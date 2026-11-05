@@ -161,30 +161,8 @@ export default function Hero() {
                     className={`object-cover ${card.pos} group-hover:scale-106 transition-transform duration-500 ease-out`}
                   />
 
-                  {/* Dark gradient overlay inside card */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
-
-                  {/* Text content inside card */}
-                  <div className="absolute inset-x-0 bottom-0 p-3 sm:p-3.5 flex flex-col justify-end">
-                    
-                    {/* White dash */}
-                    <div className="w-5 h-[2px] bg-white/75 mb-1.5" />
-
-                    {/* Small uppercase tag */}
-                    <span className="text-[#f3cd67] text-[8px] sm:text-[9px] font-bold tracking-wider uppercase block font-sans truncate">
-                      {card.tag}
-                    </span>
-
-                    {/* Card Title - font-sans font-semibold */}
-                    <h3 className="text-white font-sans font-semibold text-xs sm:text-sm leading-tight mt-0.5 drop-shadow-md truncate group-hover:text-[#f3cd67] transition-colors">
-                      {card.title}
-                    </h3>
-
-                    {/* Description */}
-                    <p className="text-gray-300 text-[7.5px] sm:text-[8.5px] font-sans mt-0.5 line-clamp-1 leading-snug">
-                      {card.desc}
-                    </p>
-                  </div>
+                  {/* Subtle dark gradient overlay at base */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
 
                   {/* Subtle golden sheen on hover */}
                   <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-[#f3cd67]/50 pointer-events-none transition-colors" />
