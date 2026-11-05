@@ -155,10 +155,10 @@ export default function Hero() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-[44px] xl:text-[48px] font-bold text-white leading-[1.12] tracking-tight mb-3 drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
+            <h1 className="font-sans text-3xl sm:text-4xl lg:text-[44px] xl:text-[48px] font-semibold text-white leading-[1.15] tracking-tight mb-3 drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
               <span>Trusted Legal</span>
               <br />
-              <span className="text-[#f3cd67] italic font-normal">Expertise In Court</span>
+              <span className="text-[#f3cd67]">Expertise In Court</span>
             </h1>
 
             {/* Subtitle / Description */}
@@ -241,7 +241,7 @@ export default function Hero() {
                     </span>
 
                     {/* Card Title */}
-                    <h3 className="text-white font-serif font-bold text-xs sm:text-sm leading-tight mt-0.5 drop-shadow-md line-clamp-2 group-hover:text-[#f3cd67] transition-colors">
+                    <h3 className="text-white font-sans font-semibold text-xs sm:text-sm leading-tight mt-0.5 drop-shadow-md line-clamp-2 group-hover:text-[#f3cd67] transition-colors">
                       {card.title}
                     </h3>
 
