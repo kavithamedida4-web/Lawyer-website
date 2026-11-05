@@ -1,228 +1,168 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
-  const slides = [
+  const archCards = [
     {
-      src: '/mobile-hero-3.jpg',
-      alt: 'Senior Advocate S. Kamalakar in client legal consultation at executive chambers',
-      position: 'object-[50%_center] sm:object-[65%_center] lg:object-[65%_center]',
+      src: '/mobile-hero-1.jpg',
+      title: 'S. Kamalakar',
+      subtitle: 'Senior Advocate (M.C.A., LL.B.)',
+      link: '/#about',
     },
     {
       src: '/mobile-hero-2.jpg',
-      alt: 'Advocate M. Umamaheshwar Reddy presenting trial argument before judge',
-      position: 'object-[62%_center] sm:object-[68%_center] lg:object-[75%_center]',
+      title: 'M. Umamaheshwar Reddy',
+      subtitle: 'Senior Advocate (M.Sc., LL.B.)',
+      link: '/#about',
     },
     {
-      src: '/mobile-hero-1.jpg',
-      alt: 'Senior Advocate S. Kamalakar presenting courtroom legal argument',
-      position: 'object-[53%_center] sm:object-[68%_center] lg:object-[82%_25%]',
+      src: '/advocate-desk-justice.jpg',
+      title: 'Executive Chambers',
+      subtitle: 'Strategic Legal Consultation',
+      link: '/#services',
+    },
+    {
+      src: '/uk-law-firm-partners.jpg',
+      title: 'Senior Partners',
+      subtitle: 'UK Law Firm Leadership',
+      link: '/#about',
+    },
+    {
+      src: '/advocate-reading-bookshelf.jpg',
+      title: 'Case Law Research',
+      subtitle: 'High Court Precedents',
+      link: '/#services',
     },
     {
       src: '/mobile-hero-seated.jpg',
-      alt: 'Advocate M. Umamaheshwar Reddy seated in courtroom chambers with scales of justice',
-      position: 'object-[68%_center] sm:object-[68%_center] lg:object-[72%_center]',
-    },
-  ];
-
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(true);
-
-  // Extended slides with cloned first slide for infinite forward-only continuous scroll
-  const extendedSlides = [...slides, slides[0]];
-
-  // Automatic scroll every 3 seconds continuously forward
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIsTransitioning(true);
-      setCurrentSlide((prev) => prev + 1);
-    }, 3000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const handleTransitionEnd = () => {
-    // When reaching the cloned slide at the end, instantly reset to 0 with no transition
-    if (currentSlide >= slides.length) {
-      setIsTransitioning(false);
-      setCurrentSlide(0);
-      
-      // Re-enable smooth transition on the next frame so subsequent slides animate smoothly
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          setIsTransitioning(true);
-        });
-      });
-    }
-  };
-
-  const features = [
-    {
-      title: 'Trusted',
-      subtitle: 'Legal Experts',
-      icon: (
-        <svg className="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5 text-[#e5bf55]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-        </svg>
-      ),
-    },
-    {
-      title: 'Client First',
-      subtitle: 'Approach',
-      icon: (
-        <svg className="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5 text-[#e5bf55]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-      ),
-    },
-    {
-      title: 'Results Driven',
-      subtitle: 'Strategy',
-      icon: (
-        <svg className="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5 text-[#e5bf55]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      ),
+      title: 'Courtroom Defense',
+      subtitle: 'Bail & Trial Advocacy',
+      link: '/#contact',
     },
   ];
 
   return (
-    <section 
-      id="home" 
-      className="relative min-h-[100dvh] h-[100dvh] max-h-[100dvh] bg-[#070c14] text-white overflow-hidden flex flex-col justify-between pt-20 sm:pt-28 pb-4"
+    <section
+      id="home"
+      className="relative min-h-[100dvh] min-h-screen bg-[#070c14] text-white overflow-hidden flex flex-col justify-between pt-24 sm:pt-32 pb-6 sm:pb-8"
     >
-      
       {/* 
         ========================================================================
-        HERO SLIDER BACKGROUND: AUTOMATICALLY SCROLLING ONE BY ONE (3 SLIDES)
-        Framed correctly on the advocate with reduced soft shadow
+        HERO BACKGROUND: REAL 'LAW & JUSTICE' CHAMBERS OFFICE (Uploaded Image 2)
+        With elegant dark cinematic overlay for pristine text legibility
         ========================================================================
       */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none select-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none select-none -z-0">
+        <Image
+          src="/hero-office-chamber.jpg"
+          alt="UK Law Firm Executive Chambers - Law & Justice Office"
+          fill
+          priority
+          unoptimized
+          sizes="100vw"
+          className="object-cover object-center brightness-[0.75] contrast-[1.08] scale-102"
+        />
         
-        {/* Horizontal sliding track with continuous forward-only loop */}
-        <div 
-          className={`flex h-full w-full ${isTransitioning ? 'transition-transform duration-1000 ease-in-out' : ''}`}
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-          onTransitionEnd={handleTransitionEnd}
-        >
-          {extendedSlides.map((slide, idx) => (
-            <div key={idx} className="relative min-w-full h-full flex-shrink-0">
-              <Image
-                src={slide.src}
-                alt={slide.alt}
-                fill
-                priority={idx <= 1}
-                unoptimized
-                sizes="100vw"
-                className={`object-cover ${slide.position} brightness-[1.12] contrast-[1.04]`}
-              />
-            </div>
-          ))}
-        </div>
-
-        {/* 
-          BALANCED SOFT SHADOW:
-          Provides deep navy opacity strictly on the left behind the headline/text,
-          while keeping the right side fully lit, natural, and untouched!
-        */}
-        <div className="absolute inset-y-0 left-0 w-[38%] sm:w-[45%] lg:w-[54%] xl:w-[48%] bg-gradient-to-r from-[#070c14] via-[#070c14]/75 lg:via-[#070c14]/45 to-transparent" />
-        
-        {/* Subtle bottom fade only on larger screens, removed on mobile */}
-        <div className="hidden sm:block absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-[#070c14]/50 to-transparent" />
+        {/* Layered dark gradients: deep navy top & bottom, glowing center transparency */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#070c14]/85 via-[#070c14]/65 to-[#070c14]/90" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.2)_0%,rgba(7,12,20,0.85)_100%)]" />
       </div>
 
       {/* 
         ========================================================================
-        CONTENT AREA - Reduced Content Size for Clean Mobile Balance
+        CENTER HERO CONTENT (Matching 3 Chillies layout structure)
+        Centered title, subtitle, and action buttons
         ========================================================================
       */}
-      <div className="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-12 w-full z-10 my-auto">
-        <div className="max-w-xl lg:max-w-2xl">
-          
-          {/* Main Hero Headline - Compact Serif Typography */}
-          <h1 className="font-serif text-[21px] sm:text-3xl lg:text-[50px] font-bold text-white leading-[1.12] tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
-            <span className="block">Trusted legal</span>
-            <span className="block">expertise for</span>
-            <span>your </span>
-            <span className="text-[#f3cd67] drop-shadow-md">success</span>
-          </h1>
+      <div className="max-w-[1200px] mx-auto px-6 sm:px-10 text-center relative z-10 my-auto pt-2 sm:pt-4">
+        
+        {/* Gold Pill Badge */}
+        <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1 sm:py-1.5 rounded-full bg-black/40 backdrop-blur-md border border-[#c9a84c]/50 text-[#f3cd67] text-[10px] sm:text-xs font-semibold tracking-widest uppercase mb-4 sm:mb-6 shadow-lg">
+          <span className="text-xs">✦</span>
+          <span>UK LAW FIRM • ADVOCATES &amp; LEGAL CONSULTANTS</span>
+          <span className="text-xs">✦</span>
+        </div>
 
-          {/* Golden Horizontal Accent Divider Line */}
-          <div className="w-8 sm:w-14 h-[1.5px] sm:h-[2px] bg-[#c9a84c] my-1.5 sm:my-3" />
+        {/* Main Headline */}
+        <h1 className="font-serif text-3xl sm:text-5xl lg:text-[62px] font-bold text-white leading-[1.14] tracking-tight mb-4 sm:mb-5 drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
+          <span>Trusted Legal Expertise </span>
+          <span className="text-[#f3cd67] italic font-normal drop-shadow-md">For Your Success</span>
+        </h1>
 
-          {/* Reduced Subtitle Description */}
-          <p className="text-white/85 text-[10px] sm:text-xs lg:text-sm leading-relaxed mb-2.5 sm:mb-5 max-w-[175px] sm:max-w-md font-sans font-normal drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">
-            Expert legal advice and dedicated support for individuals, families and businesses in India.
-          </p>
+        {/* Golden Horizontal Accent Divider */}
+        <div className="w-16 sm:w-24 h-[2px] bg-gradient-to-r from-transparent via-[#c9a84c] to-transparent mx-auto mb-4 sm:mb-5" />
 
-          {/* Action CTA Buttons - Compact Stack on Mobile */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-1.5 sm:gap-3 mb-3 sm:mb-6">
-            {/* Get Legal Advice Button */}
-            <a
-              href="#contact"
-              className="bg-gradient-to-r from-[#e5bf55] to-[#c9a84c] hover:brightness-110 text-[#080d16] px-3.5 sm:px-6 py-1.5 sm:py-3 rounded-full text-[10px] sm:text-xs font-bold font-sans tracking-wide inline-flex items-center gap-1.5 transition-all shadow-md active:scale-95"
+        {/* Subtitle Description */}
+        <p className="text-white/90 text-xs sm:text-base lg:text-[17px] leading-relaxed max-w-2xl mx-auto font-sans font-normal mb-6 sm:mb-8 drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)]">
+          25+ Years of courtroom excellence across Telangana High Court, District Courts, and Special Tribunals. Seasoned defense for individuals, families, and corporate enterprises.
+        </p>
+
+        {/* Action CTA Buttons (Matching 3 Chillies CTA button pair) */}
+        <div className="flex flex-row items-center justify-center gap-3 sm:gap-4 mb-2 sm:mb-4">
+          <Link
+            href="/contact"
+            className="bg-gradient-to-r from-[#e5bf55] via-[#d4af37] to-[#b88a38] hover:brightness-110 text-[#080d16] px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full text-xs sm:text-sm font-bold font-sans tracking-wide inline-flex items-center gap-2 transition-all shadow-[0_4px_20px_rgba(201,168,76,0.4)] hover:shadow-[0_6px_25px_rgba(201,168,76,0.6)] active:scale-95"
+          >
+            <span className="text-sm sm:text-base leading-none">⚖️</span>
+            <span>BOOK CONSULTATION</span>
+            <span className="font-bold">→</span>
+          </Link>
+
+          <a
+            href="#services"
+            className="bg-black/40 hover:bg-black/60 text-white border border-[#c9a84c]/70 hover:border-[#f3cd67] px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full text-xs sm:text-sm font-semibold font-sans tracking-wide inline-flex items-center gap-2 backdrop-blur-md transition-all active:scale-95 shadow-md"
+          >
+            <span>OUR PRACTICE AREAS</span>
+            <span className="text-[#f3cd67]">↓</span>
+          </a>
+        </div>
+
+      </div>
+
+      {/* 
+        ========================================================================
+        BOTTOM ROW OF ARCH-SHAPED CARDS (Exact 3 Chillies Reference Style)
+        Tombstone / Arch cards populated with real photos of our advocates & chambers
+        ========================================================================
+      */}
+      <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-8 relative z-10 mt-auto pt-4 sm:pt-6">
+        
+        {/* Desktop: Centered 6-Card Grid / Mobile: Smooth Horizontal Swipe */}
+        <div className="flex lg:grid lg:grid-cols-6 gap-3 sm:gap-4 lg:gap-4 items-end justify-center overflow-x-auto scrollbar-none pb-2 sm:pb-0 px-2 sm:px-0 snap-x snap-mandatory">
+          {archCards.map((card, idx) => (
+            <Link
+              key={idx}
+              href={card.link}
+              className="group relative flex-shrink-0 w-36 sm:w-44 lg:w-auto h-48 sm:h-60 lg:h-68 rounded-t-[70px] sm:rounded-t-[90px] lg:rounded-t-[100px] rounded-b-xl sm:rounded-b-2xl overflow-hidden border-2 sm:border-[3px] border-white/80 hover:border-[#f3cd67] shadow-[0_10px_30px_rgba(0,0,0,0.6)] transition-all duration-500 ease-out hover:-translate-y-3 snap-center bg-gray-900"
             >
-              <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#080d16]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-              </svg>
-              <span>Get Legal Advice</span>
-              <span>→</span>
-            </a>
+              {/* Real Photograph Inside Arch */}
+              <Image
+                src={card.src}
+                alt={card.title}
+                fill
+                unoptimized
+                sizes="(max-width: 768px) 150px, (max-width: 1200px) 200px, 240px"
+                className="object-cover object-top group-hover:scale-108 transition-transform duration-700 ease-out"
+              />
 
-            {/* Our Services Button */}
-            <a
-              href="#services"
-              className="bg-black/35 hover:bg-black/60 text-white border border-[#c9a84c]/60 hover:border-[#e5bf55] px-3.5 sm:px-6 py-1.5 sm:py-3 rounded-full text-[10px] sm:text-xs font-semibold font-sans tracking-wide inline-flex items-center gap-1.5 backdrop-blur-md transition-all active:scale-95"
-            >
-              <span>Our Services</span>
-              <span className="text-[#e5bf55]">→</span>
-            </a>
-          </div>
-
-          {/* 3 Pillar Features - Compact 3 Columns with Vertical Dividers */}
-          <div className="grid grid-cols-3 gap-0 sm:gap-5 pt-1.5 sm:pt-3.5 border-t border-[#c9a84c]/25 font-sans max-w-[260px] sm:max-w-lg">
-            {features.map((item, idx) => (
-              <div 
-                key={idx} 
-                className={`flex flex-col items-center text-center px-1 sm:px-2.5 ${
-                  idx !== 0 ? 'border-l border-[#c9a84c]/25' : ''
-                }`}
-              >
-                {/* Rounded square gold outline icon with SOLID OPAQUE background */}
-                <div className="w-6 h-6 sm:w-9 sm:h-9 rounded-lg border border-[#c9a84c] bg-[#070c14] flex items-center justify-center text-[#e5bf55] mb-1.5 shadow-md">
-                  {item.icon}
-                </div>
-                <p className="text-white text-[9px] sm:text-xs font-bold leading-tight drop-shadow-sm">
-                  {item.title}
+              {/* Dark subtle gradient overlay with text at bottom */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent flex flex-col justify-end p-2.5 sm:p-3 text-center">
+                <p className="text-white text-xs sm:text-[13px] font-serif font-bold leading-tight group-hover:text-[#f3cd67] transition-colors drop-shadow-md">
+                  {card.title}
                 </p>
-                <p className="text-gray-200 text-[7.5px] sm:text-[10px] leading-tight mt-0.5 drop-shadow-sm">
-                  {item.subtitle}
+                <p className="text-gray-300 text-[9px] sm:text-[10px] font-sans mt-0.5 line-clamp-1 group-hover:text-white transition-colors">
+                  {card.subtitle}
                 </p>
               </div>
-            ))}
-          </div>
 
-          {/* Slide Indicator Progress Bars (Continuous forward scroll) */}
-          <div className="flex items-center justify-start gap-1.5 pt-2 sm:pt-4 pointer-events-none select-none">
-            {slides.map((_, idx) => (
-              <span
-                key={idx}
-                className={`h-1 sm:h-1.5 rounded-full transition-all duration-700 ${
-                  (currentSlide % slides.length) === idx 
-                    ? 'w-6 sm:w-8 bg-[#e5bf55] shadow-[0_0_8px_rgba(229,191,85,0.8)]' 
-                    : 'w-1 sm:w-1.5 bg-white/40'
-                }`}
-              />
-            ))}
-            <span className="text-[9.5px] sm:text-xs text-[#e5bf55] font-mono ml-2 font-bold">
-              0{(currentSlide % slides.length) + 1} / 0{slides.length}
-            </span>
-          </div>
-
+              {/* Subtle top golden sheen on hover */}
+              <div className="absolute inset-0 rounded-t-[70px] sm:rounded-t-[90px] lg:rounded-t-[100px] border border-transparent group-hover:border-[#f3cd67]/40 pointer-events-none transition-colors" />
+            </Link>
+          ))}
         </div>
+
       </div>
 
     </section>
