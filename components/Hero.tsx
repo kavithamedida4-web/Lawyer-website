@@ -16,12 +16,12 @@ interface FixedCard {
 const fixedCards: FixedCard[] = [
   {
     id: 1,
-    img: '/hero-card-partners.jpg',
-    tag: 'SENIOR LEADERSHIP',
-    title: 'UK Law Firm Partners',
-    desc: 'Sri Umamaheshwar Reddy & Sri Kamalakar',
-    pos: 'object-top sm:object-[center_15%]',
-    link: '/#about',
+    img: '/hero-building-maps.jpg',
+    tag: 'HEADQUARTERS',
+    title: 'UK Law Firm Chambers',
+    desc: 'Maps Apartments, Gachibowli, Hyderabad',
+    pos: 'object-[center_28%]',
+    link: '/#contact',
   },
   {
     id: 2,
