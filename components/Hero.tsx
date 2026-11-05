@@ -295,38 +295,6 @@ export default function Hero() {
 
       </div>
 
-      {/* 
-        ========================================================================
-        BOTTOM CENTER NAVIGATION ARROWS (Matching reference circular buttons)
-        Two centered circular Prev & Next buttons
-        ========================================================================
-      */}
-      <div className="relative z-20 flex items-center justify-center gap-3 w-full">
-        {/* Prev Arrow */}
-        <button
-          type="button"
-          onClick={prevSlide}
-          aria-label="Previous Practice Area"
-          className="w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-white/35 bg-black/55 hover:bg-[#c9a84c] text-white hover:text-black hover:border-[#c9a84c] backdrop-blur-md flex items-center justify-center transition-all duration-300 shadow-lg active:scale-90 cursor-pointer"
-        >
-          <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-
-        {/* Next Arrow */}
-        <button
-          type="button"
-          onClick={nextSlide}
-          aria-label="Next Practice Area"
-          className="w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-white/35 bg-black/55 hover:bg-[#c9a84c] text-white hover:text-black hover:border-[#c9a84c] backdrop-blur-md flex items-center justify-center transition-all duration-300 shadow-lg active:scale-90 cursor-pointer"
-        >
-          <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
-
     </section>
   );
 }
