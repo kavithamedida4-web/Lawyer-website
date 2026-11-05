@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    question: 'What types of legal matters does UK Law Associates handle?',
+    question: 'What types of legal matters does UK Law Firm handle?',
     answer:
       'We provide comprehensive legal counsel and courtroom representation across Civil Litigation, Criminal Defense, Property & RERA Disputes, Family & Matrimonial Law, Corporate Compliance, and specialized Tribunals (NCLT, MACT, Consumer Forums).',
   },

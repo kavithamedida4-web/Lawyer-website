@@ -14,7 +14,7 @@ export default function Contact() {
 
   const [lastWhatsAppUrl, setLastWhatsAppUrl] = useState('');
 
-  const googleMapsUrl = 'https://g.page/r/CUcVkQD8aAhOEBM/review';
+  const googleMapsUrl = 'https://www.google.com/maps/search/?api=1&query=Maps+Apartments+Jayabheri+Pine+Valley+Gachibowli+Hyderabad';
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

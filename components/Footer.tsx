@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
-  const googleMapsUrl = 'https://g.page/r/CUcVkQD8aAhOEBM/review';
+  const googleMapsUrl = 'https://www.google.com/maps/search/?api=1&query=Maps+Apartments+Jayabheri+Pine+Valley+Gachibowli+Hyderabad';
 
   const quickLinks = [
     { name: 'Home', href: '/#home' },
@@ -22,8 +22,8 @@ export default function Footer() {
     { name: 'Cyber Crime & IT Law', href: '/services/cyber-crime', highlight: false },
     { name: 'Civil Litigation & Suits', href: '/services/civil-law', highlight: false },
     { name: 'Family & Matrimonial Law', href: '/services/family-law', highlight: false },
-    { name: 'RERA & Property Disputes', href: '/services/rera-property', highlight: false },
-    { name: 'Tribunals & High Court Writs', href: '/services/tribunals-special-courts', highlight: false },
+    { name: 'RERA & Property Disputes', href: '/services/rera-and-builder-buyer', highlight: false },
+    { name: 'Tribunals & High Court Writs', href: '/services/tribunals-and-forums', highlight: false },
   ];
 
   return (
@@ -60,7 +60,7 @@ export default function Footer() {
 
             {/* Paragraph Bio */}
             <p className="text-gray-400 text-xs sm:text-[13px] leading-relaxed">
-              <strong className="text-gray-200 font-semibold">UK Law Firm</strong> is Hyderabad and Telangana&apos;s trusted legal defense and advisory partner. With chambers in <strong className="text-gray-200 font-semibold">Gachibowli</strong> and operations across <strong className="text-gray-200 font-semibold">High Court of Telangana &amp; District Courts</strong>, we deliver professional legal defense, Trial Advocacy, Corporate Advisory, RERA Compliance, and Bail Relief ◆ all with 25+ years verified courtroom excellence, 24/7 client counsel, and 1000+ satisfied clients.
+              <strong className="text-gray-200 font-semibold">UK Law Firm</strong> is Hyderabad and Telangana&apos;s trusted legal defense and advisory partner. With chambers in <strong className="text-gray-200 font-semibold">Gachibowli</strong> and operations across <strong className="text-gray-200 font-semibold">High Court of Telangana &amp; District Courts</strong>, we deliver professional legal defense, Trial Advocacy, Corporate Advisory, RERA Compliance, and Bail Relief – all with 25+ years verified courtroom excellence, 24/7 client counsel, and 1000+ satisfied clients.
             </p>
           </div>
 
@@ -181,7 +181,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-gray-300 leading-snug">
-                    Mon ◆ Sat: 9:30 AM ◆ 8:00 PM
+                    Mon – Sat: 9:30 AM – 8:00 PM
                   </p>
                   <p className="text-gray-500 text-[11px] mt-0.5">
                     Sunday / Emergency Bail: 24/7 On-Call
