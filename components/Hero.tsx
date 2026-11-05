@@ -133,42 +133,10 @@ export default function Hero() {
 
       {/* 
         ========================================================================
-        FAR LEFT VERTICAL QUICK CONTACT BAR (Exact match to reference icons)
+        MAIN BODY: LEFT CONTENT + RIGHT 3-CARD CAROUSEL
         ========================================================================
       */}
-      <div className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 z-20 hidden md:flex flex-col items-center gap-4 text-white/70">
-        <a
-          href="https://wa.me/918919439071"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="WhatsApp UK Law Firm"
-          className="hover:text-[#25D366] hover:scale-115 transition-all text-sm"
-        >
-          💬
-        </a>
-        <a
-          href="tel:+918919439071"
-          aria-label="Call UK Law Firm"
-          className="hover:text-[#f3cd67] hover:scale-115 transition-all text-sm"
-        >
-          📞
-        </a>
-        <a
-          href="mailto:info@uklawfirm.in"
-          aria-label="Email UK Law Firm"
-          className="hover:text-[#f3cd67] hover:scale-115 transition-all text-sm"
-        >
-          ✉️
-        </a>
-        <div className="w-[1.5px] h-12 bg-white/25 mt-1" />
-      </div>
-
-      {/* 
-        ========================================================================
-        MAIN BODY: LEFT CONTENT + RIGHT 3-CARD CAROUSEL (Matching Reference)
-        ========================================================================
-      */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 md:pl-20 md:pr-8 my-auto flex-1 flex flex-col justify-center">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12 my-auto flex-1 flex flex-col justify-center">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center w-full">
           
