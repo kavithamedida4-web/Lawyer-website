@@ -25,11 +25,11 @@ const fixedCards: FixedCard[] = [
   },
   {
     id: 2,
-    img: '/hero-card-desk-justice.jpg',
-    tag: 'EXECUTIVE CONSULTATION',
-    title: 'Chambers Consultation Desk',
-    desc: 'Senior Advocate M. Umamaheshwar Reddy',
-    pos: 'object-center',
+    img: '/hero-card-umamaheshwar.jpg',
+    tag: 'SENIOR ADVOCATE',
+    title: 'M. Umamaheshwar Reddy',
+    desc: 'High Court Advocate (M.Sc., LL.B.)',
+    pos: 'object-top',
     link: '/#about',
   },
   {
@@ -132,16 +132,6 @@ export default function Hero() {
               Displaying the 3 user-provided real advocate photographs
               ================================================================== */}
           <div className="lg:col-span-7 flex flex-col justify-center">
-            
-            {/* Header above cards with gold underline */}
-            <div className="flex items-center justify-between mb-3 px-1">
-              <div className="inline-block relative">
-                <span className="text-white/95 text-xs sm:text-sm font-semibold tracking-wider uppercase font-sans">
-                  Chambers &amp; Senior Advocates
-                </span>
-                <div className="w-full h-[2.5px] bg-[#f3cd67] mt-1 rounded-full" />
-              </div>
-            </div>
 
             {/* 3 Fixed Cards Grid */}
             <div className="grid grid-cols-3 gap-3 sm:gap-4 py-1">
