@@ -4,84 +4,82 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface SlideItem {
+interface PracticeCard {
   id: number;
-  bg: string;
+  img: string;
   tag: string;
-  cardTitle: string;
-  heroTitle: string;
-  heroSubtitle: string;
+  title: string;
   desc: string;
   link: string;
 }
 
-const slides: SlideItem[] = [
-  {
-    id: 0,
-    bg: '/hero-office-chamber.jpg',
-    tag: 'EXECUTIVE CHAMBERS',
-    cardTitle: 'UK Law Firm Head Chambers',
-    heroTitle: 'Trusted Legal Expertise In Court',
-    heroSubtitle: 'Executive Chambers & Law Office',
-    desc: 'State-of-the-art advocate chambers in Hyderabad featuring the illuminated "LAW & JUSTICE" emblem wall.',
-    link: '/#about',
-  },
+const practiceCards: PracticeCard[] = [
   {
     id: 1,
-    bg: '/uk-law-firm-partners.jpg',
+    img: '/uk-law-firm-partners.jpg',
     tag: 'SENIOR LEADERSHIP',
-    cardTitle: 'Sri Umamaheshwar Reddy & Kamalakar',
-    heroTitle: '25+ Years Of Trial Excellence',
-    heroSubtitle: 'Senior Advocates & Legal Consultants',
-    desc: 'Seasoned High Court advocates providing strategic defense for individuals, families, and corporate enterprises.',
+    title: 'Sri Umamaheshwar Reddy & Kamalakar',
+    desc: 'Founding senior advocates with 25+ years of trial advocacy across Telangana High Court.',
     link: '/#about',
   },
   {
     id: 2,
-    bg: '/advocate-desk-justice.jpg',
+    img: '/advocate-desk-justice.jpg',
     tag: 'STRATEGIC COUNSEL',
-    cardTitle: 'Consultation Chambers Desk',
-    heroTitle: 'Strategic Defense & Legal Counsel',
-    heroSubtitle: 'Confidential Hearing Chambers',
-    desc: 'Private chambers dedicated to rigorous case evaluation, trial preparation, and strategic litigation planning.',
+    title: 'Executive Consultation Chambers',
+    desc: 'Confidential client hearing chambers dedicated to in-depth case evaluation & trial strategy.',
     link: '/#services',
   },
   {
     id: 3,
-    bg: '/advocate-reading-bookshelf.jpg',
+    img: '/advocate-reading-bookshelf.jpg',
     tag: 'CASE PRECEDENTS',
-    cardTitle: 'High Court Law Library',
-    heroTitle: 'Deep Research & Precedents',
-    heroSubtitle: 'Statutory Research & Precedent Analysis',
-    desc: 'Exhaustive statutory research backed by extensive Supreme Court & High Court rulings and case law reports.',
+    title: 'High Court Legal Research',
+    desc: 'Comprehensive precedent analysis backed by extensive Supreme Court & High Court rulings.',
     link: '/#services',
   },
   {
     id: 4,
-    bg: '/hero-advocate-umamaheshwar-seated.jpg',
+    img: '/hero-advocate-umamaheshwar-seated.jpg',
     tag: 'TRIAL ADVOCACY',
-    cardTitle: 'Courtroom Trial Advocacy',
-    heroTitle: 'Tenacious Trial Representation',
-    heroSubtitle: 'Bail, Trial & High Court Defense',
-    desc: 'Seasoned defense litigation counsel across Telangana High Court, District Courts, and Special Tribunals.',
+    title: 'Courtroom Trial Defense',
+    desc: 'Seasoned defense litigation counsel across Telangana High Court and District Courts.',
     link: '/#contact',
+  },
+  {
+    id: 5,
+    img: '/hero-advocate-kamalakar-portrait.jpg',
+    tag: 'CIVIL & CORPORATE',
+    title: 'S. Kamalakar, Senior Advocate',
+    desc: 'Specialized in corporate contracts, commercial disputes, property law, and arbitration.',
+    link: '/#about',
+  },
+  {
+    id: 6,
+    img: '/hero-advocate-umamaheshwar-portrait.jpg',
+    tag: 'CRIMINAL & WRIT',
+    title: 'M. Umamaheshwar Reddy, Advocate',
+    desc: 'Expert in bail defense, criminal trial advocacy, constitutional writ petitions, and appeals.',
+    link: '/#about',
   },
 ];
 
 export default function Hero() {
-  const [activeIdx, setActiveIdx] = useState(0);
+  const [startIndex, setStartIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
+  const totalCards = practiceCards.length;
+
   const nextSlide = useCallback(() => {
-    setActiveIdx((prev) => (prev + 1) % slides.length);
-  }, []);
+    setStartIndex((prev) => (prev + 1) % totalCards);
+  }, [totalCards]);
 
   const prevSlide = useCallback(() => {
-    setActiveIdx((prev) => (prev - 1 + slides.length) % slides.length);
-  }, []);
+    setStartIndex((prev) => (prev - 1 + totalCards) % totalCards);
+  }, [totalCards]);
 
-  // Auto-scroll every 4 seconds
+  // Auto-scroll cards every 4 seconds
   useEffect(() => {
     if (isPaused) return;
     timerRef.current = setInterval(() => {
@@ -93,7 +91,12 @@ export default function Hero() {
     };
   }, [isPaused, nextSlide]);
 
-  const active = slides[activeIdx];
+  // Slice exactly 3 cards for display on desktop
+  const visibleCards = [
+    practiceCards[startIndex % totalCards],
+    practiceCards[(startIndex + 1) % totalCards],
+    practiceCards[(startIndex + 2) % totalCards],
+  ];
 
   return (
     <section
@@ -104,41 +107,33 @@ export default function Hero() {
     >
       {/* 
         ========================================================================
-        DYNAMIC IMMERSIVE BACKGROUND IMAGE (Switches smoothly with active slide)
+        HERO BACKGROUND IMAGE: User Uploaded Real Office Photo (Image 2)
+        Executive Chambers with illuminated "LAW & JUSTICE" emblem wall
         ========================================================================
       */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none select-none z-0">
-        {slides.map((s, idx) => (
-          <div
-            key={s.id}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              idx === activeIdx ? 'opacity-100' : 'opacity-0 pointer-events-none'
-            }`}
-          >
-            <Image
-              src={s.bg}
-              alt={s.heroTitle}
-              fill
-              priority={idx === 0}
-              unoptimized
-              sizes="100vw"
-              className="object-cover object-center brightness-[0.62] contrast-[1.10]"
-            />
-          </div>
-        ))}
+        <Image
+          src="/hero-office-chamber.jpg"
+          alt="UK Law Firm Executive Chambers - Law & Justice Office"
+          fill
+          priority
+          unoptimized
+          sizes="100vw"
+          className="object-cover object-center lg:object-[60%_center] brightness-[0.66] contrast-[1.10]"
+        />
 
         {/* 
-          Directional Dark Gradients:
-          - Deep obsidian navy on left for 100% crystal-clear readability
-          - Gentle vignette at bottom to ground the controls & cards
+          Layered dark gradients:
+          - Deep obsidian navy on left for 100% crisp text readability
+          - Right side lets the real chambers and "LAW & JUSTICE" illuminated wall shine through
         */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070c14]/95 via-[#070c14]/80 via-45% to-[#070c14]/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#070c14]/95 via-[#070c14]/80 via-48% to-[#070c14]/30 lg:to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#070c14]/90 via-transparent to-[#070c14]/50" />
       </div>
 
       {/* 
         ========================================================================
-        FAR LEFT VERTICAL CONTACT / SOCIAL BAR (Matching reference layout)
+        FAR LEFT VERTICAL QUICK CONTACT BAR (Exact match to reference icons)
         ========================================================================
       */}
       <div className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 z-20 hidden md:flex flex-col items-center gap-4 text-white/70">
@@ -170,10 +165,10 @@ export default function Hero() {
 
       {/* 
         ========================================================================
-        MAIN BODY: LEFT CONTENT + RIGHT CAROUSEL CARDS
+        MAIN BODY: LEFT CONTENT + RIGHT 3-CARD CAROUSEL (Matching Reference)
         ========================================================================
       */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-12 md:pl-20 md:pr-10 my-auto flex-1 flex flex-col justify-center">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 md:pl-20 md:pr-8 my-auto flex-1 flex flex-col justify-center">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center w-full">
           
@@ -183,25 +178,27 @@ export default function Hero() {
               ================================================================== */}
           <div className="lg:col-span-5 flex flex-col justify-center text-left">
             
-            {/* Eyebrow with horizontal dash */}
-            <div className="flex items-center gap-2 mb-2 sm:mb-3">
-              <span className="w-8 h-[2px] bg-[#f3cd67]" />
+            {/* Eyebrow with horizontal dash line */}
+            <div className="flex items-center gap-2.5 mb-2.5 sm:mb-3">
+              <span className="w-8 sm:w-10 h-[2px] bg-[#f3cd67]" />
               <span className="text-[#f3cd67] text-[11px] sm:text-xs font-semibold tracking-widest uppercase font-sans">
-                {active.tag}
+                UK LAW FIRM • ADVOCATES
               </span>
             </div>
 
             {/* Main Headline */}
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-[44px] xl:text-[48px] font-bold text-white leading-[1.12] tracking-tight mb-3 drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
-              <span>{active.heroTitle}</span>
+              <span>Trusted Legal</span>
+              <br />
+              <span className="text-[#f3cd67] italic font-normal">Expertise In Court</span>
             </h1>
 
             {/* Subtitle / Description */}
-            <p className="text-white/85 text-xs sm:text-sm lg:text-[14px] leading-relaxed font-sans font-normal mb-5 max-w-md drop-shadow-sm line-clamp-3">
-              {active.desc}
+            <p className="text-white/85 text-xs sm:text-sm lg:text-[14px] leading-relaxed font-sans font-normal mb-5 max-w-md drop-shadow-sm">
+              25+ Years of courtroom excellence across Telangana High Court, District Courts, and Special Tribunals. Seasoned defense for individuals, families, and corporate enterprises.
             </p>
 
-            {/* CTA Action Button */}
+            {/* CTA Action Button (Pill style matching reference 'Explore Location') */}
             <div className="flex items-center gap-3">
               <Link
                 href="/contact"
@@ -213,7 +210,7 @@ export default function Hero() {
 
               <a
                 href="#services"
-                className="px-5 py-2.5 rounded-full text-white/80 hover:text-[#f3cd67] text-xs sm:text-sm font-medium font-sans tracking-wide transition-colors inline-flex items-center gap-1.5"
+                className="px-4 py-2.5 rounded-full text-white/80 hover:text-[#f3cd67] text-xs sm:text-sm font-medium font-sans tracking-wide transition-colors inline-flex items-center gap-1.5"
               >
                 <span>Practice Areas</span>
                 <span>↓</span>
@@ -223,85 +220,73 @@ export default function Hero() {
           </div>
 
           {/* ==================================================================
-              RIGHT SIDE: CAROUSEL OF CARDS (Exact match to reference layout)
-              Popular Places style header + horizontal row of cards
+              RIGHT SIDE: EXACTLY 3 CARDS (Exact match to reference layout)
+              'Popular Places' styled header + 3 vertical rectangular cards
               ================================================================== */}
           <div className="lg:col-span-7 flex flex-col justify-center">
             
-            {/* Header above cards with underline */}
+            {/* Header above cards with yellow/gold underline */}
             <div className="flex items-center justify-between mb-3 px-1">
               <div className="inline-block relative">
-                <span className="text-white/90 text-xs sm:text-sm font-semibold tracking-wider uppercase font-sans">
-                  Chambers &amp; Leadership
+                <span className="text-white/95 text-xs sm:text-sm font-semibold tracking-wider uppercase font-sans">
+                  Popular Practice Areas
                 </span>
-                <div className="w-full h-[2px] bg-[#f3cd67] mt-1" />
+                <div className="w-full h-[2.5px] bg-[#f3cd67] mt-1 rounded-full" />
               </div>
 
               {/* Slide Counter */}
               <div className="text-white/60 text-xs font-mono">
-                <span className="text-[#f3cd67] font-bold">0{activeIdx + 1}</span> / 0{slides.length}
+                <span className="text-[#f3cd67] font-bold">0{startIndex + 1}</span> / 0{totalCards}
               </div>
             </div>
 
-            {/* Horizontal Cards Row */}
-            <div className="flex gap-3 sm:gap-4 overflow-x-auto scrollbar-none py-2 px-1 snap-x snap-mandatory">
-              {slides.map((slide, idx) => {
-                const isSelected = idx === activeIdx;
-                return (
-                  <button
-                    key={slide.id}
-                    type="button"
-                    onClick={() => setActiveIdx(idx)}
-                    className={`group relative flex-shrink-0 w-36 sm:w-44 md:w-48 h-56 sm:h-64 md:h-72 rounded-2xl overflow-hidden text-left transition-all duration-400 ease-out snap-start cursor-pointer ${
-                      isSelected
-                        ? 'ring-2 ring-[#f3cd67] scale-102 shadow-[0_12px_30px_rgba(201,168,76,0.35)] -translate-y-1'
-                        : 'opacity-75 hover:opacity-100 hover:-translate-y-0.5 border border-white/20'
-                    }`}
-                  >
-                    {/* Card Photograph */}
-                    <Image
-                      src={slide.bg}
-                      alt={slide.cardTitle}
-                      fill
-                      unoptimized
-                      sizes="220px"
-                      className="object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
-                    />
+            {/* 3 Cards Row */}
+            <div className="grid grid-cols-3 gap-3 sm:gap-4 py-1">
+              {visibleCards.map((card, idx) => (
+                <Link
+                  key={`${card.id}-${idx}`}
+                  href={card.link}
+                  className="group relative w-full h-[290px] sm:h-[330px] lg:h-[360px] xl:h-[380px] rounded-2xl overflow-hidden text-left border border-white/20 hover:border-[#f3cd67] shadow-[0_14px_35px_rgba(0,0,0,0.6)] transition-all duration-400 ease-out hover:-translate-y-1.5 bg-[#0c1424] block"
+                >
+                  {/* Card Photograph */}
+                  <Image
+                    src={card.img}
+                    alt={card.title}
+                    fill
+                    unoptimized
+                    sizes="(max-width: 768px) 110px, 240px"
+                    className="object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
+                  />
 
-                    {/* Dark gradient overlay inside card */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-black/10" />
+                  {/* Dark gradient overlay inside card */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
 
-                    {/* Text content inside card (Matching reference card styling) */}
-                    <div className="absolute inset-x-0 bottom-0 p-3 sm:p-3.5 flex flex-col justify-end">
-                      
-                      {/* White dash */}
-                      <div className="w-5 h-[2px] bg-white/70 mb-1.5" />
+                  {/* Text content inside card (Matching reference card styling) */}
+                  <div className="absolute inset-x-0 bottom-0 p-3 sm:p-3.5 flex flex-col justify-end">
+                    
+                    {/* White dash */}
+                    <div className="w-5 h-[2px] bg-white/75 mb-1.5" />
 
-                      {/* Small uppercase tag */}
-                      <span className="text-[#f3cd67] text-[8.5px] sm:text-[9.5px] font-bold tracking-wider uppercase block font-sans truncate">
-                        {slide.tag}
-                      </span>
+                    {/* Small uppercase tag */}
+                    <span className="text-[#f3cd67] text-[8px] sm:text-[9px] font-bold tracking-wider uppercase block font-sans truncate">
+                      {card.tag}
+                    </span>
 
-                      {/* Card Title */}
-                      <h3 className="text-white font-serif font-bold text-xs sm:text-sm leading-tight mt-0.5 drop-shadow-md line-clamp-2 group-hover:text-[#f3cd67] transition-colors">
-                        {slide.cardTitle}
-                      </h3>
+                    {/* Card Title */}
+                    <h3 className="text-white font-serif font-bold text-xs sm:text-sm leading-tight mt-0.5 drop-shadow-md line-clamp-2 group-hover:text-[#f3cd67] transition-colors">
+                      {card.title}
+                    </h3>
 
-                      {/* Short 2-line description */}
-                      <p className="text-gray-300 text-[8px] sm:text-[9px] font-sans mt-1 line-clamp-2 leading-snug">
-                        {slide.desc}
-                      </p>
-                    </div>
+                    {/* Short 2-line description */}
+                    <p className="text-gray-300 text-[7.5px] sm:text-[8.5px] font-sans mt-1 line-clamp-2 leading-snug">
+                      {card.desc}
+                    </p>
+                  </div>
 
-                    {/* Active gold corner sheen */}
-                    {isSelected && (
-                      <div className="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-[#f3cd67] text-[#070c14] text-[8px] font-bold tracking-wider">
-                        ACTIVE
-                      </div>
-                    )}
-                  </button>
-                );
-              })}
+                  {/* Subtle golden sheen on hover */}
+                  <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-[#f3cd67]/50 pointer-events-none transition-colors" />
+                </Link>
+              ))}
             </div>
 
           </div>
@@ -313,7 +298,7 @@ export default function Hero() {
       {/* 
         ========================================================================
         BOTTOM CENTER NAVIGATION ARROWS (Matching reference circular buttons)
-        Centered circular Prev & Next buttons
+        Two centered circular Prev & Next buttons
         ========================================================================
       */}
       <div className="relative z-20 flex items-center justify-center gap-3 w-full">
@@ -321,7 +306,7 @@ export default function Hero() {
         <button
           type="button"
           onClick={prevSlide}
-          aria-label="Previous Slide"
+          aria-label="Previous Practice Area"
           className="w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-white/35 bg-black/55 hover:bg-[#c9a84c] text-white hover:text-black hover:border-[#c9a84c] backdrop-blur-md flex items-center justify-center transition-all duration-300 shadow-lg active:scale-90 cursor-pointer"
         >
           <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -333,7 +318,7 @@ export default function Hero() {
         <button
           type="button"
           onClick={nextSlide}
-          aria-label="Next Slide"
+          aria-label="Next Practice Area"
           className="w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-white/35 bg-black/55 hover:bg-[#c9a84c] text-white hover:text-black hover:border-[#c9a84c] backdrop-blur-md flex items-center justify-center transition-all duration-300 shadow-lg active:scale-90 cursor-pointer"
         >
           <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
