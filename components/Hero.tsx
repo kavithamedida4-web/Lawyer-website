@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -44,10 +45,21 @@ const fixedCards: FixedCard[] = [
 ];
 
 export default function Hero() {
+  const [mobileIndex, setMobileIndex] = useState(0);
+
+  // Auto-scroll one image at a time in mobile view only
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setMobileIndex((prev) => (prev + 1) % fixedCards.length);
+    }, 3200);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section
       id="home"
-      className="relative h-screen min-h-[620px] max-h-screen w-full bg-[#070c14] text-white overflow-hidden flex flex-col justify-center pt-20 sm:pt-22 pb-5 sm:pb-6 select-none"
+      className="relative min-h-[100dvh] lg:h-screen lg:max-h-screen w-full bg-[#070c14] text-white overflow-hidden flex flex-col justify-center pt-20 sm:pt-22 pb-6 sm:pb-6 select-none"
     >
       {/* 
         ========================================================================
@@ -73,7 +85,7 @@ export default function Hero() {
 
       {/* 
         ========================================================================
-        MAIN BODY: LEFT CONTENT + RIGHT 3 FIXED CARDS (No scrolling, fixed)
+        MAIN BODY: LEFT CONTENT + RIGHT CARDS
         ========================================================================
       */}
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12 my-auto flex-1 flex flex-col justify-center">
@@ -128,18 +140,63 @@ export default function Hero() {
           </div>
 
           {/* ==================================================================
-              RIGHT SIDE: EXACTLY 3 FIXED CARDS (No scrolling, not changing)
-              Displaying the 3 user-provided real advocate photographs
+              RIGHT SIDE:
+              - In Mobile View (< sm): ONE image at a time, auto-scrolling one by one
+              - In Desktop View (sm+): EXACTLY 3 FIXED CARDS side-by-side (No scroll)
               ================================================================== */}
           <div className="lg:col-span-7 flex flex-col justify-center">
 
-            {/* 3 Fixed Cards Grid */}
-            <div className="grid grid-cols-3 gap-3 sm:gap-4 py-1">
+            {/* MOBILE VIEW ONLY (< sm): Shows ONE image at a time with automatic one-by-one crossfade */}
+            <div className="block sm:hidden w-full py-2">
+              <Link
+                href={fixedCards[mobileIndex].link}
+                className="relative block w-full max-w-[270px] h-[310px] mx-auto rounded-2xl overflow-hidden border border-white/25 shadow-[0_12px_30px_rgba(0,0,0,0.7)] bg-[#0c1424]"
+              >
+                {fixedCards.map((card, idx) => (
+                  <div
+                    key={card.id}
+                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                      idx === mobileIndex ? 'opacity-100 z-10' : 'opacity-0 pointer-events-none z-0'
+                    }`}
+                  >
+                    <Image
+                      src={card.img}
+                      alt={card.title}
+                      fill
+                      unoptimized
+                      sizes="280px"
+                      className={`object-cover ${card.pos}`}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                  </div>
+                ))}
+              </Link>
+
+              {/* Mobile Pagination Indicator Dots */}
+              <div className="flex items-center justify-center gap-1.5 mt-3">
+                {fixedCards.map((_, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => setMobileIndex(idx)}
+                    aria-label={`Show card ${idx + 1}`}
+                    className={`rounded-full transition-all duration-300 ${
+                      idx === mobileIndex
+                        ? 'w-6 h-1.5 bg-[#f3cd67] shadow-[0_0_8px_rgba(243,205,103,0.8)]'
+                        : 'w-1.5 h-1.5 bg-white/40'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* DESKTOP VIEW ONLY (sm+): 3 Fixed Cards Side-by-Side (No scrolling) */}
+            <div className="hidden sm:grid sm:grid-cols-3 gap-3 sm:gap-4 py-1">
               {fixedCards.map((card) => (
                 <Link
                   key={card.id}
                   href={card.link}
-                  className="group relative w-full h-[290px] sm:h-[330px] lg:h-[360px] xl:h-[380px] rounded-2xl overflow-hidden text-left border border-white/20 hover:border-[#f3cd67] shadow-[0_14px_35px_rgba(0,0,0,0.6)] transition-all duration-300 ease-out hover:-translate-y-1.5 bg-[#0c1424] block"
+                  className="group relative w-full h-[320px] lg:h-[360px] xl:h-[380px] rounded-2xl overflow-hidden text-left border border-white/20 hover:border-[#f3cd67] shadow-[0_14px_35px_rgba(0,0,0,0.6)] transition-all duration-300 ease-out hover:-translate-y-1.5 bg-[#0c1424] block"
                 >
                   {/* Card Photograph */}
                   <Image
@@ -147,7 +204,7 @@ export default function Hero() {
                     alt={card.title}
                     fill
                     unoptimized
-                    sizes="(max-width: 768px) 110px, 240px"
+                    sizes="(max-width: 1024px) 200px, 240px"
                     className={`object-cover ${card.pos} group-hover:scale-106 transition-transform duration-500 ease-out`}
                   />
 
