@@ -56,38 +56,38 @@ export default function AboutPage() {
           {/* 4. 3 Side-by-Side Tall Rounded Photo Cards (3 Columns on Mobile & Desktop, exactly like reference) */}
           <div className="grid grid-cols-3 gap-2.5 sm:gap-6 max-w-[860px] mx-auto items-end">
             
-            {/* Card 1: Left - Senior Advocate at Law Library */}
+            {/* Card 1: Left - Senior Advocate M. Umamaheshwar Reddy at Law Library */}
             <div className="h-[185px] sm:h-[340px] rounded-2xl sm:rounded-[28px] overflow-hidden border-[3px] sm:border-[5px] border-white shadow-[0_8px_20px_rgba(10,18,34,0.08)] bg-white relative group transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <Image
-                src="/advocate-reading-bookshelf.jpg"
+                src="/about-bookshelf.jpg"
                 alt="Senior Advocate M. Umamaheshwar Reddy at Law Library"
                 fill
                 sizes="(max-width: 768px) 33vw, 280px"
-                className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                className="object-cover object-[32%_center] group-hover:scale-105 transition-transform duration-500"
                 priority
               />
             </div>
 
-            {/* Card 2: Center - Senior Advocate Standing Tall (Prominent Center Stagger) */}
+            {/* Card 2: Center - UK Law Firm Official Inauguration Ceremony (Prominent Center Stagger) */}
             <div className="h-[215px] sm:h-[385px] rounded-2xl sm:rounded-[28px] overflow-hidden border-[3px] sm:border-[5px] border-white shadow-[0_12px_28px_rgba(10,18,34,0.12)] bg-white relative group transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
               <Image
-                src="/advocate-senior-standing.jpg"
-                alt="Senior Advocate Partner M. Umamaheshwar Reddy"
+                src="/about-inauguration.jpg"
+                alt="UK Law Firm Official Chamber Inauguration Ceremony"
                 fill
                 sizes="(max-width: 768px) 33vw, 280px"
-                className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                className="object-cover object-[52%_center] group-hover:scale-105 transition-transform duration-500"
                 priority
               />
             </div>
 
-            {/* Card 3: Right - Advocate S. Kamalakar at Law & Justice Crest */}
+            {/* Card 3: Right - Senior Advocate S. Kamalakar at Law & Justice Chambers */}
             <div className="h-[185px] sm:h-[340px] rounded-2xl sm:rounded-[28px] overflow-hidden border-[3px] sm:border-[5px] border-white shadow-[0_8px_20px_rgba(10,18,34,0.08)] bg-white relative group transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <Image
-                src="/advocate-standing-crest.jpg"
-                alt="Advocate S. Kamalakar at Law & Justice Chambers"
+                src="/about-desk.jpg"
+                alt="Senior Advocate S. Kamalakar at Law & Justice Chambers Consultation Desk"
                 fill
                 sizes="(max-width: 768px) 33vw, 280px"
-                className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                className="object-cover object-[55%_center] group-hover:scale-105 transition-transform duration-500"
                 priority
               />
             </div>
