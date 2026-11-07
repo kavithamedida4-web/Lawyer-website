@@ -149,13 +149,8 @@ export default function HowItWorks() {
               </div>
 
               {/* Bottom Overlapping Curved Info Card */}
-              <div className="relative -mt-10 pt-12 pb-6 px-4 w-full bg-white rounded-3xl border border-gray-100 shadow-md text-center flex flex-col items-center flex-grow transition-all duration-300 group-hover:shadow-xl group-hover:border-[#c9a84c]/50">
+              <div className="relative -mt-8 pt-10 pb-6 px-4 w-full bg-white rounded-3xl border border-gray-100 shadow-md text-center flex flex-col items-center flex-grow transition-all duration-300 group-hover:shadow-xl group-hover:border-[#c9a84c]/50">
                 
-                {/* Step Icon */}
-                <div className="w-9 h-9 rounded-full bg-[#faf6ed] border border-[#c9a84c]/30 flex items-center justify-center mb-2.5 shadow-xs">
-                  {item.icon}
-                </div>
-
                 {/* Step Title */}
                 <h3 className="font-serif font-bold text-base sm:text-lg text-[#0a1222] mb-1.5 tracking-tight">
                   {item.title}
