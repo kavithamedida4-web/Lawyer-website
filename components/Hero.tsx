@@ -49,27 +49,27 @@ export default function Hero() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [waveIndex, setWaveIndex] = useState<number | null>(null);
 
-  // Staggered entrance animation: one by one cards animate into view
+  // Staggered entrance animation: cards slide in from the SIDE one by one
   useEffect(() => {
     const t = setTimeout(() => setIsLoaded(true), 120);
     return () => clearTimeout(t);
   }, []);
 
-  // Sequential gentle pulse wave: highlights Card 1 -> Card 2 -> Card 3 sequentially
+  // Sequential gentle highlight wave across the 3 cards
   useEffect(() => {
     if (!isLoaded) return;
     const interval = setInterval(() => {
       setWaveIndex((prev) => (prev === null ? 0 : (prev + 1) % fixedCards.length));
-    }, 3000);
+    }, 3200);
 
     return () => clearInterval(interval);
   }, [isLoaded]);
 
-  // Auto-scroll one image at a time in mobile view only
+  // Mobile view: auto-scroll cards sliding in from the SIDE one by one every 3 seconds
   useEffect(() => {
     const timer = setInterval(() => {
       setMobileIndex((prev) => (prev + 1) % fixedCards.length);
-    }, 3200);
+    }, 3000);
 
     return () => clearInterval(timer);
   }, []);
@@ -159,36 +159,40 @@ export default function Hero() {
 
           {/* ==================================================================
               RIGHT SIDE:
-              - In Mobile View (< sm): ONE image at a time, auto-scrolling one by one
-              - In Desktop View (sm+): 3 cards with one-by-one staggered entrance animation
+              - Mobile View (< sm): Images SLIDE IN FROM THE SIDE one by one
+              - Desktop View (sm+): 3 cards SLIDE IN FROM THE SIDE one by one on entrance
               ================================================================== */}
-          <div className="lg:col-span-7 flex flex-col justify-center">
+          <div className="lg:col-span-7 flex flex-col justify-center overflow-hidden sm:overflow-visible">
 
-            {/* MOBILE VIEW ONLY (< sm): Shows ONE image at a time with automatic one-by-one crossfade */}
+            {/* MOBILE VIEW ONLY (< sm): Continuous horizontal side-slide (Images come from the SIDE one by one) */}
             <div className="block sm:hidden w-full py-2">
-              <Link
-                href={fixedCards[mobileIndex].link}
-                className="relative block w-full max-w-[270px] h-[310px] mx-auto rounded-2xl overflow-hidden border border-white/25 shadow-[0_12px_30px_rgba(0,0,0,0.7)] bg-[#0c1424]"
-              >
-                {fixedCards.map((card, idx) => (
-                  <div
-                    key={card.id}
-                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                      idx === mobileIndex ? 'opacity-100 z-10' : 'opacity-0 pointer-events-none z-0'
-                    }`}
-                  >
-                    <Image
-                      src={card.img}
-                      alt={card.title}
-                      fill
-                      unoptimized
-                      sizes="280px"
-                      className={`object-cover ${card.pos}`}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
-                  </div>
-                ))}
-              </Link>
+              <div className="relative w-full max-w-[270px] h-[310px] mx-auto rounded-2xl overflow-hidden border border-white/25 shadow-[0_12px_30px_rgba(0,0,0,0.7)] bg-[#0c1424]">
+                {/* Horizontal sliding track that glides cards from the side */}
+                <div
+                  className="flex h-full w-full transition-transform duration-700 ease-out"
+                  style={{
+                    transform: `translateX(-${mobileIndex * 100}%)`,
+                  }}
+                >
+                  {fixedCards.map((card) => (
+                    <Link
+                      key={card.id}
+                      href={card.link}
+                      className="relative w-full h-full flex-shrink-0 block"
+                    >
+                      <Image
+                        src={card.img}
+                        alt={card.title}
+                        fill
+                        unoptimized
+                        sizes="280px"
+                        className={`object-cover ${card.pos}`}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
 
               {/* Mobile Pagination Indicator Dots */}
               <div className="flex items-center justify-center gap-1.5 mt-3">
@@ -208,7 +212,7 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* DESKTOP VIEW ONLY (sm+): 3 Fixed Cards with One-by-One Staggered Entrance & Sequential Wave */}
+            {/* DESKTOP VIEW ONLY (sm+): 3 Cards SLIDE IN FROM THE SIDE one by one */}
             <div className="hidden sm:grid sm:grid-cols-3 gap-3 sm:gap-4 py-1">
               {fixedCards.map((card, idx) => {
                 const isWave = waveIndex === idx;
@@ -221,8 +225,8 @@ export default function Hero() {
                     }}
                     className={`group relative w-full h-[320px] lg:h-[360px] xl:h-[380px] rounded-2xl overflow-hidden text-left shadow-[0_14px_35px_rgba(0,0,0,0.6)] transition-all duration-700 ease-out bg-[#0c1424] block ${
                       isLoaded
-                        ? 'opacity-100 translate-y-0 scale-100'
-                        : 'opacity-0 translate-y-12 scale-95'
+                        ? 'opacity-100 translate-x-0 scale-100'
+                        : 'opacity-0 translate-x-20 scale-95'
                     } ${
                       isWave
                         ? 'border-2 border-[#f3cd67] -translate-y-2 shadow-[0_20px_45px_rgba(243,205,103,0.35)]'
