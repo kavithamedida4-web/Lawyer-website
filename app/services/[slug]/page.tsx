@@ -149,14 +149,14 @@ export default async function ServiceDetailPage({ params }: Props) {
                       />
                     </div>
 
-                    {/* Card 3: Bottom-Left (Senior Advocate in Court Robes) - Fully Visible, Framed from Top */}
+                    {/* Card 3: Bottom-Left (Senior Advocate Consultation Desk) */}
                     <div className="relative h-[165px] sm:h-[240px] lg:h-[265px] rounded-2xl sm:rounded-[32px] overflow-hidden border-[3px] sm:border-4 border-white shadow-md sm:shadow-xl bg-gray-100 group transition-all duration-500 ease-out hover:scale-[1.03]">
                       <Image
                         src={service.heroImages.card3.src}
                         alt={service.heroImages.card3.alt}
                         fill
                         sizes="(max-width: 768px) 50vw, 320px"
-                        className="object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                        className="object-cover object-[54%_center] group-hover:scale-105 transition-transform duration-700 ease-out"
                         priority
                       />
                     </div>
@@ -319,11 +319,11 @@ export default async function ServiceDetailPage({ params }: Props) {
             <div className="lg:col-span-5 relative flex">
               <div className="relative w-full h-[380px] sm:h-[420px] lg:h-full min-h-[380px] rounded-2xl overflow-hidden border-3 border-white shadow-xl bg-gray-100 group">
                 <Image
-                  src="/why-choose-partners.jpg"
+                  src="/real-partners-brass-lamp.jpg"
                   alt="UK Law Firm Founding Advocates M. Umamaheshwar Reddy and S. Kamalakar"
                   fill
                   sizes="(max-width: 1024px) 100vw, 460px"
-                  className="object-cover object-top group-hover:scale-102 transition-transform duration-500"
+                  className="object-cover object-[50%_15%] group-hover:scale-102 transition-transform duration-500"
                   priority
                 />
               </div>
