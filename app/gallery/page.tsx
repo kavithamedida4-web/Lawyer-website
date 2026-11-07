@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
-import Gallery from '@/components/Gallery';
+import FullGallery from '@/components/FullGallery';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
@@ -46,8 +46,8 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Main Interactive Gallery Collage with Lightbox */}
-      <Gallery />
+      {/* Complete Chamber & Advocate Photo Archive with Category Tabs & Lightbox */}
+      <FullGallery />
 
       {/* Bottom Consultation Banner */}
       <section className="py-14 sm:py-16 bg-[#faf8f4] border-t border-b border-gray-200">
