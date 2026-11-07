@@ -137,14 +137,14 @@ export default async function ServiceDetailPage({ params }: Props) {
                   {/* Left Column: Card 1 (Top) + Card 3 (Bottom) */}
                   <div className="flex flex-col gap-2.5 sm:gap-5 animate-float-slow">
                     
-                    {/* Card 1: Top-Left (Gavel/Service Imagery) - Fully Framed */}
+                    {/* Card 1: Top-Left (Advocates & Inauguration) - Fully Framed */}
                     <div className="relative h-[142px] sm:h-[210px] lg:h-[235px] rounded-2xl sm:rounded-[32px] overflow-hidden border-[3px] sm:border-4 border-white shadow-md sm:shadow-xl bg-gray-100 group transition-all duration-500 ease-out hover:scale-[1.03]">
                       <Image
                         src={service.heroImages.card1.src}
                         alt={service.heroImages.card1.alt}
                         fill
                         sizes="(max-width: 768px) 50vw, 320px"
-                        className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                        className="object-cover object-[50%_20%] group-hover:scale-105 transition-transform duration-700 ease-out"
                         priority
                       />
                     </div>
