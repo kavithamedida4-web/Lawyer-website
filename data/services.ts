@@ -193,12 +193,12 @@ export const legalServices: LegalService[] = [
         alt: 'Senior Advocate M. Umamaheshwar Reddy at Law Library',
       },
       card3: {
-        src: '/real-chambers-conference-boardroom.jpg',
-        alt: 'Civil Litigation Case Strategy Conference Room',
+        src: '/real-umamaheshwar-desk-smiling.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy at Consultation Desk',
       },
       card4: {
-        src: '/real-chambers-conference-boardroom.jpg',
-        alt: 'Advocates Reviewing Case Brief in Law Chamber',
+        src: '/real-partners-brass-lamp.jpg',
+        alt: 'Founding Partners UK Law Firm',
       },
     },
     subServices: [
@@ -252,12 +252,12 @@ export const legalServices: LegalService[] = [
         alt: 'Family Law Consultation & Matrimonial Advisory',
       },
       card2: {
-        src: '/real-reception-waiting-lounge.jpg',
-        alt: 'Confidential Client Discussion Lounge',
+        src: '/real-kamalakar-desk.jpg',
+        alt: 'Advocate S. Kamalakar Matrimonial Advisory',
       },
       card3: {
-        src: '/real-chambers-executive-desk.jpg',
-        alt: 'Family Law Client Consultation in Chambers',
+        src: '/real-umamaheshwar-desk-reading.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy Case Review',
       },
       card4: {
         src: '/real-partners-brass-lamp.jpg',
@@ -315,12 +315,12 @@ export const legalServices: LegalService[] = [
         alt: 'Tribunals and Forums Judicial Bench',
       },
       card2: {
-        src: '/indian-supreme-court-hero.jpg',
-        alt: 'Higher Judicial Appellate Representation',
+        src: '/real-umamaheshwar-standing-suit.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy Higher Judicial Appellate Representation',
       },
       card3: {
-        src: '/real-chambers-conference-boardroom.jpg',
-        alt: 'Tribunal Hearing Prep in Conference Room',
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar in Courtroom Robes',
       },
       card4: {
         src: '/advocate-umamaheshwar-desk-criminal.jpg',
@@ -374,20 +374,20 @@ export const legalServices: LegalService[] = [
     courts: ['Telangana High Court (Tax Benches)', 'ITAT Hyderabad', 'GST Appellate Authorities', 'Adjudicating Officer (IT Act)'],
     heroImages: {
       card1: {
-        src: '/real-chambers-conference-boardroom.jpg',
-        alt: 'Taxation Case Law & Assessment Review',
+        src: '/service-corporate.jpg',
+        alt: 'Taxation Case Law & Statutory Compliance',
       },
       card2: {
-        src: '/real-chambers-executive-desk.jpg',
-        alt: 'Executive Desk Tax Assessment Analysis',
+        src: '/real-kamalakar-desk.jpg',
+        alt: 'Advocate S. Kamalakar Taxation & IT Counsel',
       },
       card3: {
-        src: '/service-corporate.jpg',
-        alt: 'Corporate Tax Compliance Advisory',
+        src: '/real-umamaheshwar-desk-smiling.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy Consultation Desk',
       },
       card4: {
-        src: '/real-chambers-executive-desk.jpg',
-        alt: 'Tax Strategy Client Conference',
+        src: '/real-partners-brass-lamp.jpg',
+        alt: 'Founding Partners UK Law Firm',
       },
     },
     subServices: [
@@ -441,16 +441,16 @@ export const legalServices: LegalService[] = [
         alt: 'RERA Real Estate Project Litigation',
       },
       card2: {
-        src: '/real-chambers-conference-boardroom.jpg',
-        alt: 'Builder-Buyer Multi-Party Conference Room',
+        src: '/real-umamaheshwar-desk-reading.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy Reviewing Layout & Title Deeds',
       },
       card3: {
-        src: '/lawyer-handshake.jpg',
-        alt: 'Builder Dispute Resolution and Agreements',
+        src: '/real-umamaheshwar-desk-smiling.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy Consultation Desk',
       },
       card4: {
-        src: '/real-umamaheshwar-bookshelf.jpg',
-        alt: 'Statutory Layout and Document Verification',
+        src: '/real-partners-brass-lamp.jpg',
+        alt: 'Founding Partners UK Law Firm',
       },
     },
     subServices: [
@@ -495,20 +495,20 @@ export const legalServices: LegalService[] = [
     courts: ['Rent Control Courts', 'City Civil Courts', 'Telangana High Court'],
     heroImages: {
       card1: {
-        src: '/service-civil.jpg',
+        src: '/service-property.jpg',
         alt: 'Tenancy Agreements and Property Law',
       },
       card2: {
-        src: '/real-chambers-executive-desk.jpg',
-        alt: 'Commercial Lease Consultation',
+        src: '/real-kamalakar-desk.jpg',
+        alt: 'Advocate S. Kamalakar Tenancy Litigation Counsel',
       },
       card3: {
-        src: '/real-chambers-executive-desk.jpg',
-        alt: 'Vacant Possession Strategy Desk',
+        src: '/real-umamaheshwar-desk-front.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy Consultation Desk',
       },
       card4: {
-        src: '/real-chambers-conference-boardroom.jpg',
-        alt: 'Commercial Tenancy Brief Review',
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar in Courtroom Attire',
       },
     },
     subServices: [
@@ -565,8 +565,8 @@ export const legalServices: LegalService[] = [
         alt: 'Courtroom Advocate for Labour Tribunals',
       },
       card4: {
-        src: '/real-chambers-conference-boardroom.jpg',
-        alt: 'Employment Dispute Conciliation Chamber',
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar Labour Tribunal Counsel',
       },
     },
     subServices: [
@@ -611,20 +611,20 @@ export const legalServices: LegalService[] = [
     courts: ['District Consumer Disputes Redressal Commissions (Hyderabad, Ranga Reddy)', 'Telangana State Consumer Commission', 'NCDRC New Delhi'],
     heroImages: {
       card1: {
-        src: '/service-criminal.jpg',
+        src: '/service-civil.jpg',
         alt: 'Consumer Protection Prosecution',
       },
       card2: {
-        src: '/real-reception-waiting-lounge.jpg',
-        alt: 'Consumer Dispute Client Reception',
+        src: '/real-kamalakar-desk.jpg',
+        alt: 'Advocate S. Kamalakar Consumer Counsel',
       },
       card3: {
-        src: '/real-chambers-executive-desk.jpg',
-        alt: 'Consumer Evidence Review in Chambers',
+        src: '/real-umamaheshwar-desk-smiling.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy Consultation Desk',
       },
       card4: {
-        src: '/real-kamalakar-desk.jpg',
-        alt: 'Advocate at Chambers Crest',
+        src: '/real-partners-brass-lamp.jpg',
+        alt: 'Founding Partners UK Law Firm',
       },
     },
     subServices: [
@@ -669,7 +669,7 @@ export const legalServices: LegalService[] = [
     courts: ['Telangana High Court (Commercial Benches)', 'Commercial Courts (City Civil Court)', 'NCLT Hyderabad'],
     heroImages: {
       card1: {
-        src: '/real-chambers-conference-boardroom.jpg',
+        src: '/service-corporate.jpg',
         alt: 'Indian Corporate Law Due Diligence & Commercial Contracts',
       },
       card2: {
@@ -677,8 +677,8 @@ export const legalServices: LegalService[] = [
         alt: 'Senior Indian Corporate Legal Partner & Deal Counsel',
       },
       card3: {
-        src: '/real-chambers-executive-desk.jpg',
-        alt: 'Commercial Agreement Execution & Shareholder Negotiations',
+        src: '/real-umamaheshwar-standing-suit.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy Corporate Litigation Counsel',
       },
       card4: {
         src: '/real-partners-brass-lamp.jpg',
@@ -735,12 +735,12 @@ export const legalServices: LegalService[] = [
         alt: 'Prior Art and Trademark Registry Examination',
       },
       card3: {
-        src: '/real-chambers-conference-boardroom.jpg',
-        alt: 'IP Litigation Strategy Conference',
+        src: '/real-umamaheshwar-desk-reading.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy Reviewing IP Precedents',
       },
       card4: {
-        src: '/real-chambers-executive-desk.jpg',
-        alt: 'Client Trademark Legal Consultation',
+        src: '/real-partners-brass-lamp.jpg',
+        alt: 'Founding Partners UK Law Firm Advisory',
       },
     },
     subServices: [
@@ -785,7 +785,7 @@ export const legalServices: LegalService[] = [
     courts: ['Cyber Crime Police Stations (Hyderabad, Cyberabad, Rachakonda)', 'Adjudicating Officer (IT Act)', 'Metropolitan Courts'],
     heroImages: {
       card1: {
-        src: '/real-chambers-executive-desk.jpg',
+        src: '/service-cyber.jpg',
         alt: 'Indian Cyber Crime & Digital Forensics Legal Defense',
       },
       card2: {
@@ -847,12 +847,12 @@ export const legalServices: LegalService[] = [
         alt: 'Indian Immigration and OCI Counsel',
       },
       card2: {
-        src: '/real-chambers-executive-desk.jpg',
-        alt: 'NRI Legal Documentation and Advisory',
+        src: '/real-umamaheshwar-desk-front.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy NRI Advisory',
       },
       card3: {
-        src: '/real-reception-waiting-lounge.jpg',
-        alt: 'Citizenship Review in Chambers Lounge',
+        src: '/real-umamaheshwar-standing-suit.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy at Law & Justice',
       },
       card4: {
         src: '/real-partners-brass-lamp.jpg',
@@ -914,8 +914,8 @@ export const legalServices: LegalService[] = [
         alt: 'Founding Partners UK Law Firm Advisory',
       },
       card3: {
-        src: '/real-chambers-conference-boardroom.jpg',
-        alt: 'Chambers Legal Consultation on General Matters',
+        src: '/real-umamaheshwar-desk-reading.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy Reviewing Legal Precedents and Deeds',
       },
       card4: {
         src: '/advocate-umamaheshwar-desk-criminal.jpg',

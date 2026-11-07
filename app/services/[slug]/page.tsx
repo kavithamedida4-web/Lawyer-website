@@ -165,26 +165,26 @@ export default async function ServiceDetailPage({ params }: Props) {
                   {/* Right Column: Card 2 (Top) + Card 4 (Bottom) */}
                   <div className="flex flex-col gap-2.5 sm:gap-5 animate-float-reverse">
                     
-                    {/* Card 2: Top-Right (Advocate at Crest) - Framed to Show Full 'LAW & JUSTICE' Wall */}
+                    {/* Card 2: Top-Right (Advocate Consultation / Portrait) */}
                     <div className="relative h-[165px] sm:h-[240px] lg:h-[265px] rounded-2xl sm:rounded-[32px] overflow-hidden border-[3px] sm:border-4 border-white shadow-md sm:shadow-xl bg-gray-100 group transition-all duration-500 ease-out hover:scale-[1.03]">
                       <Image
                         src={service.heroImages.card2.src}
                         alt={service.heroImages.card2.alt}
                         fill
                         sizes="(max-width: 768px) 50vw, 320px"
-                        className="object-cover object-[32%_center] group-hover:scale-105 transition-transform duration-700 ease-out"
+                        className="object-cover object-[50%_20%] group-hover:scale-105 transition-transform duration-700 ease-out"
                         priority
                       />
                     </div>
 
-                    {/* Card 4: Bottom-Right (Advocate in Law Library) - Framed to Show Advocate & Books */}
+                    {/* Card 4: Bottom-Right (Founding Partners / Advocate in Chambers) */}
                     <div className="relative h-[142px] sm:h-[210px] lg:h-[235px] rounded-2xl sm:rounded-[32px] overflow-hidden border-[3px] sm:border-4 border-white shadow-md sm:shadow-xl bg-gray-100 group transition-all duration-500 ease-out hover:scale-[1.03]">
                       <Image
                         src={service.heroImages.card4.src}
                         alt={service.heroImages.card4.alt}
                         fill
                         sizes="(max-width: 768px) 50vw, 320px"
-                        className="object-cover object-[70%_center] group-hover:scale-105 transition-transform duration-700 ease-out"
+                        className="object-cover object-[50%_15%] group-hover:scale-105 transition-transform duration-700 ease-out"
                         priority
                       />
                     </div>
