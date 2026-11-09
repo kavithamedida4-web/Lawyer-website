@@ -1,5 +1,5 @@
 'use client';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -190,7 +190,6 @@ const allServices = [
 
 export default function Services() {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [selectedService, setSelectedService] = useState<typeof allServices[0] | null>(null);
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -309,75 +308,21 @@ export default function Services() {
                   {item.desc}
                 </p>
 
-                <div className="flex items-center gap-3 mt-auto pt-2">
+                <div className="mt-auto pt-2">
                   <Link
                     href={`/services/${item.slug}`}
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#b38634] hover:text-[#0a1222] font-sans tracking-wide uppercase group-hover:translate-x-1 transition-all"
                   >
-                    <span>View Page</span>
+                    <span>Explore Practice Area</span>
                     <span className="text-sm">→</span>
                   </Link>
-                  <span className="text-gray-300">•</span>
-                  <button
-                    onClick={() => setSelectedService(item)}
-                    className="text-[11px] font-semibold text-gray-500 hover:text-gray-800 transition-colors cursor-pointer"
-                  >
-                    Quick Summary
-                  </button>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-
-
       </div>
-
-      {/* Modal Popup for In-depth Practice Area Details */}
-      {selectedService && (
-        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl relative border border-gray-200 font-sans">
-            <button
-              onClick={() => setSelectedService(null)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-xl font-bold w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center"
-            >
-              ✕
-            </button>
-
-            <span className="text-[#a8742b] text-xs font-bold uppercase tracking-wider block mb-1">
-              {selectedService.sub}
-            </span>
-            <h3 className="text-2xl font-serif font-bold text-gray-900 mb-3">
-              {selectedService.category}
-            </h3>
-            <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-5">
-              {selectedService.desc}
-            </p>
-
-            <h4 className="text-xs uppercase font-bold text-gray-800 tracking-wider mb-2.5">
-              Scope of Legal Representation:
-            </h4>
-            <ul className="space-y-2 mb-6">
-              {selectedService.points.map((pt, i) => (
-                <li key={i} className="text-xs text-gray-700 flex items-center gap-2 bg-[#faf7f2] p-2 rounded-lg">
-                  <span className="text-[#a8742b] font-bold">✓</span>
-                  <span>{pt}</span>
-                </li>
-              ))}
-            </ul>
-
-            <a
-              href="https://wa.me/919866775034?text=Hello%20UK%20Law%20Firm,%20I%20would%20like%20to%20consult%20regarding%20this%20legal%20matter."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full text-center bg-[#b38634] hover:bg-[#c9983e] text-white py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-colors shadow-md"
-            >
-              Consult On WhatsApp →
-            </a>
-          </div>
-        </div>
-      )}
 
     </section>
   );
