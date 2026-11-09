@@ -65,7 +65,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           <nav className="hidden sm:flex items-center gap-2 text-xs text-[#5c4415] mb-6 font-semibold">
             <Link href="/" className="hover:text-[#0a1222] transition-colors">Home</Link>
             <span className="text-[#8c6b23]">/</span>
-            <Link href="/#services" className="hover:text-[#0a1222] transition-colors">Services</Link>
+            <Link href="/#services" className="hover:text-[#0a1222] transition-colors">Practice Areas</Link>
             <span className="text-[#8c6b23]">/</span>
             <span className="text-[#0a1222] font-bold">{service.title}</span>
           </nav>

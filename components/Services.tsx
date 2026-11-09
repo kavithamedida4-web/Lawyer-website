@@ -221,7 +221,7 @@ export default function Services() {
           <div className="flex items-center justify-center gap-3 mb-2.5">
             <span className="w-10 h-[1.5px] bg-[#d8b577]" />
             <span className="text-[#8c6b45] text-[11px] font-bold tracking-[0.25em] uppercase font-sans">
-              OUR LEGAL SERVICES
+              OUR PRACTICE AREAS
             </span>
             <span className="w-10 h-[1.5px] bg-[#d8b577]" />
           </div>

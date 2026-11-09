@@ -6,7 +6,7 @@ export default function Footer() {
 
   const quickLinks = [
     { name: 'Home', href: '/#home' },
-    { name: 'Services', href: '/#services' },
+    { name: 'Practice Areas', href: '/#services' },
     { name: 'About Us', href: '/#about' },
     { name: 'How It Works', href: '/#how-it-works' },
     { name: 'Book Consultation', href: '/contact' },
@@ -86,10 +86,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Services (Span 3) */}
+          {/* Column 3: Practice Areas (Span 3) */}
           <div className="lg:col-span-3">
             <h4 className="text-white font-bold text-sm sm:text-base mb-5 font-sans">
-              Services
+              Practice Areas
             </h4>
             <ul className="space-y-2.5">
               {serviceLinks.map((item) => (

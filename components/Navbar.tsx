@@ -129,7 +129,7 @@ export default function Navbar() {
                   : 'text-gray-300 hover:text-[#e5bf55]'
               }`}
             >
-              <span>Services</span>
+              <span>Practice Areas</span>
               <svg
                 className={`w-3.5 h-3.5 mt-0.5 transition-transform duration-200 ${
                   servicesOpen ? 'rotate-180 text-[#e5bf55]' : 'text-gray-400'
@@ -157,7 +157,7 @@ export default function Navbar() {
                   <div className="flex items-center justify-between pb-2 mb-2 border-b border-white/10">
                     <div>
                       <span className="text-[#e5bf55] font-serif font-bold text-sm block">
-                        Legal Services &amp; Practice Areas
+                        Legal Practice Areas
                       </span>
                       <span className="text-[10px] text-gray-400">
                         TELANGANA | COURTS | TRIBUNALS | PAN INDIA
@@ -168,7 +168,7 @@ export default function Navbar() {
                       onClick={() => setServicesOpen(false)}
                       className="text-[11px] font-bold text-[#c9a84c] hover:text-[#e5bf55] transition-colors inline-flex items-center gap-1"
                     >
-                      <span>View All 14 Services</span>
+                      <span>View All 14 Practice Areas</span>
                       <span>→</span>
                     </Link>
                   </div>
@@ -264,7 +264,7 @@ export default function Navbar() {
               onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
               className="w-full text-left text-gray-200 hover:text-[#e5bf55] text-sm py-1.5 font-medium flex items-center justify-between"
             >
-              <span>Services</span>
+              <span>Practice Areas</span>
               <span className="text-xs text-[#c9a84c]">{mobileServicesOpen ? '▲' : '▼'}</span>
             </button>
 
