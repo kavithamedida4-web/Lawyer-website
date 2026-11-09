@@ -115,7 +115,7 @@ export default function HowItWorks() {
 
           {/* Heading */}
           <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-serif font-bold text-[#0a1222] mb-3 tracking-tight">
-            Learn More About Our Process
+            How It Works
           </h2>
 
           {/* Subtitle */}
