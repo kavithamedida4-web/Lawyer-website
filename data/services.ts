@@ -126,16 +126,16 @@ export const legalServices: LegalService[] = [
         alt: 'UK Law Firm Chambers Inauguration Ceremony with Founding Partners',
       },
       card2: {
-        src: '/real-kamalakar-desk.jpg',
-        alt: 'Advocate S. Kamalakar Criminal Defense Counsel',
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar in Courtroom Attire',
       },
       card3: {
-        src: '/advocate-umamaheshwar-desk-criminal.jpg',
+        src: '/real-umamaheshwar-desk-criminal.jpg',
         alt: 'Senior Advocate M. Umamaheshwar Reddy at Law & Justice Criminal Practice Desk',
       },
       card4: {
-        src: '/real-umamaheshwar-bookshelf.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy at Law Library',
+        src: '/real-partners-brass-lamp.jpg',
+        alt: 'Founding Partners UK Law Firm',
       },
     },
     subServices: [
@@ -189,8 +189,8 @@ export const legalServices: LegalService[] = [
         alt: 'Senior Advocate M. Umamaheshwar Reddy at Law & Justice',
       },
       card2: {
-        src: '/real-umamaheshwar-bookshelf.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy at Law Library',
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar in Courtroom Attire',
       },
       card3: {
         src: '/real-umamaheshwar-desk-smiling.jpg',
@@ -248,12 +248,12 @@ export const legalServices: LegalService[] = [
     courts: ['Family Courts (Hyderabad & Secunderabad)', 'Telangana High Court', 'Metropolitan Magistrate Courts'],
     heroImages: {
       card1: {
-        src: '/real-umamaheshwar-desk-front.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy Consultation Desk',
+        src: '/real-inauguration-ribbon.jpg',
+        alt: 'Founding Partners UK Law Firm Inauguration Ceremony',
       },
       card2: {
-        src: '/real-kamalakar-desk.jpg',
-        alt: 'Advocate S. Kamalakar Matrimonial Advisory',
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar in Courtroom Attire',
       },
       card3: {
         src: '/real-umamaheshwar-desk-reading.jpg',
@@ -311,20 +311,20 @@ export const legalServices: LegalService[] = [
     courts: ['NCLT Hyderabad Bench', 'NCLAT', 'Telangana Real Estate Appellate Tribunal (REAT)', 'State & National Consumer Disputes Redressal Commission', 'MACT Courts'],
     heroImages: {
       card1: {
-        src: '/real-inauguration-ribbon.jpg',
-        alt: 'Founding Partners UK Law Firm Inauguration Ceremony',
+        src: '/real-umamaheshwar-bookshelf.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy at Law Library',
       },
       card2: {
-        src: '/real-umamaheshwar-standing-suit.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy Higher Judicial Appellate Representation',
-      },
-      card3: {
         src: '/real-kamalakar-standing-coat.jpg',
         alt: 'Advocate S. Kamalakar in Courtroom Robes',
       },
-      card4: {
-        src: '/advocate-umamaheshwar-desk-criminal.jpg',
+      card3: {
+        src: '/real-umamaheshwar-desk-criminal.jpg',
         alt: 'Senior Advocate M. Umamaheshwar Reddy Chambers Consultation',
+      },
+      card4: {
+        src: '/real-partners-brass-lamp.jpg',
+        alt: 'Founding Partners UK Law Firm',
       },
     },
     subServices: [
@@ -378,8 +378,8 @@ export const legalServices: LegalService[] = [
         alt: 'Senior Advocate M. Umamaheshwar Reddy at Law & Justice',
       },
       card2: {
-        src: '/real-kamalakar-desk.jpg',
-        alt: 'Advocate S. Kamalakar Taxation & IT Counsel',
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar in Courtroom Attire',
       },
       card3: {
         src: '/real-umamaheshwar-desk-smiling.jpg',
@@ -437,16 +437,16 @@ export const legalServices: LegalService[] = [
     courts: ['Telangana State RERA (TSRERA)', 'Telangana Real Estate Appellate Tribunal', 'Consumer Disputes Redressal Commission'],
     heroImages: {
       card1: {
+        src: '/real-inauguration-ribbon.jpg',
+        alt: 'Founding Partners UK Law Firm Inauguration Ceremony',
+      },
+      card2: {
         src: '/real-kamalakar-standing-coat.jpg',
         alt: 'Advocate S. Kamalakar in Courtroom Attire',
       },
-      card2: {
+      card3: {
         src: '/real-umamaheshwar-desk-reading.jpg',
         alt: 'Senior Advocate M. Umamaheshwar Reddy Reviewing Layout & Title Deeds',
-      },
-      card3: {
-        src: '/real-umamaheshwar-desk-smiling.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy Consultation Desk',
       },
       card4: {
         src: '/real-partners-brass-lamp.jpg',
@@ -499,16 +499,16 @@ export const legalServices: LegalService[] = [
         alt: 'Senior Advocate M. Umamaheshwar Reddy at Law Library',
       },
       card2: {
-        src: '/real-kamalakar-desk.jpg',
-        alt: 'Advocate S. Kamalakar Tenancy Litigation Counsel',
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar in Courtroom Attire',
       },
       card3: {
-        src: '/real-umamaheshwar-desk-front.jpg',
+        src: '/real-umamaheshwar-desk-smiling.jpg',
         alt: 'Senior Advocate M. Umamaheshwar Reddy Consultation Desk',
       },
       card4: {
-        src: '/real-kamalakar-standing-coat.jpg',
-        alt: 'Advocate S. Kamalakar in Courtroom Attire',
+        src: '/real-partners-brass-lamp.jpg',
+        alt: 'Founding Partners UK Law Firm',
       },
     },
     subServices: [
@@ -553,20 +553,20 @@ export const legalServices: LegalService[] = [
     courts: ['Labour Courts & Industrial Tribunals', 'Telangana High Court (Writ Benches)', 'Labour Commissioner Offices'],
     heroImages: {
       card1: {
-        src: '/real-umamaheshwar-desk-smiling.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy at Consultation Desk',
+        src: '/real-inauguration-ribbon.jpg',
+        alt: 'Founding Partners UK Law Firm Inauguration Ceremony',
       },
       card2: {
-        src: '/real-partners-brass-lamp.jpg',
-        alt: 'Workplace Legal Compliance and Consultation',
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar Labour Tribunal Counsel',
       },
       card3: {
-        src: '/advocate-umamaheshwar-desk-criminal.jpg',
+        src: '/real-umamaheshwar-desk-reading.jpg',
         alt: 'Courtroom Advocate for Labour Tribunals',
       },
       card4: {
-        src: '/real-kamalakar-standing-coat.jpg',
-        alt: 'Advocate S. Kamalakar Labour Tribunal Counsel',
+        src: '/real-partners-brass-lamp.jpg',
+        alt: 'Workplace Legal Compliance and Consultation',
       },
     },
     subServices: [
@@ -611,11 +611,11 @@ export const legalServices: LegalService[] = [
     courts: ['District Consumer Disputes Redressal Commissions (Hyderabad, Ranga Reddy)', 'Telangana State Consumer Commission', 'NCDRC New Delhi'],
     heroImages: {
       card1: {
-        src: '/real-umamaheshwar-bookshelf.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy Reviewing Case Laws',
+        src: '/real-umamaheshwar-standing-suit.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy at Law & Justice',
       },
       card2: {
-        src: '/real-kamalakar-desk.jpg',
+        src: '/real-kamalakar-standing-coat.jpg',
         alt: 'Advocate S. Kamalakar Consumer Counsel',
       },
       card3: {
@@ -673,12 +673,12 @@ export const legalServices: LegalService[] = [
         alt: 'Founding Partners UK Law Firm Inauguration Ceremony',
       },
       card2: {
-        src: '/real-umamaheshwar-desk-smiling.jpg',
-        alt: 'Senior Indian Corporate Legal Partner & Deal Counsel',
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar in Courtroom Attire',
       },
       card3: {
-        src: '/real-umamaheshwar-standing-suit.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy Corporate Litigation Counsel',
+        src: '/real-umamaheshwar-desk-smiling.jpg',
+        alt: 'Senior Indian Corporate Legal Partner & Deal Counsel',
       },
       card4: {
         src: '/real-partners-brass-lamp.jpg',
@@ -727,12 +727,12 @@ export const legalServices: LegalService[] = [
     courts: ['Intellectual Property Division (Telangana High Court)', 'Trade Marks Registry (Chennai)', 'Copyright Office'],
     heroImages: {
       card1: {
-        src: '/real-umamaheshwar-standing-suit.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy at Law & Justice',
+        src: '/real-umamaheshwar-bookshelf.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy at Law Library',
       },
       card2: {
-        src: '/real-umamaheshwar-bookshelf.jpg',
-        alt: 'Prior Art and Trademark Registry Examination',
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar in Courtroom Attire',
       },
       card3: {
         src: '/real-umamaheshwar-desk-reading.jpg',
@@ -785,12 +785,12 @@ export const legalServices: LegalService[] = [
     courts: ['Cyber Crime Police Stations (Hyderabad, Cyberabad, Rachakonda)', 'Adjudicating Officer (IT Act)', 'Metropolitan Courts'],
     heroImages: {
       card1: {
-        src: '/real-kamalakar-standing-coat.jpg',
-        alt: 'Advocate S. Kamalakar in Courtroom Robes',
+        src: '/real-inauguration-ribbon.jpg',
+        alt: 'Founding Partners UK Law Firm Inauguration Ceremony',
       },
       card2: {
-        src: '/real-kamalakar-desk.jpg',
-        alt: 'Specialist Indian Cyber Crime Defense Advocate',
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar in Courtroom Robes',
       },
       card3: {
         src: '/real-umamaheshwar-desk-smiling.jpg',
@@ -843,16 +843,16 @@ export const legalServices: LegalService[] = [
     courts: ['Telangana High Court (Writ Petitions)', 'FRRO Hyderabad', 'Ministry of Home Affairs'],
     heroImages: {
       card1: {
-        src: '/real-inauguration-ribbon.jpg',
-        alt: 'Founding Partners UK Law Firm Ceremony',
-      },
-      card2: {
-        src: '/real-umamaheshwar-desk-front.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy NRI Advisory',
-      },
-      card3: {
         src: '/real-umamaheshwar-standing-suit.jpg',
         alt: 'Senior Advocate M. Umamaheshwar Reddy at Law & Justice',
+      },
+      card2: {
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar in Courtroom Attire',
+      },
+      card3: {
+        src: '/real-umamaheshwar-desk-reading.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy NRI Advisory',
       },
       card4: {
         src: '/real-partners-brass-lamp.jpg',
@@ -910,16 +910,16 @@ export const legalServices: LegalService[] = [
         alt: 'Senior Advocate Drafting Legal Opinions and Deeds',
       },
       card2: {
-        src: '/real-partners-brass-lamp.jpg',
-        alt: 'Founding Partners UK Law Firm Advisory',
+        src: '/real-kamalakar-standing-coat.jpg',
+        alt: 'Advocate S. Kamalakar in Courtroom Attire',
       },
       card3: {
-        src: '/real-umamaheshwar-desk-reading.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy Reviewing Legal Precedents and Deeds',
+        src: '/real-umamaheshwar-desk-criminal.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy in Chambers',
       },
       card4: {
-        src: '/advocate-umamaheshwar-desk-criminal.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy in Chambers',
+        src: '/real-partners-brass-lamp.jpg',
+        alt: 'Founding Partners UK Law Firm Advisory',
       },
     },
     subServices: [
