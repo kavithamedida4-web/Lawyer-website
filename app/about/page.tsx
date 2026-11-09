@@ -32,8 +32,7 @@ export default function AboutPage() {
         {/* Subtle Decorative Geometric Circles matching Reference */}
         <div className="absolute top-10 right-8 sm:right-16 w-24 h-24 sm:w-32 sm:h-32 rounded-full border border-[#eedfba]/70 pointer-events-none select-none" />
         <div className="absolute top-16 left-8 sm:left-14 w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-[#faecd1]/60 pointer-events-none select-none" />
-        <div className="hidden sm:block absolute top-12 left-1/4 text-[#d4af57]/70 text-sm pointer-events-none select-none">✦</div>
-        <div className="hidden sm:block absolute top-16 right-1/4 text-[#d4af57]/70 text-sm pointer-events-none select-none">✦</div>
+
 
         <div className="max-w-[1200px] mx-auto px-4 sm:px-10 text-center relative z-10">
           

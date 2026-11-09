@@ -58,10 +58,6 @@ export default async function ServiceDetailPage({ params }: Props) {
         <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#fff2cc]/40 rounded-full blur-3xl pointer-events-none select-none" />
         <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-[#c49a37]/25 rounded-full blur-3xl pointer-events-none select-none" />
 
-        {/* Floating Delicate Gold Star Sparkle */}
-        <div className="hidden lg:block absolute top-[44%] right-[48%] text-[#8a6316] text-xl pointer-events-none select-none">
-          ✦
-        </div>
 
         <div className="w-full max-w-[1360px] mx-auto px-4 sm:px-10 lg:px-12 relative z-10 my-auto">
           
