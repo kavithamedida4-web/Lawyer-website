@@ -727,20 +727,20 @@ export const legalServices: LegalService[] = [
     courts: ['Intellectual Property Division (Telangana High Court)', 'Trade Marks Registry (Chennai)', 'Copyright Office'],
     heroImages: {
       card1: {
-        src: '/real-umamaheshwar-bookshelf.jpg',
-        alt: 'Senior Advocate Umamaheshwar Reddy in Law Library',
+        src: '/ipr-hero-kamalakar-library.jpg',
+        alt: 'Senior Advocate S. Kamalakar Reviewing IP Treatises in Law Library',
       },
       card2: {
-        src: '/hero-card-umamaheshwar.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy',
+        src: '/ipr-hero-umamaheshwar-standing.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy in Formal Court Attire',
       },
       card3: {
-        src: '/hero-advocate-kamalakar-library.jpg',
-        alt: 'Advocate S. Kamalakar Reviewing IP Case Law',
+        src: '/ipr-hero-umamaheshwar-desk.jpg',
+        alt: 'Senior Advocate M. Umamaheshwar Reddy at Consultation Desk',
       },
       card4: {
-        src: '/real-partners-brass-lamp.jpg',
-        alt: 'Founding Partners UK Law Firm',
+        src: '/ipr-hero-partners-lamp.jpg',
+        alt: 'Founding Partners Umamaheshwar Reddy & Kamalakar at UK Law Firm',
       },
     },
     subServices: [
