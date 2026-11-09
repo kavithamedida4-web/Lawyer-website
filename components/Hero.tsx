@@ -93,12 +93,13 @@ export default function Hero() {
           priority
           unoptimized
           sizes="100vw"
-          className="object-cover object-center lg:object-[60%_center] brightness-[0.66] contrast-[1.10]"
+          className="object-cover object-center lg:object-[60%_center] brightness-[0.4] contrast-[1.10] grayscale-[0.8]"
         />
 
-        {/* Layered dark gradients for contrast */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070c14]/95 via-[#070c14]/80 via-48% to-[#070c14]/30 lg:to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070c14]/90 via-transparent to-[#070c14]/50" />
+        {/* Layered dark gradients for contrast - removes yellow background light */}
+        <div className="absolute inset-0 bg-[#070c14]/85" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#070c14] via-[#070c14]/90 to-[#070c14]/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#070c14] via-transparent to-[#070c14]/70" />
       </div>
 
       {/* 
@@ -204,7 +205,7 @@ export default function Hero() {
                     aria-label={`Show card ${idx + 1}`}
                     className={`rounded-full transition-all duration-300 ${
                       idx === mobileIndex
-                        ? 'w-6 h-1.5 bg-[#f3cd67] shadow-[0_0_8px_rgba(243,205,103,0.8)]'
+                        ? 'w-6 h-1.5 bg-white shadow-[0_0_8px_rgba(255,255,255,0.8)]'
                         : 'w-1.5 h-1.5 bg-white/40'
                     }`}
                   />
@@ -229,8 +230,8 @@ export default function Hero() {
                         : 'opacity-0 translate-x-20 scale-95'
                     } ${
                       isWave
-                        ? 'border-2 border-[#f3cd67] -translate-y-2 shadow-[0_20px_45px_rgba(243,205,103,0.35)]'
-                        : 'border border-white/20 hover:border-[#f3cd67] hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(201,168,76,0.3)]'
+                        ? 'border-2 border-white -translate-y-2 shadow-[0_20px_45px_rgba(0,0,0,0.8)]'
+                        : 'border border-white/25 hover:border-white hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(0,0,0,0.7)]'
                     }`}
                   >
                     {/* Card Photograph */}
@@ -248,10 +249,10 @@ export default function Hero() {
                     {/* Subtle dark gradient overlay at base */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
 
-                    {/* Golden accent border glow */}
+                    {/* Clean white accent border glow */}
                     <div
                       className={`absolute inset-0 rounded-2xl border transition-colors duration-500 pointer-events-none ${
-                        isWave ? 'border-[#f3cd67]/60' : 'border-transparent group-hover:border-[#f3cd67]/50'
+                        isWave ? 'border-white/40' : 'border-transparent group-hover:border-white/40'
                       }`}
                     />
                   </Link>
