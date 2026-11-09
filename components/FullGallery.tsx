@@ -275,51 +275,22 @@ export default function FullGallery() {
           </button>
         </div>
 
-        {/* Responsive Photo Grid (All 16 Real Photos) */}
+        {/* Responsive Photo Grid (All 16 Real Photos as Pure Photo Frames) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {filteredPhotos.map((photo, index) => (
             <div
               key={photo.id}
               onClick={() => setSelectedIndex(index)}
-              className="group cursor-pointer bg-white rounded-2xl overflow-hidden border-[3px] border-white shadow-md hover:shadow-xl ring-1 ring-[#c9a84c]/20 hover:ring-[#c9a84c]/60 transition-all duration-500 flex flex-col hover:-translate-y-1"
+              className="group cursor-pointer bg-white rounded-2xl overflow-hidden border-[5px] sm:border-[6px] border-white shadow-md hover:shadow-2xl ring-1 ring-[#c9a84c]/25 hover:ring-[#c9a84c]/70 transition-all duration-500 hover:scale-[1.02] aspect-[4/3] relative bg-gray-100"
             >
-              {/* Image Frame */}
-              <div className="relative w-full aspect-[4/3] bg-gray-100 overflow-hidden">
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                />
-                
-                {/* Overlay Badge on top-left */}
-                <div className="absolute top-2.5 left-2.5 z-10">
-                  <span className="bg-[#0a1222]/85 backdrop-blur-sm text-[#e5bf55] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border border-[#c9a84c]/30 shadow-xs">
-                    {photo.categoryLabel}
-                  </span>
-                </div>
-
-                {/* Hover Quick Zoom Pill */}
-                <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="bg-white/95 text-[#0a1222] text-xs font-bold px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 transform scale-95 group-hover:scale-100 transition-transform duration-300">
-                    <span>🔍</span>
-                    <span>View Full Photo</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Caption Content */}
-              <div className="p-3.5 sm:p-4 flex-1 flex flex-col justify-between bg-white">
-                <div>
-                  <h3 className="font-serif font-bold text-sm sm:text-base text-[#0a1222] group-hover:text-[#b38634] transition-colors leading-snug mb-1">
-                    {photo.title}
-                  </h3>
-                  <p className="text-gray-500 text-xs line-clamp-2 leading-relaxed">
-                    {photo.description}
-                  </p>
-                </div>
-              </div>
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/15 transition-colors duration-300 pointer-events-none" />
             </div>
           ))}
         </div>
