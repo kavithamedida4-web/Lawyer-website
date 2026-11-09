@@ -49,34 +49,6 @@ export default function GalleryPage() {
       {/* Complete Chamber & Advocate Photo Archive with Category Tabs & Lightbox */}
       <FullGallery />
 
-      {/* Bottom Consultation Banner */}
-      <section className="py-14 sm:py-16 bg-[#faf8f4] border-t border-b border-gray-200">
-        <div className="max-w-[1000px] mx-auto px-6 text-center">
-          <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0a1222] mb-3">
-            Visit Our Chambers For An In-Person Consultation
-          </h3>
-          <p className="text-gray-600 text-xs sm:text-sm max-w-xl mx-auto mb-6 leading-relaxed">
-            Located at Flat No. 201, Maps Apartments, Jayabheri Pine Valley, Gachibowli, Hyderabad. Our advocates are available for confidential strategy sessions.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            <Link
-              href="/contact"
-              className="bg-[#b38634] hover:bg-[#c9983e] text-white font-bold text-xs uppercase tracking-wider px-7 py-3 rounded-full transition-all shadow-md inline-flex items-center gap-2"
-            >
-              <span>Schedule Chamber Visit</span>
-              <span>→</span>
-            </Link>
-            <a
-              href="tel:+919866775034"
-              className="bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/50 font-bold text-xs uppercase tracking-wider px-7 py-3 rounded-full transition-all shadow-md inline-flex items-center gap-2"
-            >
-              <span>Call Direct Helpline</span>
-              <span>📞</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
       <Footer />
       <WhatsAppButton />
     </main>
