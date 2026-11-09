@@ -1,5 +1,5 @@
 'use client';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 const testimonials = [
   {
@@ -36,20 +36,36 @@ const testimonials = [
 
 export default function Testimonials() {
   const carouselRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const scroll = (direction: 'left' | 'right') => {
     if (carouselRef.current) {
-      const scrollAmount = direction === 'left' ? -380 : 380;
-      carouselRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      const card = carouselRef.current.firstElementChild as HTMLElement;
+      const step = card ? card.offsetWidth + 24 : 360;
+      carouselRef.current.scrollBy({
+        left: direction === 'left' ? -step : step,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const handleScroll = () => {
+    if (carouselRef.current) {
+      const card = carouselRef.current.firstElementChild as HTMLElement;
+      if (card) {
+        const step = card.offsetWidth + 24;
+        const idx = Math.round(carouselRef.current.scrollLeft / step);
+        setActiveIndex(Math.min(Math.max(idx, 0), testimonials.length - 1));
+      }
     }
   };
 
   return (
     <section id="testimonials" className="py-24 bg-[#faf8f4] relative text-gray-900 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-6 sm:px-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-10">
         
-        {/* Header Section matching reference */}
-        <div className="text-center mb-16">
+        {/* Header Section */}
+        <div className="text-center mb-10 sm:mb-12">
           
           {/* Top Pill Tag */}
           <div className="inline-block bg-[#fcf4e4] border border-[#e5bf55]/50 text-[#b38634] text-[11px] font-bold font-sans tracking-widest uppercase px-5 py-1.5 rounded-full mb-3.5 shadow-xs">
@@ -68,40 +84,50 @@ export default function Testimonials() {
 
         </div>
 
-        {/* Horizontal Carousel with Left and Right Circular Nav Buttons */}
+        {/* Carousel Container */}
         <div className="relative max-w-[1320px] mx-auto">
           
-          {/* Left Arrow Button */}
-          <button
-            onClick={() => scroll('left')}
-            aria-label="Previous Testimonials"
-            className="absolute -left-3 sm:-left-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white shadow-xl border border-gray-200/80 hover:border-[#c9a84c] text-gray-700 hover:text-[#c9a84c] flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
+          {/* Navigation Controls Bar - Sits cleanly ABOVE cards so buttons NEVER cover text */}
+          <div className="flex items-center justify-between mb-4 px-2">
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#c9a84c] animate-pulse" />
+              <span className="text-xs font-sans font-semibold text-gray-500 uppercase tracking-wider">
+                {testimonials.length} Verified Client Reviews
+              </span>
+            </div>
 
-          {/* Right Arrow Button */}
-          <button
-            onClick={() => scroll('right')}
-            aria-label="Next Testimonials"
-            className="absolute -right-3 sm:-right-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white shadow-xl border border-gray-200/80 hover:border-[#c9a84c] text-gray-700 hover:text-[#c9a84c] flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+            <div className="flex items-center gap-2.5">
+              <button
+                onClick={() => scroll('left')}
+                aria-label="Previous Testimonial"
+                className="w-10 h-10 rounded-full border border-gray-300 bg-white hover:bg-[#b38634] hover:text-white hover:border-[#b38634] flex items-center justify-center text-gray-700 transition-all shadow-sm active:scale-95 cursor-pointer"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                onClick={() => scroll('right')}
+                aria-label="Next Testimonial"
+                className="w-10 h-10 rounded-full border border-gray-300 bg-white hover:bg-[#b38634] hover:text-white hover:border-[#b38634] flex items-center justify-center text-gray-700 transition-all shadow-sm active:scale-95 cursor-pointer"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
 
           {/* Scrollable Cards Track */}
           <div
             ref={carouselRef}
-            className="flex gap-6 overflow-x-auto scroll-smooth py-6 px-3 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+            onScroll={handleScroll}
+            className="flex gap-5 sm:gap-6 overflow-x-auto scroll-smooth py-3 px-2 sm:px-3 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
           >
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="min-w-[300px] sm:min-w-[360px] md:min-w-[390px] max-w-[410px] flex-shrink-0 bg-white rounded-3xl p-7 sm:p-8 shadow-sm hover:shadow-xl border border-gray-100 hover:border-[#c9a84c]/40 transition-all duration-300 flex flex-col justify-between snap-start font-sans"
+                className="w-[85vw] sm:w-[360px] md:w-[380px] max-w-[400px] flex-shrink-0 bg-white rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl border border-gray-200/90 hover:border-[#c9a84c]/50 transition-all duration-300 flex flex-col justify-between snap-start font-sans"
               >
                 <div>
                   
@@ -146,6 +172,29 @@ export default function Testimonials() {
                 </div>
 
               </div>
+            ))}
+          </div>
+
+          {/* Pagination Dots Indicator */}
+          <div className="flex items-center justify-center gap-2 mt-6">
+            {testimonials.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => {
+                  if (carouselRef.current) {
+                    const card = carouselRef.current.children[idx] as HTMLElement;
+                    if (card) {
+                      card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                    }
+                  }
+                }}
+                aria-label={`Go to review ${idx + 1}`}
+                className={`rounded-full transition-all duration-300 cursor-pointer ${
+                  idx === activeIndex
+                    ? 'w-7 h-2 bg-[#b38634]'
+                    : 'w-2 h-2 bg-gray-300 hover:bg-gray-400'
+                }`}
+              />
             ))}
           </div>
 
