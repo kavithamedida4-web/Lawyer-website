@@ -1,4 +1,3 @@
-import Link from 'next/link';
 
 interface ProcessStep {
   number: number;
@@ -217,17 +216,6 @@ export default function HowItWorks() {
             ))}
           </div>
 
-        </div>
-
-        {/* Bottom CTA Action Button */}
-        <div className="text-center mt-12 sm:mt-16">
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-[#b38634] hover:bg-[#c9983e] text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-7 py-3.5 rounded-full transition-all shadow-md hover:shadow-xl hover:scale-105"
-          >
-            <span>Schedule Legal Consultation</span>
-            <span>→</span>
-          </Link>
         </div>
 
       </div>
