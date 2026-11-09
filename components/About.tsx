@@ -87,7 +87,7 @@ export default function About() {
                       alt="UK Law Associates Advocate at Law & Justice Chambers"
                       fill
                       sizes="(max-width: 768px) 50vw, 270px"
-                      className="object-cover object-top group-hover:scale-108 transition-transform duration-700 ease-out"
+                      className="object-cover object-[54%_center] group-hover:scale-108 transition-transform duration-700 ease-out"
                       priority
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent group-hover:opacity-40 transition-opacity" />
