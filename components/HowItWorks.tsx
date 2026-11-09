@@ -103,16 +103,6 @@ export default function HowItWorks() {
         
         {/* Section Header */}
         <div className="text-center mb-14 sm:mb-20">
-          
-          {/* Top Delicate Gold Star Cluster (matching user reference) */}
-          <div className="flex items-center justify-center gap-1.5 mb-3 text-[#b38634]">
-            <span className="text-[10px] opacity-70">✦</span>
-            <span className="text-sm">✦</span>
-            <span className="text-lg">⚖️</span>
-            <span className="text-sm">✦</span>
-            <span className="text-[10px] opacity-70">✦</span>
-          </div>
-
           {/* Heading */}
           <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-serif font-bold text-[#0a1222] mb-3 tracking-tight">
             How It Works
