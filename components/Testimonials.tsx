@@ -84,13 +84,7 @@ export default function Testimonials() {
             Read authentic feedback from individuals, families, and businesses represented by UK Law Firm advocates.
           </p>
 
-          {/* Verified Counter Badge */}
-          <div className="flex items-center justify-center gap-2 mt-4">
-            <span className="w-2 h-2 rounded-full bg-[#c9a84c] animate-pulse" />
-            <span className="text-xs font-sans font-semibold text-gray-500 uppercase tracking-wider">
-              {testimonials.length} Verified Client Reviews
-            </span>
-          </div>
+
 
         </div>
 
