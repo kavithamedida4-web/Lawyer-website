@@ -257,8 +257,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                   </div>
 
                   {/* Card Action Footer */}
-                  <div className="px-5 sm:px-6 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between">
-                    <span className="text-[11px] font-semibold text-gray-400">Statutory Relief</span>
+                  <div className="px-5 sm:px-6 pb-5 pt-3 border-t border-gray-100 flex items-center justify-end">
                     <a
                       href={`https://wa.me/91${service.phone.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(`Hello Advocate, I need legal counsel regarding ${sub.name} under ${service.title}.`)}`}
                       target="_blank"
