@@ -70,7 +70,7 @@ export function getSubServiceImage(subName: string, serviceSlug: string): string
   if (lower.includes('design')) return '/ipr-04-design-v3.jpg';
 
   // Immigration
-  if (lower.includes('student visa')) return '/immig-01-student-visa.jpg';
+  if (lower.includes('student visa')) return '/immig-01-student-visa-v2.jpg';
   if (lower.includes('oci') || lower.includes('pio')) return '/immig-02-oci-pio-v2.jpg';
   if (lower.includes('work visa')) return '/immig-03-work-visa.jpg';
   if (lower.includes('citizenship')) return '/immig-04-citizenship.jpg';
@@ -863,7 +863,7 @@ export const legalServices: LegalService[] = [
       {
         name: 'Student Visa',
         description: 'Legal vetting of sponsorship agreements, financial affidavits, educational verification, and resolving student visa status queries.',
-        image: '/immig-01-student-visa.jpg',
+        image: '/immig-01-student-visa-v2.jpg',
       },
       {
         name: 'OCI & PIO',
