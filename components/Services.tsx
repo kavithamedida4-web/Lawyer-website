@@ -165,7 +165,7 @@ const allServices = [
     category: 'Immigration',
     sub: 'Visa, OCI & Global Mobility',
     desc: 'Immigration advisory, OCI/PIO documentation, visa rejection appeals, and statutory clearances.',
-    image: '/service-lawyers.jpg',
+    image: '/service-immigration-new.jpg',
     points: ['Student & Work Visas', 'OCI & PIO Applications', 'Citizenship & FRRO Queries', 'Apostille & Legalizations'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
