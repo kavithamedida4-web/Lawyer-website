@@ -71,7 +71,7 @@ export function getSubServiceImage(subName: string, serviceSlug: string): string
 
   // Immigration
   if (lower.includes('student visa')) return '/immig-01-student-visa.jpg';
-  if (lower.includes('oci') || lower.includes('pio')) return '/immig-02-oci-pio.jpg';
+  if (lower.includes('oci') || lower.includes('pio')) return '/immig-02-oci-pio-v2.jpg';
   if (lower.includes('work visa')) return '/immig-03-work-visa.jpg';
   if (lower.includes('citizenship')) return '/immig-04-citizenship.jpg';
   if (lower.includes('business visa')) return '/immig-05-business-visa.jpg';
@@ -868,7 +868,7 @@ export const legalServices: LegalService[] = [
       {
         name: 'OCI & PIO',
         description: 'Applications for Overseas Citizen of India (OCI) registration, resolving dual citizenship complexities, and restoration of canceled OCI cards.',
-        image: '/immig-02-oci-pio.jpg',
+        image: '/immig-02-oci-pio-v2.jpg',
       },
       {
         name: 'Work Visa & Employment',
