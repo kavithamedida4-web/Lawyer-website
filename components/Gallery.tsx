@@ -82,15 +82,142 @@ export default function Gallery() {
 
         {/* 
           ========================================================================
-          8-FRAME SALON GALLERY WALL COLLAGE (Clean Picture Frames, No Text on Image)
-          Strictly following the uploaded reference diagram:
+          MOBILE & TABLET VIEW (< 1024px): Balanced, Pixel-Perfect Mosaic
+          Structured with a featured hero centerpiece, 6 paired facility frames,
+          and a closing conference centerpiece. Zero awkward empty gaps.
+          ========================================================================
+        */}
+        <div className="lg:hidden space-y-3 sm:space-y-4 max-w-[620px] mx-auto">
+          
+          {/* Mobile Card 1: Featured Senior Partners Centerpiece (Full Width) */}
+          <div
+            onClick={() => setSelectedPhoto(photos.centerLeftBottom50x70)}
+            className="w-full h-[220px] sm:h-[270px] rounded-2xl overflow-hidden border-[5px] border-white shadow-xl ring-1 ring-[#c9a84c]/40 active:scale-[0.98] transition-transform cursor-pointer relative bg-gray-100"
+          >
+            <Image
+              src={photos.centerLeftBottom50x70.src}
+              alt={photos.centerLeftBottom50x70.alt}
+              fill
+              sizes="(max-width: 768px) 100vw, 620px"
+              className="object-cover object-top"
+            />
+          </div>
+
+          {/* Mobile Grid: 6 Balanced Chambers & Advocate Frames in 2 Columns */}
+          <div className="grid grid-cols-2 gap-3 sm:gap-4">
+            
+            {/* Frame 2: Building Exterior */}
+            <div
+              onClick={() => setSelectedPhoto(photos.farLeft)}
+              className="w-full h-[155px] sm:h-[195px] rounded-xl overflow-hidden border-[4px] border-white shadow-md ring-1 ring-[#c9a84c]/30 active:scale-[0.97] transition-transform cursor-pointer relative bg-gray-100"
+            >
+              <Image
+                src={photos.farLeft.src}
+                alt={photos.farLeft.alt}
+                fill
+                sizes="(max-width: 768px) 50vw, 300px"
+                className="object-cover object-center"
+              />
+            </div>
+
+            {/* Frame 3: Reception & 3D Wall Emblem */}
+            <div
+              onClick={() => setSelectedPhoto(photos.centerLeftTop30x40)}
+              className="w-full h-[155px] sm:h-[195px] rounded-xl overflow-hidden border-[4px] border-white shadow-md ring-1 ring-[#c9a84c]/30 active:scale-[0.97] transition-transform cursor-pointer relative bg-gray-100"
+            >
+              <Image
+                src={photos.centerLeftTop30x40.src}
+                alt={photos.centerLeftTop30x40.alt}
+                fill
+                sizes="(max-width: 768px) 50vw, 300px"
+                className="object-cover object-top"
+              />
+            </div>
+
+            {/* Frame 4: Executive Consultation Desk */}
+            <div
+              onClick={() => setSelectedPhoto(photos.centerRightBottom30x40)}
+              className="w-full h-[155px] sm:h-[195px] rounded-xl overflow-hidden border-[4px] border-white shadow-md ring-1 ring-[#c9a84c]/30 active:scale-[0.97] transition-transform cursor-pointer relative bg-gray-100"
+            >
+              <Image
+                src={photos.centerRightBottom30x40.src}
+                alt={photos.centerRightBottom30x40.alt}
+                fill
+                sizes="(max-width: 768px) 50vw, 300px"
+                className="object-cover object-top"
+              />
+            </div>
+
+            {/* Frame 5: VIP Client Lounge */}
+            <div
+              onClick={() => setSelectedPhoto(photos.centerRightBottomA4)}
+              className="w-full h-[155px] sm:h-[195px] rounded-xl overflow-hidden border-[4px] border-white shadow-md ring-1 ring-[#c9a84c]/30 active:scale-[0.97] transition-transform cursor-pointer relative bg-gray-100"
+            >
+              <Image
+                src={photos.centerRightBottomA4.src}
+                alt={photos.centerRightBottomA4.alt}
+                fill
+                sizes="(max-width: 768px) 50vw, 300px"
+                className="object-cover object-center"
+              />
+            </div>
+
+            {/* Frame 6: Advocate Courtroom Attire */}
+            <div
+              onClick={() => setSelectedPhoto(photos.centerLeftTopA4)}
+              className="w-full h-[155px] sm:h-[195px] rounded-xl overflow-hidden border-[4px] border-white shadow-md ring-1 ring-[#c9a84c]/30 active:scale-[0.97] transition-transform cursor-pointer relative bg-gray-100"
+            >
+              <Image
+                src={photos.centerLeftTopA4.src}
+                alt={photos.centerLeftTopA4.alt}
+                fill
+                sizes="(max-width: 768px) 50vw, 300px"
+                className="object-cover object-top"
+              />
+            </div>
+
+            {/* Frame 7: Advocate at Law Bookshelf */}
+            <div
+              onClick={() => setSelectedPhoto(photos.farRight)}
+              className="w-full h-[155px] sm:h-[195px] rounded-xl overflow-hidden border-[4px] border-white shadow-md ring-1 ring-[#c9a84c]/30 active:scale-[0.97] transition-transform cursor-pointer relative bg-gray-100"
+            >
+              <Image
+                src={photos.farRight.src}
+                alt={photos.farRight.alt}
+                fill
+                sizes="(max-width: 768px) 50vw, 300px"
+                className="object-cover object-center"
+              />
+            </div>
+
+          </div>
+
+          {/* Mobile Card 8: Featured Conference Room Centerpiece (Full Width) */}
+          <div
+            onClick={() => setSelectedPhoto(photos.centerRightTop50x70)}
+            className="w-full h-[210px] sm:h-[260px] rounded-2xl overflow-hidden border-[5px] border-white shadow-xl ring-1 ring-[#c9a84c]/40 active:scale-[0.98] transition-transform cursor-pointer relative bg-gray-100"
+          >
+            <Image
+              src={photos.centerRightTop50x70.src}
+              alt={photos.centerRightTop50x70.alt}
+              fill
+              sizes="(max-width: 768px) 100vw, 620px"
+              className="object-cover object-top"
+            />
+          </div>
+
+        </div>
+
+        {/* 
+          ========================================================================
+          DESKTOP VIEW (>= 1024px): 8-FRAME SALON GALLERY WALL COLLAGE
           - Far Left: 30x40
           - Center-Left: Top (A4 + 30x40), Bottom (Large 50x70)
           - Center-Right: Top (Large 50x70), Bottom (30x40 + A4)
           - Far Right: 30x40
           ========================================================================
         */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4 sm:gap-5 items-center max-w-[1260px] mx-auto">
+        <div className="hidden lg:grid grid-cols-12 gap-4 sm:gap-5 items-center max-w-[1260px] mx-auto">
           
           {/* 
             ----------------------------------------------------------------------
@@ -279,7 +406,7 @@ export default function Gallery() {
             >
               ✕
             </button>
-            <div className="relative w-full h-[400px] sm:h-[500px] rounded-2xl overflow-hidden bg-gray-100">
+            <div className="relative w-full h-[55vh] sm:h-[500px] rounded-2xl overflow-hidden bg-gray-100">
               <Image
                 src={selectedPhoto.src}
                 alt={selectedPhoto.alt}
