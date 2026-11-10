@@ -525,7 +525,7 @@ export const legalServices: LegalService[] = [
       {
         name: 'Disputes between Landlord & Tenant',
         description: 'Resolution of conflicts concerning maintenance charges, structural repairs, security deposit withholding, and arbitrary rent hikes.',
-        image: '/tenant-03-landlord-disputes.jpg',
+        image: '/tenant-03-landlord-disputes-new.jpg',
       },
       {
         name: 'Lease Deed & Renewal',
@@ -941,7 +941,7 @@ export const legalServices: LegalService[] = [
       {
         name: 'Legal Opinion & Advisory',
         description: 'Comprehensive title search reports (30-year search), legal opinions on agricultural/commercial land titles, and litigation risk audits.',
-        image: '/other-04-legal-opinion.jpg',
+        image: '/other-04-legal-opinion-new.jpg',
       },
       {
         name: 'Will, Inheritance & Succession',
