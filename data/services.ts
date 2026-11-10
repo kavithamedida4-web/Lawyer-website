@@ -762,7 +762,7 @@ export const legalServices: LegalService[] = [
       {
         name: 'Design Registration',
         description: 'Protection of unique industrial shapes, configurations, and surface patterns under the Designs Act 2000.',
-        image: '/ipr-04-design.jpg',
+        image: '/ipr-04-design-new.jpg',
       },
       {
         name: 'IPR Disputes & Enforcement',
