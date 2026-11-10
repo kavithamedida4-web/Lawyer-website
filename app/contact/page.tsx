@@ -18,7 +18,7 @@ export default function ContactPage() {
 
       {/* Hero Header with Breadcrumbs */}
       <section className="pt-24 sm:pt-28 pb-6 sm:pb-8 bg-gradient-to-b from-[#faf5eb] via-[#faf7f2] to-white border-b border-[#eedfba]/60 relative overflow-hidden">
-        <div className="max-w-[1160px] mx-auto px-6 sm:px-8 relative z-10 text-center">
+        <div className="max-w-[1240px] mx-auto px-6 sm:px-8 relative z-10 text-center">
           
           {/* Breadcrumbs */}
           <nav className="flex items-center justify-center gap-2 text-xs text-gray-500 mb-3 font-medium">

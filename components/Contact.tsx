@@ -80,8 +80,8 @@ _Inquiry submitted via UK Law Firm official portal_`;
   };
 
   return (
-    <section id="contact" className="py-10 sm:py-14 bg-[#faf8f4] text-gray-900 font-sans relative">
-      <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-12 sm:py-16 bg-[#faf8f4] text-gray-900 font-sans relative">
+      <div className="max-w-[1240px] mx-auto px-4 sm:px-8">
         
         {/* Optional Section Heading (Shown on Homepage, hidden on dedicated /contact page) */}
         {!hideHeader && (
@@ -212,50 +212,25 @@ _Inquiry submitted via UK Law Firm official portal_`;
 
         {/* 
           ========================================================================
-          MAIN 2-COLUMN SPLIT: COMPACT MAP + CONSULTATION FORM CARD
+          MAIN 2-COLUMN SPLIT: FORM ON LEFT (7 COLS) + MAP ON RIGHT (5 COLS)
+          Matching exact reference layout proportions & side-by-side heights
           ========================================================================
         */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-7 items-stretch">
           
-          {/* LEFT COLUMN: COMPACT INTERACTIVE GOOGLE MAP (5 COLS) */}
-          <div className="lg:col-span-5 w-full h-[320px] sm:h-[360px] lg:h-auto lg:min-h-[440px] rounded-2xl overflow-hidden border border-gray-200/90 shadow-md relative bg-gray-100 flex flex-col">
-            <iframe
-              title="UK LAW FIRM Google Maps Location - Maps Apartments Gachibowli Hyderabad"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              scrolling="no"
-              marginHeight={0}
-              marginWidth={0}
-              src="https://maps.google.com/maps?q=Maps+Apartments+Jayabheri+Pine+Valley+Gachibowli+Hyderabad&t=&z=16&ie=UTF8&iwloc=&output=embed"
-              className="w-full h-full border-0 flex-grow"
-              loading="lazy"
-            />
-
-            {/* Bottom Button "Open in Google Maps" */}
-            <a
-              href={googleMapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-3 left-3 z-10 bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/50 px-4 py-2 rounded-xl font-bold text-[11px] uppercase tracking-wider shadow-lg transition-all inline-flex items-center gap-1.5 group hover:scale-105"
-            >
-              <span>Open in Google Maps</span>
-              <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
-            </a>
-          </div>
-
-          {/* RIGHT COLUMN: COMPACT ELEVATED CONSULTATION FORM CARD (7 COLS) */}
-          <div className="lg:col-span-7 bg-white rounded-2xl p-5 sm:p-6 lg:p-7 border border-gray-200/90 shadow-md flex flex-col justify-center">
+          {/* LEFT COLUMN: CONSULTATION FORM CARD (7 COLS) */}
+          <div className="lg:col-span-7 bg-white rounded-2xl p-6 sm:p-7 border border-[#c9a84c]/40 shadow-md flex flex-col justify-center">
             
             <div className="mb-4">
-              <span className="text-[10px] font-bold text-[#b38634] uppercase tracking-[0.2em] block mb-0.5">
-                CONFIDENTIAL INQUIRY
+              <span className="inline-flex items-center gap-1.5 bg-[#0a1222] text-[#e5bf55] px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-2.5">
+                <span>⚖️</span>
+                <span>CONFIDENTIAL CONSULTATION</span>
               </span>
               <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#0a1222]">
-                Schedule a Consultation
+                Schedule a Legal Consultation
               </h3>
               <p className="text-xs text-gray-500 mt-0.5">
-                Fill in your case details below to connect directly with your chosen advocate.
+                Fill out the quick form below to connect directly with our senior advocates.
               </p>
             </div>
 
@@ -294,9 +269,9 @@ _Inquiry submitted via UK Law Firm official portal_`;
                 </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-3 font-sans">
+              <form onSubmit={handleSubmit} className="space-y-3.5 font-sans">
                 
-                {/* Step 1: Select Advocate */}
+                {/* Advocate Switcher */}
                 <div>
                   <label className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1.5">
                     Select Senior Advocate
@@ -360,41 +335,25 @@ _Inquiry submitted via UK Law Firm official portal_`;
                   </div>
                 </div>
 
-                {/* Step 2: Name + Practice Area or Name alone */}
-                <div>
-                  <label htmlFor="contact-name" className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">
-                    Your Full Name
-                  </label>
-                  <input
-                    id="contact-name"
-                    type="text"
-                    required
-                    placeholder="e.g. Rajeshwar Rao"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-white border border-gray-300 focus:border-[#b38634] focus:ring-2 focus:ring-[#b38634]/20 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-[#0a1222] placeholder-gray-400 focus:outline-none transition-all"
-                  />
-                </div>
-
-                {/* Step 3: Email & Phone Row */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {/* Row 1: Full Name & Phone Number */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   <div>
-                    <label htmlFor="contact-email" className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">
-                      Email Address
+                    <label htmlFor="contact-name" className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">
+                      Your Name *
                     </label>
                     <input
-                      id="contact-email"
-                      type="email"
+                      id="contact-name"
+                      type="text"
                       required
-                      placeholder="name@example.com"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      placeholder="e.g. Rajeshwar Rao"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full bg-white border border-gray-300 focus:border-[#b38634] focus:ring-2 focus:ring-[#b38634]/20 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-[#0a1222] placeholder-gray-400 focus:outline-none transition-all"
                     />
                   </div>
                   <div>
                     <label htmlFor="contact-phone" className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">
-                      Phone Number
+                      Phone Number *
                     </label>
                     <input
                       id="contact-phone"
@@ -408,42 +367,58 @@ _Inquiry submitted via UK Law Firm official portal_`;
                   </div>
                 </div>
 
-                {/* Step 4: Practice Area Select */}
-                <div>
-                  <label htmlFor="contact-practice" className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">
-                    Select Practice Area
-                  </label>
-                  <div className="relative">
-                    <select
-                      id="contact-practice"
-                      value={formData.practiceArea}
-                      onChange={(e) => setFormData({ ...formData, practiceArea: e.target.value })}
-                      className="w-full appearance-none bg-white border border-gray-300 focus:border-[#b38634] focus:ring-2 focus:ring-[#b38634]/20 rounded-xl px-3.5 py-2.5 pr-9 text-xs sm:text-sm text-[#0a1222] focus:outline-none transition-all cursor-pointer"
-                    >
-                      {practiceAreasList.map((area) => (
-                        <option key={area} value={area}>
-                          {area}
-                        </option>
-                      ))}
-                    </select>
-                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-500">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
+                {/* Row 2: Practice Area & Email Address */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                  <div>
+                    <label htmlFor="contact-practice" className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">
+                      Select Practice Area *
+                    </label>
+                    <div className="relative">
+                      <select
+                        id="contact-practice"
+                        value={formData.practiceArea}
+                        onChange={(e) => setFormData({ ...formData, practiceArea: e.target.value })}
+                        className="w-full appearance-none bg-white border border-gray-300 focus:border-[#b38634] focus:ring-2 focus:ring-[#b38634]/20 rounded-xl px-3.5 py-2.5 pr-9 text-xs sm:text-sm text-[#0a1222] focus:outline-none transition-all cursor-pointer truncate"
+                      >
+                        {practiceAreasList.map((area) => (
+                          <option key={area} value={area}>
+                            {area}
+                          </option>
+                        ))}
+                      </select>
+                      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-500">
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </div>
                     </div>
+                  </div>
+                  <div>
+                    <label htmlFor="contact-email" className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">
+                      Email Address *
+                    </label>
+                    <input
+                      id="contact-email"
+                      type="email"
+                      required
+                      placeholder="name@example.com"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      className="w-full bg-white border border-gray-300 focus:border-[#b38634] focus:ring-2 focus:ring-[#b38634]/20 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-[#0a1222] placeholder-gray-400 focus:outline-none transition-all"
+                    />
                   </div>
                 </div>
 
-                {/* Step 5: Message */}
+                {/* Row 3: Brief Case Details */}
                 <div>
                   <label htmlFor="contact-message" className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">
-                    Brief Case Details / Legal Query
+                    Brief Case Details &amp; Notes
                   </label>
                   <textarea
                     id="contact-message"
                     rows={2}
                     required
-                    placeholder="Briefly describe your legal matter or desired consultation date..."
+                    placeholder="Briefly describe your legal matter or preferred chamber appointment time..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full bg-white border border-gray-300 focus:border-[#b38634] focus:ring-2 focus:ring-[#b38634]/20 rounded-xl px-3.5 py-2 text-xs sm:text-sm text-[#0a1222] placeholder-gray-400 focus:outline-none transition-all resize-none"
@@ -454,19 +429,43 @@ _Inquiry submitted via UK Law Firm official portal_`;
                 <div className="pt-1">
                   <button
                     type="submit"
-                    className="w-full bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/60 hover:border-[#e5bf55] px-6 py-3 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider transition-all shadow-sm hover:shadow-lg flex items-center justify-center gap-2 group cursor-pointer"
+                    className="w-full bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/60 hover:border-[#e5bf55] px-6 py-3.5 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider transition-all shadow-sm hover:shadow-lg flex items-center justify-center gap-2 group cursor-pointer"
                   >
-                    <span>Send Consultation Request</span>
+                    <span>Send Consultation Request on WhatsApp</span>
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </button>
-                  <p className="text-[10px] text-gray-400 text-center mt-2">
-                    Opens a confidential pre-filled consultation message in WhatsApp.
-                  </p>
                 </div>
 
               </form>
             )}
 
+          </div>
+
+          {/* RIGHT COLUMN: GOOGLE MAP CARD (5 COLS - MATCHES FORM HEIGHT) */}
+          <div className="lg:col-span-5 w-full h-[320px] sm:h-[360px] lg:h-auto rounded-2xl overflow-hidden border border-[#c9a84c]/50 shadow-md relative bg-gray-100 flex flex-col">
+            <iframe
+              title="UK LAW FIRM Google Maps Location - Maps Apartments Gachibowli Hyderabad"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              scrolling="no"
+              marginHeight={0}
+              marginWidth={0}
+              src="https://maps.google.com/maps?q=Maps+Apartments+Jayabheri+Pine+Valley+Gachibowli+Hyderabad&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              className="w-full h-full border-0 flex-grow"
+              loading="lazy"
+            />
+
+            {/* Bottom Button "Open in Google Maps" */}
+            <a
+              href={googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-3 left-3 z-10 bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/50 px-4 py-2 rounded-xl font-bold text-[11px] uppercase tracking-wider shadow-lg transition-all inline-flex items-center gap-1.5 group hover:scale-105"
+            >
+              <span>Open in Google Maps</span>
+              <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+            </a>
           </div>
 
         </div>
