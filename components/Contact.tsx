@@ -1,13 +1,30 @@
 'use client';
 import { useState } from 'react';
 
-export default function Contact() {
+const practiceAreasList = [
+  'Criminal Law (Bail, Cheque Bounce & Trials)',
+  'Civil Law (Property, Partition & Injunctions)',
+  'Family Law (Divorce, Custody & Alimony)',
+  'Tribunals & Forums (NCLT, MACT, CAT)',
+  'Taxation & IT Law (Income Tax, GST, Appeals)',
+  'RERA & Builder - Buyer Disputes',
+  'Landlord & Tenant (Eviction & Lease Deeds)',
+  'Labour & Employment Law',
+  'Consumer Protection Commission',
+  'Corporate & Commercial Agreements',
+  'Intellectual Property (Trademark, Patent, Copyright)',
+  'Cyber Crime & Digital Fraud',
+  'Immigration & NRI Documentation',
+  'Other Legal Services (Notices, GPA, Wills)',
+];
+
+export default function Contact({ hideHeader = false }: { hideHeader?: boolean }) {
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    practiceArea: 'Civil Litigation & Injunction Suits',
+    practiceArea: practiceAreasList[1],
     selectedAdvocatePhone: '9866775034',
     message: '',
   });
@@ -56,43 +73,147 @@ _Inquiry submitted via UK Law Firm official portal_`;
       name: '',
       email: '',
       phone: '',
-      practiceArea: 'Civil Litigation & Injunction Suits',
+      practiceArea: practiceAreasList[1],
       selectedAdvocatePhone: '9866775034',
       message: '',
     });
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-20 bg-white text-gray-900 font-sans relative">
-      <div className="max-w-[1320px] mx-auto px-6 sm:px-10">
+    <section id="contact" className="py-16 sm:py-24 bg-[#faf8f4] text-gray-900 font-sans relative">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-8 lg:px-10">
         
-        {/* Section Heading */}
-        <div className="mb-10 text-center sm:text-left">
-          <p className="text-[#b38634] text-xs font-bold uppercase tracking-[0.25em] mb-2 font-sans">
-            GET IN TOUCH
-          </p>
-          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#0a1222] tracking-tight">
-            Contact Chambers &amp; Location
-          </h2>
-          <div className="w-16 h-[2px] bg-[#c9a84c] mt-3 hidden sm:block" />
+        {/* Optional Section Heading (Shown on Homepage, hidden on dedicated /contact page) */}
+        {!hideHeader && (
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
+            <div className="flex items-center justify-center gap-3 mb-2.5">
+              <span className="w-10 h-[1.5px] bg-[#d8b577]" />
+              <span className="text-[#8c6b45] text-[11px] font-bold tracking-[0.25em] uppercase font-sans">
+                GET IN TOUCH
+              </span>
+              <span className="w-10 h-[1.5px] bg-[#d8b577]" />
+            </div>
+
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-serif font-bold text-[#0a1222] tracking-tight mb-2">
+              Contact Chambers &amp; <span className="text-[#b38634]">Location</span>
+            </h2>
+
+            <p className="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed max-w-xl mx-auto">
+              Reach out directly to our senior advocates for confidential consultation, legal representation, and chamber appointments in Hyderabad.
+            </p>
+
+            <div className="w-16 h-[2px] bg-[#c9a84c] mx-auto mt-4" />
+          </div>
+        )}
+
+        {/* 
+          ========================================================================
+          TOP ROW: 3 STRUCTURED CONTACT INFO CARDS
+          ========================================================================
+        */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 mb-10 sm:mb-12">
+          
+          {/* Card 1: Chambers Location */}
+          <div className="bg-white rounded-2xl p-6 border border-gray-200/80 shadow-sm hover:shadow-md hover:border-[#c9a84c]/60 transition-all flex flex-col justify-between">
+            <div>
+              <div className="w-11 h-11 rounded-xl bg-[#0a1222] text-[#e5bf55] flex items-center justify-center mb-4 shadow-sm">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-serif font-bold text-[#0a1222] mb-2">
+                Chambers Address
+              </h3>
+              <p className="text-gray-700 text-xs sm:text-sm leading-relaxed font-medium">
+                Flat No. 201, 2nd Floor, Maps Apartments, Plot No. 45, Jayabheri Pine Valley, Besides Care Hospitals, Gachibowli, Hyderabad - 500032
+              </p>
+            </div>
+            <div className="mt-4 pt-3 border-t border-gray-100">
+              <a
+                href={googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold text-[#b38634] hover:text-[#0a1222] inline-flex items-center gap-1.5 transition-colors"
+              >
+                <span>View on Google Maps</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Card 2: Direct Advocate Helplines */}
+          <div className="bg-white rounded-2xl p-6 border border-gray-200/80 shadow-sm hover:shadow-md hover:border-[#c9a84c]/60 transition-all flex flex-col justify-between">
+            <div>
+              <div className="w-11 h-11 rounded-xl bg-[#0a1222] text-[#e5bf55] flex items-center justify-center mb-4 shadow-sm">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-serif font-bold text-[#0a1222] mb-3">
+                Direct Advocate Phones
+              </h3>
+              <div className="space-y-3">
+                <a
+                  href="tel:+919866775034"
+                  className="block p-2.5 rounded-xl bg-gray-50 hover:bg-[#faf6ed] border border-gray-100 hover:border-[#c9a84c]/40 transition-all group"
+                >
+                  <p className="text-xs text-gray-500 font-medium">Adv. M. Umamaheshwar Reddy</p>
+                  <p className="text-sm font-bold text-[#0a1222] group-hover:text-[#b38634] transition-colors mt-0.5">
+                    +91 98667 75034
+                  </p>
+                </a>
+                <a
+                  href="tel:+916304856208"
+                  className="block p-2.5 rounded-xl bg-gray-50 hover:bg-[#faf6ed] border border-gray-100 hover:border-[#c9a84c]/40 transition-all group"
+                >
+                  <p className="text-xs text-gray-500 font-medium">Adv. S. Kamalakar</p>
+                  <p className="text-sm font-bold text-[#0a1222] group-hover:text-[#b38634] transition-colors mt-0.5">
+                    +91 63048 56208
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3: Email & Chamber Hours */}
+          <div className="bg-white rounded-2xl p-6 border border-gray-200/80 shadow-sm hover:shadow-md hover:border-[#c9a84c]/60 transition-all flex flex-col justify-between">
+            <div>
+              <div className="w-11 h-11 rounded-xl bg-[#0a1222] text-[#e5bf55] flex items-center justify-center mb-4 shadow-sm">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-serif font-bold text-[#0a1222] mb-2">
+                Email &amp; Office Hours
+              </h3>
+              <div className="mb-4">
+                <p className="text-xs text-gray-500 font-medium mb-1">Official Email Address</p>
+                <a
+                  href="mailto:contact@uklawfirm.in"
+                  className="text-sm font-bold text-[#0a1222] hover:text-[#b38634] transition-colors break-all"
+                >
+                  contact@uklawfirm.in
+                </a>
+              </div>
+              <div className="pt-3 border-t border-gray-100 space-y-1 text-xs text-gray-600">
+                <p><strong className="text-[#0a1222]">Mon – Sat:</strong> 10:00 AM – 7:30 PM</p>
+                <p><strong className="text-[#0a1222]">Sunday:</strong> By Prior Appointment</p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         {/* 
           ========================================================================
-          2-COLUMN SIDE-BY-SIDE LAYOUT (Matching Reference Image)
-          Left: Interactive Google Map
-          Right: Contact Info + Legal Inquiry Form
+          MAIN 2-COLUMN SPLIT: INTERACTIVE GOOGLE MAP + ELEVATED CONSULTATION FORM
           ========================================================================
         */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
           
-          {/* 
-            ----------------------------------------------------------------------
-            LEFT COLUMN: INTERACTIVE GOOGLE MAP (Matching Reference Map)
-            ----------------------------------------------------------------------
-          */}
-          <div className="lg:col-span-6 w-full min-h-[480px] lg:min-h-[580px] h-full rounded-2xl overflow-hidden border border-gray-200 shadow-md relative bg-gray-100 flex flex-col">
-            
+          {/* LEFT COLUMN: INTERACTIVE GOOGLE MAP */}
+          <div className="lg:col-span-6 w-full min-h-[420px] lg:min-h-[600px] rounded-3xl overflow-hidden border border-gray-200/90 shadow-lg relative bg-gray-100 flex flex-col">
             <iframe
               title="UK LAW FIRM Google Maps Location - Maps Apartments Gachibowli Hyderabad"
               width="100%"
@@ -102,12 +223,12 @@ _Inquiry submitted via UK Law Firm official portal_`;
               marginHeight={0}
               marginWidth={0}
               src="https://maps.google.com/maps?q=Maps+Apartments+Jayabheri+Pine+Valley+Gachibowli+Hyderabad&t=&z=16&ie=UTF8&iwloc=&output=embed"
-              className="w-full h-full min-h-[480px] border-0"
+              className="w-full h-full min-h-[420px] border-0 flex-grow"
               loading="lazy"
             />
 
-            {/* Floating Top Location Card (Matching Reference Design) */}
-            <div className="absolute top-4 left-4 z-10 bg-white/95 backdrop-blur-sm rounded-xl p-3.5 shadow-lg border border-gray-200/90 max-w-[270px]">
+            {/* Floating Top Location Card */}
+            <div className="absolute top-4 left-4 z-10 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl border border-gray-200/90 max-w-[260px]">
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <h4 className="font-bold text-sm text-[#0a1222] font-serif leading-tight">
@@ -121,7 +242,7 @@ _Inquiry submitted via UK Law Firm official portal_`;
                   href={googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-7 h-7 rounded-full bg-[#0a1222] text-[#e5bf55] flex items-center justify-center flex-shrink-0 hover:scale-105 transition-transform"
+                  className="w-8 h-8 rounded-full bg-[#0a1222] text-[#e5bf55] flex items-center justify-center flex-shrink-0 hover:scale-105 transition-transform shadow-sm"
                   title="Get Directions"
                 >
                   <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -129,16 +250,16 @@ _Inquiry submitted via UK Law Firm official portal_`;
                   </svg>
                 </a>
               </div>
-              <div className="mt-2 pt-2 border-t border-gray-100 flex items-center justify-between text-[11px]">
+              <div className="mt-2.5 pt-2 border-t border-gray-100 flex items-center justify-between text-[11px]">
                 <a
                   href={googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#b38634] font-semibold hover:underline"
+                  className="text-[#b38634] font-bold hover:underline"
                 >
                   View larger map ↗
                 </a>
-                <span className="text-gray-400">Gachibowli, Hyd</span>
+                <span className="text-gray-400 font-medium">Gachibowli, Hyd</span>
               </div>
             </div>
 
@@ -147,232 +268,231 @@ _Inquiry submitted via UK Law Firm official portal_`;
               href={googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute bottom-4 left-4 z-10 bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/50 px-4 py-2 rounded-xl font-bold text-xs uppercase tracking-wider shadow-xl transition-all inline-flex items-center gap-2 group hover:scale-105"
+              className="absolute bottom-4 left-4 z-10 bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/50 px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider shadow-xl transition-all inline-flex items-center gap-2 group hover:scale-105"
             >
               <span>Open in Google Maps</span>
               <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
             </a>
-
           </div>
 
-          {/* 
-            ----------------------------------------------------------------------
-            RIGHT COLUMN: EXACT REPLICA OF THE USER REFERENCE DESIGN
-            Heading: "Contact Info"
-            Icons: Address, Email, Phone
-            Inputs: Name, Email, Phone, Practice Area, Message
-            Button: Send (Opens WhatsApp pre-filled)
-            ----------------------------------------------------------------------
-          */}
-          <div className="lg:col-span-6 flex flex-col justify-between py-1">
+          {/* RIGHT COLUMN: ELEVATED CONSULTATION FORM CARD (CRISP WHITE, NO YELLOW TINT) */}
+          <div className="lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-gray-200/90 shadow-lg flex flex-col justify-center">
             
-            {/* Contact Info Header (Exact Layout from Reference Image) */}
             <div className="mb-6">
-              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#0a1222] mb-4">
-                Contact Info
+              <span className="text-[11px] font-bold text-[#b38634] uppercase tracking-[0.2em] block mb-1">
+                CONFIDENTIAL INQUIRY
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#0a1222]">
+                Schedule a Consultation
               </h3>
-
-              <div className="space-y-3.5 text-sm text-gray-700">
-                
-                {/* 1. Address Row with Location Pin Icon */}
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-full bg-[#fcf8ec] text-[#b38634] flex items-center justify-center flex-shrink-0 mt-0.5 border border-[#e8d5a3]">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
-                    </svg>
-                  </div>
-                  <div className="leading-snug">
-                    <p className="font-semibold text-[#0a1222]">
-                      Flat No. 201, 2nd Floor, Maps Apartments, Plot No. 45,
-                    </p>
-                    <p className="text-gray-600 text-xs sm:text-sm">
-                      Jayabheri Pine Valley, Besides Care Hospitals, Gachibowli, Hyderabad - 500032
-                    </p>
-                  </div>
-                </div>
-
-                {/* 2. Email Row with Mail Icon */}
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-[#fcf8ec] text-[#b38634] flex items-center justify-center flex-shrink-0 border border-[#e8d5a3]">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <a
-                    href="mailto:contact@uklawfirm.in"
-                    className="hover:text-[#b38634] transition-colors font-medium text-xs sm:text-sm"
-                  >
-                    contact@uklawfirm.in
-                  </a>
-                </div>
-
-                {/* 3. Phone Row with Phone Icon */}
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-full bg-[#fcf8ec] text-[#b38634] flex items-center justify-center flex-shrink-0 mt-0.5 border border-[#e8d5a3]">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                  </div>
-                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs sm:text-sm">
-                    <a
-                      href="tel:+919866775034"
-                      className="hover:text-[#b38634] font-medium transition-colors inline-flex items-center gap-1"
-                    >
-                      <span className="text-gray-900 font-semibold">+91 98667 75034</span>
-                      <span className="text-gray-500 text-xs">(M. Umamaheshwar Reddy)</span>
-                    </a>
-                    <span className="text-gray-300 hidden sm:inline">•</span>
-                    <a
-                      href="tel:+916304856208"
-                      className="hover:text-[#b38634] font-medium transition-colors inline-flex items-center gap-1"
-                    >
-                      <span className="text-gray-900 font-semibold">+91 63048 56208</span>
-                      <span className="text-gray-500 text-xs">(S. Kamalakar)</span>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
+              <p className="text-xs sm:text-sm text-gray-500 mt-1">
+                Fill in your case details below and connect directly with your chosen advocate.
+              </p>
             </div>
 
-            {/* Legal Consultation Form (Matching Soft Blue Tint Inputs from Reference) */}
             {submitted ? (
-              <div className="bg-[#faf6ed] border border-[#c9a84c] rounded-2xl p-7 text-center my-auto">
-                <div className="w-12 h-12 rounded-full bg-[#0a1222] text-[#e5bf55] mx-auto flex items-center justify-center mb-3 shadow">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-gray-50 border border-[#c9a84c]/60 rounded-2xl p-8 text-center my-auto">
+                <div className="w-14 h-14 rounded-full bg-[#0a1222] text-[#e5bf55] mx-auto flex items-center justify-center mb-4 shadow-md">
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h4 className="font-serif font-bold text-lg text-[#0a1222]">
-                  WhatsApp Ready to Send
+                <h4 className="font-serif font-bold text-xl text-[#0a1222]">
+                  Consultation Inquiry Prepared
                 </h4>
-                <p className="text-xs sm:text-sm text-gray-700 mt-2 max-w-sm mx-auto leading-relaxed">
-                  Your case details are placed inside WhatsApp&apos;s message bar. Tap <strong>Send</strong> in WhatsApp to deliver your inquiry.
+                <p className="text-xs sm:text-sm text-gray-600 mt-2 max-w-sm mx-auto leading-relaxed">
+                  Your structured case summary has been pre-filled in WhatsApp. Tap <strong>Send</strong> in WhatsApp to immediately deliver it to our chambers.
                 </p>
 
-                <div className="mt-4 flex items-center justify-center gap-3">
+                <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
                   {lastWhatsAppUrl && (
                     <a
                       href={lastWhatsAppUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] px-5 py-2.5 rounded-lg text-xs font-bold inline-flex items-center gap-1.5 shadow"
+                      className="bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-wider inline-flex items-center gap-2 shadow-md transition-all hover:scale-105"
                     >
-                      <span>Re-Open WhatsApp</span>
+                      <span>Open WhatsApp</span>
                       <span>↗</span>
                     </a>
                   )}
                   <button
                     onClick={handleReset}
-                    className="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2.5 rounded-lg text-xs font-semibold cursor-pointer"
+                    className="bg-white border border-gray-300 hover:bg-gray-100 text-gray-800 px-5 py-3 rounded-xl text-xs font-semibold cursor-pointer transition-colors"
                   >
                     New Consultation
                   </button>
                 </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-3 font-sans">
+              <form onSubmit={handleSubmit} className="space-y-4 font-sans">
                 
-                {/* Clean Advocate Selection Switch - Light Gold Yellow */}
-                <div className="bg-[#fcf8ec] p-1.5 rounded-xl flex items-center gap-1.5 border border-[#eedfba]">
-                  <button
-                    type="button"
-                    onClick={() => setFormData({ ...formData, selectedAdvocatePhone: '9866775034' })}
-                    className={`flex-1 py-2 px-3 rounded-lg text-xs font-semibold transition-all cursor-pointer text-center truncate ${
-                      formData.selectedAdvocatePhone === '9866775034'
-                        ? 'bg-white text-[#0a1222] shadow-sm font-bold border border-[#c9a84c]'
-                        : 'text-[#8a7238] hover:text-[#0a1222] hover:bg-[#f8f1de]'
-                    }`}
-                  >
-                    Adv. M. Umamaheshwar Reddy
-                  </button>
+                {/* Step 1: Select Advocate */}
+                <div>
+                  <label className="block text-[11px] font-bold text-gray-600 uppercase tracking-wider mb-2">
+                    Select Senior Advocate
+                  </label>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <button
+                      type="button"
+                      onClick={() => setFormData({ ...formData, selectedAdvocatePhone: '9866775034' })}
+                      className={`p-3 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-2 ${
+                        formData.selectedAdvocatePhone === '9866775034'
+                          ? 'border-2 border-[#b38634] bg-[#fdfbf6] shadow-xs'
+                          : 'border-gray-200 bg-gray-50 hover:bg-white hover:border-gray-300'
+                      }`}
+                    >
+                      <div>
+                        <p className="text-xs font-bold text-[#0a1222]">Adv. M. Umamaheshwar Reddy</p>
+                        <p className="text-[11px] text-gray-500 mt-0.5">+91 98667 75034</p>
+                      </div>
+                      <span
+                        className={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 ${
+                          formData.selectedAdvocatePhone === '9866775034'
+                            ? 'bg-[#b38634] text-white'
+                            : 'border border-gray-300 bg-white'
+                        }`}
+                      >
+                        {formData.selectedAdvocatePhone === '9866775034' && (
+                          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                          </svg>
+                        )}
+                      </span>
+                    </button>
 
-                  <button
-                    type="button"
-                    onClick={() => setFormData({ ...formData, selectedAdvocatePhone: '6304856208' })}
-                    className={`flex-1 py-2 px-3 rounded-lg text-xs font-semibold transition-all cursor-pointer text-center truncate ${
-                      formData.selectedAdvocatePhone === '6304856208'
-                        ? 'bg-white text-[#0a1222] shadow-sm font-bold border border-[#c9a84c]'
-                        : 'text-[#8a7238] hover:text-[#0a1222] hover:bg-[#f8f1de]'
-                    }`}
-                  >
-                    Adv. S. Kamalakar
-                  </button>
+                    <button
+                      type="button"
+                      onClick={() => setFormData({ ...formData, selectedAdvocatePhone: '6304856208' })}
+                      className={`p-3 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-2 ${
+                        formData.selectedAdvocatePhone === '6304856208'
+                          ? 'border-2 border-[#b38634] bg-[#fdfbf6] shadow-xs'
+                          : 'border-gray-200 bg-gray-50 hover:bg-white hover:border-gray-300'
+                      }`}
+                    >
+                      <div>
+                        <p className="text-xs font-bold text-[#0a1222]">Adv. S. Kamalakar</p>
+                        <p className="text-[11px] text-gray-500 mt-0.5">+91 63048 56208</p>
+                      </div>
+                      <span
+                        className={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 ${
+                          formData.selectedAdvocatePhone === '6304856208'
+                            ? 'bg-[#b38634] text-white'
+                            : 'border border-gray-300 bg-white'
+                        }`}
+                      >
+                        {formData.selectedAdvocatePhone === '6304856208' && (
+                          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                          </svg>
+                        )}
+                      </span>
+                    </button>
+                  </div>
                 </div>
 
-                {/* Name - Light Gold Yellow Tint */}
+                {/* Step 2: Full Name */}
                 <div>
+                  <label htmlFor="contact-name" className="block text-[11px] font-bold text-gray-600 uppercase tracking-wider mb-1.5">
+                    Your Full Name
+                  </label>
                   <input
+                    id="contact-name"
                     type="text"
                     required
-                    placeholder="Name"
+                    placeholder="e.g. Rajeshwar Rao"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-[#fcf8ec] hover:bg-[#faf3df] focus:bg-white border border-[#eedfba] focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 rounded-xl px-4 py-3.5 text-sm text-[#0a1222] placeholder-[#a69268] focus:outline-none transition-all shadow-xs"
+                    className="w-full bg-white border border-gray-300 focus:border-[#b38634] focus:ring-2 focus:ring-[#b38634]/20 rounded-xl px-4 py-3 text-sm text-[#0a1222] placeholder-gray-400 focus:outline-none transition-all"
                   />
                 </div>
 
-                {/* Email & Phone Dual Row - Light Gold Yellow Tint */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <input
-                    type="email"
-                    required
-                    placeholder="Email"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-[#fcf8ec] hover:bg-[#faf3df] focus:bg-white border border-[#eedfba] focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 rounded-xl px-4 py-3.5 text-sm text-[#0a1222] placeholder-[#a69268] focus:outline-none transition-all shadow-xs"
-                  />
-                  <input
-                    type="tel"
-                    required
-                    placeholder="Phone"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full bg-[#fcf8ec] hover:bg-[#faf3df] focus:bg-white border border-[#eedfba] focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 rounded-xl px-4 py-3.5 text-sm text-[#0a1222] placeholder-[#a69268] focus:outline-none transition-all shadow-xs"
-                  />
+                {/* Step 3: Email & Phone Row */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="contact-email" className="block text-[11px] font-bold text-gray-600 uppercase tracking-wider mb-1.5">
+                      Email Address
+                    </label>
+                    <input
+                      id="contact-email"
+                      type="email"
+                      required
+                      placeholder="name@example.com"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      className="w-full bg-white border border-gray-300 focus:border-[#b38634] focus:ring-2 focus:ring-[#b38634]/20 rounded-xl px-4 py-3 text-sm text-[#0a1222] placeholder-gray-400 focus:outline-none transition-all"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="contact-phone" className="block text-[11px] font-bold text-gray-600 uppercase tracking-wider mb-1.5">
+                      Phone Number
+                    </label>
+                    <input
+                      id="contact-phone"
+                      type="tel"
+                      required
+                      placeholder="+91 98XXX XXXXX"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      className="w-full bg-white border border-gray-300 focus:border-[#b38634] focus:ring-2 focus:ring-[#b38634]/20 rounded-xl px-4 py-3 text-sm text-[#0a1222] placeholder-gray-400 focus:outline-none transition-all"
+                    />
+                  </div>
                 </div>
 
-                {/* Practice Area Selector - Light Gold Yellow Tint */}
+                {/* Step 4: Practice Area Select */}
                 <div>
-                  <select
-                    value={formData.practiceArea}
-                    onChange={(e) => setFormData({ ...formData, practiceArea: e.target.value })}
-                    className="w-full bg-[#fcf8ec] hover:bg-[#faf3df] focus:bg-white border border-[#eedfba] focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 rounded-xl px-4 py-3.5 text-sm text-[#0a1222] focus:outline-none transition-all shadow-xs cursor-pointer"
-                  >
-                    <option value="Civil Litigation & Injunction Suits">Civil Litigation &amp; Injunction Suits</option>
-                    <option value="Criminal Defense & Bail Matters">Criminal Defense &amp; Bail Matters</option>
-                    <option value="Property, Title Disputes & RERA">Property, Title Disputes &amp; RERA</option>
-                    <option value="Family & Matrimonial Matters">Family &amp; Matrimonial Matters</option>
-                    <option value="Corporate, Arbitration & Contracts">Corporate, Arbitration &amp; Contracts</option>
-                    <option value="Tribunals & High Court Writs">Tribunals &amp; High Court Writs</option>
-                  </select>
+                  <label htmlFor="contact-practice" className="block text-[11px] font-bold text-gray-600 uppercase tracking-wider mb-1.5">
+                    Select Practice Area
+                  </label>
+                  <div className="relative">
+                    <select
+                      id="contact-practice"
+                      value={formData.practiceArea}
+                      onChange={(e) => setFormData({ ...formData, practiceArea: e.target.value })}
+                      className="w-full appearance-none bg-white border border-gray-300 focus:border-[#b38634] focus:ring-2 focus:ring-[#b38634]/20 rounded-xl px-4 py-3 pr-10 text-sm text-[#0a1222] focus:outline-none transition-all cursor-pointer"
+                    >
+                      {practiceAreasList.map((area) => (
+                        <option key={area} value={area}>
+                          {area}
+                        </option>
+                      ))}
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3.5 text-gray-500">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Message - Light Gold Yellow Tint */}
+                {/* Step 5: Message */}
                 <div>
+                  <label htmlFor="contact-message" className="block text-[11px] font-bold text-gray-600 uppercase tracking-wider mb-1.5">
+                    Brief Case Details / Legal Query
+                  </label>
                   <textarea
+                    id="contact-message"
                     rows={3}
                     required
-                    placeholder="Message"
+                    placeholder="Briefly describe your legal matter or desired consultation date..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full bg-[#fcf8ec] hover:bg-[#faf3df] focus:bg-white border border-[#eedfba] focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 rounded-xl px-4 py-3.5 text-sm text-[#0a1222] placeholder-[#a69268] focus:outline-none transition-all shadow-xs resize-none"
+                    className="w-full bg-white border border-gray-300 focus:border-[#b38634] focus:ring-2 focus:ring-[#b38634]/20 rounded-xl px-4 py-3 text-sm text-[#0a1222] placeholder-gray-400 focus:outline-none transition-all resize-none"
                   />
                 </div>
 
-                {/* Send Button (Matching Reference Shape with Luxury Navy & Gold Theme) */}
-                <div className="pt-1 flex items-center justify-between">
+                {/* Submit CTA */}
+                <div className="pt-2">
                   <button
                     type="submit"
-                    className="bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/50 hover:border-[#e5bf55] px-10 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all shadow-md hover:shadow-lg inline-flex items-center gap-2 group cursor-pointer hover:scale-105"
+                    className="w-full bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/60 hover:border-[#e5bf55] px-8 py-4 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider transition-all shadow-md hover:shadow-xl flex items-center justify-center gap-2 group cursor-pointer"
                   >
-                    <span>Send</span>
+                    <span>Send Consultation Request</span>
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </button>
-
-                  <span className="text-[11px] text-gray-400">
-                    Pre-fills in WhatsApp message bar
-                  </span>
+                  <p className="text-[11px] text-gray-400 text-center mt-2.5">
+                    Opens a confidential pre-filled consultation message in WhatsApp.
+                  </p>
                 </div>
 
               </form>
