@@ -757,7 +757,7 @@ export const legalServices: LegalService[] = [
       {
         name: 'Patent Filing & Advisory',
         description: 'Patentability analysis, provisional and complete specification drafting, and prior-art search consultation.',
-        image: '/ipr-03-patent.jpg',
+        image: '/ipr-03-patent-new.jpg',
       },
       {
         name: 'Design Registration',
