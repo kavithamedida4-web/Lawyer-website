@@ -198,9 +198,6 @@ export default async function ServiceDetailPage({ params }: Props) {
         <div className="max-w-[1280px] mx-auto px-6 sm:px-10">
           
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <p className="text-[#b38634] text-xs font-bold uppercase tracking-[0.25em] mb-2 font-sans">
-              SUB-SERVICES &amp; PRACTICE SCOPE
-            </p>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#0a1222] tracking-tight">
               Comprehensive Legal Coverage in {service.title}
             </h2>
