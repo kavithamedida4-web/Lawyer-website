@@ -17,7 +17,7 @@ export default function Footer() {
 
   const serviceLinks = [
     { name: 'Criminal Defense & Bail', href: '/services/criminal-law', highlight: false },
-    { name: 'Corporate & Commercial', href: '/services/corporate-and-commercial', highlight: true },
+    { name: 'Corporate & Commercial', href: '/services/corporate-and-commercial', highlight: false },
     { name: 'Labour & Employment', href: '/services/labour-and-employment', highlight: false },
     { name: 'Cyber Crime & IT Law', href: '/services/cyber-crime', highlight: false },
     { name: 'Civil Litigation & Suits', href: '/services/civil-law', highlight: false },
