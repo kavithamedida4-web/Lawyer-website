@@ -234,15 +234,8 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Carousel Navigation Buttons & Counter */}
-        <div className="flex items-center justify-between mb-3 px-2">
-          <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#a8742b] animate-pulse" />
-            <span className="text-xs font-sans font-semibold text-gray-500 uppercase tracking-wider">
-              14 Specialised Practice Categories
-            </span>
-          </div>
-
+        {/* Carousel Navigation Buttons */}
+        <div className="flex items-center justify-end mb-3 px-2">
           <div className="flex gap-3">
             <button
               onClick={() => scroll('left')}
