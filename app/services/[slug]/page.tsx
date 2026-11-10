@@ -227,14 +227,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-transparent" />
-                      
-                      {/* Floating Index Badge */}
-                      <div className="absolute top-3 left-3">
-                        <span className="w-8 h-8 rounded-lg bg-[#0a1222]/90 backdrop-blur-xs text-[#e5bf55] border border-[#c9a84c]/40 flex items-center justify-center font-serif font-bold text-xs shadow-md">
-                          0{idx + 1}
-                        </span>
-                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                     </div>
 
                     {/* Content Body */}
