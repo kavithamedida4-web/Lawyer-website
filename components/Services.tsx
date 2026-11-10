@@ -139,7 +139,7 @@ const allServices = [
     category: 'Intellectual Property (IPR)',
     sub: 'Brands, Ideas & Creations',
     desc: 'Trademark search & registration, copyright protection, patent filings, and infringement actions.',
-    image: '/service-ipr.jpg',
+    image: '/service-intellectual-property.jpg',
     points: ['Trademark Registration & Opposition', 'Copyright Protection', 'Patent Filing & Advisory', 'IPR Infringement Litigation'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">

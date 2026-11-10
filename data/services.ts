@@ -404,7 +404,7 @@ export const legalServices: LegalService[] = [
       {
         name: 'Tax Appeals & Assessments',
         description: 'Formulation of appeals, stay of demand applications, and substantive representation before the Income Tax Appellate Tribunal (ITAT).',
-        image: '/tax-03-appeals-itat.jpg',
+        image: '/tax-03-appeals-itat-new.jpg',
       },
       {
         name: 'TDS, PAN & Compliance',
