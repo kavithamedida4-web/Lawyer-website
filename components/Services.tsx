@@ -113,7 +113,7 @@ const allServices = [
     category: 'Labour & Employment',
     sub: 'Workplace Law',
     desc: 'Industrial disputes, employee rights, termination cases, and statutory compliance (EPF, ESI).',
-    image: '/service-lawyers.jpg',
+    image: '/labour-04-epf-esi.jpg',
     points: ['Employee Rights & Service Matters', 'Wrongful Termination', 'Industrial Disputes', 'EPF & Labour Compliance'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
