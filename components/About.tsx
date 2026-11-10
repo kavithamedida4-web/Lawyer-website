@@ -184,11 +184,7 @@ export default function About() {
               ))}
             </div>
 
-            {/* Core Values Badge with Ambient Glow */}
-            <div className="p-3.5 bg-gradient-to-r from-[#f7f2e7] via-[#fbf7ed] to-[#f4ece0] border border-[#c9a84c]/35 rounded-xl text-xs font-serif text-[#0a1222] tracking-wider text-center sm:text-left mb-6 shadow-xs hover:border-[#b38634] hover:shadow-md transition-all duration-300">
-              <span className="font-bold text-[#b38634] block sm:inline sm:mr-2">CORE PILLARS:</span>
-              Integrity • Dedication • Results • Justice • Trust
-            </div>
+
 
             {/* Link to Dedicated About Page with Hover Slide Arrow */}
             <div>

@@ -211,11 +211,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Core Pillars pill */}
-              <div className="inline-block bg-[#fcf8ec] border border-[#eedfba] px-4 py-2 rounded-xl text-xs font-serif font-bold text-[#0a1222]">
-                <span className="text-[#8a7238] uppercase tracking-wider text-[11px] mr-2">Core Pillars:</span>
-                <span>Integrity • Dedication • Results • Justice • Trust</span>
-              </div>
+
             </div>
 
           </div>
