@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface GalleryPhoto {
   src: string;
@@ -55,8 +56,30 @@ export default function Gallery() {
   };
 
   return (
-    <section id="gallery" className="pt-8 sm:pt-10 pb-16 sm:pb-20 bg-white text-gray-900 relative overflow-hidden">
+    <section id="gallery" className="py-20 sm:py-24 bg-white text-gray-900 relative overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8">
+
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div className="flex items-center justify-center gap-3 mb-2.5">
+            <span className="w-10 h-[1.5px] bg-[#d8b577]" />
+            <span className="text-[#8c6b45] text-[11px] font-bold tracking-[0.25em] uppercase font-sans">
+              CHAMBERS &amp; PRACTICE
+            </span>
+            <span className="w-10 h-[1.5px] bg-[#d8b577]" />
+          </div>
+
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-serif font-bold text-[#0a1222] mb-3 tracking-tight">
+            Our <span className="text-[#c9a84c]">Gallery</span>
+          </h2>
+
+          <p className="text-gray-600 text-xs sm:text-sm md:text-base font-sans max-w-xl mx-auto leading-relaxed">
+            Take a visual tour inside our executive consultation chambers, law library, and advocate facilities in Gachibowli, Hyderabad.
+          </p>
+
+          <div className="w-16 h-[2px] bg-[#c9a84c] mx-auto mt-4" />
+        </div>
+
         {/* 
           ========================================================================
           8-FRAME SALON GALLERY WALL COLLAGE (Clean Picture Frames, No Text on Image)
@@ -225,6 +248,17 @@ export default function Gallery() {
             </div>
           </div>
 
+        </div>
+
+        {/* View Full Gallery Link Button */}
+        <div className="text-center mt-12 sm:mt-14">
+          <Link
+            href="/gallery"
+            className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#0a1222] hover:bg-[#b38634] text-white text-xs sm:text-sm font-semibold tracking-wider uppercase transition-all shadow-md hover:shadow-xl hover:scale-105"
+          >
+            <span>View All Chambers Photos</span>
+            <span>→</span>
+          </Link>
         </div>
 
       </div>
