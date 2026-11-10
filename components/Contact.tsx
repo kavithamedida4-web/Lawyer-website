@@ -31,7 +31,6 @@ export default function Contact({ hideHeader = false }: { hideHeader?: boolean }
 
   const [lastWhatsAppUrl, setLastWhatsAppUrl] = useState('');
 
-  const googleMapsUrl = 'https://g.page/r/CUcVkQD8aAhOEBM/review';
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -343,25 +342,13 @@ _Inquiry submitted via UK Law Firm official portal_`;
               title="UK LAW FIRM Google Maps Location - Maps Apartments Gachibowli Hyderabad"
               width="100%"
               height="100%"
-              frameBorder="0"
-              scrolling="no"
-              marginHeight={0}
-              marginWidth={0}
-              src="https://maps.google.com/maps?q=Maps+Apartments+Jayabheri+Pine+Valley+Gachibowli+Hyderabad&t=&z=16&ie=UTF8&iwloc=&output=embed"
-              className="w-full h-full border-0 flex-grow"
+              style={{ border: 0 }}
+              allowFullScreen
               loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6128129318995!2d78.3718349!3d17.4303593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93d350593b7f%3A0x4e0868fc00911547!2s!5e0!3m2!1sen!2sin!4v1794314126057!5m2!1sen!2sin"
+              className="w-full h-full border-0 flex-grow"
             />
-
-            {/* Bottom Button "Open in Google Maps" */}
-            <a
-              href={googleMapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-3 left-3 z-10 bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/50 px-4 py-2 rounded-xl font-bold text-[11px] uppercase tracking-wider shadow-lg transition-all inline-flex items-center gap-1.5 group hover:scale-105"
-            >
-              <span>Open in Google Maps</span>
-              <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
-            </a>
           </div>
 
         </div>
