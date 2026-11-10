@@ -95,7 +95,7 @@ _Inquiry submitted via UK Law Firm official portal_`;
             </div>
 
             <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-serif font-bold text-[#0a1222] tracking-tight mb-1.5">
-              Contact Chambers &amp; <span className="text-[#b38634]">Location</span>
+              Contact Us &amp; <span className="text-[#b38634]">Location</span>
             </h2>
 
             <p className="text-gray-600 text-xs sm:text-sm leading-relaxed max-w-lg mx-auto">

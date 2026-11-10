@@ -40,7 +40,7 @@ export function getSubServiceImage(subName: string, serviceSlug: string): string
   // Tax
   if (lower.includes('income tax')) return '/tax-01-income-tax.jpg';
   if (lower.includes('gst')) return '/tax-02-gst-disputes.jpg';
-  if (lower.includes('appeal') || lower.includes('itat')) return '/tax-03-appeals-itat.jpg';
+  if (lower.includes('appeal') || lower.includes('itat')) return '/tax-03-appeals-itat-v3.jpg';
   if (lower.includes('tds') || lower.includes('pan')) return '/tax-04-tds-pan.jpg';
   if (lower.includes('it act')) return '/tax-05-cyber-it-law.jpg';
   if (lower.includes('e-commerce') || lower.includes('ecommerce')) return '/tax-06-ecommerce-business.jpg';
@@ -67,7 +67,7 @@ export function getSubServiceImage(subName: string, serviceSlug: string): string
   if (lower.includes('trademark')) return '/ipr-01-trademark.jpg';
   if (lower.includes('copyright')) return '/ipr-02-copyright.jpg';
   if (lower.includes('patent')) return '/ipr-03-patent.jpg';
-  if (lower.includes('design')) return '/ipr-04-design.jpg';
+  if (lower.includes('design')) return '/ipr-04-design-v3.jpg';
 
   // Immigration
   if (lower.includes('student visa')) return '/immig-01-student-visa.jpg';
@@ -404,7 +404,7 @@ export const legalServices: LegalService[] = [
       {
         name: 'Tax Appeals & Assessments',
         description: 'Formulation of appeals, stay of demand applications, and substantive representation before the Income Tax Appellate Tribunal (ITAT).',
-        image: '/tax-03-appeals-itat-new.jpg',
+        image: '/tax-03-appeals-itat-v3.jpg',
       },
       {
         name: 'TDS, PAN & Compliance',
@@ -525,7 +525,7 @@ export const legalServices: LegalService[] = [
       {
         name: 'Disputes between Landlord & Tenant',
         description: 'Resolution of conflicts concerning maintenance charges, structural repairs, security deposit withholding, and arbitrary rent hikes.',
-        image: '/tenant-03-landlord-disputes-new.jpg',
+        image: '/tenant-03-landlord-disputes-v3.jpg',
       },
       {
         name: 'Lease Deed & Renewal',
@@ -762,7 +762,7 @@ export const legalServices: LegalService[] = [
       {
         name: 'Design Registration',
         description: 'Protection of unique industrial shapes, configurations, and surface patterns under the Designs Act 2000.',
-        image: '/ipr-04-design-new.jpg',
+        image: '/ipr-04-design-v3.jpg',
       },
       {
         name: 'IPR Disputes & Enforcement',
