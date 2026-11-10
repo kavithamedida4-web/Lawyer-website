@@ -235,13 +235,6 @@ export default async function ServiceDetailPage({ params }: Props) {
                           0{idx + 1}
                         </span>
                       </div>
-                      
-                      {/* Sub-Service Scope Tag */}
-                      <div className="absolute bottom-3 left-3 right-3">
-                        <span className="text-[10px] font-bold text-white uppercase tracking-wider bg-black/40 backdrop-blur-xs px-2.5 py-1 rounded-md border border-white/20">
-                          {service.title}
-                        </span>
-                      </div>
                     </div>
 
                     {/* Content Body */}
