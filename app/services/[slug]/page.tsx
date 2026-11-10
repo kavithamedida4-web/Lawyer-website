@@ -107,13 +107,6 @@ export default async function ServiceDetailPage({ params }: Props) {
                   <span className="text-xs sm:text-sm font-bold">→</span>
                 </Link>
 
-                <a
-                  href="#sub-services"
-                  className="bg-white hover:bg-[#faf6ed] text-[#0a1222] border border-[#ab832b] px-3.5 sm:px-6 py-2.5 sm:py-3.5 rounded-full text-xs sm:text-sm font-bold transition-all inline-flex items-center gap-1 sm:gap-2 shadow-sm flex-shrink-0"
-                >
-                  <span>Sub-Services</span>
-                  <span className="text-[10px] sm:text-xs">↓</span>
-                </a>
               </div>
 
             </div>
