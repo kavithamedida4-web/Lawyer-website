@@ -43,7 +43,7 @@ export default function AboutPage() {
           </div>
 
           {/* 2. Main Title Matching Reference */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-sans tracking-tight text-[#0a1222] mb-3">
+          <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold tracking-tight leading-tight text-[#0a1222] mb-3 max-w-[600px] mx-auto">
             About <span className="text-[#b88a38]">UK Law Firm</span>
           </h1>
 
@@ -179,7 +179,7 @@ export default function AboutPage() {
               <p className="text-[#b38634] font-serif italic text-base sm:text-lg mb-2 font-medium">
                 Our Practice &amp; Ethos
               </p>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#0a1222] leading-tight mb-5 tracking-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-4 tracking-tight max-w-[600px]">
                 A Distinguished Practice Rooted in Justice and Ethics
               </h2>
 

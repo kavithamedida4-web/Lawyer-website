@@ -225,7 +225,7 @@ export default function Services() {
             <span className="w-10 h-[1.5px] bg-[#d8b577]" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#141e2e] leading-tight mb-2 tracking-tight max-w-[600px] mx-auto">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-2 tracking-tight max-w-[600px] mx-auto">
             Comprehensive Legal Solutions
           </h2>
 

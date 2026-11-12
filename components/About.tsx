@@ -151,7 +151,7 @@ export default function About() {
             </div>
 
             {/* Main Headline */}
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[46px] font-bold text-[#0a1222] leading-[1.18] mb-5 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-4 tracking-tight max-w-[600px]">
               A Legacy Of Legal Excellence
             </h2>
 

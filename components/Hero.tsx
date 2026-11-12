@@ -126,7 +126,7 @@ export default function Hero() {
             </div>
 
             {/* Main Headline - font-sans font-semibold (600) */}
-            <h1 className="font-sans text-3xl sm:text-4xl lg:text-[44px] xl:text-[48px] font-semibold text-white leading-[1.15] tracking-tight mb-3 drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
+            <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-white leading-tight tracking-tight mb-3 max-w-[600px] drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
               <span>Trusted Legal</span>
               <br />
               <span className="text-[#f3cd67]">Expertise In Court</span>

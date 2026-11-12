@@ -87,7 +87,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               </div>
 
               {/* Main Service Title */}
-              <h1 className="font-serif text-3xl sm:text-5xl lg:text-[58px] font-bold tracking-tight text-[#0a1222] leading-tight sm:leading-[1.1] mb-2 sm:mb-5">
+              <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold tracking-tight text-[#0a1222] leading-tight mb-2 sm:mb-4 max-w-[600px]">
                 {service.title}
               </h1>
 
@@ -198,7 +198,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         <div className="max-w-[1280px] mx-auto px-6 sm:px-10">
           
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#0a1222] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] tracking-tight leading-tight max-w-[600px] mx-auto">
               Comprehensive Legal Coverage in {service.title}
             </h2>
             <div className="w-16 h-[2px] bg-[#c9a84c] mx-auto mt-4" />
@@ -276,7 +276,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             <p className="text-[#b38634] text-xs font-bold uppercase tracking-[0.22em] mb-2 font-sans">
               WHY CHOOSE UK LAW FIRM
             </p>
-            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#0a1222] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] tracking-tight leading-tight max-w-[600px] mx-auto">
               The Numbers &amp; Track Record Speak For Themselves
             </h2>
             <div className="w-14 h-[2px] bg-[#c9a84c] mx-auto mt-3.5" />

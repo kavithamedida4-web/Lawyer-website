@@ -31,7 +31,7 @@ export default function LegalDisclaimerPage() {
             <span>BAR COUNCIL OF INDIA REGULATORY NOTICE</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#0a1222] tracking-tight mb-3">
+          <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] tracking-tight leading-tight mb-3 max-w-[600px] mx-auto">
             Legal <span className="text-[#b38634]">Disclaimer</span>
           </h1>
 

@@ -34,7 +34,7 @@ export default function ContactPage() {
           </div>
 
           {/* Heading */}
-          <h1 className="text-2xl sm:text-4xl font-serif font-bold text-[#0a1222] tracking-tight mb-2">
+          <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] tracking-tight leading-tight mb-2 max-w-[600px] mx-auto">
             Contact <span className="text-[#b38634]">UK Law Firm</span>
           </h1>
 

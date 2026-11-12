@@ -104,7 +104,7 @@ export default function HowItWorks() {
         {/* Section Header */}
         <div className="text-center mb-14 sm:mb-20">
           {/* Heading */}
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-serif font-bold text-[#0a1222] mb-3 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-3 tracking-tight max-w-[600px] mx-auto">
             How It Works
           </h2>
 

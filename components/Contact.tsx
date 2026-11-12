@@ -97,7 +97,7 @@ _Inquiry submitted via UK Law Firm official portal_`;
               <span className="w-8 h-[1.5px] bg-[#d8b577]" />
             </div>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-serif font-bold text-[#0a1222] tracking-tight mb-1.5">
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight tracking-tight mb-2 max-w-[600px] mx-auto">
               Contact Us &amp; <span className="text-[#b38634]">Location</span>
             </h2>
 

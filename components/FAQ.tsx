@@ -50,7 +50,7 @@ export default function FAQ() {
           <div className="inline-block bg-[#fcf4e4] border border-[#e5bf55]/50 text-[#b38634] text-[11px] font-bold tracking-widest uppercase px-5 py-1.5 rounded-full mb-3.5 shadow-xs">
             FREQUENTLY ASKED QUESTIONS
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-serif font-bold text-[#0a1222] mb-3 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-3 tracking-tight max-w-[600px] mx-auto">
             Frequently Asked <span className="text-[#c9a84c]">Questions</span>
           </h2>
           <p className="text-gray-600 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">

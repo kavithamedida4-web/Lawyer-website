@@ -69,7 +69,7 @@ export default function Gallery() {
             <span className="w-10 h-[1.5px] bg-[#d8b577]" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-serif font-bold text-[#0a1222] mb-3 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-3 tracking-tight max-w-[600px] mx-auto">
             Our <span className="text-[#c9a84c]">Gallery</span>
           </h2>
 
