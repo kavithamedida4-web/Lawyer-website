@@ -158,11 +158,8 @@ export default function Navbar() {
                   {/* Header */}
                   <div className="flex items-center justify-between pb-2 mb-2 border-b border-white/10">
                     <div>
-                      <span className="text-[#e5bf55] font-serif font-bold text-sm block">
+                      <span className="text-[#e5bf55] font-bold text-sm block">
                         Legal Practice Areas
-                      </span>
-                      <span className="text-[10px] text-gray-400">
-                        TELANGANA | COURTS | TRIBUNALS | PAN INDIA
                       </span>
                     </div>
                     <Link
