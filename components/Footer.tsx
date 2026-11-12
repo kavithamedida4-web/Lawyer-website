@@ -155,7 +155,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-gray-200 leading-relaxed font-normal">
-                    Flat 201, Maps Apts, Jayabheri Pine Valley, Beside Care Hospitals, Gachibowli, Hyderabad, Telangana 500032
+                    Flat No. 201, 2nd Floor, Maps Apartments, Plot No. 45, Beside Care Hospitals, Jayabheri Pine Valley, Gachibowli, Hyderabad, Telangana 500032
                   </p>
                   <a
                     href={googleMapsUrl}

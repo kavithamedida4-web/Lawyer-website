@@ -1,7 +1,7 @@
 # UK Law Firm — Official Web Platform
 
 > **Advocates & Legal Consultants**  
-> Chambers: Flat 201, Maps Apts, Jayabheri Pine Valley, Beside Care Hospitals, Gachibowli, Hyderabad, Telangana 500032  
+> Chambers: Flat No. 201, 2nd Floor, Maps Apartments, Plot No. 45, Beside Care Hospitals, Jayabheri Pine Valley, Gachibowli, Hyderabad, Telangana 500032  
 > Contact: `+91 98667 75034` / `+91 63048 56208` | `contact@uklawfirm.in`
 
 ---

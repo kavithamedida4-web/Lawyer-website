@@ -123,7 +123,7 @@ export default function TermsOfServicePage() {
             </p>
             <div className="bg-[#faf7f2] border border-[#eedfba] p-5 rounded-xl space-y-2 text-xs sm:text-sm">
               <p><strong className="text-[#0a1222]">Chambers:</strong> UK Law Firm, Advocates &amp; Legal Consultants</p>
-              <p><strong className="text-[#0a1222]">Address:</strong> Flat 201, Maps Apts, Jayabheri Pine Valley, Beside Care Hospitals, Gachibowli, Hyderabad, Telangana 500032</p>
+              <p><strong className="text-[#0a1222]">Address:</strong> Flat No. 201, 2nd Floor, Maps Apartments, Plot No. 45, Beside Care Hospitals, Jayabheri Pine Valley, Gachibowli, Hyderabad, Telangana 500032</p>
               <p><strong className="text-[#0a1222]">Phone:</strong> +91 98667 75034 / +91 63048 56208</p>
               <p><strong className="text-[#0a1222]">Email:</strong> contact@uklawfirm.in</p>
             </div>
