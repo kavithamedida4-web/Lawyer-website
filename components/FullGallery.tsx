@@ -312,16 +312,11 @@ export default function FullGallery() {
             onClick={(e) => e.stopPropagation()}
             className="bg-[#0f172a] text-white rounded-3xl max-w-4xl w-full p-4 sm:p-6 shadow-2xl relative border border-white/10 flex flex-col max-h-[92vh] overflow-hidden"
           >
-            {/* Header: Counter, Category Badge, Close Button */}
+            {/* Header: Photo Counter & Close Button */}
             <div className="flex items-center justify-between pb-3 border-b border-white/10">
-              <div className="flex items-center gap-2">
-                <span className="bg-[#b38634] text-white text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
-                  {currentPhoto.categoryLabel}
-                </span>
-                <span className="text-xs text-gray-400 font-medium">
-                  Photo {selectedIndex + 1} of {filteredPhotos.length}
-                </span>
-              </div>
+              <span className="text-xs text-gray-400 font-medium">
+                Photo {selectedIndex + 1} of {filteredPhotos.length}
+              </span>
               <button
                 onClick={() => setSelectedIndex(null)}
                 className="text-gray-400 hover:text-white w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center font-bold text-base transition-colors"
@@ -331,8 +326,8 @@ export default function FullGallery() {
               </button>
             </div>
 
-            {/* Main Image Display (Preserves Natural Proportions) */}
-            <div className="relative w-full h-[340px] sm:h-[460px] md:h-[520px] rounded-2xl overflow-hidden bg-black/50 my-3 flex items-center justify-center">
+            {/* Main Image Display (Full Clean View) */}
+            <div className="relative w-full h-[55vh] sm:h-[68vh] md:h-[75vh] rounded-2xl overflow-hidden bg-black/50 my-2 flex items-center justify-center">
               <Image
                 src={currentPhoto.src}
                 alt={currentPhoto.alt}
@@ -359,16 +354,6 @@ export default function FullGallery() {
               >
                 ›
               </button>
-            </div>
-
-            {/* Caption & Description Footer */}
-            <div className="pt-2 text-left">
-              <h3 className="font-serif font-bold text-base sm:text-lg text-[#e5bf55] mb-1">
-                {currentPhoto.title}
-              </h3>
-              <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
-                {currentPhoto.description}
-              </p>
             </div>
           </div>
         </div>
