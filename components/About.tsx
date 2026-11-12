@@ -109,13 +109,13 @@ export default function About() {
 
               </div>
 
-              {/* Center Circular Notary Seal with Rotating Aura & Interactive Shimmer */}
-              <div className="absolute left-[50%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 group cursor-pointer">
-                {/* Glowing pulsating halo behind seal */}
-                <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#e5bf55] via-[#c9a84c] to-[#996e23] blur-xs opacity-60 group-hover:opacity-100 transition-opacity duration-500 animate-pulse" />
+              {/* Center Circular Notary Seal - Static, Upright & Elegant */}
+              <div className="absolute left-[50%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none select-none">
+                {/* Glowing halo behind seal */}
+                <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#e5bf55] via-[#c9a84c] to-[#996e23] blur-xs opacity-60" />
                 
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#0a1222] border-2 border-[#c9a84c] shadow-2xl flex items-center justify-center p-2 group-hover:scale-110 group-hover:border-[#f3d37a] transition-all duration-500">
-                  <div className="w-full h-full rounded-full border border-dashed border-[#e5bf55]/70 flex items-center justify-center relative p-1.5 group-hover:rotate-180 transition-transform duration-1000 ease-out">
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#0a1222] border-2 border-[#c9a84c] shadow-2xl flex items-center justify-center p-2">
+                  <div className="w-full h-full rounded-full border border-dashed border-[#e5bf55]/70 flex items-center justify-center relative p-1.5">
                     <Image
                       src="/uk-emblem-gold.png"
                       alt="UK Law Firm Official Gold Emblem"
