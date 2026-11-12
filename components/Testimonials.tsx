@@ -155,15 +155,12 @@ export default function Testimonials() {
 
                 </div>
 
-                {/* Divider Line & Client Name / Role */}
+                {/* Divider Line & Client Name */}
                 <div>
-                  <div className="w-full h-px bg-gray-100 mb-4" />
+                  <div className="w-full h-px bg-gray-100 mb-3" />
                   <h4 className="font-bold text-sm text-[#0a1222]">
                     {t.name}
                   </h4>
-                  <p className="text-gray-500 text-xs mt-0.5">
-                    {t.role}
-                  </p>
                 </div>
 
               </div>
