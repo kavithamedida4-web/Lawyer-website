@@ -52,14 +52,14 @@ export default async function ServiceDetailPage({ params }: Props) {
         Matching exact user reference design
         ========================================================================
       */}
-      <section className="min-h-screen min-h-[100dvh] flex flex-col justify-center pt-20 sm:pt-28 pb-6 sm:pb-12 bg-gradient-to-b from-[#ebd498] via-[#e2c67b] to-[#d6b461] text-[#0a1222] relative overflow-hidden border-b border-[#c49a37]">
+      <section className="pt-20 pb-8 sm:pt-24 sm:pb-10 lg:pt-28 lg:pb-12 lg:min-h-screen lg:min-h-[100dvh] lg:flex lg:flex-col lg:justify-center bg-gradient-to-b from-[#ebd498] via-[#e2c67b] to-[#d6b461] text-[#0a1222] relative overflow-hidden border-b border-[#c49a37]">
         
         {/* Subtle Ambient Gold Glow */}
         <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#fff2cc]/40 rounded-full blur-3xl pointer-events-none select-none" />
         <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-[#c49a37]/25 rounded-full blur-3xl pointer-events-none select-none" />
 
 
-        <div className="w-full max-w-[1360px] mx-auto px-4 sm:px-10 lg:px-12 relative z-10 my-auto">
+        <div className="w-full max-w-[1360px] mx-auto px-4 sm:px-10 lg:px-12 relative z-10 lg:my-auto">
           
           {/* Breadcrumb Navigation - Desktop Only to keep Mobile ultra-clean & lightweight */}
           <nav className="hidden sm:flex items-center gap-2 text-xs text-[#5c4415] mb-6 font-semibold">
