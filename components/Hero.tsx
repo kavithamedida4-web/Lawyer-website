@@ -117,8 +117,8 @@ export default function Hero() {
               ================================================================== */}
           <div className="lg:col-span-5 flex flex-col justify-center text-left">
             
-            {/* Eyebrow with horizontal dash line */}
-            <div className="flex items-center gap-2.5 mb-2.5 sm:mb-3">
+            {/* Eyebrow with horizontal dash line (hidden on mobile) */}
+            <div className="hidden sm:flex items-center gap-2.5 mb-2.5 sm:mb-3">
               <span className="w-8 sm:w-10 h-[2px] bg-[#f3cd67]" />
               <span className="text-[#f3cd67] text-[11px] sm:text-xs font-semibold tracking-widest uppercase font-sans">
                 UK LAW FIRM • ADVOCATES
