@@ -87,7 +87,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               </div>
 
               {/* Main Service Title */}
-              <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold tracking-tight text-[#0a1222] leading-tight mb-2 sm:mb-4 max-w-[600px]">
+              <h1 className="text-3xl sm:text-5xl lg:text-[52px] font-sans font-semibold tracking-tight text-[#0a1222] leading-[1.12] mb-2 sm:mb-4 max-w-[680px]">
                 {service.title}
               </h1>
 
