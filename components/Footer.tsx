@@ -49,10 +49,10 @@ export default function Footer() {
                 />
               </div>
               <div className="leading-tight">
-                <span className="text-white font-serif text-2xl font-bold tracking-tight block">
+                <span className="text-white font-sans text-2xl font-semibold tracking-tight block">
                   UK Law Firm
                 </span>
-                <span className="text-[#c9a84c] text-[9px] tracking-[0.2em] font-sans font-bold uppercase block -mt-0.5">
+                <span className="text-[#c9a84c] text-[9px] tracking-[0.2em] font-sans font-semibold uppercase block -mt-0.5">
                   ADVOCATES &amp; LEGAL CONSULTANTS
                 </span>
               </div>
