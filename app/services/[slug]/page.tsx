@@ -52,14 +52,14 @@ export default async function ServiceDetailPage({ params }: Props) {
         Matching exact user reference design
         ========================================================================
       */}
-      <section className="pt-[72px] pb-6 sm:pt-24 sm:pb-10 lg:pt-28 lg:pb-12 lg:min-h-screen lg:min-h-[100dvh] lg:flex lg:flex-col lg:justify-center bg-gradient-to-b from-[#ebd498] via-[#e2c67b] to-[#d6b461] text-[#0a1222] relative overflow-hidden border-b border-[#c49a37]">
+      <section className="min-h-screen min-h-[100dvh] flex flex-col justify-between pt-[74px] pb-6 sm:pt-24 sm:pb-10 lg:pt-28 lg:pb-12 lg:justify-center bg-gradient-to-b from-[#ebd498] via-[#e2c67b] to-[#d6b461] text-[#0a1222] relative overflow-hidden border-b border-[#c49a37]">
         
         {/* Subtle Ambient Gold Glow */}
         <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#fff2cc]/40 rounded-full blur-3xl pointer-events-none select-none" />
         <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-[#c49a37]/25 rounded-full blur-3xl pointer-events-none select-none" />
 
 
-        <div className="w-full max-w-[1360px] mx-auto px-4 sm:px-10 lg:px-12 relative z-10 lg:my-auto">
+        <div className="w-full max-w-[1360px] mx-auto px-4 sm:px-10 lg:px-12 relative z-10 flex-1 flex flex-col justify-between lg:justify-center lg:my-auto">
           
           {/* Breadcrumb Navigation - Desktop Only to keep Mobile ultra-clean & lightweight */}
           <nav className="hidden sm:flex items-center gap-2 text-xs text-[#5c4415] mb-6 font-semibold">
@@ -127,7 +127,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                   <div className="flex flex-col gap-2.5 sm:gap-5 animate-float-slow">
                     
                     {/* Card 1: Top-Left (Advocates & Inauguration) - Fully Framed */}
-                    <div className="relative h-[155px] sm:h-[210px] lg:h-[235px] rounded-2xl sm:rounded-[32px] overflow-hidden border-[3px] sm:border-4 border-white shadow-md sm:shadow-xl bg-gray-100 group transition-all duration-500 ease-out hover:scale-[1.03]">
+                    <div className="relative h-[175px] sm:h-[210px] lg:h-[235px] rounded-2xl sm:rounded-[32px] overflow-hidden border-[3px] sm:border-4 border-white shadow-md sm:shadow-xl bg-gray-100 group transition-all duration-500 ease-out hover:scale-[1.03]">
                       <Image
                         src={service.heroImages.card1.src}
                         alt={service.heroImages.card1.alt}
@@ -139,7 +139,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                     </div>
 
                     {/* Card 3: Bottom-Left (Senior Advocate Consultation Desk) */}
-                    <div className="relative h-[180px] sm:h-[240px] lg:h-[265px] rounded-2xl sm:rounded-[32px] overflow-hidden border-[3px] sm:border-4 border-white shadow-md sm:shadow-xl bg-gray-100 group transition-all duration-500 ease-out hover:scale-[1.03]">
+                    <div className="relative h-[205px] sm:h-[240px] lg:h-[265px] rounded-2xl sm:rounded-[32px] overflow-hidden border-[3px] sm:border-4 border-white shadow-md sm:shadow-xl bg-gray-100 group transition-all duration-500 ease-out hover:scale-[1.03]">
                       <Image
                         src={service.heroImages.card3.src}
                         alt={service.heroImages.card3.alt}
@@ -155,7 +155,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                   <div className="flex flex-col gap-2.5 sm:gap-5 animate-float-reverse">
                     
                     {/* Card 2: Top-Right (Advocate Consultation / Portrait) */}
-                    <div className="relative h-[180px] sm:h-[240px] lg:h-[265px] rounded-2xl sm:rounded-[32px] overflow-hidden border-[3px] sm:border-4 border-white shadow-md sm:shadow-xl bg-gray-100 group transition-all duration-500 ease-out hover:scale-[1.03]">
+                    <div className="relative h-[205px] sm:h-[240px] lg:h-[265px] rounded-2xl sm:rounded-[32px] overflow-hidden border-[3px] sm:border-4 border-white shadow-md sm:shadow-xl bg-gray-100 group transition-all duration-500 ease-out hover:scale-[1.03]">
                       <Image
                         src={service.heroImages.card2.src}
                         alt={service.heroImages.card2.alt}
@@ -167,7 +167,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                     </div>
 
                     {/* Card 4: Bottom-Right (Founding Partners / Advocate in Chambers) */}
-                    <div className="relative h-[155px] sm:h-[210px] lg:h-[235px] rounded-2xl sm:rounded-[32px] overflow-hidden border-[3px] sm:border-4 border-white shadow-md sm:shadow-xl bg-gray-100 group transition-all duration-500 ease-out hover:scale-[1.03]">
+                    <div className="relative h-[175px] sm:h-[210px] lg:h-[235px] rounded-2xl sm:rounded-[32px] overflow-hidden border-[3px] sm:border-4 border-white shadow-md sm:shadow-xl bg-gray-100 group transition-all duration-500 ease-out hover:scale-[1.03]">
                       <Image
                         src={service.heroImages.card4.src}
                         alt={service.heroImages.card4.alt}
