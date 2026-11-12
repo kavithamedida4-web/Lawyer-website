@@ -241,15 +241,13 @@ export default async function ServiceDetailPage({ params }: Props) {
 
                   {/* Card Action Footer */}
                   <div className="px-5 sm:px-6 pb-5 pt-3 border-t border-gray-100 flex items-center justify-end">
-                    <a
-                      href={`https://wa.me/91${service.phone.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(`Hello Advocate, I need legal counsel regarding ${sub.name} under ${service.title}.`)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      href="/contact"
                       className="text-xs font-bold text-[#b38634] group-hover:text-[#0a1222] transition-colors inline-flex items-center gap-1"
                     >
                       <span>Inquire Now</span>
                       <span className="group-hover:translate-x-0.5 transition-transform">→</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               );
