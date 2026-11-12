@@ -91,8 +91,8 @@ export default async function ServiceDetailPage({ params }: Props) {
                 {service.title}
               </h1>
 
-              {/* Single Line Content on Mobile, Full on Desktop */}
-              <p className="text-[#1e293b] text-xs sm:text-base leading-snug sm:leading-relaxed mb-2.5 sm:mb-6 font-sans max-w-lg font-medium line-clamp-1 sm:line-clamp-none">
+              {/* Full One Sentence Description */}
+              <p className="text-[#1e293b] text-xs sm:text-base leading-relaxed mb-3 sm:mb-6 font-sans max-w-lg font-medium">
                 {service.shortDesc}
               </p>
 
