@@ -36,27 +36,27 @@ export default function Footer() {
           {/* Column 1: Brand & Overview (Span 4) */}
           <div className="lg:col-span-4">
             
-            {/* Logo Badge + Titles */}
-            <div className="flex items-center gap-3.5 mb-5">
-              <div className="w-13 h-13 rounded-full bg-white border-2 border-[#e5bf55] flex items-center justify-center shadow-md p-1.5 flex-shrink-0">
+            {/* Brand Logo & Name (matching Navbar) */}
+            <Link href="/" className="inline-flex items-center gap-3 group mb-5">
+              <div className="relative w-11 h-11 flex items-center justify-center flex-shrink-0">
                 <Image
                   src="/uk-emblem-gold.png"
                   alt="UK Law Firm Official Gold Emblem"
-                  width={38}
-                  height={32}
+                  width={48}
+                  height={40}
                   style={{ width: 'auto', height: 'auto' }}
-                  className="max-h-8 object-contain"
+                  className="max-h-10 object-contain drop-shadow-[0_2px_8px_rgba(201,168,76,0.4)] group-hover:scale-105 transition-transform"
                 />
               </div>
-              <div>
-                <h3 className="text-white font-serif font-bold text-lg sm:text-xl tracking-tight leading-none">
-                  UK LAW FIRM
-                </h3>
-                <p className="text-[#e5bf55] text-[11px] sm:text-xs font-semibold tracking-wider uppercase mt-1">
+              <div className="leading-tight">
+                <span className="text-white font-serif text-2xl font-bold tracking-tight block">
+                  UK Law Firm
+                </span>
+                <span className="text-[#c9a84c] text-[9px] tracking-[0.2em] font-sans font-bold uppercase block -mt-0.5">
                   ADVOCATES &amp; LEGAL CONSULTANTS
-                </p>
+                </span>
               </div>
-            </div>
+            </Link>
 
             {/* Paragraph Bio */}
             <p className="text-gray-200 text-xs sm:text-[13px] leading-relaxed">
