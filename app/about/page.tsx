@@ -118,7 +118,7 @@ export default function AboutPage() {
                   <div className="h-[390px] sm:h-[450px] rounded-t-full rounded-b-3xl overflow-hidden shadow-2xl relative border-4 border-white bg-gray-100 group">
                     <Image
                       src="/advocate-senior-standing.jpg"
-                      alt="UK Law Associates Senior Advocate Partner"
+                      alt="UK Law Firm Senior Advocate Partner"
                       fill
                       sizes="(max-width: 768px) 50vw, 270px"
                       className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
@@ -134,7 +134,7 @@ export default function AboutPage() {
                     <div className="h-[48%] rounded-t-3xl rounded-b-2xl overflow-hidden shadow-xl relative border-2 border-white bg-gray-100 group">
                       <Image
                         src="/advocate-desk-justice.jpg"
-                        alt="UK Law Associates Advocate at Law & Justice Chambers"
+                        alt="UK Law Firm Advocate at Law & Justice Chambers"
                         fill
                         sizes="(max-width: 768px) 50vw, 270px"
                         className="object-cover object-[54%_center] group-hover:scale-105 transition-transform duration-700"

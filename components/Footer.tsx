@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
-  const googleMapsUrl = 'https://g.page/r/CUcVkQD8aAhOEBM/review';
+  const googleMapsUrl = 'https://maps.google.com/?q=Maps+Apartments+Jayabheri+Pine+Valley+Gachibowli+Hyderabad';
 
   const quickLinks = [
     { name: 'Home', href: '/#home' },
@@ -10,9 +10,9 @@ export default function Footer() {
     { name: 'About Us', href: '/#about' },
     { name: 'How It Works', href: '/#how-it-works' },
     { name: 'Book Consultation', href: '/contact' },
-    { name: 'Privacy Policy', href: '/#disclaimer' },
-    { name: 'Terms of Service', href: '/#disclaimer' },
-    { name: 'Legal Disclaimer', href: '/#disclaimer' },
+    { name: 'Privacy Policy', href: '/privacy-policy' },
+    { name: 'Terms of Service', href: '/terms-of-service' },
+    { name: 'Legal Disclaimer', href: '/disclaimer' },
   ];
 
   const serviceLinks = [
@@ -22,8 +22,8 @@ export default function Footer() {
     { name: 'Cyber Crime & IT Law', href: '/services/cyber-crime', highlight: false },
     { name: 'Civil Litigation & Suits', href: '/services/civil-law', highlight: false },
     { name: 'Family & Matrimonial Law', href: '/services/family-law', highlight: false },
-    { name: 'RERA & Property Disputes', href: '/services/rera-property', highlight: false },
-    { name: 'Tribunals & High Court Writs', href: '/services/tribunals-special-courts', highlight: false },
+    { name: 'RERA & Property Disputes', href: '/services/rera-and-builder-buyer', highlight: false },
+    { name: 'Tribunals & High Court Writs', href: '/services/tribunals-and-forums', highlight: false },
   ];
 
   return (
@@ -60,7 +60,7 @@ export default function Footer() {
 
             {/* Paragraph Bio */}
             <p className="text-gray-200 text-xs sm:text-[13px] leading-relaxed">
-              <strong className="text-white font-semibold">UK Law Firm</strong> is Hyderabad and Telangana&apos;s trusted legal defense and advisory partner. With chambers in <strong className="text-white font-semibold">Gachibowli</strong> and operations across <strong className="text-white font-semibold">High Court of Telangana &amp; District Courts</strong>, we deliver professional legal defense, Trial Advocacy, Corporate Advisory, RERA Compliance, and Bail Relief ◆ all with 25+ years verified courtroom excellence, 24/7 client counsel, and 1000+ satisfied clients.
+              <strong className="text-white font-semibold">UK Law Firm</strong> is Hyderabad and Telangana&apos;s trusted legal defense and advisory partner. With chambers in <strong className="text-white font-semibold">Gachibowli</strong> and operations across <strong className="text-white font-semibold">High Court of Telangana &amp; District Courts</strong>, we deliver professional legal defense, Trial Advocacy, Corporate Advisory, RERA Compliance, and Bail Relief – all with 25+ years verified courtroom excellence, 24/7 client counsel, and 1000+ satisfied clients.
             </p>
           </div>
 
@@ -177,7 +177,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-gray-200 leading-snug font-medium">
-                    Mon ◆ Sat: 9:30 AM ◆ 8:00 PM
+                    Mon – Sat: 9:30 AM – 8:00 PM
                   </p>
                   <p className="text-gray-300 text-[11px] sm:text-xs mt-0.5 font-normal">
                     Sunday / Emergency Bail: 24/7 On-Call
@@ -194,7 +194,7 @@ export default function Footer() {
         <div className="pt-6 border-t border-[#1f2228] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-300">
           <p className="text-center sm:text-left">
             &copy; {new Date().getFullYear()} UK Law Firm. All rights reserved. &nbsp;•&nbsp;{' '}
-            <Link href="/#disclaimer" className="hover:text-white transition-colors text-gray-300 underline-offset-2 hover:underline">
+            <Link href="/disclaimer" className="hover:text-white transition-colors text-gray-300 underline-offset-2 hover:underline">
               Legal Disclaimer
             </Link>
           </p>
