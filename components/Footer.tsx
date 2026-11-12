@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
-  const googleMapsUrl = 'https://maps.google.com/?q=Maps+Apartments+Jayabheri+Pine+Valley+Gachibowli+Hyderabad';
+  const googleMapsUrl = 'https://www.google.com/maps?cid=5622859566322619719';
 
   const quickLinks = [
     { name: 'Home', href: '/#home' },
