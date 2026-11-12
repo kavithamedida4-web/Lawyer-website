@@ -378,8 +378,8 @@ export const legalServices: LegalService[] = [
         alt: 'Senior Advocate M. Umamaheshwar Reddy',
       },
       card2: {
-        src: '/hero-advocate-kamalakar-library.jpg',
-        alt: 'Advocate S. Kamalakar Reviewing Statutory Commentaries',
+        src: '/kamalakar-desk-justice.jpg',
+        alt: 'Advocate S. Kamalakar at Chambers Desk',
       },
       card3: {
         src: '/real-umamaheshwar-desk-smiling.jpg',
