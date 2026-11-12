@@ -59,14 +59,14 @@ export default function Footer() {
             </div>
 
             {/* Paragraph Bio */}
-            <p className="text-gray-400 text-xs sm:text-[13px] leading-relaxed">
-              <strong className="text-gray-200 font-semibold">UK Law Firm</strong> is Hyderabad and Telangana&apos;s trusted legal defense and advisory partner. With chambers in <strong className="text-gray-200 font-semibold">Gachibowli</strong> and operations across <strong className="text-gray-200 font-semibold">High Court of Telangana &amp; District Courts</strong>, we deliver professional legal defense, Trial Advocacy, Corporate Advisory, RERA Compliance, and Bail Relief ◆ all with 25+ years verified courtroom excellence, 24/7 client counsel, and 1000+ satisfied clients.
+            <p className="text-gray-200 text-xs sm:text-[13px] leading-relaxed">
+              <strong className="text-white font-semibold">UK Law Firm</strong> is Hyderabad and Telangana&apos;s trusted legal defense and advisory partner. With chambers in <strong className="text-white font-semibold">Gachibowli</strong> and operations across <strong className="text-white font-semibold">High Court of Telangana &amp; District Courts</strong>, we deliver professional legal defense, Trial Advocacy, Corporate Advisory, RERA Compliance, and Bail Relief ◆ all with 25+ years verified courtroom excellence, 24/7 client counsel, and 1000+ satisfied clients.
             </p>
           </div>
 
           {/* Column 2: Quick Links (Span 2) */}
           <div className="lg:col-span-2">
-            <h4 className="text-white font-bold text-sm sm:text-base mb-5 font-sans">
+            <h4 className="text-white font-bold text-sm sm:text-base mb-5 font-sans tracking-wide">
               Quick Links
             </h4>
             <ul className="space-y-2.5">
@@ -74,7 +74,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-gray-400 hover:text-[#e5bf55] text-xs sm:text-[13px] transition-colors flex items-center group"
+                    className="text-gray-200 hover:text-[#f5d061] text-xs sm:text-[13px] transition-colors flex items-center group font-medium"
                   >
                     <span className="text-[#e5bf55] font-bold mr-2 text-xs group-hover:translate-x-0.5 transition-transform">
                       &gt;
@@ -88,7 +88,7 @@ export default function Footer() {
 
           {/* Column 3: Practice Areas (Span 3) */}
           <div className="lg:col-span-3">
-            <h4 className="text-white font-bold text-sm sm:text-base mb-5 font-sans">
+            <h4 className="text-white font-bold text-sm sm:text-base mb-5 font-sans tracking-wide">
               Practice Areas
             </h4>
             <ul className="space-y-2.5">
@@ -96,11 +96,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className={`text-xs sm:text-[13px] transition-colors flex items-center group ${
-                      item.highlight
-                        ? 'text-[#e5bf55] font-semibold hover:text-[#f3d37a]'
-                        : 'text-gray-400 hover:text-[#e5bf55]'
-                    }`}
+                    className="text-gray-200 hover:text-[#f5d061] text-xs sm:text-[13px] transition-colors flex items-center group font-medium"
                   >
                     <span className="text-[#e5bf55] font-bold mr-2 text-xs group-hover:translate-x-0.5 transition-transform">
                       &gt;
@@ -114,7 +110,7 @@ export default function Footer() {
 
           {/* Column 4: Contact Us (Span 3) */}
           <div className="lg:col-span-3">
-            <h4 className="text-white font-bold text-sm sm:text-base mb-5 font-sans">
+            <h4 className="text-white font-bold text-sm sm:text-base mb-5 font-sans tracking-wide">
               Contact Us
             </h4>
             
@@ -128,10 +124,10 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <a href="tel:+919866775034" className="block text-gray-300 hover:text-[#e5bf55] transition-colors font-medium">
+                  <a href="tel:+919866775034" className="block text-gray-100 hover:text-[#f5d061] transition-colors font-medium">
                     +91 98667 75034
                   </a>
-                  <a href="tel:+916304856208" className="block text-gray-300 hover:text-[#e5bf55] transition-colors font-medium mt-0.5">
+                  <a href="tel:+916304856208" className="block text-gray-100 hover:text-[#f5d061] transition-colors font-medium mt-0.5">
                     +91 63048 56208
                   </a>
                 </div>
@@ -144,7 +140,7 @@ export default function Footer() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <a href="mailto:contact@uklawfirm.in" className="text-gray-300 hover:text-[#e5bf55] transition-colors break-all">
+                <a href="mailto:contact@uklawfirm.in" className="text-gray-100 hover:text-[#f5d061] transition-colors break-all font-medium">
                   contact@uklawfirm.in
                 </a>
               </div>
@@ -158,14 +154,14 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-gray-200 leading-relaxed font-normal">
                     Flat 201, Maps Apts, Jayabheri Pine Valley, Beside Care Hospitals, Gachibowli, Hyderabad, Telangana 500032
                   </p>
                   <a
                     href={googleMapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block text-[#e5bf55] hover:underline font-semibold mt-1 text-xs"
+                    className="inline-block text-[#f5d061] hover:underline font-semibold mt-1 text-xs"
                   >
                     View locations on Google Maps
                   </a>
@@ -180,10 +176,10 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-gray-300 leading-snug">
+                  <p className="text-gray-200 leading-snug font-medium">
                     Mon ◆ Sat: 9:30 AM ◆ 8:00 PM
                   </p>
-                  <p className="text-gray-500 text-[11px] mt-0.5">
+                  <p className="text-gray-300 text-[11px] sm:text-xs mt-0.5 font-normal">
                     Sunday / Emergency Bail: 24/7 On-Call
                   </p>
                 </div>
@@ -195,17 +191,17 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar: Copyright & Edone Solutions attribution */}
-        <div className="pt-6 border-t border-[#1f2228] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+        <div className="pt-6 border-t border-[#1f2228] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-300">
           <p className="text-center sm:text-left">
             &copy; {new Date().getFullYear()} UK Law Firm. All rights reserved. &nbsp;•&nbsp;{' '}
-            <Link href="/#disclaimer" className="hover:text-gray-200 transition-colors">
+            <Link href="/#disclaimer" className="hover:text-white transition-colors text-gray-300 underline-offset-2 hover:underline">
               Legal Disclaimer
             </Link>
           </p>
 
-          <p className="text-center sm:text-right text-gray-400 text-xs">
+          <p className="text-center sm:text-right text-gray-300 text-xs">
             Designed &amp; Developed by{' '}
-            <span className="text-[#e5bf55] font-semibold hover:underline">
+            <span className="text-[#f5d061] font-semibold hover:underline">
               Edone Solutions
             </span>
           </p>
