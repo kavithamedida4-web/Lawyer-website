@@ -8,7 +8,7 @@
 
 ## 🏛️ About the Project
 
-This repository hosts the official production website for **UK Law Firm**, a premier litigation and legal advisory firm based in Gachibowli, Hyderabad. Led by founding advocates **Sri M. Umamaheshwar Reddy** (25+ years courtroom practice across High Court of Telangana and District Courts) and **Sri S. Kamalakar** (Cyber Law, Corporate Advisory, and Commercial Litigation specialist).
+This repository hosts the official production website for **UK Law Firm**, a premier litigation and legal advisory firm based in Gachibowli, Hyderabad. Led by founding advocates **Sri M. Umamaheshwar Reddy** (15+ years courtroom practice across High Court of Telangana and District Courts) and **Sri S. Kamalakar** (Cyber Law, Corporate Advisory, and Commercial Litigation specialist).
 
 The website provides comprehensive information on 14 specialized practice areas, firm credentials, chamber facilities, and a seamless client consultation intake system.
 
