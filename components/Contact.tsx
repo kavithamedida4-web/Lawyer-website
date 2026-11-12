@@ -30,10 +30,12 @@ export default function Contact({ hideHeader = false }: { hideHeader?: boolean }
   });
 
   const [lastWhatsAppUrl, setLastWhatsAppUrl] = useState('');
-
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (isSubmitting) return;
+    setIsSubmitting(true);
 
     const advocateName =
       formData.selectedAdvocatePhone === '9866775034'
@@ -60,6 +62,7 @@ _Inquiry submitted via UK Law Firm official portal_`;
 
     setLastWhatsAppUrl(targetUrl);
     setSubmitted(true);
+    setIsSubmitting(false);
 
     if (typeof window !== 'undefined') {
       window.open(targetUrl, '_blank');
@@ -68,6 +71,7 @@ _Inquiry submitted via UK Law Firm official portal_`;
 
   const handleReset = () => {
     setSubmitted(false);
+    setIsSubmitting(false);
     setFormData({
       name: '',
       email: '',
@@ -254,6 +258,9 @@ _Inquiry submitted via UK Law Firm official portal_`;
                       id="contact-phone"
                       type="tel"
                       required
+                      minLength={10}
+                      pattern="[0-9+\s\-]{10,15}"
+                      title="Please enter a valid phone number (at least 10 digits)"
                       placeholder="+91 98XXX XXXXX"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -296,7 +303,7 @@ _Inquiry submitted via UK Law Firm official portal_`;
                       id="contact-email"
                       type="email"
                       required
-                      placeholder="name@example.com"
+                      placeholder="name@email.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full bg-white border border-gray-300 focus:border-[#b38634] focus:ring-2 focus:ring-[#b38634]/20 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-[#0a1222] placeholder-gray-400 focus:outline-none transition-all"
@@ -324,9 +331,10 @@ _Inquiry submitted via UK Law Firm official portal_`;
                 <div className="pt-1">
                   <button
                     type="submit"
-                    className="w-full bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/60 hover:border-[#e5bf55] px-6 py-3.5 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider transition-all shadow-sm hover:shadow-lg flex items-center justify-center gap-2 group cursor-pointer"
+                    disabled={isSubmitting}
+                    className="w-full bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/60 hover:border-[#e5bf55] px-6 py-3.5 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider transition-all shadow-sm hover:shadow-lg flex items-center justify-center gap-2 group cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    <span>Send Consultation Request on WhatsApp</span>
+                    <span>{isSubmitting ? 'Opening WhatsApp...' : 'Send Consultation Request on WhatsApp'}</span>
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </button>
                 </div>

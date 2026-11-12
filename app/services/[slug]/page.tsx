@@ -206,8 +206,8 @@ export default async function ServiceDetailPage({ params }: Props) {
 
           {/* Sub-services Grid with Authentic Legal Images */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
-            {service.subServices.map((sub, idx) => {
-              const subImage = sub.image || getSubServiceImage(sub.name, service.slug);
+            {service.subServices.map((sub) => {
+              const subImage = sub.image || getSubServiceImage(sub.name);
               return (
                 <div
                   key={sub.name}

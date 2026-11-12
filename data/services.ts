@@ -4,7 +4,7 @@ export interface SubService {
   image?: string;
 }
 
-export function getSubServiceImage(subName: string, serviceSlug: string): string {
+export function getSubServiceImage(subName: string): string {
   const lower = subName.toLowerCase();
   
   // Specific criminal subservice mappings
