@@ -52,7 +52,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         Matching exact user reference design
         ========================================================================
       */}
-      <section className="min-h-screen min-h-[100dvh] flex flex-col justify-between pt-[74px] pb-6 sm:pt-24 sm:pb-10 lg:pt-28 lg:pb-12 lg:justify-center bg-gradient-to-b from-[#ebd498] via-[#e2c67b] to-[#d6b461] text-[#0a1222] relative overflow-hidden border-b border-[#c49a37]">
+      <section className="min-h-screen min-h-[100dvh] flex flex-col justify-between pt-[90px] pb-6 sm:pt-24 sm:pb-10 lg:pt-28 lg:pb-12 lg:justify-center bg-gradient-to-b from-[#ebd498] via-[#e2c67b] to-[#d6b461] text-[#0a1222] relative overflow-hidden border-b border-[#c49a37]">
         
         {/* Subtle Ambient Gold Glow */}
         <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#fff2cc]/40 rounded-full blur-3xl pointer-events-none select-none" />
