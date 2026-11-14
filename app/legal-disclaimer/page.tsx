@@ -1,5 +1,5 @@
-import LegalDisclaimerPage, { metadata } from '../disclaimer/page';
+import { redirect } from 'next/navigation';
 
-export { metadata };
-export default LegalDisclaimerPage;
-
+export default function LegalDisclaimerRedirect() {
+  redirect('/disclaimer');
+}

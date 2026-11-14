@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | UK Law Firm — Hyderabad',
+  title: 'Privacy Policy',
   description:
     'Read the Privacy Policy of UK Law Firm, detailing our strict client confidentiality protocols, data handling, and legal compliance under Indian law.',
 };
@@ -81,7 +81,7 @@ export default function PrivacyPolicyPage() {
               <li>Assessing conflict of interest prior to legal engagement.</li>
               <li>Coordinating and scheduling confidential advocate consultation sessions.</li>
               <li>Formulating strategic legal advice tailored to your matter.</li>
-              <li>Compliance with court filing guidelines and statutory statutory record-keeping.</li>
+              <li>Compliance with court filing guidelines and statutory record-keeping.</li>
             </ul>
           </div>
 

@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | UK Law Firm — Hyderabad',
+  title: 'Terms of Service',
   description:
     'Read the Terms of Service for UK Law Firm. Understand the terms governing the use of our legal consultation website, chamber advisory, and practice policies under Indian law.',
 };

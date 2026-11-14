@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
 export const metadata: Metadata = {
-  title: 'Chambers & Courtroom Practice Gallery | UK Law Firm — Hyderabad',
+  title: 'Chambers & Courtroom Practice Gallery',
   description:
     'Explore the photo gallery of UK Law Firm, featuring our executive consultation chambers, law library, conference facilities, and advocate practice in Gachibowli, Hyderabad.',
 };

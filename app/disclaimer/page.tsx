@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
 export const metadata: Metadata = {
-  title: 'Legal Disclaimer | UK Law Firm — Hyderabad',
+  title: 'Legal Disclaimer',
   description:
     'Legal Disclaimer and statutory notice of UK Law Firm in compliance with Rule 36 of the Bar Council of India Rules, governing non-solicitation, informational access, and professional advocacy standards.',
 };

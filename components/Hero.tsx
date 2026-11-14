@@ -175,7 +175,7 @@ export default function Hero() {
                     transform: `translateX(-${mobileIndex * 100}%)`,
                   }}
                 >
-                  {fixedCards.map((card) => (
+                  {fixedCards.map((card, idx) => (
                     <Link
                       key={card.id}
                       href={card.link}
@@ -187,6 +187,7 @@ export default function Hero() {
                         fill
                         unoptimized
                         sizes="280px"
+                        loading={idx === 0 ? 'eager' : 'lazy'}
                         className={`object-cover ${card.pos}`}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
@@ -241,6 +242,7 @@ export default function Hero() {
                       fill
                       unoptimized
                       sizes="(max-width: 1024px) 200px, 240px"
+                      loading="eager"
                       className={`object-cover ${card.pos} transition-transform duration-700 ease-out ${
                         isWave ? 'scale-106' : 'group-hover:scale-106'
                       }`}

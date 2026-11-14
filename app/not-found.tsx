@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Page Not Found (404) | UK Law Firm — Hyderabad',
+  title: 'Page Not Found (404)',
   description: 'The requested page could not be found. Return to UK Law Firm home page or browse practice areas.',
 };
 

@@ -27,10 +27,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const service = legalServices.find((s) => s.slug === slug);
-  if (!service) return { title: 'Service Not Found | UK Law Firm' };
+  if (!service) return { title: 'Service Not Found' };
 
   return {
-    title: `${service.title} (${service.category}) | UK Law Firm — Hyderabad`,
+    title: `${service.title} (${service.category})`,
     description: `${service.shortDesc} Practice led by advocates M. Umamaheshwar Reddy & S. Kamalakar in Gachibowli, Hyderabad.`,
   };
 }

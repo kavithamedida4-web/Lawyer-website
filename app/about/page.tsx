@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
 export const metadata: Metadata = {
-  title: 'About Us | UK Law Firm — Advocates & Legal Consultants',
+  title: 'About Us — Advocates & Legal Consultants',
   description:
     'Learn about UK Law Firm, founded by senior advocates M. Umamaheshwar Reddy (B.Sc., M.Sc., LL.B.) and S. Kamalakar (B.B.M., M.C.A., LL.B.) in Gachibowli, Hyderabad.',
 };

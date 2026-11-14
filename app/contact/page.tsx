@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
 export const metadata: Metadata = {
-  title: 'Contact Us & Chambers Consultation | UK Law Firm — Hyderabad',
+  title: 'Contact Us & Chambers Consultation',
   description:
     'Schedule a confidential legal consultation with senior advocates M. Umamaheshwar Reddy (B.Sc., M.Sc., LL.B.) and S. Kamalakar (B.B.M., M.C.A., LL.B.) at UK Law Firm chambers in Gachibowli, Hyderabad.',
 };
