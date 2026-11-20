@@ -4,33 +4,33 @@ import { useRef, useState } from 'react';
 const testimonials = [
   {
     name: 'Rajeshwar G.',
-    role: 'Property Dispute Client',
-    text: 'The property dispute and injunction suit was handled with incredible legal precision! No delays, and the advocate team ensured every court document and evidence was presented flawlessly.',
+    role: 'Property Matter, Hyderabad',
+    text: 'They helped us with our land title dispute in Hyderabad. Clearly explained our options, drafted the injunction petition promptly, and kept us informed after every court hearing.',
   },
   {
     name: 'Kiran K.',
-    role: 'Commercial Litigation Client',
-    text: 'Super quick response and excellent court representation. The advocates are disciplined, court-certified, and handle litigation with immense tactical sharpness. Highly recommend their legal services!',
+    role: 'Business Owner, Secunderabad',
+    text: 'Very professional and patient advocates. Handled our Section 138 cheque bounce case smoothly without any unnecessary delay or confusion.',
   },
   {
     name: 'Sandhya Y.',
-    role: 'Real Estate & RERA Client',
-    text: 'Absolutely outstanding legal support! They intervened in our delayed possession builder dispute, drafted a water-tight claim, and secured our financial relief before the tribunal.',
+    role: 'Homebuyer, Gachibowli',
+    text: 'We approached UK Law Firm when our builder delayed apartment handover by over two years. They filed our RERA complaint and guided us until our compensation was settled.',
   },
   {
     name: 'Mohammed A.',
-    role: 'Managing Director, Infrastructure',
-    text: 'Their mastery in commercial arbitration, corporate compliance, and contractual advisory saved our enterprise from substantial legal liabilities. Most dependable advocate team!',
+    role: 'Managing Director, IT & Infrastructure',
+    text: 'Drafted our company agreements and vendor contracts cleanly. Whenever a dispute arose, their advice was practical and saved us time and unnecessary litigation.',
   },
   {
     name: 'Venkatesh M.',
-    role: 'Civil & Family Law Client',
-    text: 'Empathetic yet fearless courtroom advocacy. They handled our sensitive family matter with utmost confidentiality, ethical integrity, and achieved a fair and peaceful resolution.',
+    role: 'Family Law Matter, Hyderabad',
+    text: 'Handled our family matter with great dignity, patience, and complete confidentiality. They prioritized reaching a peaceful, fair settlement.',
   },
   {
     name: 'Sushila D.',
-    role: 'Property Owner, Title Dispute',
-    text: 'Transparent legal advisory with zero false promises. They explained the legal merits clearly, kept us updated after every hearing, and delivered the exact outcome we needed.',
+    role: 'Property Owner, Kukatpally',
+    text: 'Transparent about legal fees from the very first meeting. Advocate Umamaheshwar Reddy sir gave us realistic advice rather than false promises. Highly dependable.',
   },
 ];
 
@@ -75,7 +75,7 @@ export default function Testimonials() {
 
           {/* Subtitle */}
           <p className="text-gray-600 text-sm sm:text-[15px] font-sans max-w-2xl mx-auto leading-relaxed">
-            Read authentic feedback from individuals, families, and businesses represented by UK Law Firm advocates.
+            Read feedback from clients and families who took legal help from our advocates.
           </p>
 
 

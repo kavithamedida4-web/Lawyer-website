@@ -40,7 +40,7 @@ export default function ContactPage() {
 
           {/* Subtitle */}
           <p className="text-gray-600 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
-            Connect directly with Senior Advocates M. Umamaheshwar Reddy &amp; S. Kamalakar for confidential legal advisory and chamber appointments in Hyderabad.
+            Speak directly with advocates M. Umamaheshwar Reddy &amp; S. Kamalakar for legal advice and appointments at our office in Gachibowli, Hyderabad.
           </p>
           <div className="w-14 h-[2px] bg-[#c9a84c] mx-auto mt-3" />
         </div>

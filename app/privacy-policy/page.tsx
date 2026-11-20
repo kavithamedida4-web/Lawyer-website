@@ -104,7 +104,7 @@ export default function PrivacyPolicyPage() {
             <div className="mt-3 p-4 rounded-xl bg-[#faf7f2] border border-[#eedfba]">
               <p className="font-bold text-[#0a1222]">UK Law Firm — Chambers</p>
               <p className="text-gray-600 text-sm mt-0.5">Flat No. 201, 2nd Floor, Maps Apartments, Plot No. 45, Beside Care Hospitals, Jayabheri Pine Valley, Gachibowli, Hyderabad, Telangana 500032</p>
-              <p className="text-gray-600 text-sm mt-0.5">Email: <a href="mailto:contact@uklawfirm.in" className="text-[#b38634] font-semibold underline">contact@uklawfirm.in</a> | Phone: +91 98667 75034</p>
+              <p className="text-gray-600 text-sm mt-0.5">Email: <a href="mailto:contact@uklawfirm.in" className="text-[#b38634] font-semibold underline">contact@uklawfirm.in</a> | Phone: +91 88978 47788</p>
             </div>
           </div>
 

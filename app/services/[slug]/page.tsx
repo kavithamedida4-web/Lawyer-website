@@ -199,7 +199,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           
           <div className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] tracking-tight leading-tight max-w-[600px] mx-auto">
-              Comprehensive Legal Coverage in {service.title}
+              Services We Provide in {service.title}
             </h2>
             <div className="w-16 h-[2px] bg-[#c9a84c] mx-auto mt-4" />
           </div>
@@ -274,10 +274,10 @@ export default async function ServiceDetailPage({ params }: Props) {
           {/* Section Header */}
           <div className="text-center max-w-2xl mx-auto mb-9 sm:mb-11">
             <p className="text-[#b38634] text-xs font-bold uppercase tracking-[0.22em] mb-2 font-sans">
-              WHY CHOOSE UK LAW FIRM
+              WHY CHOOSE US
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] tracking-tight leading-tight max-w-[600px] mx-auto">
-              The Numbers &amp; Track Record Speak For Themselves
+              Why Work With UK Law Firm
             </h2>
             <div className="w-14 h-[2px] bg-[#c9a84c] mx-auto mt-3.5" />
           </div>
@@ -301,7 +301,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             {/* Right Column: 3 High-Impact Cards */}
             <div className="lg:col-span-7 flex flex-col justify-between gap-4 sm:gap-4.5">
               
-              {/* Point 1: 98% Success Rate */}
+              {/* Point 1: Honest Advice */}
               <div className="flex items-center gap-4 sm:gap-5 p-4.5 sm:p-5 rounded-2xl bg-white border border-[#eedfba] shadow-xs hover:shadow-md transition-shadow group">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#14233c] border-3 border-white shadow-sm flex-shrink-0 flex items-center justify-center">
                   <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#f3cd67]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -310,10 +310,10 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-sans font-bold text-[#0a1222] mb-1 group-hover:text-[#916b1f] transition-colors leading-snug">
-                    98% Favorable Resolution &amp; Relief
+                    Honest Advice &amp; Clear Plan
                   </h3>
                   <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans">
-                    Anticipatory bails, stay orders, quash petitions under 482 Cr.P.C., and decisive trial decrees across Telangana Courts.
+                    We explain the strengths and weaknesses of your case honestly so you know your options clearly before going to court.
                   </p>
                 </div>
               </div>
@@ -327,10 +327,10 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-sans font-bold text-[#0a1222] mb-1 group-hover:text-[#916b1f] transition-colors leading-snug">
-                    15+ Years Direct Courtroom Advocacy
+                    15+ Years Court Experience
                   </h3>
                   <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans">
-                    Direct partner representation before High Courts, Metropolitan Sessions Benches, and NCLT with zero delegation to juniors.
+                    Our senior advocates personally attend your hearings in the Telangana High Court, District Courts, and Tribunals.
                   </p>
                 </div>
               </div>
@@ -344,10 +344,10 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-sans font-bold text-[#0a1222] mb-1 group-hover:text-[#916b1f] transition-colors leading-snug">
-                    100% Confidential Chamber Practice
+                    Complete Privacy &amp; Trust
                   </h3>
                   <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans">
-                    Private one-on-one case conferences, comprehensive evidentiary case preparation, and 24/7 emergency readiness in Gachibowli.
+                    All your family matters, documents, and discussions are kept 100% confidential and safe with our office.
                   </p>
                 </div>
               </div>

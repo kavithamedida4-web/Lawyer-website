@@ -112,9 +112,9 @@ export const legalServices: LegalService[] = [
     slug: 'criminal-law',
     title: 'Criminal Law',
     category: 'BAIL, TRIAL COURT & SPECIAL COURTS',
-    shortDesc: 'Authoritative defense and trial representation across Sessions Courts, Special CBI/ACB Benches, and High Court appeals.',
+    shortDesc: 'Legal help for bail, anticipatory bail, police cases, cheque bounce, and court trials.',
     fullDesc:
-      'UK Law Firm provides strategic, urgent, and aggressive criminal defense counsel across all stages of criminal proceedings in India. Our advocates have extensive courtroom experience handling anticipatory and regular bail petitions, quashing petitions under Section 482 Cr.P.C., criminal appeals, trial cross-examinations, and white-collar fraud defenses.',
+      'UK Law Firm helps you with criminal cases in Hyderabad and Telangana. Our senior advocates handle bail applications, anticipatory bail, quashing of FIRs, cheque bounce cases, and trial court hearings with clear guidance at every step.',
     leadAdvocate: 'S. Kamalakar & M. Umamaheshwar Reddy',
     phone: '+916304856208',
     whatsappMessage: 'Hello Advocate Kamalakar, I need urgent legal counsel regarding Criminal Law / Bail.',
@@ -141,7 +141,7 @@ export const legalServices: LegalService[] = [
     subServices: [
       {
         name: 'Bail & Anticipatory Bail',
-        description: 'Urgent filing and forceful arguments for Anticipatory Bail (Sec 438 CrPC), Regular Bail (Sec 437/439 CrPC), and Interim Protection across Sessions Courts and High Courts.',
+        description: 'Quick filing and court arguments for Anticipatory Bail and Regular Bail in Sessions Courts and the High Court.',
         image: '/criminal-01-bail.jpg',
       },
       {
@@ -156,17 +156,17 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Criminal Trials & Appeals',
-        description: 'Comprehensive trial court advocacy, rigorous witness cross-examination, final arguments, criminal appeals, and revision petitions before Sessions Judges and the High Court.',
+        description: 'Complete representation during court trials, questioning witnesses, and filing criminal appeals.',
         image: '/criminal-04-trials.jpg',
       },
       {
         name: 'NDPS, POCSO, Cyber Crime',
-        description: 'Specialized legal defense in Narcotics (NDPS Act), sensitive POCSO statutory trials, cyber financial frauds, and specialized criminal benches.',
+        description: 'Dedicated defense for drug-related cases (NDPS), POCSO matters, and online cyber fraud.',
         image: '/criminal-05-ndps-cyber.jpg',
       },
       {
         name: 'White Collar & Economic Offences',
-        description: 'Defense against allegations of corporate embezzlement, criminal breach of trust (Sec 406/420 IPC), money laundering (PMLA), and financial fraud investigations.',
+        description: 'Legal defense for business fraud, cheating cases (Section 420), and financial investigations.',
         image: '/criminal-06-white-collar.jpg',
       },
     ],
@@ -175,11 +175,11 @@ export const legalServices: LegalService[] = [
     slug: 'civil-law',
     title: 'Civil Law',
     category: 'PROPERTY, CONTRACTS & RIGHTS',
-    shortDesc: 'Comprehensive civil litigation, title declarations, specific performance, and injunction suits across Trial Courts and High Courts.',
+    shortDesc: 'Legal help for property disputes, land partition, stay orders, agreements, and money recovery.',
     fullDesc:
-      'Our civil practice covers complex disputes concerning landed properties, title declarations, partition suits among family co-parceners, contractual enforcement, money recovery, and high-stakes stay orders. We protect your civil and proprietary rights with rigorous evidentiary preparation and authoritative courtroom arguments.',
+      'Our advocates handle property and land disputes, partition of family property, stay orders (injunctions), sale agreement issues, and money recovery cases across civil courts and the High Court.',
     leadAdvocate: 'M. Umamaheshwar Reddy (Senior Advocate)',
-    phone: '+919866775034',
+    phone: '+918897847788',
     whatsappMessage: 'Hello Senior Advocate Umamaheshwar Reddy, I would like to consult regarding a Civil Law matter.',
     iconType: 'document',
     courts: ['Telangana High Court', 'City Civil Courts', 'Senior Civil Judge Courts', 'Junior Civil Judge Courts'],
@@ -219,7 +219,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Injunctions & Stay Orders',
-        description: 'Securing ex-parte ad-interim temporary injunctions (Order 39 Rules 1 & 2 CPC), perpetual injunctions against illegal dispossession, and status-quo orders.',
+        description: 'Getting quick stay orders and injunctions from court to stop illegal construction or land grabbing.',
         image: '/civil-04-injunctions.jpg',
       },
       {
@@ -229,7 +229,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Consumer, Trespass & Other Civil Matters',
-        description: 'Suits for damages, prevention of illegal encroachment, nuisance, easementary rights, and boundary demarcation disputes.',
+        description: 'Legal action against illegal land entry, boundary disputes, and property damages.',
         image: '/civil-06-trespass.jpg',
       },
     ],
@@ -238,11 +238,11 @@ export const legalServices: LegalService[] = [
     slug: 'family-law',
     title: 'Family Law',
     category: 'MARRIAGE, DIVORCE & RELATIONSHIPS',
-    shortDesc: 'Empathetic yet resolute advocacy for matrimonial disputes, mutual & contested divorces, child custody, and alimony settlements.',
+    shortDesc: 'Help with divorce, child custody, maintenance, and family property settlements.',
     fullDesc:
-      'Family disputes require sensitivity, dignity, and unwavering legal resolve. UK Law Firm advises clients through divorce proceedings, alimony and permanent maintenance calculations, protection against domestic violence, child custody petitions, and fair division of matrimonial assets.',
+      'We guide you through sensitive family and marriage matters with care and complete privacy. Our advocates help with mutual divorce, contested divorce, child custody, monthly maintenance, and settlement of disputes.',
     leadAdvocate: 'M. Umamaheshwar Reddy & S. Kamalakar',
-    phone: '+919866775034',
+    phone: '+918897847788',
     whatsappMessage: 'Hello UK Law Firm, I seek legal guidance regarding Family / Matrimonial Law.',
     iconType: 'family',
     courts: ['Family Courts (Hyderabad & Secunderabad)', 'Telangana High Court', 'Metropolitan Magistrate Courts'],
@@ -267,7 +267,7 @@ export const legalServices: LegalService[] = [
     subServices: [
       {
         name: 'Divorce (Mutual & Contested)',
-        description: 'Fast-track mutual consent divorce petitions with cooling-off waivers, as well as contested divorce petitions on grounds of cruelty, desertion, or adultery.',
+        description: 'Filing for mutual consent divorce quickly, or handling contested divorce cases in Family Court.',
         image: '/fam-01-divorce.jpg',
       },
       {
@@ -292,7 +292,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Matrimonial Disputes',
-        description: 'Resolution of complex dowry harassment complaints (Sec 498A IPC), stridhan recovery, comprehensive settlement deeds, and mutual releases.',
+        description: 'Resolving dowry complaints (498A), gold and stridhan recovery, and mutual family agreements.',
         image: '/fam-06-matrimonial.jpg',
       },
     ],
@@ -301,9 +301,9 @@ export const legalServices: LegalService[] = [
     slug: 'tribunals-and-forums',
     title: 'Tribunals & Forums',
     category: 'SPECIALISED REPRESENTATION',
-    shortDesc: 'Specialized litigation before NCLT, NCLAT, MACT, Consumer Forums, RERA Tribunals, and Central Administrative Tribunal (CAT).',
+    shortDesc: 'Representation before NCLT, Consumer Courts, MACT accident claims, and Service Tribunals.',
     fullDesc:
-      'India’s quasi-judicial tribunals operate with specialized procedural rules and expedited benches. UK Law Firm represents corporate entities, accident victims, aggrieved consumers, and civil servants before quasi-judicial appellate tribunals across Telangana and South India.',
+      'We represent clients before special tribunals in Hyderabad, including the Consumer Commission, Motor Accident Claims Tribunal (MACT), NCLT for company insolvency, and Central Administrative Tribunal (CAT).',
     leadAdvocate: 'S. Kamalakar & M. Umamaheshwar Reddy',
     phone: '+916304856208',
     whatsappMessage: 'Hello Advocate Kamalakar, I need legal representation before a Tribunal / Forum.',
@@ -335,7 +335,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Motor Accident Claims (MACT)',
-        description: 'Substantial compensation claims for road traffic accident victims, third-party liability disputes, permanent disability claims, and insurance claim appeals.',
+        description: 'Claiming full compensation from insurance companies for road accident injuries or loss of life.',
         image: '/tribunals-02-motor-accident.jpg',
       },
       {
@@ -364,9 +364,9 @@ export const legalServices: LegalService[] = [
     slug: 'taxation-and-it-law',
     title: 'Taxation & IT Law',
     category: 'BUSINESS & COMPLIANCE',
-    shortDesc: 'Direct and indirect tax dispute resolution, GST notices, scrutiny assessments, and legal advisory for tech-driven enterprises.',
+    shortDesc: 'Legal advice for income tax notices, GST disputes, tax appeals, and IT compliance.',
     fullDesc:
-      'We combine legal statutory mastery with financial acumen to assist corporations, business proprietors, and individuals with tax litigation, GST appeals, search-and-seizure inquiries, and digital business regulatory mandates under the Information Technology Act.',
+      'We help individuals, traders, and companies reply to income tax notices, resolve GST disputes, file tax appeals, and follow digital business laws.',
     leadAdvocate: 'S. Kamalakar (B.B.M., M.C.A., LL.B.)',
     phone: '+916304856208',
     whatsappMessage: 'Hello Advocate Kamalakar, I need consultation on Taxation & IT Law.',
@@ -427,11 +427,11 @@ export const legalServices: LegalService[] = [
     slug: 'rera-and-builder-buyer',
     title: 'RERA & Builder - Buyer',
     category: 'REAL ESTATE LAW',
-    shortDesc: 'Dedicated advocacy for homebuyers and investors facing possession delays, developer defaults, and misleading real estate projects.',
+    shortDesc: 'Legal help for homebuyers facing delayed possession, builder disputes, and refund claims.',
     fullDesc:
-      'Real estate investments in Hyderabad and Telangana often encounter builder delays, structural deviations, missing occupancy certificates, and refusal to refund advance payments. UK Law Firm aggressively prosecutes developer defaults before TSRERA and the Real Estate Appellate Tribunal.',
+      'If your builder delayed handing over your flat, changed building plans without permission, or refused to refund your money, our advocates file complaints before TSRERA to get your flat, interest, or compensation.',
     leadAdvocate: 'M. Umamaheshwar Reddy & S. Kamalakar',
-    phone: '+919866775034',
+    phone: '+918897847788',
     whatsappMessage: 'Hello UK Law Firm, I need assistance regarding a RERA / Builder-Buyer dispute.',
     iconType: 'realEstate',
     courts: ['Telangana State RERA (TSRERA)', 'Telangana Real Estate Appellate Tribunal', 'Consumer Disputes Redressal Commission'],
@@ -471,7 +471,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Refund & Compensation',
-        description: 'Enforcing the buyer’s statutory right to withdraw from defaulted projects with complete refund of principal along with punitive interest and legal costs.',
+        description: 'Getting your full money back with bank interest and legal costs if the builder stops work.',
         image: '/rera-04-refund-compensation.jpg',
       },
       {
@@ -485,11 +485,11 @@ export const legalServices: LegalService[] = [
     slug: 'landlord-and-tenant',
     title: 'Landlord & Tenant',
     category: 'PROPERTY MATTERS',
-    shortDesc: 'Speedy eviction proceedings, lease drafting, security deposit recoveries, and dispute management for commercial and residential estates.',
+    shortDesc: 'Drafting rental agreements, eviction of non-paying tenants, and resolving rent disputes.',
     fullDesc:
-      'We counsel property owners, multinational tenants, and high-street commercial landlords through tenancy agreements, eviction litigation, breach of lease covenants, rent default recovery, and peaceful vacant possession.',
+      'We help property owners and tenants with clear rental and lease agreements, getting delayed rent paid, vacating tenants who refuse to leave, and protecting property rights.',
     leadAdvocate: 'M. Umamaheshwar Reddy',
-    phone: '+919866775034',
+    phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Umamaheshwar Reddy, I need legal help regarding Landlord & Tenant law.',
     iconType: 'briefcase',
     courts: ['Rent Control Courts', 'City Civil Courts', 'Telangana High Court'],
@@ -514,12 +514,12 @@ export const legalServices: LegalService[] = [
     subServices: [
       {
         name: 'Eviction & Possession',
-        description: 'Instituting fast-track eviction suits for willful default in rent, unauthorized subletting, bona fide personal requirement, or expiry of lease term.',
+        description: 'Filing court cases to evict tenants for non-payment of rent, lease expiry, or personal property use.',
         image: '/tenant-01-eviction.jpg',
       },
       {
         name: 'Rental Agreements',
-        description: 'Bespoke drafting and registration of bulletproof commercial lease deeds, residential rent agreements, escalation clauses, and lock-in covenants.',
+        description: 'Drafting clear commercial and residential rent agreements with fair terms for both sides.',
         image: '/tenant-02-rental-agreements.jpg',
       },
       {
@@ -534,7 +534,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Commercial & Residential Premises',
-        description: 'Protection of landlords from tenant overstaying in prime IT corridors (Gachibowli, Hitec City, Madhapur) and recovery of mesne profits.',
+        description: 'Legal action to recover unpaid rent and clear possession of commercial shops, offices, and homes.',
         image: '/tenant-05-premises-hyderabad.jpg',
       },
     ],
@@ -543,9 +543,9 @@ export const legalServices: LegalService[] = [
     slug: 'labour-and-employment',
     title: 'Labour & Employment',
     category: 'WORKPLACE LAW',
-    shortDesc: 'Workplace dispute defense, executive employment contracts, POSH inquiry handling, and statutory labour tribunal litigation.',
+    shortDesc: 'Legal help for employment contracts, wrongful termination, unpaid salary, and workplace disputes.',
     fullDesc:
-      'UK Law Firm handles industrial and employment legalities for both corporate employers and senior personnel. We advise on wrongful termination, severance packages, non-compete enforcement, POSH compliance, and representation before Labour Courts and Industrial Tribunals.',
+      'We advise employees and employers on job contracts, wrongful firing, unpaid wages, notice period disputes, POSH rules, and labour court proceedings.',
     leadAdvocate: 'S. Kamalakar & M. Umamaheshwar Reddy',
     phone: '+916304856208',
     whatsappMessage: 'Hello Advocate Kamalakar, I need counsel regarding Labour & Employment law.',
@@ -601,11 +601,11 @@ export const legalServices: LegalService[] = [
     slug: 'consumer-protection',
     title: 'Consumer Protection',
     category: 'CONSUMER DISPUTES FORUM',
-    shortDesc: 'Vigorous prosecution of corporate deficiencies, defective products, medical negligence, and deceptive online trade practices.',
+    shortDesc: 'Filing court cases for defective products, poor services, and getting refunds and compensation.',
     fullDesc:
-      'Under the Consumer Protection Act 2019, consumers enjoy expansive rights against substandard goods and deceptive trade conduct. UK Law Firm files and fights consumer complaints against automobile makers, real estate promoters, healthcare providers, e-commerce giants, and insurance firms.',
+      'If a company sold you a defective product, an insurance company rejected your genuine claim, or a hospital/airline gave poor service, we file cases in Consumer Court to get you compensation.',
     leadAdvocate: 'M. Umamaheshwar Reddy',
-    phone: '+919866775034',
+    phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Umamaheshwar Reddy, I need assistance with a Consumer Dispute.',
     iconType: 'shield',
     courts: ['District Consumer Disputes Redressal Commissions (Hyderabad, Ranga Reddy)', 'Telangana State Consumer Commission', 'NCDRC New Delhi'],
@@ -635,12 +635,12 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Refund & Replacement',
-        description: 'Enforcing complete statutory refunds, price deductions, and mandatory replacement of defective machinery, vehicles, and electronics.',
+        description: 'Getting your full money back or getting a new replacement for damaged goods, vehicles, or appliances.',
         image: '/consumer-02-refund-replacement.jpg',
       },
       {
         name: 'Deficiency in Service',
-        description: 'Holding banking, insurance, healthcare, aviation, and hospitality providers accountable for negligent service and monetary loss.',
+        description: 'Taking legal action against banks, insurance firms, travel companies, and builders for poor service.',
         image: '/consumer-03-deficiency-service.jpg',
       },
       {
@@ -659,9 +659,9 @@ export const legalServices: LegalService[] = [
     slug: 'corporate-and-commercial',
     title: 'Corporate & Commercial',
     category: 'BUSINESS, CONTRACTS & STRUCTURE',
-    shortDesc: 'Strategic corporate counsel, shareholder pacts, commercial litigation, mergers, startup advisory, and contract negotiations.',
+    shortDesc: 'Company registration, partner agreements, contract drafting, and business dispute resolution.',
     fullDesc:
-      'From entity formation and shareholder agreements to complex commercial cross-border contracts and dispute resolution, our corporate practice provides actionable, business-focused legal clarity to founders, SMEs, and established companies.',
+      'We help startups, business owners, and companies register new businesses, draft agreements between partners, prepare client contracts, and resolve business disputes.',
     leadAdvocate: 'S. Kamalakar (B.B.M., M.C.A., LL.B.)',
     phone: '+916304856208',
     whatsappMessage: 'Hello Advocate Kamalakar, I would like to consult on Corporate & Commercial Law.',
@@ -717,9 +717,9 @@ export const legalServices: LegalService[] = [
     slug: 'intellectual-property',
     title: 'Intellectual Property (IPR)',
     category: 'BRANDS, IDEAS & CREATIONS',
-    shortDesc: 'Securing, safeguarding, and prosecuting trademarks, copyrights, patent filings, and proprietary design rights in India.',
+    shortDesc: 'Registering trademarks, logos, brand names, copyrights, and patents to protect your work.',
     fullDesc:
-      'Intellectual property is a company’s most valuable asset. UK Law Firm provides proactive registration and courtroom enforcement against trademark infringers, counterfeiters, copyright violators, and digital piracy across India.',
+      'We help businesses and individuals protect their brand names, logos, inventions, and creative work by registering trademarks, copyrights, and patents, and taking legal action if someone copies them.',
     leadAdvocate: 'S. Kamalakar & M. Umamaheshwar Reddy',
     phone: '+916304856208',
     whatsappMessage: 'Hello UK Law Firm, I need consultation on Intellectual Property (IPR).',
@@ -766,7 +766,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'IPR Disputes & Enforcement',
-        description: 'Cease-and-desist notices, filing suits for trademark infringement and passing off, Anton Piller ex-parte search orders, and damages.',
+        description: 'Sending legal notices and filing court cases against people or companies who copy your brand.',
         image: '/ipr-05-enforcement.jpg',
       },
     ],
@@ -775,9 +775,9 @@ export const legalServices: LegalService[] = [
     slug: 'cyber-crime',
     title: 'Cyber Crime',
     category: 'DIGITAL LAW & ONLINE FRAUD',
-    shortDesc: 'Decisive legal action and defense against financial cyber scams, data breach, extortion, and offences under the IT Act.',
+    shortDesc: 'Legal help for online bank fraud, social media harassment, identity theft, and hacking.',
     fullDesc:
-      'With the exponential rise in digital transactions and online interactions, cyber offences require immediate legal intervention. Led by Advocate S. Kamalakar (with specialized MCA tech background), our firm guides victims and corporate defendants through cyber forensics, FIR registration, bank account freezes, and trial defense.',
+      'If you lost money in an online scam, had your social media hacked, or face online harassment, our advocates help you file complaints with the Cyber Crime Police and take legal action.',
     leadAdvocate: 'S. Kamalakar (B.B.M., M.C.A., LL.B.)',
     phone: '+916304856208',
     whatsappMessage: 'Hello Advocate Kamalakar, I need urgent legal counsel regarding Cyber Crime / Online Fraud.',
@@ -804,27 +804,27 @@ export const legalServices: LegalService[] = [
     subServices: [
       {
         name: 'Online Fraud & Financial Crime',
-        description: 'Immediate coordination with Cyber Police and banks to freeze fraudulent money transfers, phishing scams, and OTP fraud accounts.',
+        description: 'Helping freeze stolen funds, reporting UPI and bank fraud, and filing police complaints.',
         image: '/cyber-01-online-fraud.jpg',
       },
       {
         name: 'Cyber Bullying & Harassment',
-        description: 'Legal action against cyber stalking, identity theft, impersonation, defamatory posts, and offensive messaging under Sec 66D/67 IT Act.',
+        description: 'Legal action against cyber stalking, identity theft, impersonation, defamatory posts, and offensive messaging.',
         image: '/cyber-02-bullying-harassment.jpg',
       },
       {
         name: 'Social Media Offences',
-        description: 'Takedown requests, digital defamation suits, and filing FIRs against malicious social media profiles and forged content.',
+        description: 'Taking down fake accounts, digital defamation suits, and filing FIRs against online abusers.',
         image: '/cyber-03-social-media.jpg',
       },
       {
         name: 'Data Theft & Privacy Breach',
-        description: 'Prosecution and defense in corporate data exfiltration, source code theft, non-disclosure breaches, and unauthorized server intrusions.',
+        description: 'Legal action against corporate data theft, source code copying, and hacking.',
         image: '/cyber-04-data-theft.jpg',
       },
       {
         name: 'Cyber Complaints & Investigation',
-        description: 'Drafting structured technical-legal complaints for the National Cyber Crime Portal and representing clients before investigating officers.',
+        description: 'Drafting clear technical complaints for the National Cyber Crime Portal and following up with police.',
         image: '/cyber-05-cyber-complaints.jpg',
       },
     ],
@@ -833,11 +833,11 @@ export const legalServices: LegalService[] = [
     slug: 'immigration',
     title: 'Immigration',
     category: 'VISA, OCI & GLOBAL MOBILITY',
-    shortDesc: 'Comprehensive immigration advisory, OCI/PIO assistance, visa appeals, citizenship queries, and international travel documentation.',
+    shortDesc: 'Legal guidance for student visas, work visas, OCI cards, visa rejections, and travel documents.',
     fullDesc:
-      'UK Law Firm assists NRIs, international students, corporate transferees, and overseas citizens with complex Indian immigration formalities, visa rejections, OCI card disputes, and statutory documentation before the FRRO and Ministry of External Affairs.',
+      'We help students, professionals, and families with visa application documents, OCI cards, appealing rejected visas, and clearing immigration legal issues.',
     leadAdvocate: 'M. Umamaheshwar Reddy & S. Kamalakar',
-    phone: '+919866775034',
+    phone: '+918897847788',
     whatsappMessage: 'Hello UK Law Firm, I need guidance regarding Immigration & OCI matters.',
     iconType: 'globe',
     courts: ['Telangana High Court (Writ Petitions)', 'FRRO Hyderabad', 'Ministry of Home Affairs'],
@@ -896,11 +896,11 @@ export const legalServices: LegalService[] = [
     slug: 'other-legal-services',
     title: 'Other Legal Services',
     category: 'ADVISORY & REPRESENTATION',
-    shortDesc: 'Drafting of legal notices, registered wills, General Power of Attorney, legal opinions, and customized legal representation.',
+    shortDesc: 'Drafting legal notices, registered wills, Power of Attorney (GPA), and property legal opinions.',
     fullDesc:
-      'In addition to courtroom litigation, UK Law Firm offers extensive preventive legal advisory, deed drafting, title search reports, and general statutory assistance tailored to individuals, families, and commercial entities.',
+      'We prepare essential legal documents including legal notices, registered wills, General Power of Attorney (GPA), gift deeds, and written property title check opinions before you buy real estate.',
     leadAdvocate: 'M. Umamaheshwar Reddy & S. Kamalakar',
-    phone: '+919866775034',
+    phone: '+918897847788',
     whatsappMessage: 'Hello UK Law Firm, I need legal drafting and advisory services.',
     iconType: 'users',
     courts: ['Sub-Registrar Offices', 'Civil Courts', 'Telangana High Court'],
@@ -925,32 +925,32 @@ export const legalServices: LegalService[] = [
     subServices: [
       {
         name: 'Legal Notice Drafting',
-        description: 'Formulation and issuance of stern statutory legal notices for contract breaches, unpaid debts, civil trespass, and defamation.',
+        description: 'Drafting and sending strong legal notices, and preparing proper replies to notices received.',
         image: '/other-01-legal-notice.jpg',
       },
       {
         name: 'Power of Attorney',
-        description: 'Drafting, adjudication, and registration of General Power of Attorney (GPA) and Special Power of Attorney (SPA) for NRIs and local owners.',
+        description: 'Drafting and registering General Power of Attorney (GPA) and Special Power of Attorney (SPA) for property and business use.',
         image: '/other-02-power-of-attorney.jpg',
       },
       {
         name: 'Agreement & Contract Drafting',
-        description: 'Custom formulation of partnership deeds, memorandum of understanding (MOU), settlement deeds, gift deeds, and release deeds.',
+        description: 'Preparing partnership deeds, MOUs, settlement deeds, gift deeds, and property release deeds.',
         image: '/other-03-agreement-drafting.jpg',
       },
       {
         name: 'Legal Opinion & Advisory',
-        description: 'Comprehensive title search reports (30-year search), legal opinions on agricultural/commercial land titles, and litigation risk audits.',
+        description: 'Checking 30-year property link documents to verify clear title before you buy land or flats.',
         image: '/other-04-legal-opinion-new.jpg',
       },
       {
         name: 'Will, Inheritance & Succession',
-        description: 'Drafting and registering bulletproof Wills, codicils, succession certificates, letters of administration, and probate proceedings.',
+        description: 'Drafting and registering legal wills to ensure your property is safely passed on to your family.',
         image: '/other-05-will-succession.jpg',
       },
       {
         name: 'Any Other Legal Matter',
-        description: 'Bespoke representation for unique legal challenges across administrative authorities, government revenue offices, and statutory bodies.',
+        description: 'Legal help for unique challenges before revenue offices, municipal bodies, and government departments.',
         image: '/other-06-other-matters.jpg',
       },
     ],

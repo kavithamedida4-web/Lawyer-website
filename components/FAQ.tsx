@@ -3,34 +3,34 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    question: 'What types of legal matters does UK Law Firm handle?',
+    question: 'What kinds of legal cases do you handle?',
     answer:
-      'We provide comprehensive legal counsel and courtroom representation across Civil Litigation, Criminal Defense, Property & RERA Disputes, Family & Matrimonial Law, Corporate Compliance, and specialized Tribunals (NCLT, MACT, Consumer Forums).',
+      'We help with property disputes, civil suits, criminal defense and bail, cheque bounce cases, family and divorce matters, RERA builder disputes, company contracts, and tribunal cases across Hyderabad.',
   },
   {
-    question: 'How do I schedule an initial consultation with an advocate?',
+    question: 'How do I book an appointment with an advocate?',
     answer:
-      'You can schedule a consultation by calling our chambers directly or submitting an appointment request online. We offer both in-person chamber meetings and secure, confidential telephonic or video consultations.',
+      'You can call us directly, send a message on WhatsApp, or book a time through our website. We meet clients at our Gachibowli office or can speak over phone or video call.',
   },
   {
-    question: 'What documents should I bring for my first legal evaluation?',
+    question: 'What documents should I bring for my first meeting?',
     answer:
-      'Please carry any legal notices received, property title deeds, contracts, police complaints/FIRs, or prior court orders relevant to your matter. Having a brief chronological summary of events also helps our advocates evaluate your merits swiftly.',
+      'Bring any papers related to your case, like notices received, property documents, agreements, or police complaints. If you do not have all papers, just bring what you have and we will guide you.',
   },
   {
-    question: 'How are professional legal fees and court expenses structured?',
+    question: 'How do you charge for your legal services?',
     answer:
-      'Our fee structure is completely transparent and discussed upfront with zero hidden charges. Fees vary depending on the nature of the case, jurisdictional court, drafting requirements, and stages of proceedings.',
+      'We discuss our fees clearly during your first consultation before starting any work. Fees depend on the type of case, court, and drafting needed. There are no hidden charges.',
   },
   {
-    question: 'Do your advocates represent clients across High Courts and Tribunals in India?',
+    question: 'Do you take cases in the High Court and other courts?',
     answer:
-      'Yes. Our advocates regularly represent individuals, commercial entities, and property owners across various High Courts, District & Sessions Courts, Special Tribunals, and the Supreme Court of India.',
+      'Yes. We regularly handle cases in the Telangana High Court, District Courts, Family Courts, and Special Tribunals in Hyderabad and across Telangana.',
   },
   {
-    question: 'How will I be informed about court hearing dates and case progress?',
+    question: 'How will I know what is happening in my case?',
     answer:
-      'We maintain an active client reporting protocol. Following every court listing or tribunal hearing, our legal team provides prompt status updates, certified copies of orders, and next-step litigation roadmaps.',
+      'We keep you updated before and after every court hearing date, explain what happened in simple words, and give you copies of any court orders.',
   },
 ];
 
@@ -54,7 +54,7 @@ export default function FAQ() {
             Frequently Asked <span className="text-[#c9a84c]">Questions</span>
           </h2>
           <p className="text-gray-600 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-            Clear, honest answers to common queries regarding courtroom procedures, consultations, and litigation.
+            Clear, honest answers to common questions about legal advice, court procedures, and our fees.
           </p>
           <div className="w-16 h-[2px] bg-[#c9a84c] mx-auto mt-4" />
         </div>

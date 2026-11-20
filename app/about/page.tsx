@@ -49,7 +49,7 @@ export default function AboutPage() {
 
           {/* 3. Subtitle Description Matching Reference */}
           <p className="text-gray-700 text-xs sm:text-base max-w-2xl mx-auto leading-relaxed font-sans mb-7 sm:mb-10 px-2">
-            Since our establishment, we have been delivering principled legal counsel, strategic courtroom advocacy, and trusted advisory across High Courts, District Courts, and Special Tribunals throughout India.
+            Based in Gachibowli, Hyderabad, UK Law Firm provides clear legal guidance and courtroom representation across the High Court of Telangana, District &amp; Sessions Courts, and Tribunals.
           </p>
 
           {/* 4. 3 Side-by-Side Tall Rounded Photo Cards (3 Columns on Mobile & Desktop, exactly like reference) */}
@@ -180,15 +180,15 @@ export default function AboutPage() {
                 Our Practice &amp; Ethos
               </p>
               <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-4 tracking-tight max-w-[600px]">
-                A Distinguished Practice Rooted in Justice and Ethics
+                Dedicated Legal Practice Rooted in Justice and Ethics
               </h2>
 
               <p className="text-gray-700 text-sm sm:text-[15px] leading-relaxed mb-4">
-                Founded by advocates <strong>M. Umamaheshwar Reddy</strong> (B.Sc., M.Sc., LL.B.) and <strong>S. Kamalakar</strong> (B.B.M., M.C.A., LL.B.), UK Law Firm delivers client-centered, ethical, and result-oriented legal representation across India&apos;s judicial system.
+                Founded by advocates <strong>M. Umamaheshwar Reddy</strong> (B.Sc., M.Sc., LL.B.) and <strong>S. Kamalakar</strong> (B.B.M., M.C.A., LL.B.), UK Law Firm provides accessible, ethical, and dependable legal representation. We take the time to understand your circumstances and provide honest guidance on the strengths and challenges of your matter.
               </p>
 
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                Our chambers specialize in civil litigation, property and title disputes, criminal defense, bail matters, corporate contracts, RERA disputes, and writ petitions before High Courts. We combine exhaustive legal research, rigorous courtroom advocacy, and strategic counsel to safeguard client rights.
+                Our chambers handle civil litigation, property disputes, criminal defense, bail matters, RERA complaints, family matters, and commercial contracts. We focus on thorough preparation, timely filings, and keeping our clients informed throughout the legal process.
               </p>
 
               {/* Checkpoints Grid */}
@@ -199,7 +199,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <span className="w-5 h-5 rounded-full bg-[#0a1222] text-[#e5bf55] flex items-center justify-center flex-shrink-0 text-xs">✓</span>
-                  <span>Rigorous Case-Law Preparation</span>
+                  <span>Thorough Case Preparation</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <span className="w-5 h-5 rounded-full bg-[#0a1222] text-[#e5bf55] flex items-center justify-center flex-shrink-0 text-xs">✓</span>
@@ -207,7 +207,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <span className="w-5 h-5 rounded-full bg-[#0a1222] text-[#e5bf55] flex items-center justify-center flex-shrink-0 text-xs">✓</span>
-                  <span>Tailored Legal Strategy</span>
+                  <span>Direct Senior Advocate Guidance</span>
                 </div>
               </div>
 

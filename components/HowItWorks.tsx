@@ -11,7 +11,7 @@ const processSteps: ProcessStep[] = [
   {
     number: 1,
     title: 'Initial Consultation',
-    desc: 'Share your legal concerns in complete confidentiality. Our advocates evaluate your situation and outline immediate next steps.',
+    desc: 'Meet with our advocates in person or over phone. We listen to your facts in complete confidence and explain your immediate legal options.',
     isFeatured: true,
     // Solid Advocate in Court Suit & Tie (matching reference image style)
     icon: (
@@ -30,7 +30,7 @@ const processSteps: ProcessStep[] = [
   {
     number: 2,
     title: 'Case Review & Research',
-    desc: 'Detailed evidentiary review, examination of records, and statutory research to establish key legal merits.',
+    desc: 'We review your notices, agreements, and case records thoroughly to assess the strengths and merits under the applicable laws.',
     // Solid Open Law Commentary Treatise with Ribbon Bookmark (matching reference image 05)
     icon: (
       <svg className="w-10 h-10 sm:w-11 sm:h-11 text-[#0a1222]" viewBox="0 0 48 48" fill="none">
@@ -48,7 +48,7 @@ const processSteps: ProcessStep[] = [
   {
     number: 3,
     title: 'Legal Strategy',
-    desc: 'Formulating an authoritative, custom litigation roadmap grounded in statutory law and High Court precedents.',
+    desc: 'Preparing clear pleadings, petitions, and legal notices supported by relevant High Court and Supreme Court precedents.',
     // Solid Scales of Justice with Balanced Pans & Pedestal (matching reference image hero & 05)
     icon: (
       <svg className="w-10 h-10 sm:w-11 sm:h-11 text-[#0a1222]" viewBox="0 0 48 48" fill="none">
@@ -73,7 +73,7 @@ const processSteps: ProcessStep[] = [
   {
     number: 4,
     title: 'Courtroom Representation',
-    desc: 'Forceful advocacy before Trial Courts, High Court, and Special Tribunals to secure favorable judgment and protection.',
+    desc: 'Dedicated courtroom representation before trial courts, tribunals, or the High Court, keeping you updated after every hearing.',
     // Solid Classical Courthouse with 4 Pillars & Pediment (matching reference image 02 & 05)
     icon: (
       <svg className="w-10 h-10 sm:w-11 sm:h-11 text-[#0a1222]" viewBox="0 0 48 48" fill="none">
@@ -110,7 +110,7 @@ export default function HowItWorks() {
 
           {/* Subtitle */}
           <p className="text-gray-500 text-xs sm:text-sm md:text-base font-sans max-w-xl mx-auto leading-relaxed">
-            A transparent, disciplined 4-step approach ensuring your legal rights are vigorously protected from consultation to courtroom resolution.
+            A clear, 4-step process—from understanding your situation and reviewing documents to building your case and representing you in court.
           </p>
 
           <div className="w-14 h-[2px] bg-[#c9a84c] mx-auto mt-4" />

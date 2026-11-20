@@ -74,7 +74,7 @@ export default function Gallery() {
           </h2>
 
           <p className="text-gray-600 text-xs sm:text-sm md:text-base font-sans max-w-xl mx-auto leading-relaxed">
-            Take a visual tour inside our executive consultation chambers, law library, and advocate facilities in Gachibowli, Hyderabad.
+            Photos of our law chambers, conference room, and advocates at our office in Gachibowli, Hyderabad.
           </p>
 
           <div className="w-16 h-[2px] bg-[#c9a84c] mx-auto mt-4" />

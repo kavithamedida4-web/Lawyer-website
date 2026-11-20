@@ -60,7 +60,7 @@ export default function Footer() {
 
             {/* Paragraph Bio */}
             <p className="text-gray-200 text-xs sm:text-[13px] leading-relaxed">
-              <strong className="text-white font-semibold">UK Law Firm</strong> is Hyderabad and Telangana&apos;s trusted legal defense and advisory partner. With chambers in <strong className="text-white font-semibold">Gachibowli</strong> and operations across <strong className="text-white font-semibold">High Court of Telangana &amp; District Courts</strong>, we deliver professional legal defense, Trial Advocacy, Corporate Advisory, RERA Compliance, and Bail Relief – all with 15+ years verified courtroom excellence, 24/7 client counsel, and 1000+ satisfied clients.
+              <strong className="text-white font-semibold">UK Law Firm</strong> is based in <strong className="text-white font-semibold">Gachibowli, Hyderabad</strong>. Our senior advocates have over 15 years of experience handling cases in the <strong className="text-white font-semibold">High Court of Telangana, District Courts, and Tribunals</strong>, providing clear advice and dependable legal support for you and your family.
             </p>
           </div>
 
@@ -124,8 +124,8 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <a href="tel:+919866775034" className="block text-gray-100 hover:text-[#f5d061] transition-colors font-medium">
-                    +91 98667 75034
+                  <a href="tel:+918897847788" className="block text-gray-100 hover:text-[#f5d061] transition-colors font-medium">
+                    +91 88978 47788
                   </a>
                   <a href="tel:+916304856208" className="block text-gray-100 hover:text-[#f5d061] transition-colors font-medium mt-0.5">
                     +91 63048 56208

@@ -7,8 +7,8 @@ const allServices = [
   {
     slug: 'criminal-law',
     category: 'Criminal Law',
-    sub: 'Bail, Trial Court & Special Courts',
-    desc: 'Strong defense for Anticipatory Bail, Cheque Bounce, Police Inquiries & Criminal Appeals.',
+    sub: 'Bail, Police & Court Cases',
+    desc: 'Help with bail, anticipatory bail, cheque bounce cases, police complaints, and court trials.',
     image: '/service-criminal.jpg',
     points: ['Bail & Anticipatory Bail', 'Cheque Bounce Cases', 'Criminal Trials & Appeals', 'Cyber Crime & NDPS'],
     icon: (
@@ -20,8 +20,8 @@ const allServices = [
   {
     slug: 'civil-law',
     category: 'Civil Law',
-    sub: 'Property, Contracts & Rights',
-    desc: 'Resolving partition suits, contract breaches, injunctions, title disputes and recovery suits.',
+    sub: 'Property, Land & Agreements',
+    desc: 'Help with property partition, title disputes, stay orders, agreements, and money recovery.',
     image: '/service-civil.jpg',
     points: ['Civil Suits & Decrees', 'Partition & Title Disputes', 'Injunctions & Stay Orders', 'Specific Performance'],
     icon: (
@@ -34,7 +34,7 @@ const allServices = [
     slug: 'family-law',
     category: 'Family Law',
     sub: 'Marriage, Divorce & Custody',
-    desc: 'Compassionate handling of mutual/contested divorce, maintenance, alimony, and custody rights.',
+    desc: 'Help with mutual divorce, contested divorce, child custody, and monthly maintenance.',
     image: '/service-family.jpg',
     points: ['Mutual & Contested Divorce', 'Maintenance / Alimony', 'Domestic Violence (DV Act)', 'Child Custody & Visitation'],
     icon: (
@@ -46,8 +46,8 @@ const allServices = [
   {
     slug: 'rera-and-builder-buyer',
     category: 'RERA & Builder - Buyer',
-    sub: 'Real Estate Law',
-    desc: 'Advocacy for delayed possessions, project defaults, builder agreements, and RERA claims.',
+    sub: 'Real Estate & Flats',
+    desc: 'Help for homebuyers with delayed flat delivery, builder disputes, and refund claims.',
     image: '/service-property.jpg',
     points: ['RERA Complaints & Redressal', 'Builder - Buyer Disputes', 'Delay in Possession Compensation', 'Agreement & Title Verification'],
     icon: (
@@ -59,8 +59,8 @@ const allServices = [
   {
     slug: 'landlord-and-tenant',
     category: 'Landlord & Tenant',
-    sub: 'Property Matters',
-    desc: 'Commercial & residential lease deeds, eviction matters, rental defaults, and tenant rights.',
+    sub: 'Rental & Leases',
+    desc: 'Drafting rent agreements, evicting non-paying tenants, and resolving tenancy disputes.',
     image: '/service-civil.jpg',
     points: ['Eviction & Possession Suits', 'Rental Agreements Drafting', 'Lease Deed & Renewals', 'Commercial Property Disputes'],
     icon: (
@@ -72,8 +72,8 @@ const allServices = [
   {
     slug: 'tribunals-and-forums',
     category: 'Tribunals & Forums',
-    sub: 'Specialised Representation',
-    desc: 'Representation before NCLT, NCLAT, IBC, Consumer Forums, and appellate authorities.',
+    sub: 'Consumer, NCLT & Tribunals',
+    desc: 'Representation in Consumer Courts, NCLT company matters, and motor accident claims.',
     image: '/service-tribunals.jpg',
     points: ['NCLT, NCLAT & IBC Matters', 'Motor Accident Claims (MACT)', 'Consumer Disputes Forum', 'CAT & Service Law Matters'],
     icon: (
@@ -85,8 +85,8 @@ const allServices = [
   {
     slug: 'corporate-and-commercial',
     category: 'Corporate & Commercial',
-    sub: 'Business & Structure',
-    desc: 'Company incorporation, commercial contracts, shareholder pacts, due diligence, and startup legal support.',
+    sub: 'Business & Contracts',
+    desc: 'Company registration, partner agreements, contract drafting, and business dispute resolution.',
     image: '/service-corporate.jpg',
     points: ['Company Incorporation', 'MOU & Shareholder Agreements', 'Business Due Diligence', 'Commercial Disputes'],
     icon: (
@@ -98,8 +98,8 @@ const allServices = [
   {
     slug: 'taxation-and-it-law',
     category: 'Taxation & IT Law',
-    sub: 'Business & Compliance',
-    desc: 'Income tax appeals, assessments, GST disputes, regulatory compliance, and corporate filings.',
+    sub: 'Taxes & Compliance',
+    desc: 'Help with income tax notices, GST dispute notices, tax appeals, and digital business compliance.',
     image: '/service-civil.jpg',
     points: ['Income Tax Appeals & Assessments', 'GST Registration & Disputes', 'TDS & Regulatory Compliance', 'IT Act Compliance'],
     icon: (
@@ -111,8 +111,8 @@ const allServices = [
   {
     slug: 'labour-and-employment',
     category: 'Labour & Employment',
-    sub: 'Workplace Law',
-    desc: 'Industrial disputes, employee rights, termination cases, and statutory compliance (EPF, ESI).',
+    sub: 'Workplace & Job Issues',
+    desc: 'Help with employment contracts, sudden firing, unpaid salary, and workplace disputes.',
     image: '/labour-04-epf-esi.jpg',
     points: ['Employee Rights & Service Matters', 'Wrongful Termination', 'Industrial Disputes', 'EPF & Labour Compliance'],
     icon: (
@@ -124,8 +124,8 @@ const allServices = [
   {
     slug: 'consumer-protection',
     category: 'Consumer Protection',
-    sub: 'Consumer Disputes Forum',
-    desc: 'Legal claims for deficiency in services, defective products, refund disputes, and medical negligence.',
+    sub: 'Consumer Court & Claims',
+    desc: 'Filing Consumer Court cases for defective products, poor services, and compensation claims.',
     image: '/service-criminal.jpg',
     points: ['Defective Goods & Services', 'Refund & Compensation Claims', 'Deficiency in Service', 'District & State Forum Representation'],
     icon: (
@@ -137,8 +137,8 @@ const allServices = [
   {
     slug: 'intellectual-property',
     category: 'Intellectual Property (IPR)',
-    sub: 'Brands, Ideas & Creations',
-    desc: 'Trademark search & registration, copyright protection, patent filings, and infringement actions.',
+    sub: 'Trademarks & Copyrights',
+    desc: 'Registering trademarks, brand logos, copyrights, and patents to protect your business.',
     image: '/service-intellectual-property.jpg',
     points: ['Trademark Registration & Opposition', 'Copyright Protection', 'Patent Filing & Advisory', 'IPR Infringement Litigation'],
     icon: (
@@ -150,8 +150,8 @@ const allServices = [
   {
     slug: 'cyber-crime',
     category: 'Cyber Crime',
-    sub: 'Digital Law & Fraud',
-    desc: 'Online financial fraud, identity theft, data breach litigation, cyber defamation, and complaints.',
+    sub: 'Online Scams & Harassment',
+    desc: 'Help with online bank fraud, social media harassment, hacking, and cyber police complaints.',
     image: '/service-cyber.jpg',
     points: ['Online Fraud & Financial Crime', 'Data Theft & Privacy Breaches', 'Social Media Offences', 'Cyber Cell Complaints'],
     icon: (
@@ -163,8 +163,8 @@ const allServices = [
   {
     slug: 'immigration',
     category: 'Immigration',
-    sub: 'Visa, OCI & Global Mobility',
-    desc: 'Immigration advisory, OCI/PIO documentation, visa rejection appeals, and statutory clearances.',
+    sub: 'Visas & OCI Cards',
+    desc: 'Help with student visas, work visas, OCI cards, visa rejections, and travel papers.',
     image: '/service-immigration-new.jpg',
     points: ['Student & Work Visas', 'OCI & PIO Applications', 'Citizenship & FRRO Queries', 'Apostille & Legalizations'],
     icon: (
@@ -176,8 +176,8 @@ const allServices = [
   {
     slug: 'other-legal-services',
     category: 'Other Legal Services',
-    sub: 'Advisory & Representation',
-    desc: 'Legal notice drafting, Power of Attorney, registered wills, inheritance, and formal legal opinions.',
+    sub: 'Wills, Notices & Deeds',
+    desc: 'Drafting legal notices, registered wills, General Power of Attorney (GPA), and property legal opinions.',
     image: '/service-civil.jpg',
     points: ['Legal Notice Drafting', 'Power of Attorney (GPA/SPA)', 'Wills & Inheritance Succession', 'Title Search & Legal Opinions'],
     icon: (
@@ -226,11 +226,11 @@ export default function Services() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-sans font-semibold text-[#0a1222] leading-tight mb-2 tracking-tight max-w-[680px] mx-auto">
-            Comprehensive Legal Solutions
+            Our Legal Services
           </h2>
 
           <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans max-w-lg mx-auto">
-            Trusted legal support tailored to your needs.
+            Clear, honest advice and dependable court representation for you and your family.
           </p>
         </div>
 
@@ -239,7 +239,7 @@ export default function Services() {
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-[#b38634] animate-pulse flex-shrink-0" />
             <span className="text-xs sm:text-[13px] font-sans font-bold text-[#0a1222] uppercase tracking-wider">
-              14 Specialised Practice Categories
+              14 Practice Areas
             </span>
           </div>
           <div className="flex gap-3">

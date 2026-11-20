@@ -297,7 +297,7 @@ export default function FullGallery() {
 
         {/* Bottom Helper Note */}
         <div className="text-center mt-8 text-xs text-gray-500">
-          Showing {filteredPhotos.length} of {allGalleryPhotos.length} authentic camera photographs of UK Law Firm chambers.
+          Showing {filteredPhotos.length} of {allGalleryPhotos.length} photos of UK Law Firm office.
         </div>
 
       </div>

@@ -26,10 +26,10 @@ export default function About() {
   }, []);
 
   const points = [
-    'Committed to excellence in legal practice.',
-    'Act with honesty and uphold ethical principles.',
-    'Strategic representation with 98% success rate.',
-    'Meeting clients\' legal needs is our priority.',
+    'Direct consultation with senior advocates on every case.',
+    'Clear and realistic legal advice without false assurances.',
+    'Thorough preparation, timely filings, and regular court attendance.',
+    'Prompt updates after hearings with complete client confidentiality.',
   ];
 
   return (
@@ -157,7 +157,7 @@ export default function About() {
 
             {/* Description Paragraph */}
             <p className="text-gray-600 text-sm sm:text-[15px] leading-relaxed mb-6 font-sans">
-              Led by senior advocates <strong className="text-gray-900 font-semibold">M. Umamaheshwar Reddy</strong> (B.Sc., M.Sc., LL.B.) and <strong className="text-gray-900 font-semibold">S. Kamalakar</strong> (B.B.M., M.C.A., LL.B.), UK Law Firm delivers seasoned legal counsel across High Courts, District &amp; Sessions Courts, and Special Tribunals throughout India.
+              Founded by advocates <strong className="text-gray-900 font-semibold">M. Umamaheshwar Reddy</strong> (B.Sc., M.Sc., LL.B.) and <strong className="text-gray-900 font-semibold">S. Kamalakar</strong> (B.B.M., M.C.A., LL.B.), UK Law Firm is based in Gachibowli, Hyderabad. We represent individuals, families, and businesses before the High Court of Telangana, District &amp; Sessions Courts, and Tribunals, offering clear guidance, honest legal merits, and dedicated court representation.
             </p>
 
             {/* 4 Checkpoint Bullet List with Hover Glow & Subtle Slide */}
