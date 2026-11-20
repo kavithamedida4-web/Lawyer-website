@@ -392,51 +392,19 @@ _Submitted via UK Law Firm official website_`;
 
           </div>
 
-          {/* RIGHT COLUMN: LOCATION & GOOGLE MAP CARD (5 COLS - MATCHES FORM HEIGHT) */}
-          <div className="lg:col-span-5 w-full rounded-2xl overflow-hidden border border-[#c9a84c]/50 shadow-md relative bg-white flex flex-col justify-between">
-            {/* Chamber Location Details Card */}
-            <div className="p-5 sm:p-6 bg-[#0a1222] text-white">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-[#e5bf55] text-sm">📍</span>
-                <h4 className="font-serif font-bold text-base sm:text-lg text-white">
-                  Chambers &amp; Location
-                </h4>
-              </div>
-              <p className="text-xs text-gray-300 leading-relaxed mb-3">
-                Flat No. 201, 2nd Floor, Maps Apartments, Plot No. 45, Beside Care Hospitals, Jayabheri Pine Valley, Gachibowli, Hyderabad, Telangana 500032.
-              </p>
-              <div className="space-y-1.5 text-xs text-gray-300 border-t border-white/10 pt-3">
-                <p className="flex items-center gap-2">
-                  <span className="text-[#e5bf55]">📞</span>
-                  <a href="tel:+918897847788" className="hover:text-[#f4d27a] font-medium">+91 88978 47788</a>
-                  <span>/</span>
-                  <a href="tel:+916304856208" className="hover:text-[#f4d27a] font-medium">+91 63048 56208</a>
-                </p>
-                <p className="flex items-center gap-2">
-                  <span className="text-[#e5bf55]">✉️</span>
-                  <a href="mailto:contact@uklawfirm.in" className="hover:text-[#f4d27a]">contact@uklawfirm.in</a>
-                </p>
-                <p className="flex items-center gap-2 text-[11px] text-gray-400">
-                  <span className="text-[#e5bf55]">🕒</span>
-                  <span>Mon to Sat 9:30 AM to 8:00 PM, Sunday / Emergency Bail: 24/7 On-Call</span>
-                </p>
-              </div>
-            </div>
-
-            {/* Embedded Google Map */}
-            <div className="w-full h-[220px] sm:h-[250px] lg:flex-grow relative bg-gray-100">
-              <iframe
-                title="UK LAW FIRM Google Maps Location - Maps Apartments Gachibowli Hyderabad"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="strict-origin-when-cross-origin"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6128129318995!2d78.3718349!3d17.4303593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93d350593b7f%3A0x4e0868fc00911547!2s!5e0!3m2!1sen!2sin!4v1794314126057!5m2!1sen!2sin"
-                className="w-full h-full border-0"
-              />
-            </div>
+          {/* RIGHT COLUMN: GOOGLE MAP CARD (5 COLS - MATCHES FORM HEIGHT) */}
+          <div className="lg:col-span-5 w-full h-[360px] sm:h-[440px] lg:h-auto rounded-2xl overflow-hidden border border-[#c9a84c]/50 shadow-md relative bg-gray-100 flex flex-col">
+            <iframe
+              title="UK LAW FIRM Google Maps Location - Maps Apartments Gachibowli Hyderabad"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6128129318995!2d78.3718349!3d17.4303593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93d350593b7f%3A0x4e0868fc00911547!2s!5e0!3m2!1sen!2sin!4v1794314126057!5m2!1sen!2sin"
+              className="w-full h-full border-0 flex-grow min-h-[360px] lg:min-h-full"
+            />
           </div>
 
         </div>

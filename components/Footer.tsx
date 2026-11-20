@@ -108,14 +108,37 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Contact Us (Span 3) */}
+          {/* Column 4: Chambers & Location (Span 3) */}
           <div className="lg:col-span-3">
-            <h4 className="text-white font-bold text-sm sm:text-base mb-5 font-sans tracking-wide">
-              Contact Us
+            <h4 className="text-white font-bold text-sm sm:text-base mb-5 font-sans tracking-wide flex items-center gap-1.5">
+              <span>📍</span> Chambers &amp; Location
             </h4>
             
             <div className="space-y-4 text-xs sm:text-[13px]">
               
+              {/* Location Address */}
+              <div className="flex items-start gap-3">
+                <div className="text-[#e5bf55] mt-0.5 flex-shrink-0">
+                  <svg className="w-4 h-4 text-[#e5bf55]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-gray-200 leading-relaxed font-normal">
+                    Flat No. 201, 2nd Floor, Maps Apartments, Plot No. 45, Beside Care Hospitals, Jayabheri Pine Valley, Gachibowli, Hyderabad, Telangana 500032.
+                  </p>
+                  <a
+                    href={googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-[#f5d061] hover:underline font-semibold mt-1 text-xs"
+                  >
+                    View on Google Maps →
+                  </a>
+                </div>
+              </div>
+
               {/* Phone */}
               <div className="flex items-start gap-3">
                 <div className="text-[#e5bf55] mt-0.5 text-base flex-shrink-0">
@@ -123,11 +146,12 @@ export default function Footer() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
-                <div>
-                  <a href="tel:+918897847788" className="block text-gray-100 hover:text-[#f5d061] transition-colors font-medium">
+                <div className="flex flex-wrap items-center gap-x-1.5 gap-y-0.5">
+                  <a href="tel:+918897847788" className="text-gray-100 hover:text-[#f5d061] transition-colors font-medium">
                     +91 88978 47788
                   </a>
-                  <a href="tel:+916304856208" className="block text-gray-100 hover:text-[#f5d061] transition-colors font-medium mt-0.5">
+                  <span className="text-gray-400">/</span>
+                  <a href="tel:+916304856208" className="text-gray-100 hover:text-[#f5d061] transition-colors font-medium">
                     +91 63048 56208
                   </a>
                 </div>
@@ -145,29 +169,6 @@ export default function Footer() {
                 </a>
               </div>
 
-              {/* Location */}
-              <div className="flex items-start gap-3">
-                <div className="text-[#e5bf55] mt-0.5 flex-shrink-0">
-                  <svg className="w-4 h-4 text-[#e5bf55]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-gray-200 leading-relaxed font-normal">
-                    Flat No. 201, 2nd Floor, Maps Apartments, Plot No. 45, Beside Care Hospitals, Jayabheri Pine Valley, Gachibowli, Hyderabad, Telangana 500032
-                  </p>
-                  <a
-                    href={googleMapsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block text-[#f5d061] hover:underline font-semibold mt-1 text-xs"
-                  >
-                    View locations on Google Maps
-                  </a>
-                </div>
-              </div>
-
               {/* Working Hours */}
               <div className="flex items-start gap-3">
                 <div className="text-[#e5bf55] mt-0.5 flex-shrink-0">
@@ -177,7 +178,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-gray-200 leading-snug font-medium">
-                    Mon – Sat: 9:30 AM – 8:00 PM
+                    Mon to Sat 9:30 AM to 8:00 PM
                   </p>
                   <p className="text-gray-300 text-[11px] sm:text-xs mt-0.5 font-normal">
                     Sunday / Emergency Bail: 24/7 On-Call
