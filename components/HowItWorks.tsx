@@ -208,11 +208,6 @@ export default function HowItWorks() {
 
         </div>
 
-        {/* Disclaimer Note */}
-        <p className="mt-10 text-center text-xs sm:text-sm text-gray-600 font-sans max-w-xl mx-auto leading-relaxed border-t border-gray-200 pt-6">
-          <span className="font-semibold text-gray-800">Note:</span> A consultation does not by itself create a lawyer-client relationship.
-        </p>
-
       </div>
     </section>
   );
