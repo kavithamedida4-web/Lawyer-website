@@ -177,7 +177,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-gray-200 leading-snug font-medium">
-                    Mon to Sat 9:30 AM to 10:30 PM
+                    Mon to Sat 9:30 AM to 10:30 – 11:00 PM
                   </p>
                   <p className="text-gray-300 text-[11px] sm:text-xs mt-0.5 font-normal">
                     Sunday / Emergency Bail: 24/7 On-Call
