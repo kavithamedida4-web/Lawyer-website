@@ -116,7 +116,7 @@ export const legalServices: LegalService[] = [
     fullDesc:
       'UK Law Firm helps you with criminal cases in Hyderabad and Telangana. Our senior advocates handle bail applications, anticipatory bail, quashing of FIRs, cheque bounce cases, and trial court hearings with clear guidance at every step.',
     leadAdvocate: 'S. Kamalakar & M. Umamaheshwar Reddy',
-    phone: '+916304856208',
+    phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Kamalakar, I need urgent legal counsel regarding Criminal Law / Bail.',
     iconType: 'scales',
     courts: ['Telangana High Court', 'Metropolitan Sessions Courts', 'Special CBI & ACB Courts', 'Chief Metropolitan Magistrate Courts'],
@@ -305,7 +305,7 @@ export const legalServices: LegalService[] = [
     fullDesc:
       'We represent clients before special tribunals in Hyderabad, including the Consumer Commission, Motor Accident Claims Tribunal (MACT), NCLT for company insolvency, and Central Administrative Tribunal (CAT).',
     leadAdvocate: 'S. Kamalakar & M. Umamaheshwar Reddy',
-    phone: '+916304856208',
+    phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Kamalakar, I need legal representation before a Tribunal / Forum.',
     iconType: 'tribunal',
     courts: ['NCLT Hyderabad Bench', 'NCLAT', 'Telangana Real Estate Appellate Tribunal (REAT)', 'State & National Consumer Disputes Redressal Commission', 'MACT Courts'],
@@ -368,7 +368,7 @@ export const legalServices: LegalService[] = [
     fullDesc:
       'We help individuals, traders, and companies reply to income tax notices, resolve GST disputes, file tax appeals, and follow digital business laws.',
     leadAdvocate: 'S. Kamalakar (B.B.M., M.C.A., LL.B.)',
-    phone: '+916304856208',
+    phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Kamalakar, I need consultation on Taxation & IT Law.',
     iconType: 'taxation',
     courts: ['Telangana High Court (Tax Benches)', 'ITAT Hyderabad', 'GST Appellate Authorities', 'Adjudicating Officer (IT Act)'],
@@ -547,7 +547,7 @@ export const legalServices: LegalService[] = [
     fullDesc:
       'We advise employees and employers on job contracts, wrongful firing, unpaid wages, notice period disputes, POSH rules, and labour court proceedings.',
     leadAdvocate: 'S. Kamalakar & M. Umamaheshwar Reddy',
-    phone: '+916304856208',
+    phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Kamalakar, I need counsel regarding Labour & Employment law.',
     iconType: 'workplace',
     courts: ['Labour Courts & Industrial Tribunals', 'Telangana High Court (Writ Benches)', 'Labour Commissioner Offices'],
@@ -663,7 +663,7 @@ export const legalServices: LegalService[] = [
     fullDesc:
       'We help startups, business owners, and companies register new businesses, draft agreements between partners, prepare client contracts, and resolve business disputes.',
     leadAdvocate: 'S. Kamalakar (B.B.M., M.C.A., LL.B.)',
-    phone: '+916304856208',
+    phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Kamalakar, I would like to consult on Corporate & Commercial Law.',
     iconType: 'corporate',
     courts: ['Telangana High Court (Commercial Benches)', 'Commercial Courts (City Civil Court)', 'NCLT Hyderabad'],
@@ -721,7 +721,7 @@ export const legalServices: LegalService[] = [
     fullDesc:
       'We help businesses and individuals protect their brand names, logos, inventions, and creative work by registering trademarks, copyrights, and patents, and taking legal action if someone copies them.',
     leadAdvocate: 'S. Kamalakar & M. Umamaheshwar Reddy',
-    phone: '+916304856208',
+    phone: '+918897847788',
     whatsappMessage: 'Hello UK Law Firm, I need consultation on Intellectual Property (IPR).',
     iconType: 'bulb',
     courts: ['Intellectual Property Division (Telangana High Court)', 'Trade Marks Registry (Chennai)', 'Copyright Office'],
@@ -779,7 +779,7 @@ export const legalServices: LegalService[] = [
     fullDesc:
       'If you lost money in an online scam, had your social media hacked, or face online harassment, our advocates help you file complaints with the Cyber Crime Police and take legal action.',
     leadAdvocate: 'S. Kamalakar (B.B.M., M.C.A., LL.B.)',
-    phone: '+916304856208',
+    phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Kamalakar, I need urgent legal counsel regarding Cyber Crime / Online Fraud.',
     iconType: 'document',
     courts: ['Cyber Crime Police Stations (Hyderabad, Cyberabad, Rachakonda)', 'Adjudicating Officer (IT Act)', 'Metropolitan Courts'],

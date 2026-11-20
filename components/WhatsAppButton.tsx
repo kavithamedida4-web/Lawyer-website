@@ -19,10 +19,10 @@ export default function WhatsAppButton() {
       name: 'S KAMALAKAR',
       degree: 'B.B.M., M.C.A., LL.B.',
       title: 'Advocate & Legal Consultant',
-      phone: '6304856208',
-      phoneDisplay: '+91 63048 56208',
+      phone: '8897847788',
+      phoneDisplay: '+91 88978 47788',
       whatsappUrl:
-        'https://wa.me/916304856208?text=Hello%20Advocate%20Kamalakar,%20I%20would%20like%20to%20consult%20regarding%20a%20legal%20matter.',
+        'https://wa.me/918897847788?text=Hello%20Advocate%20Kamalakar,%20I%20would%20like%20to%20consult%20regarding%20a%20legal%20matter.',
     },
   ];
 
@@ -109,7 +109,7 @@ export default function WhatsAppButton() {
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    <span>{adv.phone}</span>
+                    <span>{adv.phoneDisplay}</span>
                   </a>
                 </div>
               </div>

@@ -42,7 +42,28 @@ export default function ContactPage() {
           <p className="text-gray-600 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
             Speak directly with advocates M. Umamaheshwar Reddy &amp; S. Kamalakar for legal advice and appointments at our office in Gachibowli, Hyderabad.
           </p>
-          <div className="w-14 h-[2px] bg-[#c9a84c] mx-auto mt-3" />
+
+          {/* Direct Phone & WhatsApp Bar */}
+          <div className="flex flex-wrap items-center justify-center gap-3 mt-4">
+            <a
+              href="tel:+918897847788"
+              className="inline-flex items-center gap-2 bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/50 px-4 py-2 rounded-full text-xs font-bold transition-all shadow-xs"
+            >
+              <span>📞</span>
+              <span>Call: +91 88978 47788</span>
+            </a>
+            <a
+              href="https://wa.me/918897847788?text=Hello%20UK%20Law%20Firm,%20I%20would%20like%20to%20consult%20regarding%20a%20legal%20matter."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white px-4 py-2 rounded-full text-xs font-bold transition-all shadow-xs"
+            >
+              <span>💬</span>
+              <span>WhatsApp: +91 88978 47788</span>
+            </a>
+          </div>
+
+          <div className="w-14 h-[2px] bg-[#c9a84c] mx-auto mt-4" />
         </div>
       </section>
 
