@@ -10,8 +10,8 @@ interface ProcessStep {
 const processSteps: ProcessStep[] = [
   {
     number: 1,
-    title: 'Initial Consultation',
-    desc: 'Meet with our advocates in person or over phone. We listen to your facts in complete confidence and explain your immediate legal options.',
+    title: 'Appointment Request',
+    desc: 'Fill form or call, share name, phone, brief details.',
     isFeatured: true,
     // Solid Advocate in Court Suit & Tie (matching reference image style)
     icon: (
@@ -29,8 +29,8 @@ const processSteps: ProcessStep[] = [
   },
   {
     number: 2,
-    title: 'Case Review & Research',
-    desc: 'We review your notices, agreements, and case records thoroughly to assess the strengths and merits under the applicable laws.',
+    title: 'Document Review',
+    desc: 'Bring relevant documents, notices, agreements, court papers and ID proof.',
     // Solid Open Law Commentary Treatise with Ribbon Bookmark (matching reference image 05)
     icon: (
       <svg className="w-10 h-10 sm:w-11 sm:h-11 text-[#0a1222]" viewBox="0 0 48 48" fill="none">
@@ -47,8 +47,8 @@ const processSteps: ProcessStep[] = [
   },
   {
     number: 3,
-    title: 'Legal Strategy',
-    desc: 'Preparing clear pleadings, petitions, and legal notices supported by relevant High Court and Supreme Court precedents.',
+    title: 'Legal Assessment',
+    desc: 'We explain procedure, options, documents required, next steps as per law.',
     // Solid Scales of Justice with Balanced Pans & Pedestal (matching reference image hero & 05)
     icon: (
       <svg className="w-10 h-10 sm:w-11 sm:h-11 text-[#0a1222]" viewBox="0 0 48 48" fill="none">
@@ -72,8 +72,8 @@ const processSteps: ProcessStep[] = [
   },
   {
     number: 4,
-    title: 'Courtroom Representation',
-    desc: 'Dedicated courtroom representation before trial courts, tribunals, or the High Court, keeping you updated after every hearing.',
+    title: 'Representation',
+    desc: 'If you decide to engage, representation begins after engagement formalities and fee discussion. Court work is done as per procedure.',
     // Solid Classical Courthouse with 4 Pillars & Pediment (matching reference image 02 & 05)
     icon: (
       <svg className="w-10 h-10 sm:w-11 sm:h-11 text-[#0a1222]" viewBox="0 0 48 48" fill="none">
@@ -105,12 +105,12 @@ export default function HowItWorks() {
         <div className="text-center mb-14 sm:mb-20">
           {/* Heading */}
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-3 tracking-tight max-w-[600px] mx-auto">
-            How It Works
+            How a Consultation Works
           </h2>
 
           {/* Subtitle */}
           <p className="text-gray-500 text-xs sm:text-sm md:text-base font-sans max-w-xl mx-auto leading-relaxed">
-            A clear, 4-step process—from understanding your situation and reviewing documents to building your case and representing you in court.
+            A simple 4-step process — from booking an appointment and sharing your documents, to getting a legal assessment and deciding on representation.
           </p>
 
           <div className="w-14 h-[2px] bg-[#c9a84c] mx-auto mt-4" />
@@ -207,6 +207,11 @@ export default function HowItWorks() {
           </div>
 
         </div>
+
+        {/* Disclaimer Note */}
+        <p className="mt-10 text-center text-xs sm:text-sm text-gray-600 font-sans max-w-xl mx-auto leading-relaxed border-t border-gray-200 pt-6">
+          <span className="font-semibold text-gray-800">Note:</span> A consultation does not by itself create a lawyer-client relationship.
+        </p>
 
       </div>
     </section>
