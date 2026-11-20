@@ -26,7 +26,7 @@ export default function Contact({ hideHeader = false }: { hideHeader?: boolean }
     phone: '',
     practiceArea: practiceAreasList[1],
     selectedAdvocate: 'umamaheshwar' as 'umamaheshwar' | 'kamalakar',
-    selectedAdvocatePhone: '8897847788',
+    selectedAdvocatePhone: '9866775034',
     message: '',
   });
 
@@ -79,7 +79,7 @@ _Submitted via UK Law Firm official website_`;
       phone: '',
       practiceArea: practiceAreasList[1],
       selectedAdvocate: 'umamaheshwar',
-      selectedAdvocatePhone: '8897847788',
+      selectedAdvocatePhone: '9866775034',
       message: '',
     });
   };
@@ -181,7 +181,7 @@ _Submitted via UK Law Firm official website_`;
                     {/* Option 1: Adv. M. Umamaheshwar Reddy */}
                     <button
                       type="button"
-                      onClick={() => setFormData({ ...formData, selectedAdvocate: 'umamaheshwar', selectedAdvocatePhone: '8897847788' })}
+                      onClick={() => setFormData({ ...formData, selectedAdvocate: 'umamaheshwar', selectedAdvocatePhone: '9866775034' })}
                       className={`p-2.5 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-2 ${
                         formData.selectedAdvocate === 'umamaheshwar'
                           ? 'border-2 border-[#b38634] bg-[#fdfbf6] shadow-2xs'
@@ -190,7 +190,7 @@ _Submitted via UK Law Firm official website_`;
                     >
                       <div>
                         <p className="text-xs font-bold text-[#0a1222]">Adv. M. Umamaheshwar Reddy</p>
-                        <p className="text-[10px] text-gray-500 mt-0.5">+91 88978 47788</p>
+                        <p className="text-[10px] text-gray-500 mt-0.5">+91 98667 75034</p>
                       </div>
                       <span
                         className={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 ${

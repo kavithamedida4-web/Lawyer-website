@@ -10,10 +10,10 @@ export default function WhatsAppButton() {
       name: 'M UMAMAHESHWAR REDDY',
       degree: 'B.Sc., M.Sc., LL.B.',
       title: 'Advocate & Legal Consultant',
-      phone: '8897847788',
-      phoneDisplay: '+91 88978 47788',
+      phone: '9866775034',
+      phoneDisplay: '+91 98667 75034',
       whatsappUrl:
-        'https://wa.me/918897847788?text=Hello%20Advocate%20Umamaheshwar%20Reddy,%20I%20would%20like%20to%20consult%20regarding%20a%20legal%20matter.',
+        'https://wa.me/919866775034?text=Hello%20Advocate%20Umamaheshwar%20Reddy,%20I%20would%20like%20to%20consult%20regarding%20a%20legal%20matter.',
     },
     {
       name: 'S KAMALAKAR',
