@@ -68,12 +68,6 @@ export default function Testimonials() {
         
         {/* Header Section */}
         <div className="text-center mb-8 sm:mb-10">
-          
-          {/* Top Pill Tag */}
-          <div className="inline-block bg-[#fcf4e4] border border-[#e5bf55]/50 text-[#b38634] text-[11px] font-bold font-sans tracking-widest uppercase px-5 py-1.5 rounded-full mb-3.5 shadow-xs">
-            CLIENT TESTIMONIALS
-          </div>
-
           {/* Headline */}
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-3 tracking-tight max-w-[600px] mx-auto">
             What Our Clients <span className="text-[#c9a84c]">Say</span>
