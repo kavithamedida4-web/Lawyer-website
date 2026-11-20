@@ -25,7 +25,7 @@ export default function Contact({ hideHeader = false }: { hideHeader?: boolean }
     email: '',
     phone: '',
     practiceArea: practiceAreasList[1],
-    selectedAdvocate: 'umamaheshwar' as 'umamaheshwar' | 'kamalakar' | 'either',
+    selectedAdvocate: 'umamaheshwar' as 'umamaheshwar' | 'kamalakar',
     selectedAdvocatePhone: '8897847788',
     message: '',
   });
@@ -41,9 +41,7 @@ export default function Contact({ hideHeader = false }: { hideHeader?: boolean }
     const advocateName =
       formData.selectedAdvocate === 'umamaheshwar'
         ? 'Advocate M. Umamaheshwar Reddy'
-        : formData.selectedAdvocate === 'kamalakar'
-        ? 'Advocate S. Kamalakar'
-        : 'Either / Any Available Advocate';
+        : 'Advocate S. Kamalakar';
 
     const whatsappMessage =
 `⚖️ *UK LAW FIRM - Chamber Appointment Request*
@@ -174,35 +172,35 @@ _Submitted via UK Law Firm official website_`;
             ) : (
               <form onSubmit={handleSubmit} className="space-y-3.5 font-sans">
                 
-                {/* Advocate Switcher: [M. Umamaheshwar Reddy / S. Kamalakar / Either] */}
+                {/* Advocate Switcher: [M. Umamaheshwar Reddy / S. Kamalakar] */}
                 <div>
                   <label className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1.5">
                     Advocate you wish to consult
                   </label>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {/* Option 1: Adv. M. Umamaheshwar Reddy */}
                     <button
                       type="button"
                       onClick={() => setFormData({ ...formData, selectedAdvocate: 'umamaheshwar', selectedAdvocatePhone: '8897847788' })}
-                      className={`p-2 sm:p-2.5 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-1.5 ${
+                      className={`p-2.5 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-2 ${
                         formData.selectedAdvocate === 'umamaheshwar'
                           ? 'border-2 border-[#b38634] bg-[#fdfbf6] shadow-2xs'
                           : 'border-gray-200 bg-gray-50 hover:bg-white hover:border-gray-300'
                       }`}
                     >
-                      <div className="min-w-0">
-                        <p className="text-xs font-bold text-[#0a1222] truncate">M. Umamaheshwar Reddy</p>
+                      <div>
+                        <p className="text-xs font-bold text-[#0a1222]">Adv. M. Umamaheshwar Reddy</p>
                         <p className="text-[10px] text-gray-500 mt-0.5">+91 88978 47788</p>
                       </div>
                       <span
-                        className={`w-3.5 h-3.5 rounded-full flex items-center justify-center flex-shrink-0 ${
+                        className={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 ${
                           formData.selectedAdvocate === 'umamaheshwar'
                             ? 'bg-[#b38634] text-white'
                             : 'border border-gray-300 bg-white'
                         }`}
                       >
                         {formData.selectedAdvocate === 'umamaheshwar' && (
-                          <svg className="w-2 h-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>
                         )}
@@ -213,54 +211,25 @@ _Submitted via UK Law Firm official website_`;
                     <button
                       type="button"
                       onClick={() => setFormData({ ...formData, selectedAdvocate: 'kamalakar', selectedAdvocatePhone: '8897847788' })}
-                      className={`p-2 sm:p-2.5 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-1.5 ${
+                      className={`p-2.5 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-2 ${
                         formData.selectedAdvocate === 'kamalakar'
                           ? 'border-2 border-[#b38634] bg-[#fdfbf6] shadow-2xs'
                           : 'border-gray-200 bg-gray-50 hover:bg-white hover:border-gray-300'
                       }`}
                     >
-                      <div className="min-w-0">
-                        <p className="text-xs font-bold text-[#0a1222] truncate">S. Kamalakar</p>
+                      <div>
+                        <p className="text-xs font-bold text-[#0a1222]">Adv. S. Kamalakar</p>
                         <p className="text-[10px] text-gray-500 mt-0.5">+91 88978 47788</p>
                       </div>
                       <span
-                        className={`w-3.5 h-3.5 rounded-full flex items-center justify-center flex-shrink-0 ${
+                        className={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 ${
                           formData.selectedAdvocate === 'kamalakar'
                             ? 'bg-[#b38634] text-white'
                             : 'border border-gray-300 bg-white'
                         }`}
                       >
                         {formData.selectedAdvocate === 'kamalakar' && (
-                          <svg className="w-2 h-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                          </svg>
-                        )}
-                      </span>
-                    </button>
-
-                    {/* Option 3: Either Advocate */}
-                    <button
-                      type="button"
-                      onClick={() => setFormData({ ...formData, selectedAdvocate: 'either', selectedAdvocatePhone: '8897847788' })}
-                      className={`p-2 sm:p-2.5 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-1.5 ${
-                        formData.selectedAdvocate === 'either'
-                          ? 'border-2 border-[#b38634] bg-[#fdfbf6] shadow-2xs'
-                          : 'border-gray-200 bg-gray-50 hover:bg-white hover:border-gray-300'
-                      }`}
-                    >
-                      <div className="min-w-0">
-                        <p className="text-xs font-bold text-[#0a1222] truncate">Either Advocate</p>
-                        <p className="text-[10px] text-gray-500 mt-0.5">Next Available</p>
-                      </div>
-                      <span
-                        className={`w-3.5 h-3.5 rounded-full flex items-center justify-center flex-shrink-0 ${
-                          formData.selectedAdvocate === 'either'
-                            ? 'bg-[#b38634] text-white'
-                            : 'border border-gray-300 bg-white'
-                        }`}
-                      >
-                        {formData.selectedAdvocate === 'either' && (
-                          <svg className="w-2 h-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>
                         )}
