@@ -19,10 +19,10 @@ export default function WhatsAppButton() {
       name: 'S KAMALAKAR',
       degree: 'B.B.M., M.C.A., LL.B.',
       title: 'Advocate & Legal Consultant',
-      phone: '8897847788',
-      phoneDisplay: '+91 88978 47788',
+      phone: '6304856208',
+      phoneDisplay: '+91 63048 56208',
       whatsappUrl:
-        'https://wa.me/918897847788?text=Hello%20Advocate%20Kamalakar,%20I%20would%20like%20to%20consult%20regarding%20a%20legal%20matter.',
+        'https://wa.me/916304856208?text=Hello%20Advocate%20Kamalakar,%20I%20would%20like%20to%20consult%20regarding%20a%20legal%20matter.',
     },
   ];
 
