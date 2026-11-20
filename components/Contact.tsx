@@ -25,6 +25,7 @@ export default function Contact({ hideHeader = false }: { hideHeader?: boolean }
     email: '',
     phone: '',
     practiceArea: practiceAreasList[1],
+    selectedAdvocate: 'umamaheshwar' as 'umamaheshwar' | 'kamalakar' | 'either',
     selectedAdvocatePhone: '8897847788',
     message: '',
   });
@@ -38,24 +39,26 @@ export default function Contact({ hideHeader = false }: { hideHeader?: boolean }
     setIsSubmitting(true);
 
     const advocateName =
-      formData.selectedAdvocatePhone === '8897847788'
+      formData.selectedAdvocate === 'umamaheshwar'
         ? 'Advocate M. Umamaheshwar Reddy'
-        : 'Advocate S. Kamalakar';
+        : formData.selectedAdvocate === 'kamalakar'
+        ? 'Advocate S. Kamalakar'
+        : 'Either / Any Available Advocate';
 
     const whatsappMessage =
-`⚖️ *UK LAW FIRM - Legal Consultation Inquiry*
+`⚖️ *UK LAW FIRM - Chamber Appointment Request*
 
 👤 *Client Name:* ${formData.name.trim()}
 📞 *Phone Number:* ${formData.phone.trim()}
 📧 *Email Address:* ${formData.email.trim()}
 🏛️ *Practice Area:* ${formData.practiceArea}
-👨‍⚖️ *Attention:* ${advocateName}
+👨‍⚖️ *Advocate to Consult:* ${advocateName}
 
-📝 *Case Summary & Details:*
+📝 *Brief Details & Notes:*
 ${formData.message.trim()}
 
 ---
-_Inquiry submitted via UK Law Firm official portal_`;
+_Submitted via UK Law Firm official website_`;
 
     const encodedText = encodeURIComponent(whatsappMessage);
     const targetUrl = `https://wa.me/91${formData.selectedAdvocatePhone}?text=${encodedText}`;
@@ -77,6 +80,7 @@ _Inquiry submitted via UK Law Firm official portal_`;
       email: '',
       phone: '',
       practiceArea: practiceAreasList[1],
+      selectedAdvocate: 'umamaheshwar',
       selectedAdvocatePhone: '8897847788',
       message: '',
     });
@@ -97,12 +101,12 @@ _Inquiry submitted via UK Law Firm official portal_`;
               <span className="w-8 h-[1.5px] bg-[#d8b577]" />
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight tracking-tight mb-2 max-w-[600px] mx-auto">
-              Contact Us &amp; <span className="text-[#b38634]">Location</span>
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight tracking-tight mb-2 max-w-[700px] mx-auto">
+              Contact Us and Location — <span className="text-[#b38634]">Request Chamber Appointment</span>
             </h2>
 
             <p className="text-gray-600 text-xs sm:text-sm leading-relaxed max-w-lg mx-auto">
-              Call or message our advocates to book a meeting at our Gachibowli office or speak over the phone.
+              Reach out directly to our advocates for consultations and chamber appointments in Gachibowli, Hyderabad.
             </p>
 
             <div className="w-14 h-[2px] bg-[#c9a84c] mx-auto mt-3" />
@@ -170,62 +174,93 @@ _Inquiry submitted via UK Law Firm official portal_`;
             ) : (
               <form onSubmit={handleSubmit} className="space-y-3.5 font-sans">
                 
-                {/* Advocate Switcher */}
+                {/* Advocate Switcher: [M. Umamaheshwar Reddy / S. Kamalakar / Either] */}
                 <div>
                   <label className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1.5">
                     Advocate you wish to consult
                   </label>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                    {/* Option 1: Adv. M. Umamaheshwar Reddy */}
                     <button
                       type="button"
-                      onClick={() => setFormData({ ...formData, selectedAdvocatePhone: '8897847788' })}
-                      className={`p-2.5 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-2 ${
-                        formData.selectedAdvocatePhone === '8897847788'
+                      onClick={() => setFormData({ ...formData, selectedAdvocate: 'umamaheshwar', selectedAdvocatePhone: '8897847788' })}
+                      className={`p-2 sm:p-2.5 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-1.5 ${
+                        formData.selectedAdvocate === 'umamaheshwar'
                           ? 'border-2 border-[#b38634] bg-[#fdfbf6] shadow-2xs'
                           : 'border-gray-200 bg-gray-50 hover:bg-white hover:border-gray-300'
                       }`}
                     >
-                      <div>
-                        <p className="text-xs font-bold text-[#0a1222]">Adv. M. Umamaheshwar Reddy</p>
+                      <div className="min-w-0">
+                        <p className="text-xs font-bold text-[#0a1222] truncate">M. Umamaheshwar Reddy</p>
                         <p className="text-[10px] text-gray-500 mt-0.5">+91 88978 47788</p>
                       </div>
                       <span
-                        className={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 ${
-                          formData.selectedAdvocatePhone === '8897847788'
+                        className={`w-3.5 h-3.5 rounded-full flex items-center justify-center flex-shrink-0 ${
+                          formData.selectedAdvocate === 'umamaheshwar'
                             ? 'bg-[#b38634] text-white'
                             : 'border border-gray-300 bg-white'
                         }`}
                       >
-                        {formData.selectedAdvocatePhone === '8897847788' && (
-                          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        {formData.selectedAdvocate === 'umamaheshwar' && (
+                          <svg className="w-2 h-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>
                         )}
                       </span>
                     </button>
 
+                    {/* Option 2: Adv. S. Kamalakar */}
                     <button
                       type="button"
-                      onClick={() => setFormData({ ...formData, selectedAdvocatePhone: '6304856208' })}
-                      className={`p-2.5 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-2 ${
-                        formData.selectedAdvocatePhone === '6304856208'
+                      onClick={() => setFormData({ ...formData, selectedAdvocate: 'kamalakar', selectedAdvocatePhone: '6304856208' })}
+                      className={`p-2 sm:p-2.5 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-1.5 ${
+                        formData.selectedAdvocate === 'kamalakar'
                           ? 'border-2 border-[#b38634] bg-[#fdfbf6] shadow-2xs'
                           : 'border-gray-200 bg-gray-50 hover:bg-white hover:border-gray-300'
                       }`}
                     >
-                      <div>
-                        <p className="text-xs font-bold text-[#0a1222]">Adv. S. Kamalakar</p>
+                      <div className="min-w-0">
+                        <p className="text-xs font-bold text-[#0a1222] truncate">S. Kamalakar</p>
                         <p className="text-[10px] text-gray-500 mt-0.5">+91 63048 56208</p>
                       </div>
                       <span
-                        className={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 ${
-                          formData.selectedAdvocatePhone === '6304856208'
+                        className={`w-3.5 h-3.5 rounded-full flex items-center justify-center flex-shrink-0 ${
+                          formData.selectedAdvocate === 'kamalakar'
                             ? 'bg-[#b38634] text-white'
                             : 'border border-gray-300 bg-white'
                         }`}
                       >
-                        {formData.selectedAdvocatePhone === '6304856208' && (
-                          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        {formData.selectedAdvocate === 'kamalakar' && (
+                          <svg className="w-2 h-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                          </svg>
+                        )}
+                      </span>
+                    </button>
+
+                    {/* Option 3: Either Advocate */}
+                    <button
+                      type="button"
+                      onClick={() => setFormData({ ...formData, selectedAdvocate: 'either', selectedAdvocatePhone: '8897847788' })}
+                      className={`p-2 sm:p-2.5 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-1.5 ${
+                        formData.selectedAdvocate === 'either'
+                          ? 'border-2 border-[#b38634] bg-[#fdfbf6] shadow-2xs'
+                          : 'border-gray-200 bg-gray-50 hover:bg-white hover:border-gray-300'
+                      }`}
+                    >
+                      <div className="min-w-0">
+                        <p className="text-xs font-bold text-[#0a1222] truncate">Either Advocate</p>
+                        <p className="text-[10px] text-gray-500 mt-0.5">Next Available</p>
+                      </div>
+                      <span
+                        className={`w-3.5 h-3.5 rounded-full flex items-center justify-center flex-shrink-0 ${
+                          formData.selectedAdvocate === 'either'
+                            ? 'bg-[#b38634] text-white'
+                            : 'border border-gray-300 bg-white'
+                        }`}
+                      >
+                        {formData.selectedAdvocate === 'either' && (
+                          <svg className="w-2 h-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>
                         )}
@@ -383,7 +418,7 @@ _Inquiry submitted via UK Law Firm official portal_`;
                 </p>
                 <p className="flex items-center gap-2 text-[11px] text-gray-400">
                   <span className="text-[#e5bf55]">🕒</span>
-                  <span>Mon to Sat: 9:30 AM to 8:00 PM | Sun: On-Call</span>
+                  <span>Mon to Sat 9:30 AM to 8:00 PM, Sunday / Emergency Bail: 24/7 On-Call</span>
                 </p>
               </div>
             </div>
