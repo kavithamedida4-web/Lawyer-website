@@ -342,9 +342,10 @@ export default async function ServiceDetailPage({ params }: Props) {
                   <h3 className="text-lg sm:text-xl font-sans font-bold text-[#0a1222] mb-1 group-hover:text-[#916b1f] transition-colors leading-snug">
                     Chambers in Gachibowli, Hyderabad
                   </h3>
-                  <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans">
-                    Led by M. Umamaheshwar Reddy (B.Sc., M.Sc., LL.B.) and S. Kamalakar (B.B.M., M.C.A., LL.B.), keeping clients updated on filings and hearing dates.
-                  </p>
+                  <div className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans space-y-1">
+                    <p><strong className="text-[#0a1222]">Led by M. Umamaheshwar Reddy</strong> — B.Sc., M.Sc., LL.B. [Enrolment No: to add]</p>
+                    <p><strong className="text-[#0a1222]">S. Kamalakar</strong> — B.B.M., M.C.A., LL.B. [Enrolment No: to add]</p>
+                  </div>
                 </div>
               </div>
 
