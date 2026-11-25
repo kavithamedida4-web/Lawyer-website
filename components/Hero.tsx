@@ -27,8 +27,7 @@ const fixedCards: FixedCard[] = [
   {
     id: 2,
     img: '/hero-card-umamaheshwar.jpg',
-    tag: 'SENIOR ADVOCATE',
-    title: 'M. Umamaheshwar Reddy',
+    tag: 'ADVOCATE',
     desc: 'High Court Advocate (M.Sc., LL.B.)',
     pos: 'object-top',
     link: '/#about',
@@ -36,7 +35,7 @@ const fixedCards: FixedCard[] = [
   {
     id: 3,
     img: '/hero-card-kamalakar.jpg',
-    tag: 'SENIOR ADVOCATE',
+    tag: 'ADVOCATE',
     title: 'S. Kamalakar',
     desc: 'High Court Advocate (M.C.A., LL.B.)',
     pos: 'object-top',
@@ -134,7 +133,7 @@ export default function Hero() {
 
             {/* Subtitle / Description */}
             <p className="text-white/85 text-xs sm:text-sm lg:text-[14px] leading-relaxed font-sans font-normal mb-5 max-w-md drop-shadow-sm">
-              <strong className="text-[#f3cd67] font-bold">15+ Years</strong> of practice before the High Court of Telangana, District Courts, and Tribunals. Clear advice and dependable legal representation for individuals, families, and businesses.
+              Advocates at the High Court of Telangana, District Courts, and Tribunals. Clear advice and dependable legal representation for individuals, families, and businesses.
             </p>
 
             {/* CTA Action Buttons */}
@@ -143,7 +142,7 @@ export default function Hero() {
                 href="/contact"
                 className="px-6 sm:px-7 py-2.5 sm:py-3 rounded-full border border-white/60 hover:border-[#f3cd67] bg-white/10 hover:bg-[#c9a84c] text-white hover:text-black backdrop-blur-md text-xs sm:text-sm font-semibold font-sans tracking-wide transition-all duration-300 shadow-lg active:scale-95 inline-flex items-center gap-2 group cursor-pointer"
               >
-                <span>Book Consultation</span>
+                <span>Request Appointment</span>
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
               </Link>
 

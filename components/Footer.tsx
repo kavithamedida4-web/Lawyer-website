@@ -9,7 +9,7 @@ export default function Footer() {
     { name: 'Practice Areas', href: '/#services' },
     { name: 'About Us', href: '/#about' },
     { name: 'How It Works', href: '/#how-it-works' },
-    { name: 'Book Consultation', href: '/contact' },
+    { name: 'Request Appointment', href: '/contact' },
     { name: 'Privacy Policy', href: '/privacy-policy' },
     { name: 'Terms of Service', href: '/terms-of-service' },
     { name: 'Legal Disclaimer', href: '/disclaimer' },
@@ -60,7 +60,7 @@ export default function Footer() {
 
             {/* Paragraph Bio */}
             <p className="text-gray-200 text-xs sm:text-[13px] leading-relaxed">
-              <strong className="text-white font-semibold">UK Law Firm</strong> is based in <strong className="text-white font-semibold">Gachibowli, Hyderabad</strong>. Our senior advocates have over 15 years of experience handling cases in the <strong className="text-white font-semibold">High Court of Telangana, District Courts, and Tribunals</strong>, providing clear advice and dependable legal support for you and your family.
+              <strong className="text-white font-semibold">UK Law Firm</strong> is based in <strong className="text-white font-semibold">Gachibowli, Hyderabad</strong>. Our advocates handle cases before the <strong className="text-white font-semibold">High Court of Telangana, District Courts, and Tribunals</strong>, providing clear advice and dependable legal support for individuals, families, and businesses.
             </p>
           </div>
 
@@ -180,7 +180,7 @@ export default function Footer() {
                     Mon to Sat 9:30 AM to 10:30 – 11:00 PM
                   </p>
                   <p className="text-gray-300 text-[11px] sm:text-xs mt-0.5 font-normal">
-                    Sunday / Emergency Bail: 24/7 On-Call
+                    Sunday: By appointment only
                   </p>
                 </div>
               </div>

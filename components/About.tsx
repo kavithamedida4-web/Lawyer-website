@@ -26,7 +26,7 @@ export default function About() {
   }, []);
 
   const points = [
-    'Direct consultation with senior advocates on every case.',
+    'Direct access to your assigned advocate on every case.',
     'Clear and realistic legal advice without false assurances.',
     'Thorough preparation, timely filings, and regular court attendance.',
     'Prompt updates after hearings with complete client confidentiality.',
@@ -152,7 +152,7 @@ export default function About() {
 
             {/* Main Headline */}
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-4 tracking-tight max-w-[600px]">
-              A Legacy Of Legal Excellence
+              About Our Chambers
             </h2>
 
             {/* Description Paragraph */}
