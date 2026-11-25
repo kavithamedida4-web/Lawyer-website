@@ -208,6 +208,11 @@ export default function HowItWorks() {
 
         </div>
 
+        {/* No-relationship Note */}
+        <p className="mt-10 text-center text-xs sm:text-sm text-gray-700 font-sans font-semibold max-w-xl mx-auto leading-relaxed border-t border-gray-200 pt-6">
+          Note: A consultation does not by itself create a lawyer-client relationship.
+        </p>
+
       </div>
     </section>
   );
