@@ -109,7 +109,7 @@ export default function Hero() {
       */}
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12 my-auto flex-1 flex flex-col justify-center">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 lg:gap-10 items-center w-full">
           
           {/* ==================================================================
               LEFT SIDE: CONTENT (Clean font-sans typography with font-weight 600)
@@ -118,21 +118,22 @@ export default function Hero() {
           <div className="lg:col-span-5 flex flex-col justify-center text-left">
             
             {/* Main Headline - font-sans font-semibold (600) */}
-            <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-white leading-tight tracking-tight mb-3 max-w-[600px] drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
+            <h1 className="text-2xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-white leading-tight tracking-tight mb-2 sm:mb-3 max-w-[600px] drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
               <span>UK Law Firm — Advocates and Legal Counsel, </span>
               <span className="text-[#f3cd67]">Hyderabad.</span>
             </h1>
 
-            {/* Subtitle / Description */}
-            <p className="text-white/85 text-xs sm:text-sm lg:text-[14px] leading-relaxed font-sans font-normal mb-5 max-w-md drop-shadow-sm">
-              Practice before the Telangana High Court, District and Sessions Courts, and Tribunals in Hyderabad. 8+ Years of practice in civil, criminal, family, property and consumer matters.
+            {/* Subtitle / Description (concise on mobile, full on desktop) */}
+            <p className="text-white/85 text-xs sm:text-sm lg:text-[14px] leading-relaxed font-sans font-normal mb-3.5 sm:mb-5 max-w-md drop-shadow-sm">
+              Practice before the Telangana High Court, District and Sessions Courts, and Tribunals in Hyderabad.
+              <span className="hidden sm:inline"> 8+ Years of practice in civil, criminal, family, property and consumer matters.</span>
             </p>
 
             {/* CTA Action Buttons */}
             <div className="flex flex-wrap items-center gap-3">
               <Link
                 href="/contact"
-                className="px-6 sm:px-7 py-2.5 sm:py-3 rounded-full border border-white/60 hover:border-[#f3cd67] bg-white/10 hover:bg-[#c9a84c] text-white hover:text-black backdrop-blur-md text-xs sm:text-sm font-semibold font-sans tracking-wide transition-all duration-300 shadow-lg active:scale-95 inline-flex items-center gap-2 group cursor-pointer"
+                className="px-5 sm:px-7 py-2.5 sm:py-3 rounded-full border border-white/60 hover:border-[#f3cd67] bg-white/10 hover:bg-[#c9a84c] text-white hover:text-black backdrop-blur-md text-xs sm:text-sm font-semibold font-sans tracking-wide transition-all duration-300 shadow-lg active:scale-95 inline-flex items-center gap-2 group cursor-pointer"
               >
                 <span>Request Chamber Appointment</span>
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -140,7 +141,7 @@ export default function Hero() {
 
               <a
                 href="#services"
-                className="px-4 py-2.5 rounded-full text-white/80 hover:text-[#f3cd67] text-xs sm:text-sm font-medium font-sans tracking-wide transition-colors inline-flex items-center gap-1.5"
+                className="hidden sm:inline-flex px-4 py-2.5 rounded-full text-white/80 hover:text-[#f3cd67] text-xs sm:text-sm font-medium font-sans tracking-wide transition-colors items-center gap-1.5"
               >
                 <span>View Practice Areas</span>
                 <span>↓</span>
