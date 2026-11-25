@@ -220,19 +220,45 @@ export default function Services() {
           <div className="flex items-center justify-center gap-3 mb-2.5">
             <span className="w-10 h-[1.5px] bg-[#d8b577]" />
             <span className="text-[#8c6b45] text-[11px] font-bold tracking-[0.25em] uppercase font-sans">
-              OUR PRACTICE AREAS
+              SECTION 02 — WHAT THE FIRM HANDLES
             </span>
             <span className="w-10 h-[1.5px] bg-[#d8b577]" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-sans font-semibold text-[#0a1222] leading-tight mb-2 tracking-tight max-w-[680px] mx-auto">
-            Our Legal Services
+          <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-sans font-semibold text-[#0a1222] leading-tight mb-4 tracking-tight max-w-[680px] mx-auto">
+            Our Practice Areas — Areas of Practice.
           </h2>
-
-          <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans max-w-lg mx-auto">
-            Clear, honest advice and dependable court representation for you and your family.
-          </p>
         </div>
+
+        {/* Numbered Practice Areas Grid */}
+        <div className="max-w-4xl mx-auto mb-6 grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-2.5 px-2">
+          {[
+            { n: '01', label: 'Civil Litigation' },
+            { n: '02', label: 'Criminal Defence' },
+            { n: '03', label: 'Family and Matrimonial Matters' },
+            { n: '04', label: 'Property and Real Estate Matters' },
+            { n: '05', label: 'Consumer Disputes' },
+            { n: '06', label: 'Bail and Anticipatory Bail' },
+            { n: '07', label: 'Cheque Bounce Cases under NI Act' },
+            { n: '08', label: 'Motor Accident Claims' },
+            { n: '09', label: 'Labour and Employment Matters' },
+            { n: '10', label: 'Wills and Succession' },
+            { n: '11', label: 'Business and Commercial Matters' },
+            { n: '12', label: 'Arbitration and Mediation' },
+            { n: '13', label: 'Writs before the High Court' },
+            { n: '14', label: 'Documentation and Legal Notices' },
+          ].map(({ n, label }) => (
+            <div key={n} className="flex items-center gap-3 py-1.5 border-b border-gray-200/70">
+              <span className="text-[#c9a84c] font-bold text-xs font-sans w-6 flex-shrink-0">{n}</span>
+              <span className="text-gray-800 text-sm font-sans font-medium">{label}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Footer Note */}
+        <p className="max-w-4xl mx-auto text-xs sm:text-sm font-sans text-[#b38634] leading-relaxed mb-10 px-2">
+          If your matter does not fall in this list, share brief details, we will inform you whether we can take it up.
+        </p>
 
         {/* Carousel Navigation Buttons & Counter */}
         <div className="flex items-center justify-between mb-3 px-2">
