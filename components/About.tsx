@@ -135,14 +135,6 @@ export default function About() {
             }`}
           >
             
-            {/* Top Subtitle Tag with Animated Expanding Gold Rule */}
-            <div className="flex items-center gap-3 mb-2.5">
-              <span className={`h-[2px] bg-[#c9a84c] transition-all duration-700 delay-300 ${isVisible ? 'w-8' : 'w-0'}`} />
-              <p className="text-[#b38634] font-serif italic text-base sm:text-lg font-semibold tracking-wide">
-                About Us
-              </p>
-            </div>
-
             {/* Main Headline */}
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-4 tracking-tight max-w-[600px]">
               About the Firm.
