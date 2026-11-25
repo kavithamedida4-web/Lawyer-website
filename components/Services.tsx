@@ -61,7 +61,7 @@ const allServices = [
     category: 'Consumer Disputes',
     sub: 'Consumer Court & Claims',
     desc: 'Filing Consumer Court cases for defective products, poor services, and compensation claims.',
-    image: '/service-criminal.jpg',
+    image: '/service-consumer.jpg',
     points: ['Defective Goods & Services', 'Refund & Compensation Claims', 'Deficiency in Service', 'District & State Forum Representation'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -74,7 +74,7 @@ const allServices = [
     category: 'Bail and Anticipatory Bail',
     sub: 'Bail Applications',
     desc: 'Filing and arguing bail and anticipatory bail applications before Magistrate, Sessions, and High Courts.',
-    image: '/service-criminal.jpg',
+    image: '/service-bail.jpg',
     points: ['Regular Bail Applications', 'Anticipatory Bail (AB)', 'Bail Cancellation Matters', 'High Court Bail Petitions'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -87,7 +87,7 @@ const allServices = [
     category: 'Cheque Bounce Cases under NI Act',
     sub: 'Section 138 NI Act',
     desc: 'Handling cheque dishonour cases under Section 138 of the Negotiable Instruments Act.',
-    image: '/service-criminal.jpg',
+    image: '/service-cheque-bounce.jpg',
     points: ['Section 138 Complaints', 'Legal Notice under NI Act', 'Trial Court Representation', 'Compounding & Settlement'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -100,7 +100,7 @@ const allServices = [
     category: 'Motor Accident Claims',
     sub: 'MACT & Compensation',
     desc: 'Filing and arguing motor accident compensation claims before Motor Accident Claims Tribunals.',
-    image: '/service-tribunals.jpg',
+    image: '/service-motor-accident.jpg',
     points: ['MACT Claim Petitions', 'Compensation Assessment', 'Insurance Company Disputes', 'Interim Relief Applications'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -126,7 +126,7 @@ const allServices = [
     category: 'Wills and Succession',
     sub: 'Inheritance & Succession',
     desc: 'Drafting registered wills, handling succession certificates, and inheritance disputes.',
-    image: '/service-civil.jpg',
+    image: '/service-wills.jpg',
     points: ['Will Drafting & Registration', 'Succession Certificates', 'Legal Heir Certificates', 'Inheritance Disputes'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -152,7 +152,7 @@ const allServices = [
     category: 'Arbitration and Mediation',
     sub: 'Dispute Resolution',
     desc: 'Representing parties in arbitration proceedings and assisting in out-of-court mediation settlements.',
-    image: '/service-corporate.jpg',
+    image: '/service-arbitration.jpg',
     points: ['Arbitration Proceedings', 'Mediation & Conciliation', 'Arbitral Award Enforcement', 'Commercial Dispute Resolution'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -165,7 +165,7 @@ const allServices = [
     category: 'Writs before the High Court',
     sub: 'Writ Petitions & High Court',
     desc: 'Filing writ petitions before the High Court of Telangana for fundamental rights, service matters, and government actions.',
-    image: '/service-tribunals.jpg',
+    image: '/service-writs-hc.jpg',
     points: ['Writ Petitions (HC)', 'Article 226 Petitions', 'Service & Government Matters', 'Stay & Interim Orders'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -178,7 +178,7 @@ const allServices = [
     category: 'Documentation and Legal Notices',
     sub: 'Notices, Deeds & Opinions',
     desc: 'Drafting legal notices, registered deeds, General Power of Attorney (GPA), and property legal opinions.',
-    image: '/service-civil.jpg',
+    image: '/service-documentation.jpg',
     points: ['Legal Notice Drafting', 'Power of Attorney (GPA/SPA)', 'Title Search & Legal Opinions', 'Affidavits & Declarations'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
