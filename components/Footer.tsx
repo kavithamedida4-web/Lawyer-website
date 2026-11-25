@@ -8,7 +8,7 @@ export default function Footer() {
     { name: 'Home', href: '/#home' },
     { name: 'Practice Areas', href: '/#services' },
     { name: 'About Us', href: '/#about' },
-    { name: 'How It Works', href: '/#how-it-works' },
+    { name: 'Consultation Process', href: '/#how-it-works' },
     { name: 'Request Appointment', href: '/contact' },
     { name: 'Privacy Policy', href: '/privacy-policy' },
     { name: 'Terms of Service', href: '/terms-of-service' },
@@ -16,18 +16,18 @@ export default function Footer() {
   ];
 
   const serviceLinks = [
-    { name: 'Criminal Defense & Bail', href: '/services/criminal-law', highlight: false },
-    { name: 'Corporate & Commercial', href: '/services/corporate-and-commercial', highlight: false },
-    { name: 'Labour & Employment', href: '/services/labour-and-employment', highlight: false },
-    { name: 'Cyber Crime & IT Law', href: '/services/cyber-crime', highlight: false },
-    { name: 'Civil Litigation & Suits', href: '/services/civil-law', highlight: false },
-    { name: 'Family & Matrimonial Law', href: '/services/family-law', highlight: false },
-    { name: 'RERA & Property Disputes', href: '/services/rera-and-builder-buyer', highlight: false },
-    { name: 'Tribunals & High Court Writs', href: '/services/tribunals-and-forums', highlight: false },
+    { name: 'Civil Litigation', href: '/services/civil-law', highlight: false },
+    { name: 'Criminal Defence', href: '/services/criminal-law', highlight: false },
+    { name: 'Family and Matrimonial Matters', href: '/services/family-law', highlight: false },
+    { name: 'Property and Real Estate Matters', href: '/services/rera-and-builder-buyer', highlight: false },
+    { name: 'Labour and Employment Matters', href: '/services/labour-and-employment', highlight: false },
+    { name: 'Business and Commercial Matters', href: '/services/corporate-and-commercial', highlight: false },
+    { name: 'Writs before the High Court', href: '/services/tribunals-and-forums', highlight: false },
+    { name: 'Documentation and Legal Notices', href: '/services/other-legal-services', highlight: false },
   ];
 
   return (
-    <footer className="bg-[#0b0c0e] text-white pt-16 pb-8 font-sans border-t border-[#1f2228]">
+    <footer className="bg-[#0b0c0e] text-white pt-16 pb-20 sm:pb-10 font-sans border-t border-[#1f2228]">
       <div className="max-w-[1360px] mx-auto px-6 sm:px-10 lg:px-12">
         
         {/* 4-Column Main Grid */}
@@ -110,8 +110,8 @@ export default function Footer() {
 
           {/* Column 4: Chambers & Location (Span 3) */}
           <div className="lg:col-span-3">
-            <h4 className="text-white font-bold text-sm sm:text-base mb-5 font-sans tracking-wide flex items-center gap-1.5">
-              <span>📍</span> Chambers &amp; Location
+            <h4 className="text-white font-bold text-sm sm:text-base mb-5 font-sans tracking-wide">
+              Chambers &amp; Location
             </h4>
             
             <div className="space-y-4 text-xs sm:text-[13px]">
@@ -198,7 +198,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar: Copyright & Edone Solutions attribution */}
-        <div className="pt-6 border-t border-[#1f2228] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-300">
+        <div className="pt-6 border-t border-[#1f2228] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-300 sm:pr-44">
           <p className="text-center sm:text-left">
             &copy; {new Date().getFullYear()} UK Law Firm. All rights reserved. &nbsp;•&nbsp;{' '}
             <Link href="/disclaimer" className="hover:text-white transition-colors text-gray-300 underline-offset-2 hover:underline">
