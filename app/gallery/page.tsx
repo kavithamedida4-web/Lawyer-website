@@ -27,12 +27,6 @@ export default function GalleryPage() {
             <span className="text-[#916b1f] font-semibold">Gallery</span>
           </nav>
 
-          {/* Pill Badge */}
-          <div className="inline-flex items-center gap-1.5 bg-[#faecd1] text-[#916b1f] border border-[#ebd8ad] px-4 py-1.5 rounded-full text-[11px] font-bold tracking-widest uppercase mb-3 shadow-2xs">
-            <span>⚖️</span>
-            <span>CHAMBERS &amp; PRACTICE</span>
-          </div>
-
           {/* Heading */}
           <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] tracking-tight leading-tight mb-3 max-w-[700px] mx-auto">
             Chambers and Practice — <span className="text-[#b38634]">Our Gallery.</span>
