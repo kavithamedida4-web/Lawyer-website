@@ -36,20 +36,19 @@ export default function AboutPage() {
 
         <div className="max-w-[1200px] mx-auto px-4 sm:px-10 text-center relative z-10">
           
-          {/* 1. Pill Badge Matching Reference */}
+          {/* 1. Pill Badge */}
           <div className="inline-flex items-center gap-1.5 bg-[#faecd1] text-[#916b1f] border border-[#ebd8ad] px-4 py-1.5 rounded-full text-[11px] sm:text-xs font-bold tracking-widest uppercase mb-3.5 shadow-2xs">
-            <span className="text-xs">✨</span>
-            <span>OUR STORY</span>
+            <span>OUR CHAMBERS</span>
           </div>
 
-          {/* 2. Main Title Matching Reference */}
+          {/* 2. Main Title */}
           <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold tracking-tight leading-tight text-[#0a1222] mb-3 max-w-[600px] mx-auto">
             About <span className="text-[#b88a38]">UK Law Firm</span>
           </h1>
 
-          {/* 3. Subtitle Description Matching Reference */}
+          {/* 3. Subtitle Description */}
           <p className="text-gray-700 text-xs sm:text-base max-w-2xl mx-auto leading-relaxed font-sans mb-7 sm:mb-10 px-2">
-            Based in Gachibowli, Hyderabad, UK Law Firm provides clear legal guidance and courtroom representation across the High Court of Telangana, District &amp; Sessions Courts, and Tribunals.
+            An advocates office based in Gachibowli, Hyderabad, practising before the High Court for the State of Telangana, District &amp; Sessions Courts, and Tribunals.
           </p>
 
           {/* 4. 3 Side-by-Side Tall Rounded Photo Cards (3 Columns on Mobile & Desktop, exactly like reference) */}
@@ -114,11 +113,11 @@ export default function AboutPage() {
 
                 <div className="grid grid-cols-2 gap-4 h-full relative z-10">
                   
-                  {/* Left Tall Arch: Senior Advocate Partner */}
+                  {/* Left Tall Arch: Advocate Partner */}
                   <div className="h-[390px] sm:h-[450px] rounded-t-full rounded-b-3xl overflow-hidden shadow-2xl relative border-4 border-white bg-gray-100 group">
                     <Image
                       src="/advocate-senior-standing.jpg"
-                      alt="UK Law Firm Senior Advocate Partner"
+                      alt="UK Law Firm Advocate Partner"
                       fill
                       sizes="(max-width: 768px) 50vw, 270px"
                       className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
@@ -177,40 +176,49 @@ export default function AboutPage() {
             {/* Right: Core Practice Overview */}
             <div className="lg:col-span-6 font-sans">
               <p className="text-[#b38634] font-serif italic text-base sm:text-lg mb-2 font-medium">
-                Our Practice &amp; Ethos
+                About the Advocates
               </p>
               <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-4 tracking-tight max-w-[600px]">
-                Dedicated Legal Practice Rooted in Justice and Ethics
+                Advocates Office in Gachibowli, Hyderabad.
               </h2>
 
+              {/* Advocates & Enrolment Placeholders */}
+              <div className="space-y-3 mb-5">
+                <div className="bg-[#f9f3e3] border-l-4 border-[#c9a84c] px-4 py-3 rounded-r-lg text-xs sm:text-sm text-[#0a1222]">
+                  <strong className="font-semibold">Led by M. Umamaheshwar Reddy</strong> — B.Sc., M.Sc., LL.B. [Enrolment No: to add]
+                </div>
+                <div className="bg-[#f9f3e3] border-l-4 border-[#c9a84c] px-4 py-3 rounded-r-lg text-xs sm:text-sm text-[#0a1222]">
+                  <strong className="font-semibold">S. Kamalakar</strong> — B.B.M., M.C.A., LL.B. [Enrolment No: to add]
+                </div>
+              </div>
+
               <p className="text-gray-700 text-sm sm:text-[15px] leading-relaxed mb-4">
-                Founded by advocates <strong>M. Umamaheshwar Reddy</strong> (B.Sc., M.Sc., LL.B.) and <strong>S. Kamalakar</strong> (B.B.M., M.C.A., LL.B.), UK Law Firm provides accessible, ethical, and dependable legal representation. We take the time to understand your circumstances and provide honest guidance on the strengths and challenges of your matter.
+                Our chambers handle civil litigation, criminal defence, bail and anticipatory bail, family and matrimonial matters, property and real estate disputes, cheque bounce cases under the NI Act, consumer disputes, motor accident claims, labour matters, wills and succession, business and commercial matters, arbitration and mediation, writs before the High Court, and legal documentation.
               </p>
 
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                Our chambers handle civil litigation, property disputes, criminal defense, bail matters, RERA complaints, family matters, and commercial contracts. We focus on thorough preparation, timely filings, and keeping our clients informed throughout the legal process.
+              <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-6">
+                Matters are handled after review of facts, documents and applicable law. Consultation is based on information and documents you provide.
               </p>
 
               {/* Checkpoints Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-xs sm:text-sm font-medium text-gray-800 mb-6">
                 <div className="flex items-center gap-2.5">
                   <span className="w-5 h-5 rounded-full bg-[#0a1222] text-[#e5bf55] flex items-center justify-center flex-shrink-0 text-xs">✓</span>
-                  <span>High Court &amp; Trial Court Advocacy</span>
+                  <span>High Court &amp; Trial Court Practice</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <span className="w-5 h-5 rounded-full bg-[#0a1222] text-[#e5bf55] flex items-center justify-center flex-shrink-0 text-xs">✓</span>
-                  <span>Thorough Case Preparation</span>
+                  <span>Document &amp; Case Review</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <span className="w-5 h-5 rounded-full bg-[#0a1222] text-[#e5bf55] flex items-center justify-center flex-shrink-0 text-xs">✓</span>
-                  <span>Complete Client Confidentiality</span>
+                  <span>Procedural Filings &amp; Hearings</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <span className="w-5 h-5 rounded-full bg-[#0a1222] text-[#e5bf55] flex items-center justify-center flex-shrink-0 text-xs">✓</span>
-                  <span>Direct Advocate Guidance</span>
+                  <span>Direct Advocate Access</span>
                 </div>
               </div>
-
 
             </div>
 
