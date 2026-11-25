@@ -105,13 +105,8 @@ export default function HowItWorks() {
         <div className="text-center mb-14 sm:mb-20">
           {/* Heading */}
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-3 tracking-tight max-w-[600px] mx-auto">
-            How a Consultation Works
+            How a Consultation Works.
           </h2>
-
-          {/* Subtitle */}
-          <p className="text-gray-500 text-xs sm:text-sm md:text-base font-sans max-w-xl mx-auto leading-relaxed">
-            A simple 4-step process — from booking an appointment and sharing your documents, to getting a legal assessment and deciding on representation.
-          </p>
 
           <div className="w-14 h-[2px] bg-[#c9a84c] mx-auto mt-4" />
         </div>
@@ -209,9 +204,11 @@ export default function HowItWorks() {
         </div>
 
         {/* No-relationship Note */}
-        <p className="mt-10 text-center text-xs sm:text-sm text-gray-700 font-sans font-semibold max-w-xl mx-auto leading-relaxed border-t border-gray-200 pt-6">
-          Note: A consultation does not by itself create a lawyer-client relationship.
-        </p>
+        <div className="mt-12 max-w-2xl mx-auto bg-[#0a1222] text-white px-6 py-4 rounded-xl text-center shadow-sm">
+          <p className="text-xs sm:text-sm font-sans font-semibold leading-relaxed">
+            Note: A consultation does not by itself create a lawyer-client relationship.
+          </p>
+        </div>
 
       </div>
     </section>
