@@ -256,7 +256,7 @@ _Submitted via UK Law Firm official website_`;
                   </div>
                   <div>
                     <label htmlFor="contact-phone" className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">
-                      Phone Number *
+                      Phone *
                     </label>
                     <input
                       id="contact-phone"
@@ -277,7 +277,7 @@ _Submitted via UK Law Firm official website_`;
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   <div>
                     <label htmlFor="contact-practice" className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">
-                      Select Practice Area *
+                      Practice Area *
                     </label>
                     <div className="relative">
                       <select
@@ -301,7 +301,7 @@ _Submitted via UK Law Firm official website_`;
                   </div>
                   <div>
                     <label htmlFor="contact-email" className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">
-                      Email Address *
+                      Email *
                     </label>
                     <input
                       id="contact-email"
@@ -318,7 +318,7 @@ _Submitted via UK Law Firm official website_`;
                 {/* Row 3: Brief Case Details */}
                 <div>
                   <label htmlFor="contact-message" className="block text-[10px] font-bold text-gray-600 uppercase tracking-wider mb-1">
-                    Brief Case Details &amp; Notes
+                    Brief Details *
                   </label>
                   <textarea
                     id="contact-message"
