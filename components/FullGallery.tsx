@@ -36,8 +36,8 @@ export const allGalleryPhotos: GalleryPhoto[] = [
   {
     id: 'umamaheshwar-desk-smiling',
     src: '/real-umamaheshwar-desk-smiling.jpg',
-    alt: 'Senior Advocate M. Umamaheshwar Reddy at his consultation desk with Criminal Court Practice and Procedure treatise',
-    title: 'Senior Advocate M. Umamaheshwar Reddy',
+    alt: 'Advocate M. Umamaheshwar Reddy at his consultation desk with Criminal Court Practice and Procedure treatise',
+    title: 'Advocate M. Umamaheshwar Reddy',
     category: 'partners',
     categoryLabel: 'Advocate Consultation',
     description:
@@ -56,7 +56,7 @@ export const allGalleryPhotos: GalleryPhoto[] = [
   {
     id: 'umamaheshwar-bookshelf',
     src: '/real-umamaheshwar-bookshelf.jpg',
-    alt: 'Senior Advocate M. Umamaheshwar Reddy reviewing legal treatises in the law library',
+    alt: 'Advocate M. Umamaheshwar Reddy reviewing legal treatises in the law library',
     title: 'Chambers Law Library & Research',
     category: 'partners',
     categoryLabel: 'Legal Research',

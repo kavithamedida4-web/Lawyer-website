@@ -81,7 +81,7 @@ export function getSubServiceImage(subName: string): string {
   if (lower.includes('power of attorney')) return '/other-02-power-of-attorney.jpg';
   if (lower.includes('will') || lower.includes('succession')) return '/other-05-will-succession.jpg';
 
-  // Safe fallback to our framed Senior Advocate M. Umamaheshwar Reddy in courtroom
+  // Safe fallback to our framed Advocate M. Umamaheshwar Reddy in courtroom
   return '/advocate-umamaheshwar-framed.jpg';
 }
 
@@ -114,7 +114,7 @@ export const legalServices: LegalService[] = [
     category: 'BAIL, TRIAL COURT & SPECIAL COURTS',
     shortDesc: 'Legal help for bail, anticipatory bail, police cases, cheque bounce, and court trials.',
     fullDesc:
-      'UK Law Firm helps you with criminal cases in Hyderabad and Telangana. Our senior advocates handle bail applications, anticipatory bail, quashing of FIRs, cheque bounce cases, and trial court hearings with clear guidance at every step.',
+      'UK Law Firm helps you with criminal cases in Hyderabad and Telangana. Our Advocates handle bail applications, anticipatory bail, quashing of FIRs, cheque bounce cases, and trial court hearings with clear guidance at every step.',
     leadAdvocate: 'S. Kamalakar & M. Umamaheshwar Reddy',
     phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Kamalakar, I need urgent legal counsel regarding Criminal Law / Bail.',
@@ -131,7 +131,7 @@ export const legalServices: LegalService[] = [
       },
       card3: {
         src: '/real-umamaheshwar-desk-criminal.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy at Criminal Practice Desk',
+        alt: 'Advocate M. Umamaheshwar Reddy at Criminal Practice Desk',
       },
       card4: {
         src: '/real-partners-brass-lamp.jpg',
@@ -178,15 +178,15 @@ export const legalServices: LegalService[] = [
     shortDesc: 'Legal help for property disputes, land partition, stay orders, agreements, and money recovery.',
     fullDesc:
       'Our advocates handle property and land disputes, partition of family property, stay orders (injunctions), sale agreement issues, and money recovery cases across civil courts and the High Court.',
-    leadAdvocate: 'M. Umamaheshwar Reddy (Senior Advocate)',
+    leadAdvocate: 'M. Umamaheshwar Reddy',
     phone: '+918897847788',
-    whatsappMessage: 'Hello Senior Advocate Umamaheshwar Reddy, I would like to consult regarding a Civil Law matter.',
+    whatsappMessage: 'Hello Advocate Umamaheshwar Reddy, I would like to consult regarding a Civil Law matter.',
     iconType: 'document',
     courts: ['Telangana High Court', 'City Civil Courts', 'Senior Civil Judge Courts', 'Junior Civil Judge Courts'],
     heroImages: {
       card1: {
         src: '/real-umamaheshwar-standing-suit.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy in Formal Court Suit',
+        alt: 'Advocate M. Umamaheshwar Reddy in Formal Court Suit',
       },
       card2: {
         src: '/hero-advocate-kamalakar-portrait.jpg',
@@ -194,7 +194,7 @@ export const legalServices: LegalService[] = [
       },
       card3: {
         src: '/real-umamaheshwar-desk-smiling.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy at Civil Practice Desk',
+        alt: 'Advocate M. Umamaheshwar Reddy at Civil Practice Desk',
       },
       card4: {
         src: '/hero-partners-uk-law-firm.jpg',
@@ -253,7 +253,7 @@ export const legalServices: LegalService[] = [
       },
       card2: {
         src: '/real-umamaheshwar-desk-reading.jpg',
-        alt: 'Senior Advocate Umamaheshwar Reddy Reviewing Case Briefs',
+        alt: 'Advocate Umamaheshwar Reddy Reviewing Case Briefs',
       },
       card3: {
         src: '/hero-advocate-kamalakar-library.jpg',
@@ -261,7 +261,7 @@ export const legalServices: LegalService[] = [
       },
       card4: {
         src: '/real-umamaheshwar-standing-suit.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy — Chambers',
+        alt: 'Advocate M. Umamaheshwar Reddy — Chambers',
       },
     },
     subServices: [
@@ -312,7 +312,7 @@ export const legalServices: LegalService[] = [
     heroImages: {
       card1: {
         src: '/real-umamaheshwar-bookshelf.jpg',
-        alt: 'Senior Advocate Umamaheshwar Reddy in Law Library',
+        alt: 'Advocate Umamaheshwar Reddy in Law Library',
       },
       card2: {
         src: '/advocate-lapels-neckband.jpg',
@@ -320,7 +320,7 @@ export const legalServices: LegalService[] = [
       },
       card3: {
         src: '/real-umamaheshwar-desk-criminal.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy at Briefing Desk',
+        alt: 'Advocate M. Umamaheshwar Reddy at Briefing Desk',
       },
       card4: {
         src: '/real-partners-brass-lamp.jpg',
@@ -375,7 +375,7 @@ export const legalServices: LegalService[] = [
     heroImages: {
       card1: {
         src: '/hero-card-umamaheshwar.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy',
+        alt: 'Advocate M. Umamaheshwar Reddy',
       },
       card2: {
         src: '/kamalakar-desk-justice.jpg',
@@ -383,7 +383,7 @@ export const legalServices: LegalService[] = [
       },
       card3: {
         src: '/real-umamaheshwar-desk-smiling.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy at Executive Desk',
+        alt: 'Advocate M. Umamaheshwar Reddy at Executive Desk',
       },
       card4: {
         src: '/hero-partners-uk-law-firm.jpg',
@@ -442,11 +442,11 @@ export const legalServices: LegalService[] = [
       },
       card2: {
         src: '/real-umamaheshwar-standing-suit.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy before Law & Justice Wall',
+        alt: 'Advocate M. Umamaheshwar Reddy before Law & Justice Wall',
       },
       card3: {
         src: '/real-umamaheshwar-desk-reading.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy Analyzing Builder Contracts',
+        alt: 'Advocate M. Umamaheshwar Reddy Analyzing Builder Contracts',
       },
       card4: {
         src: '/hero-advocate-kamalakar-portrait.jpg',
@@ -496,7 +496,7 @@ export const legalServices: LegalService[] = [
     heroImages: {
       card1: {
         src: '/real-umamaheshwar-bookshelf.jpg',
-        alt: 'Senior Advocate Umamaheshwar Reddy Reviewing Tenancy Treatises',
+        alt: 'Advocate Umamaheshwar Reddy Reviewing Tenancy Treatises',
       },
       card2: {
         src: '/real-kamalakar-standing-coat.jpg',
@@ -504,7 +504,7 @@ export const legalServices: LegalService[] = [
       },
       card3: {
         src: '/real-umamaheshwar-desk-smiling.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy at Consultation Desk',
+        alt: 'Advocate M. Umamaheshwar Reddy at Consultation Desk',
       },
       card4: {
         src: '/real-partners-brass-lamp.jpg',
@@ -562,11 +562,11 @@ export const legalServices: LegalService[] = [
       },
       card3: {
         src: '/real-umamaheshwar-desk-reading.jpg',
-        alt: 'Senior Advocate Umamaheshwar Reddy Reviewing Employment Briefs',
+        alt: 'Advocate Umamaheshwar Reddy Reviewing Employment Briefs',
       },
       card4: {
         src: '/hero-card-umamaheshwar.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy',
+        alt: 'Advocate M. Umamaheshwar Reddy',
       },
     },
     subServices: [
@@ -616,11 +616,11 @@ export const legalServices: LegalService[] = [
       },
       card2: {
         src: '/real-umamaheshwar-standing-suit.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy',
+        alt: 'Advocate M. Umamaheshwar Reddy',
       },
       card3: {
         src: '/real-umamaheshwar-desk-smiling.jpg',
-        alt: 'Senior Advocate Umamaheshwar Reddy at Consultation Desk',
+        alt: 'Advocate Umamaheshwar Reddy at Consultation Desk',
       },
       card4: {
         src: '/hero-advocate-kamalakar-portrait.jpg',
@@ -678,7 +678,7 @@ export const legalServices: LegalService[] = [
       },
       card3: {
         src: '/real-umamaheshwar-desk-reading.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy Analyzing Corporate Agreements',
+        alt: 'Advocate M. Umamaheshwar Reddy Analyzing Corporate Agreements',
       },
       card4: {
         src: '/hero-partners-uk-law-firm.jpg',
@@ -728,15 +728,15 @@ export const legalServices: LegalService[] = [
     heroImages: {
       card1: {
         src: '/ipr-hero-kamalakar-library.jpg',
-        alt: 'Senior Advocate S. Kamalakar Reviewing IP Treatises in Law Library',
+        alt: 'Advocate S. Kamalakar Reviewing IP Treatises in Law Library',
       },
       card2: {
         src: '/ipr-hero-umamaheshwar-standing.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy in Formal Court Attire',
+        alt: 'Advocate M. Umamaheshwar Reddy in Formal Court Attire',
       },
       card3: {
         src: '/ipr-hero-umamaheshwar-desk.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy at Consultation Desk',
+        alt: 'Advocate M. Umamaheshwar Reddy at Consultation Desk',
       },
       card4: {
         src: '/ipr-hero-partners-lamp.jpg',
@@ -786,7 +786,7 @@ export const legalServices: LegalService[] = [
     heroImages: {
       card1: {
         src: '/real-umamaheshwar-standing-suit.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy',
+        alt: 'Advocate M. Umamaheshwar Reddy',
       },
       card2: {
         src: '/advocate-lapels-neckband.jpg',
@@ -794,7 +794,7 @@ export const legalServices: LegalService[] = [
       },
       card3: {
         src: '/real-umamaheshwar-desk-criminal.jpg',
-        alt: 'Senior Advocate Umamaheshwar Reddy at Cyber Defense Desk',
+        alt: 'Advocate Umamaheshwar Reddy at Cyber Defense Desk',
       },
       card4: {
         src: '/hero-partners-uk-law-firm.jpg',
@@ -852,11 +852,11 @@ export const legalServices: LegalService[] = [
       },
       card3: {
         src: '/real-umamaheshwar-desk-smiling.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy at Consultation Desk',
+        alt: 'Advocate M. Umamaheshwar Reddy at Consultation Desk',
       },
       card4: {
         src: '/real-umamaheshwar-standing-suit.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy — Chambers',
+        alt: 'Advocate M. Umamaheshwar Reddy — Chambers',
       },
     },
     subServices: [
@@ -915,11 +915,11 @@ export const legalServices: LegalService[] = [
       },
       card3: {
         src: '/real-umamaheshwar-bookshelf.jpg',
-        alt: 'Senior Advocate Umamaheshwar Reddy in Legal Library',
+        alt: 'Advocate Umamaheshwar Reddy in Legal Library',
       },
       card4: {
         src: '/hero-card-umamaheshwar.jpg',
-        alt: 'Senior Advocate M. Umamaheshwar Reddy',
+        alt: 'Advocate M. Umamaheshwar Reddy',
       },
     },
     subServices: [

@@ -137,7 +137,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                       />
                     </div>
 
-                    {/* Card 3: Bottom-Left (Senior Advocate Consultation Desk) */}
+                    {/* Card 3: Bottom-Left (Advocate Consultation Desk) */}
                     <div className="relative h-[205px] sm:h-[240px] lg:h-[265px] rounded-2xl sm:rounded-[32px] overflow-hidden border-[3px] sm:border-4 border-white shadow-md sm:shadow-xl bg-gray-100 group transition-all duration-500 ease-out hover:scale-[1.03]">
                       <Image
                         src={service.heroImages.card3.src}
@@ -329,7 +329,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                     15+ Years Court Experience
                   </h3>
                   <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans">
-                    Our senior advocates personally attend your hearings in the Telangana High Court, District Courts, and Tribunals.
+                    Our Advocates personally attend your hearings in the Telangana High Court, District Courts, and Tribunals.
                   </p>
                 </div>
               </div>
