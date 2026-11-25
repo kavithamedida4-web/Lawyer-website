@@ -5,22 +5,9 @@ import Link from 'next/link';
 
 const allServices = [
   {
-    slug: 'criminal-law',
-    category: 'Criminal Law',
-    sub: 'Bail, Police & Court Cases',
-    desc: 'Help with bail, anticipatory bail, cheque bounce cases, police complaints, and court trials.',
-    image: '/service-criminal.jpg',
-    points: ['Bail & Anticipatory Bail', 'Cheque Bounce Cases', 'Criminal Trials & Appeals', 'Cyber Crime & NDPS'],
-    icon: (
-      <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-      </svg>
-    ),
-  },
-  {
     slug: 'civil-law',
-    category: 'Civil Law',
-    sub: 'Property, Land & Agreements',
+    category: 'Civil Litigation',
+    sub: 'Property, Land & Suits',
     desc: 'Help with property partition, title disputes, stay orders, agreements, and money recovery.',
     image: '/service-civil.jpg',
     points: ['Civil Suits & Decrees', 'Partition & Title Disputes', 'Injunctions & Stay Orders', 'Specific Performance'],
@@ -31,8 +18,21 @@ const allServices = [
     ),
   },
   {
+    slug: 'criminal-law',
+    category: 'Criminal Defence',
+    sub: 'Police & Court Cases',
+    desc: 'Representation in criminal cases, trials, appeals, and police matters before courts.',
+    image: '/service-criminal.jpg',
+    points: ['Criminal Trials & Appeals', 'FIR & Police Complaints', 'Cyber Crime & NDPS', 'Sessions & High Court Cases'],
+    icon: (
+      <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+      </svg>
+    ),
+  },
+  {
     slug: 'family-law',
-    category: 'Family Law',
+    category: 'Family and Matrimonial Matters',
     sub: 'Marriage, Divorce & Custody',
     desc: 'Help with mutual divorce, contested divorce, child custody, and monthly maintenance.',
     image: '/service-family.jpg',
@@ -45,11 +45,11 @@ const allServices = [
   },
   {
     slug: 'rera-and-builder-buyer',
-    category: 'RERA & Builder - Buyer',
-    sub: 'Real Estate & Flats',
-    desc: 'Help for homebuyers with delayed flat delivery, builder disputes, and refund claims.',
+    category: 'Property and Real Estate Matters',
+    sub: 'RERA, Flats & Land',
+    desc: 'Help for homebuyers with delayed flat delivery, builder disputes, RERA complaints, and refund claims.',
     image: '/service-property.jpg',
-    points: ['RERA Complaints & Redressal', 'Builder - Buyer Disputes', 'Delay in Possession Compensation', 'Agreement & Title Verification'],
+    points: ['RERA Complaints & Redressal', 'Builder–Buyer Disputes', 'Delay in Possession Compensation', 'Agreement & Title Verification'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -57,73 +57,8 @@ const allServices = [
     ),
   },
   {
-    slug: 'landlord-and-tenant',
-    category: 'Landlord & Tenant',
-    sub: 'Rental & Leases',
-    desc: 'Drafting rent agreements, evicting non-paying tenants, and resolving tenancy disputes.',
-    image: '/service-civil.jpg',
-    points: ['Eviction & Possession Suits', 'Rental Agreements Drafting', 'Lease Deed & Renewals', 'Commercial Property Disputes'],
-    icon: (
-      <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-      </svg>
-    ),
-  },
-  {
-    slug: 'tribunals-and-forums',
-    category: 'Tribunals & Forums',
-    sub: 'Consumer, NCLT & Tribunals',
-    desc: 'Representation in Consumer Courts, NCLT company matters, and motor accident claims.',
-    image: '/service-tribunals.jpg',
-    points: ['NCLT, NCLAT & IBC Matters', 'Motor Accident Claims (MACT)', 'Consumer Disputes Forum', 'CAT & Service Law Matters'],
-    icon: (
-      <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
-      </svg>
-    ),
-  },
-  {
-    slug: 'corporate-and-commercial',
-    category: 'Corporate & Commercial',
-    sub: 'Business & Contracts',
-    desc: 'Company registration, partner agreements, contract drafting, and business dispute resolution.',
-    image: '/service-corporate.jpg',
-    points: ['Company Incorporation', 'MOU & Shareholder Agreements', 'Business Due Diligence', 'Commercial Disputes'],
-    icon: (
-      <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
-    ),
-  },
-  {
-    slug: 'taxation-and-it-law',
-    category: 'Taxation & IT Law',
-    sub: 'Taxes & Compliance',
-    desc: 'Help with income tax notices, GST dispute notices, tax appeals, and digital business compliance.',
-    image: '/service-civil.jpg',
-    points: ['Income Tax Appeals & Assessments', 'GST Registration & Disputes', 'TDS & Regulatory Compliance', 'IT Act Compliance'],
-    icon: (
-      <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
-  },
-  {
-    slug: 'labour-and-employment',
-    category: 'Labour & Employment',
-    sub: 'Workplace & Job Issues',
-    desc: 'Help with employment contracts, sudden firing, unpaid salary, and workplace disputes.',
-    image: '/labour-04-epf-esi.jpg',
-    points: ['Employee Rights & Service Matters', 'Wrongful Termination', 'Industrial Disputes', 'EPF & Labour Compliance'],
-    icon: (
-      <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-      </svg>
-    ),
-  },
-  {
     slug: 'consumer-protection',
-    category: 'Consumer Protection',
+    category: 'Consumer Disputes',
     sub: 'Consumer Court & Claims',
     desc: 'Filing Consumer Court cases for defective products, poor services, and compensation claims.',
     image: '/service-criminal.jpg',
@@ -135,51 +70,116 @@ const allServices = [
     ),
   },
   {
-    slug: 'intellectual-property',
-    category: 'Intellectual Property (IPR)',
-    sub: 'Trademarks & Copyrights',
-    desc: 'Registering trademarks, brand logos, copyrights, and patents to protect your business.',
-    image: '/service-intellectual-property.jpg',
-    points: ['Trademark Registration & Opposition', 'Copyright Protection', 'Patent Filing & Advisory', 'IPR Infringement Litigation'],
+    slug: 'criminal-law',
+    category: 'Bail and Anticipatory Bail',
+    sub: 'Bail Applications',
+    desc: 'Filing and arguing bail and anticipatory bail applications before Magistrate, Sessions, and High Courts.',
+    image: '/service-criminal.jpg',
+    points: ['Regular Bail Applications', 'Anticipatory Bail (AB)', 'Bail Cancellation Matters', 'High Court Bail Petitions'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
       </svg>
     ),
   },
   {
-    slug: 'cyber-crime',
-    category: 'Cyber Crime',
-    sub: 'Online Scams & Harassment',
-    desc: 'Help with online bank fraud, social media harassment, hacking, and cyber police complaints.',
-    image: '/service-cyber.jpg',
-    points: ['Online Fraud & Financial Crime', 'Data Theft & Privacy Breaches', 'Social Media Offences', 'Cyber Cell Complaints'],
+    slug: 'criminal-law',
+    category: 'Cheque Bounce Cases under NI Act',
+    sub: 'Section 138 NI Act',
+    desc: 'Handling cheque dishonour cases under Section 138 of the Negotiable Instruments Act.',
+    image: '/service-criminal.jpg',
+    points: ['Section 138 Complaints', 'Legal Notice under NI Act', 'Trial Court Representation', 'Compounding & Settlement'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z" />
       </svg>
     ),
   },
   {
-    slug: 'immigration',
-    category: 'Immigration',
-    sub: 'Visas & OCI Cards',
-    desc: 'Help with student visas, work visas, OCI cards, visa rejections, and travel papers.',
-    image: '/service-immigration-new.jpg',
-    points: ['Student & Work Visas', 'OCI & PIO Applications', 'Citizenship & FRRO Queries', 'Apostille & Legalizations'],
+    slug: 'tribunals-and-forums',
+    category: 'Motor Accident Claims',
+    sub: 'MACT & Compensation',
+    desc: 'Filing and arguing motor accident compensation claims before Motor Accident Claims Tribunals.',
+    image: '/service-tribunals.jpg',
+    points: ['MACT Claim Petitions', 'Compensation Assessment', 'Insurance Company Disputes', 'Interim Relief Applications'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+      </svg>
+    ),
+  },
+  {
+    slug: 'labour-and-employment',
+    category: 'Labour and Employment Matters',
+    sub: 'Workplace & Job Issues',
+    desc: 'Help with employment contracts, wrongful termination, unpaid salary, and workplace disputes.',
+    image: '/labour-04-epf-esi.jpg',
+    points: ['Employee Rights & Service Matters', 'Wrongful Termination', 'Industrial Disputes', 'EPF & Labour Compliance'],
+    icon: (
+      <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
       </svg>
     ),
   },
   {
     slug: 'other-legal-services',
-    category: 'Other Legal Services',
-    sub: 'Wills, Notices & Deeds',
-    desc: 'Drafting legal notices, registered wills, General Power of Attorney (GPA), and property legal opinions.',
+    category: 'Wills and Succession',
+    sub: 'Inheritance & Succession',
+    desc: 'Drafting registered wills, handling succession certificates, and inheritance disputes.',
     image: '/service-civil.jpg',
-    points: ['Legal Notice Drafting', 'Power of Attorney (GPA/SPA)', 'Wills & Inheritance Succession', 'Title Search & Legal Opinions'],
+    points: ['Will Drafting & Registration', 'Succession Certificates', 'Legal Heir Certificates', 'Inheritance Disputes'],
+    icon: (
+      <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+      </svg>
+    ),
+  },
+  {
+    slug: 'corporate-and-commercial',
+    category: 'Business and Commercial Matters',
+    sub: 'Business & Contracts',
+    desc: 'Company registration, partner agreements, contract drafting, and commercial dispute resolution.',
+    image: '/service-corporate.jpg',
+    points: ['Company Incorporation', 'MOU & Shareholder Agreements', 'Business Due Diligence', 'Commercial Disputes'],
+    icon: (
+      <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      </svg>
+    ),
+  },
+  {
+    slug: 'corporate-and-commercial',
+    category: 'Arbitration and Mediation',
+    sub: 'Dispute Resolution',
+    desc: 'Representing parties in arbitration proceedings and assisting in out-of-court mediation settlements.',
+    image: '/service-corporate.jpg',
+    points: ['Arbitration Proceedings', 'Mediation & Conciliation', 'Arbitral Award Enforcement', 'Commercial Dispute Resolution'],
+    icon: (
+      <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+      </svg>
+    ),
+  },
+  {
+    slug: 'tribunals-and-forums',
+    category: 'Writs before the High Court',
+    sub: 'Writ Petitions & High Court',
+    desc: 'Filing writ petitions before the High Court of Telangana for fundamental rights, service matters, and government actions.',
+    image: '/service-tribunals.jpg',
+    points: ['Writ Petitions (HC)', 'Article 226 Petitions', 'Service & Government Matters', 'Stay & Interim Orders'],
+    icon: (
+      <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+      </svg>
+    ),
+  },
+  {
+    slug: 'other-legal-services',
+    category: 'Documentation and Legal Notices',
+    sub: 'Notices, Deeds & Opinions',
+    desc: 'Drafting legal notices, registered deeds, General Power of Attorney (GPA), and property legal opinions.',
+    image: '/service-civil.jpg',
+    points: ['Legal Notice Drafting', 'Power of Attorney (GPA/SPA)', 'Title Search & Legal Opinions', 'Affidavits & Declarations'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -200,7 +200,7 @@ export default function Services() {
 
   return (
     <section id="services" className="py-24 bg-[#faf7f2] relative overflow-hidden text-gray-900">
-      
+
       {/* Background Architectural Greek Columns Faint Outline */}
       <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-[0.035] pointer-events-none select-none flex justify-end">
         <svg className="h-full w-full max-h-[700px]" viewBox="0 0 300 600" fill="currentColor">
@@ -214,51 +214,25 @@ export default function Services() {
       </div>
 
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 relative z-10">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-6">
           <div className="flex items-center justify-center gap-3 mb-2.5">
             <span className="w-10 h-[1.5px] bg-[#d8b577]" />
             <span className="text-[#8c6b45] text-[11px] font-bold tracking-[0.25em] uppercase font-sans">
-              SECTION 02 — WHAT THE FIRM HANDLES
+              OUR PRACTICE AREAS
             </span>
             <span className="w-10 h-[1.5px] bg-[#d8b577]" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-sans font-semibold text-[#0a1222] leading-tight mb-4 tracking-tight max-w-[680px] mx-auto">
-            Our Practice Areas — Areas of Practice.
+          <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-sans font-semibold text-[#0a1222] leading-tight mb-2 tracking-tight max-w-[680px] mx-auto">
+            Our Legal Services
           </h2>
-        </div>
 
-        {/* Numbered Practice Areas Grid */}
-        <div className="max-w-4xl mx-auto mb-6 grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-2.5 px-2">
-          {[
-            { n: '01', label: 'Civil Litigation' },
-            { n: '02', label: 'Criminal Defence' },
-            { n: '03', label: 'Family and Matrimonial Matters' },
-            { n: '04', label: 'Property and Real Estate Matters' },
-            { n: '05', label: 'Consumer Disputes' },
-            { n: '06', label: 'Bail and Anticipatory Bail' },
-            { n: '07', label: 'Cheque Bounce Cases under NI Act' },
-            { n: '08', label: 'Motor Accident Claims' },
-            { n: '09', label: 'Labour and Employment Matters' },
-            { n: '10', label: 'Wills and Succession' },
-            { n: '11', label: 'Business and Commercial Matters' },
-            { n: '12', label: 'Arbitration and Mediation' },
-            { n: '13', label: 'Writs before the High Court' },
-            { n: '14', label: 'Documentation and Legal Notices' },
-          ].map(({ n, label }) => (
-            <div key={n} className="flex items-center gap-3 py-1.5 border-b border-gray-200/70">
-              <span className="text-[#c9a84c] font-bold text-xs font-sans w-6 flex-shrink-0">{n}</span>
-              <span className="text-gray-800 text-sm font-sans font-medium">{label}</span>
-            </div>
-          ))}
+          <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans max-w-lg mx-auto">
+            Clear, honest advice and dependable court representation for you and your family.
+          </p>
         </div>
-
-        {/* Footer Note */}
-        <p className="max-w-4xl mx-auto text-xs sm:text-sm font-sans text-[#b38634] leading-relaxed mb-10 px-2">
-          If your matter does not fall in this list, share brief details, we will inform you whether we can take it up.
-        </p>
 
         {/* Carousel Navigation Buttons & Counter */}
         <div className="flex items-center justify-between mb-3 px-2">
