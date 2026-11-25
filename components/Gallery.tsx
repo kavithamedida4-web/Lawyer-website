@@ -31,7 +31,7 @@ export default function Gallery() {
     // Center-Left Block (Bottom 50x70 - Large Main Centerpiece) - Partners
     centerLeftBottom50x70: {
       src: '/uk-law-firm-partners.jpg',
-      alt: 'UK Law Firm Senior Partners Standing in Chambers',
+      alt: 'UK Law Firm Advocates Standing in Chambers',
     },
     // Center-Right Block (Top 50x70 - Large Main Centerpiece) - Conference Room
     centerRightTop50x70: {
@@ -51,7 +51,7 @@ export default function Gallery() {
     // Far Right Wing (30x40) - Advocate at Law Bookshelf
     farRight: {
       src: '/advocate-reading-bookshelf.jpg',
-      alt: 'Senior Advocate examining law reports at chambers library',
+      alt: 'Advocate examining law reports at chambers library',
     },
   };
 
@@ -69,12 +69,12 @@ export default function Gallery() {
             <span className="w-10 h-[1.5px] bg-[#d8b577]" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-3 tracking-tight max-w-[600px] mx-auto">
-            Our <span className="text-[#c9a84c]">Gallery</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-3 tracking-tight max-w-[700px] mx-auto">
+            Chambers and Practice — <span className="text-[#c9a84c]">Our Gallery.</span>
           </h2>
 
           <p className="text-gray-600 text-xs sm:text-sm md:text-base font-sans max-w-xl mx-auto leading-relaxed">
-            Photos of our law chambers, conference room, and advocates at our office in Gachibowli, Hyderabad.
+            Photographs of the chamber, consultation area and office facilities in Gachibowli, Hyderabad.
           </p>
 
           <div className="w-16 h-[2px] bg-[#c9a84c] mx-auto mt-4" />
