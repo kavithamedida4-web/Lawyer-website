@@ -190,6 +190,13 @@ export default function Footer() {
 
         </div>
 
+        {/* Compliance Disclaimer (Shown on Every Page) */}
+        <div className="mb-8 bg-[#12151a] border-l-4 border-[#c9a84c] px-5 py-4 rounded-r-lg">
+          <p className="text-gray-300 text-xs leading-relaxed">
+            The contents of this website are for informational purposes only. They do not constitute solicitation, advertisement, invitation or inducement, and do not create a lawyer-client relationship. No outcome, time frame or result is promised. For advice on your specific matter, please consult after sharing facts and documents.
+          </p>
+        </div>
+
         {/* Bottom Bar: Copyright & Edone Solutions attribution */}
         <div className="pt-6 border-t border-[#1f2228] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-300">
           <p className="text-center sm:text-left">
