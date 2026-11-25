@@ -8,7 +8,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 export const metadata: Metadata = {
   title: 'About Us — Advocates & Legal Consultants',
   description:
-    'Learn about UK Law Firm, founded by senior advocates M. Umamaheshwar Reddy (B.Sc., M.Sc., LL.B.) and S. Kamalakar (B.B.M., M.C.A., LL.B.) in Gachibowli, Hyderabad.',
+    'Learn about UK Law Firm, founded by advocates M. Umamaheshwar Reddy (B.Sc., M.Sc., LL.B.) and S. Kamalakar (B.B.M., M.C.A., LL.B.) in Gachibowli, Hyderabad.',
 };
 
 export default function AboutPage() {
@@ -55,11 +55,11 @@ export default function AboutPage() {
           {/* 4. 3 Side-by-Side Tall Rounded Photo Cards (3 Columns on Mobile & Desktop, exactly like reference) */}
           <div className="grid grid-cols-3 gap-2.5 sm:gap-6 max-w-[860px] mx-auto items-end">
             
-            {/* Card 1: Left - Senior Advocate M. Umamaheshwar Reddy at Law Library */}
+            {/* Card 1: Left - Advocate M. Umamaheshwar Reddy at Law Library */}
             <div className="h-[185px] sm:h-[340px] rounded-2xl sm:rounded-[28px] overflow-hidden border-[3px] sm:border-[5px] border-white shadow-[0_8px_20px_rgba(10,18,34,0.08)] bg-white relative group transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <Image
                 src="/about-bookshelf.jpg"
-                alt="Senior Advocate M. Umamaheshwar Reddy at Law Library"
+                alt="Advocate M. Umamaheshwar Reddy at Law Library"
                 fill
                 sizes="(max-width: 768px) 33vw, 280px"
                 className="object-cover object-[32%_center] group-hover:scale-105 transition-transform duration-500"
@@ -79,11 +79,11 @@ export default function AboutPage() {
               />
             </div>
 
-            {/* Card 3: Right - Senior Advocate S. Kamalakar at Law & Justice Chambers */}
+            {/* Card 3: Right - Advocate S. Kamalakar at Law & Justice Chambers */}
             <div className="h-[185px] sm:h-[340px] rounded-2xl sm:rounded-[28px] overflow-hidden border-[3px] sm:border-[5px] border-white shadow-[0_8px_20px_rgba(10,18,34,0.08)] bg-white relative group transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <Image
                 src="/about-desk.jpg"
-                alt="Senior Advocate S. Kamalakar at Law & Justice Chambers Consultation Desk"
+                alt="Advocate S. Kamalakar at Law & Justice Chambers Consultation Desk"
                 fill
                 sizes="(max-width: 768px) 33vw, 280px"
                 className="object-cover object-[55%_center] group-hover:scale-105 transition-transform duration-500"
@@ -207,7 +207,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <span className="w-5 h-5 rounded-full bg-[#0a1222] text-[#e5bf55] flex items-center justify-center flex-shrink-0 text-xs">✓</span>
-                  <span>Direct Senior Advocate Guidance</span>
+                  <span>Direct Advocate Guidance</span>
                 </div>
               </div>
 

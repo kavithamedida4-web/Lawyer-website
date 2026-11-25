@@ -25,13 +25,6 @@ export default function About() {
     return () => observer.disconnect();
   }, []);
 
-  const points = [
-    'Direct access to your assigned advocate on every case.',
-    'Clear and realistic legal advice without false assurances.',
-    'Thorough preparation, timely filings, and regular court attendance.',
-    'Prompt updates after hearings with complete client confidentiality.',
-  ];
-
   return (
     <section
       ref={sectionRef}
@@ -156,33 +149,24 @@ export default function About() {
             </h2>
 
             {/* Description Paragraph */}
-            <p className="text-gray-600 text-sm sm:text-[15px] leading-relaxed mb-6 font-sans">
-              Founded by advocates <strong className="text-gray-900 font-semibold">M. Umamaheshwar Reddy</strong> (B.Sc., M.Sc., LL.B.) [Enrolment No: to add] and <strong className="text-gray-900 font-semibold">S. Kamalakar</strong> (B.B.M., M.C.A., LL.B.) [Enrolment No: to add], UK Law Firm is based in Gachibowli, Hyderabad. We represent individuals, families, and businesses before the High Court of Telangana, District &amp; Sessions Courts, and Tribunals, offering clear guidance, honest legal merits, and dedicated court representation.
+            <p className="text-gray-600 text-sm sm:text-[15px] leading-relaxed mb-5 font-sans">
+              UK Law Firm is an advocates office in Gachibowli, Hyderabad.
             </p>
 
-            {/* 4 Checkpoint Bullet List with Hover Glow & Subtle Slide */}
-            <div className="space-y-3.5 mb-7">
-              {points.map((pt, i) => (
-                <div
-                  key={i}
-                  className={`flex items-center gap-3.5 group p-1.5 -ml-1.5 rounded-lg hover:bg-white/80 transition-all duration-300 cursor-default transform ${
-                    isVisible
-                      ? 'opacity-100 translate-y-0'
-                      : 'opacity-0 translate-y-4'
-                  }`}
-                  style={{ transitionDelay: `${350 + i * 100}ms` }}
-                >
-                  <div className="w-5 h-5 rounded-full bg-[#0a1222] text-[#e5bf55] group-hover:bg-[#c9a84c] group-hover:text-[#0a1222] group-hover:scale-115 flex items-center justify-center flex-shrink-0 shadow-sm transition-all duration-300">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-gray-700 text-xs sm:text-sm font-medium group-hover:text-[#0a1222] group-hover:translate-x-1 transition-all duration-300">
-                    {pt}
-                  </p>
-                </div>
-              ))}
+            {/* Advocates & Enrolment Placeholders */}
+            <div className="space-y-3 mb-5">
+              <div className="bg-[#f9f3e3] border-l-4 border-[#c9a84c] px-4 py-3 rounded-r-lg text-xs sm:text-sm text-[#0a1222]">
+                <strong className="font-semibold">Led by M. Umamaheshwar Reddy</strong> — B.Sc., M.Sc., LL.B. [Enrolment No: to add]
+              </div>
+              <div className="bg-[#f9f3e3] border-l-4 border-[#c9a84c] px-4 py-3 rounded-r-lg text-xs sm:text-sm text-[#0a1222]">
+                <strong className="font-semibold">S. Kamalakar</strong> — B.B.M., M.C.A., LL.B. [Enrolment No: to add]
+              </div>
             </div>
+
+            {/* Factual Note */}
+            <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-7 font-sans">
+              Matters are handled after review of facts, documents and applicable law. Consultation is based on information and documents you provide.
+            </p>
 
 
 
