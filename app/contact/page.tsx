@@ -43,22 +43,8 @@ export default function ContactPage() {
             Flat No. 201, 2nd Floor, Maps Apartments, Plot No. 45, Beside Care Hospitals, Jayabheri Pine Valley, Gachibowli, Hyderabad, Telangana 500032.
           </p>
 
-          {/* Direct Phone & WhatsApp Bar */}
+          {/* Email Pill */}
           <div className="flex flex-wrap items-center justify-center gap-3 mt-4">
-            <a
-              href="tel:+919866775034"
-              className="inline-flex items-center gap-2 bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/50 px-4 py-2 rounded-full text-xs font-bold transition-all shadow-xs"
-            >
-              <span>📞</span>
-              <span>+91 98667 75034</span>
-            </a>
-            <a
-              href="tel:+918897847788"
-              className="inline-flex items-center gap-2 bg-[#0a1222] hover:bg-[#14233c] text-[#e5bf55] border border-[#c9a84c]/50 px-4 py-2 rounded-full text-xs font-bold transition-all shadow-xs"
-            >
-              <span>📞</span>
-              <span>+91 88978 47788</span>
-            </a>
             <a
               href="mailto:contact@uklawfirm.in"
               className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-[#0a1222] border border-[#c9a84c]/50 px-4 py-2 rounded-full text-xs font-bold transition-all shadow-xs"
