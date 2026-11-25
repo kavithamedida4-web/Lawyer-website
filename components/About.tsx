@@ -140,52 +140,25 @@ export default function About() {
               About the Firm.
             </h2>
 
-            <div className="w-14 h-[2px] bg-[#c9a84c] mb-5" />
-
             {/* Description Paragraph */}
-            <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-6 font-sans">
+            <p className="text-gray-600 text-sm sm:text-[15px] leading-relaxed mb-5 font-sans max-w-xl">
               UK Law Firm is an advocates office in Gachibowli, Hyderabad.
             </p>
 
-            {/* Advocates & Enrolment Cards (2-column balanced grid) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-6">
-              <div className="bg-white border border-[#e6d5ad] rounded-xl p-4 shadow-xs hover:border-[#c9a84c] transition-colors">
-                <p className="text-[10px] font-bold uppercase tracking-wider text-[#b38634] mb-1">
-                  Led by
-                </p>
-                <h3 className="text-sm sm:text-[15px] font-bold text-[#0a1222] leading-snug">
-                  M. Umamaheshwar Reddy
-                </h3>
-                <p className="text-xs text-gray-600 mt-0.5">
-                  B.Sc., M.Sc., LL.B.
-                </p>
-                <span className="inline-block mt-2.5 bg-[#faf5eb] border border-[#ebd8ad] text-[#7a5a18] text-[11px] font-medium px-2.5 py-0.5 rounded-md">
-                  Enrolment No: to add
-                </span>
+            {/* Advocates & Enrolment Placeholders */}
+            <div className="space-y-3 mb-5 max-w-xl">
+              <div className="bg-[#f9f3e3] border-l-4 border-[#c9a84c] px-4 py-3 text-xs sm:text-sm text-[#0a1222]">
+                <strong className="font-semibold">Led by M. Umamaheshwar Reddy</strong> — B.Sc., M.Sc., LL.B. [Enrolment No: to add]
               </div>
-
-              <div className="bg-white border border-[#e6d5ad] rounded-xl p-4 shadow-xs hover:border-[#c9a84c] transition-colors">
-                <p className="text-[10px] font-bold uppercase tracking-wider text-[#b38634] mb-1">
-                  Advocate
-                </p>
-                <h3 className="text-sm sm:text-[15px] font-bold text-[#0a1222] leading-snug">
-                  S. Kamalakar
-                </h3>
-                <p className="text-xs text-gray-600 mt-0.5">
-                  B.B.M., M.C.A., LL.B.
-                </p>
-                <span className="inline-block mt-2.5 bg-[#faf5eb] border border-[#ebd8ad] text-[#7a5a18] text-[11px] font-medium px-2.5 py-0.5 rounded-md">
-                  Enrolment No: to add
-                </span>
+              <div className="bg-[#f9f3e3] border-l-4 border-[#c9a84c] px-4 py-3 text-xs sm:text-sm text-[#0a1222]">
+                <strong className="font-semibold">S. Kamalakar</strong> — B.B.M., M.C.A., LL.B. [Enrolment No: to add]
               </div>
             </div>
 
             {/* Factual Note */}
-            <div className="bg-white/80 border-l-3 border-[#c9a84c] border border-gray-200/80 rounded-r-xl px-4 py-3 mb-7">
-              <p className="text-gray-600 text-xs sm:text-[13px] leading-relaxed font-sans">
-                Matters are handled after review of facts, documents and applicable law. Consultation is based on information and documents you provide.
-              </p>
-            </div>
+            <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-7 font-sans max-w-xl">
+              Matters are handled after review of facts, documents and applicable law. Consultation is based on information and documents you provide.
+            </p>
 
 
 
