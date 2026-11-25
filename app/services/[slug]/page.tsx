@@ -272,11 +272,8 @@ export default async function ServiceDetailPage({ params }: Props) {
           
           {/* Section Header */}
           <div className="text-center max-w-2xl mx-auto mb-9 sm:mb-11">
-            <p className="text-[#b38634] text-xs font-bold uppercase tracking-[0.22em] mb-2 font-sans">
-              WHY CHOOSE US
-            </p>
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] tracking-tight leading-tight max-w-[600px] mx-auto">
-              Why Work With UK Law Firm
+              Practice &amp; Court Representation
             </h2>
             <div className="w-14 h-[2px] bg-[#c9a84c] mx-auto mt-3.5" />
           </div>
@@ -297,10 +294,10 @@ export default async function ServiceDetailPage({ params }: Props) {
               </div>
             </div>
 
-            {/* Right Column: 3 High-Impact Cards */}
+            {/* Right Column: 3 Factual Practice Cards */}
             <div className="lg:col-span-7 flex flex-col justify-between gap-4 sm:gap-4.5">
               
-              {/* Point 1: Honest Advice */}
+              {/* Point 1: Fact & Document Review */}
               <div className="flex items-center gap-4 sm:gap-5 p-4.5 sm:p-5 rounded-2xl bg-white border border-[#eedfba] shadow-xs hover:shadow-md transition-shadow group">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#14233c] border-3 border-white shadow-sm flex-shrink-0 flex items-center justify-center">
                   <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#f3cd67]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -309,15 +306,15 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-sans font-bold text-[#0a1222] mb-1 group-hover:text-[#916b1f] transition-colors leading-snug">
-                    Honest Advice &amp; Clear Plan
+                    Fact &amp; Document Review
                   </h3>
                   <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans">
-                    We explain the strengths and weaknesses of your case honestly so you know your options clearly before going to court.
+                    Matters are handled after review of facts, documents, and applicable law. Consultation is based on information and documents you provide.
                   </p>
                 </div>
               </div>
 
-              {/* Point 2: 15+ Years Courtroom Experience */}
+              {/* Point 2: 8+ Years of Court Practice */}
               <div className="flex items-center gap-4 sm:gap-5 p-4.5 sm:p-5 rounded-2xl bg-white border border-[#eedfba] shadow-xs hover:shadow-md transition-shadow group">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#24374e] border-3 border-white shadow-sm flex-shrink-0 flex items-center justify-center">
                   <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#f3cd67]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -326,15 +323,15 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-sans font-bold text-[#0a1222] mb-1 group-hover:text-[#916b1f] transition-colors leading-snug">
-                    15+ Years Court Experience
+                    8+ Years of Court Practice
                   </h3>
                   <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans">
-                    Our Advocates personally attend your hearings in the Telangana High Court, District Courts, and Tribunals.
+                    Practice before the Telangana High Court, District and Sessions Courts, and Tribunals in Hyderabad.
                   </p>
                 </div>
               </div>
 
-              {/* Point 3: 100% Confidential Practice */}
+              {/* Point 3: Gachibowli Chambers */}
               <div className="flex items-center gap-4 sm:gap-5 p-4.5 sm:p-5 rounded-2xl bg-white border border-[#eedfba] shadow-xs hover:shadow-md transition-shadow group">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#b38634] border-3 border-white shadow-sm flex-shrink-0 flex items-center justify-center">
                   <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -343,10 +340,10 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-sans font-bold text-[#0a1222] mb-1 group-hover:text-[#916b1f] transition-colors leading-snug">
-                    Complete Privacy &amp; Trust
+                    Chambers in Gachibowli, Hyderabad
                   </h3>
                   <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans">
-                    All your family matters, documents, and discussions are kept 100% confidential and safe with our office.
+                    Led by M. Umamaheshwar Reddy (B.Sc., M.Sc., LL.B.) and S. Kamalakar (B.B.M., M.C.A., LL.B.), keeping clients updated on filings and hearing dates.
                   </p>
                 </div>
               </div>
