@@ -102,7 +102,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                   className="bg-[#0a1222] hover:bg-[#14233c] text-[#f4d27a] hover:text-white font-extrabold px-4 sm:px-6 py-2.5 sm:py-3.5 rounded-full text-xs sm:text-sm tracking-wider uppercase shadow-[0_4px_18px_rgba(10,18,34,0.35)] hover:shadow-[0_6px_22px_rgba(10,18,34,0.5)] transition-all inline-flex items-center gap-1.5 sm:gap-2 active:scale-95 flex-shrink-0"
                 >
                   <span className="text-sm sm:text-base leading-none">⚖️</span>
-                  <span>BOOK CONSULTATION</span>
+                  <span>REQUEST APPOINTMENT</span>
                   <span className="text-xs sm:text-sm font-bold">→</span>
                 </Link>
 

@@ -110,7 +110,7 @@ export interface LegalService {
 export const legalServices: LegalService[] = [
   {
     slug: 'criminal-law',
-    title: 'Criminal Law',
+    title: 'Criminal Defence',
     category: 'BAIL, TRIAL COURT & SPECIAL COURTS',
     shortDesc: 'Legal help for bail, anticipatory bail, police cases, cheque bounce, and court trials.',
     fullDesc:
@@ -173,7 +173,7 @@ export const legalServices: LegalService[] = [
   },
   {
     slug: 'civil-law',
-    title: 'Civil Law',
+    title: 'Civil Litigation',
     category: 'PROPERTY, CONTRACTS & RIGHTS',
     shortDesc: 'Legal help for property disputes, land partition, stay orders, agreements, and money recovery.',
     fullDesc:
@@ -236,7 +236,7 @@ export const legalServices: LegalService[] = [
   },
   {
     slug: 'family-law',
-    title: 'Family Law',
+    title: 'Family and Matrimonial Matters',
     category: 'MARRIAGE, DIVORCE & RELATIONSHIPS',
     shortDesc: 'Help with divorce, child custody, maintenance, and family property settlements.',
     fullDesc:
@@ -299,7 +299,7 @@ export const legalServices: LegalService[] = [
   },
   {
     slug: 'tribunals-and-forums',
-    title: 'Tribunals & Forums',
+    title: 'Writs before the High Court',
     category: 'SPECIALISED REPRESENTATION',
     shortDesc: 'Representation before NCLT, Consumer Courts, MACT accident claims, and Service Tribunals.',
     fullDesc:
@@ -425,7 +425,7 @@ export const legalServices: LegalService[] = [
   },
   {
     slug: 'rera-and-builder-buyer',
-    title: 'RERA & Builder - Buyer',
+    title: 'Property and Real Estate Matters',
     category: 'REAL ESTATE LAW',
     shortDesc: 'Legal help for homebuyers facing delayed possession, builder disputes, and refund claims.',
     fullDesc:
@@ -541,7 +541,7 @@ export const legalServices: LegalService[] = [
   },
   {
     slug: 'labour-and-employment',
-    title: 'Labour & Employment',
+    title: 'Labour and Employment Matters',
     category: 'WORKPLACE LAW',
     shortDesc: 'Legal help for employment contracts, wrongful termination, unpaid salary, and workplace disputes.',
     fullDesc:
@@ -599,7 +599,7 @@ export const legalServices: LegalService[] = [
   },
   {
     slug: 'consumer-protection',
-    title: 'Consumer Protection',
+    title: 'Consumer Disputes',
     category: 'CONSUMER DISPUTES FORUM',
     shortDesc: 'Filing court cases for defective products, poor services, and getting refunds and compensation.',
     fullDesc:
@@ -657,7 +657,7 @@ export const legalServices: LegalService[] = [
   },
   {
     slug: 'corporate-and-commercial',
-    title: 'Corporate & Commercial',
+    title: 'Business and Commercial Matters',
     category: 'BUSINESS, CONTRACTS & STRUCTURE',
     shortDesc: 'Company registration, partner agreements, contract drafting, and business dispute resolution.',
     fullDesc:
@@ -894,7 +894,7 @@ export const legalServices: LegalService[] = [
   },
   {
     slug: 'other-legal-services',
-    title: 'Other Legal Services',
+    title: 'Documentation and Legal Notices',
     category: 'ADVISORY & REPRESENTATION',
     shortDesc: 'Drafting legal notices, registered wills, Power of Attorney (GPA), and property legal opinions.',
     fullDesc:
