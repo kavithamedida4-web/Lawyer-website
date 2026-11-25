@@ -126,14 +126,14 @@ export default function Hero() {
 
             {/* Main Headline - font-sans font-semibold (600) */}
             <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-white leading-tight tracking-tight mb-3 max-w-[600px] drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
-              <span>Trusted Legal</span>
+              <span>A Legal Practice in</span>
               <br />
-              <span className="text-[#f3cd67]">Expertise In Court</span>
+              <span className="text-[#f3cd67]">Gachibowli, Hyderabad</span>
             </h1>
 
             {/* Subtitle / Description */}
             <p className="text-white/85 text-xs sm:text-sm lg:text-[14px] leading-relaxed font-sans font-normal mb-5 max-w-md drop-shadow-sm">
-              Advocates at the High Court of Telangana, District Courts, and Tribunals. Clear advice and dependable legal representation for individuals, families, and businesses.
+              Practice before the High Court for the State of Telangana, District and Sessions Courts, and other competent courts. Practice areas include civil, criminal, property, corporate and commercial law, RERA matters, and other areas of legal practice.
             </p>
 
             {/* CTA Action Buttons */}

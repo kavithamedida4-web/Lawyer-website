@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     default: "UK Law Firm | Advocates & Legal Counsel — Hyderabad",
     template: "%s | UK Law Firm — Hyderabad",
   },
-  description: "Trusted courtroom advocates and legal defense counsel with chambers in Gachibowli, Hyderabad. Representing clients across High Court of Telangana, District Courts, RERA & Tribunals.",
+  description: "A legal practice based in Gachibowli, Hyderabad, Telangana. Practice before the High Court for the State of Telangana, District and Sessions Courts, and other competent courts.",
   keywords: [
     "UK Law Firm",
     "Advocates in Hyderabad",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "UK Law Firm | Advocates & Legal Counsel — Hyderabad",
-    description: "Trusted courtroom advocates and legal defense counsel with chambers in Gachibowli, Hyderabad. Representing clients across High Court of Telangana, District Courts, RERA & Tribunals.",
+    description: "A legal practice based in Gachibowli, Hyderabad, Telangana. Practice before the High Court for the State of Telangana, District and Sessions Courts, and other competent courts.",
     url: "https://uklawfirm.in",
     siteName: "UK Law Firm",
     locale: "en_IN",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "UK Law Firm | Advocates & Legal Counsel — Hyderabad",
-    description: "Trusted courtroom advocates and legal defense counsel with chambers in Gachibowli, Hyderabad.",
+    description: "A legal practice based in Gachibowli, Hyderabad, Telangana.",
     images: ["/uk-law-firm-partners.jpg"],
   },
 };
