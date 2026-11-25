@@ -11,7 +11,7 @@ const processSteps: ProcessStep[] = [
   {
     number: 1,
     title: 'Appointment Request',
-    desc: 'Call us or fill out the form with your name, phone number, and a few details about your matter.',
+    desc: 'Fill form or call, share name, phone, brief details.',
     isFeatured: true,
     // Solid Advocate in Court Suit & Tie (matching reference image style)
     icon: (
@@ -30,7 +30,7 @@ const processSteps: ProcessStep[] = [
   {
     number: 2,
     title: 'Document Review',
-    desc: 'Bring your notices, agreements, court papers, and an ID proof so we can go through the facts together.',
+    desc: 'Bring relevant documents, notices, agreements, court papers and ID proof.',
     // Solid Open Law Commentary Treatise with Ribbon Bookmark (matching reference image 05)
     icon: (
       <svg className="w-10 h-10 sm:w-11 sm:h-11 text-[#0a1222]" viewBox="0 0 48 48" fill="none">
@@ -48,7 +48,7 @@ const processSteps: ProcessStep[] = [
   {
     number: 3,
     title: 'Legal Assessment',
-    desc: 'We explain the legal process, your options, what documents are needed, and the next steps.',
+    desc: 'We explain procedure, options, documents required, next steps as per law.',
     // Solid Scales of Justice with Balanced Pans & Pedestal (matching reference image hero & 05)
     icon: (
       <svg className="w-10 h-10 sm:w-11 sm:h-11 text-[#0a1222]" viewBox="0 0 48 48" fill="none">
@@ -73,7 +73,7 @@ const processSteps: ProcessStep[] = [
   {
     number: 4,
     title: 'Representation',
-    desc: 'If you decide to go ahead, we discuss the fees, complete the paperwork, and represent you in court.',
+    desc: 'If you decide to engage, representation begins after engagement formalities and fee discussion. Court work is done as per procedure.',
     // Solid Classical Courthouse with 4 Pillars & Pediment (matching reference image 02 & 05)
     icon: (
       <svg className="w-10 h-10 sm:w-11 sm:h-11 text-[#0a1222]" viewBox="0 0 48 48" fill="none">
