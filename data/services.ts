@@ -651,7 +651,7 @@ export const legalServices: LegalService[] = [
       {
         name: 'Filing Complaints & Representation',
         description: 'Filing complaints on the e-Daakhil portal, presenting oral arguments, executing consumer decrees, and securing punitive compensation.',
-        image: '/consumer-05-filing-complaints.jpg',
+        image: '/service-consumer.jpg',
       },
     ],
   },
