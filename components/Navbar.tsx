@@ -3,7 +3,23 @@ import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { legalServices } from '@/data/services';
+
+const navPracticeAreas = [
+  { title: 'Civil Litigation', slug: 'civil-law' },
+  { title: 'Criminal Defence', slug: 'criminal-law' },
+  { title: 'Family and Matrimonial Matters', slug: 'family-law' },
+  { title: 'Property and Real Estate Matters', slug: 'rera-and-builder-buyer' },
+  { title: 'Consumer Disputes', slug: 'consumer-protection' },
+  { title: 'Bail and Anticipatory Bail', slug: 'criminal-law' },
+  { title: 'Cheque Bounce Cases under NI Act', slug: 'criminal-law' },
+  { title: 'Motor Accident Claims', slug: 'tribunals-and-forums' },
+  { title: 'Labour and Employment Matters', slug: 'labour-and-employment' },
+  { title: 'Wills and Succession', slug: 'other-legal-services' },
+  { title: 'Business and Commercial Matters', slug: 'corporate-and-commercial' },
+  { title: 'Arbitration and Mediation', slug: 'corporate-and-commercial' },
+  { title: 'Writs before the High Court', slug: 'tribunals-and-forums' },
+  { title: 'Documentation and Legal Notices', slug: 'other-legal-services' },
+];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -167,16 +183,16 @@ export default function Navbar() {
                       onClick={() => setServicesOpen(false)}
                       className="text-[11px] font-bold text-[#c9a84c] hover:text-[#e5bf55] transition-colors inline-flex items-center gap-1"
                     >
-                      <span>View All 14 Practice Areas</span>
+                      <span>View All Practice Areas</span>
                       <span>→</span>
                     </Link>
                   </div>
 
                   {/* 2-Column Compact Grid of 14 Services */}
                   <div className="grid grid-cols-2 gap-x-2.5 gap-y-1">
-                    {legalServices.map((service) => (
+                    {navPracticeAreas.map((service) => (
                       <Link
-                        key={service.slug}
+                        key={service.title}
                         href={`/services/${service.slug}`}
                         onClick={() => setServicesOpen(false)}
                         className="group py-1.5 px-2 rounded-lg hover:bg-white/8 border border-transparent hover:border-[#c9a84c]/30 transition-all flex items-center gap-2"
@@ -274,11 +290,11 @@ export default function Navbar() {
                   className="block text-xs font-bold text-[#e5bf55] py-1"
                   onClick={() => setMenuOpen(false)}
                 >
-                  ✦ View All 14 Practice Areas →
+                  ✦ View All Practice Areas →
                 </Link>
-                {legalServices.map((service) => (
+                {navPracticeAreas.map((service) => (
                   <Link
-                    key={service.slug}
+                    key={service.title}
                     href={`/services/${service.slug}`}
                     className="block text-xs text-gray-300 hover:text-[#e5bf55] py-1 truncate"
                     onClick={() => setMenuOpen(false)}
