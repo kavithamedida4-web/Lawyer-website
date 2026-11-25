@@ -226,7 +226,7 @@ export default function Services() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-2 tracking-tight max-w-[600px] mx-auto">
-            Our Legal Services
+            Our Practice Areas
           </h2>
 
           <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans max-w-lg mx-auto">
