@@ -145,13 +145,13 @@ export default function About() {
               UK Law Firm is an advocates office in Gachibowli, Hyderabad.
             </p>
 
-            {/* Advocates & Enrolment Placeholders */}
+            {/* Advocates */}
             <div className="space-y-3 mb-5 max-w-xl">
               <div className="bg-[#f9f3e3] border-l-4 border-[#c9a84c] px-4 py-3 text-xs sm:text-sm text-[#0a1222]">
-                <strong className="font-semibold">Led by M. Umamaheshwar Reddy</strong> — B.Sc., M.Sc., LL.B. [Enrolment No: to add]
+                <strong className="font-semibold">Led by M. Umamaheshwar Reddy</strong> — B.Sc., M.Sc., LL.B.
               </div>
               <div className="bg-[#f9f3e3] border-l-4 border-[#c9a84c] px-4 py-3 text-xs sm:text-sm text-[#0a1222]">
-                <strong className="font-semibold">S. Kamalakar</strong> — B.B.M., M.C.A., LL.B. [Enrolment No: to add]
+                <strong className="font-semibold">S. Kamalakar</strong> — B.B.M., M.C.A., LL.B.
               </div>
             </div>
 

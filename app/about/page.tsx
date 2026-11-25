@@ -182,13 +182,13 @@ export default function AboutPage() {
                 Advocates Office in Gachibowli, Hyderabad.
               </h2>
 
-              {/* Advocates & Enrolment Placeholders */}
+              {/* Advocates */}
               <div className="space-y-3 mb-5">
                 <div className="bg-[#f9f3e3] border-l-4 border-[#c9a84c] px-4 py-3 rounded-r-lg text-xs sm:text-sm text-[#0a1222]">
-                  <strong className="font-semibold">Led by M. Umamaheshwar Reddy</strong> — B.Sc., M.Sc., LL.B. [Enrolment No: to add]
+                  <strong className="font-semibold">Led by M. Umamaheshwar Reddy</strong> — B.Sc., M.Sc., LL.B.
                 </div>
                 <div className="bg-[#f9f3e3] border-l-4 border-[#c9a84c] px-4 py-3 rounded-r-lg text-xs sm:text-sm text-[#0a1222]">
-                  <strong className="font-semibold">S. Kamalakar</strong> — B.B.M., M.C.A., LL.B. [Enrolment No: to add]
+                  <strong className="font-semibold">S. Kamalakar</strong> — B.B.M., M.C.A., LL.B.
                 </div>
               </div>
 

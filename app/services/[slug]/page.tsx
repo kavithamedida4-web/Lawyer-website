@@ -343,8 +343,8 @@ export default async function ServiceDetailPage({ params }: Props) {
                     Chambers in Gachibowli, Hyderabad
                   </h3>
                   <div className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans space-y-1">
-                    <p><strong className="text-[#0a1222]">Led by M. Umamaheshwar Reddy</strong> — B.Sc., M.Sc., LL.B. [Enrolment No: to add]</p>
-                    <p><strong className="text-[#0a1222]">S. Kamalakar</strong> — B.B.M., M.C.A., LL.B. [Enrolment No: to add]</p>
+                    <p><strong className="text-[#0a1222]">Led by M. Umamaheshwar Reddy</strong> — B.Sc., M.Sc., LL.B.</p>
+                    <p><strong className="text-[#0a1222]">S. Kamalakar</strong> — B.B.M., M.C.A., LL.B.</p>
                   </div>
                 </div>
               </div>
