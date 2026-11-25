@@ -91,14 +91,6 @@ _Submitted via UK Law Firm official website_`;
         {/* Optional Section Heading (Shown on Homepage, hidden on dedicated /contact page) */}
         {!hideHeader && (
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-            <div className="flex items-center justify-center gap-3 mb-2">
-              <span className="w-8 h-[1.5px] bg-[#d8b577]" />
-              <span className="text-[#8c6b45] text-[10px] font-bold tracking-[0.25em] uppercase font-sans">
-                GET IN TOUCH
-              </span>
-              <span className="w-8 h-[1.5px] bg-[#d8b577]" />
-            </div>
-
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight tracking-tight mb-2 max-w-[700px] mx-auto">
               Contact Us and Location — <span className="text-[#b38634]">Request Chamber Appointment</span>
             </h2>
