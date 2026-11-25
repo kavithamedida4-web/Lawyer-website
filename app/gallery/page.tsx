@@ -6,9 +6,9 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
 export const metadata: Metadata = {
-  title: 'Chambers & Courtroom Practice Gallery',
+  title: 'Chambers and Practice — Our Gallery',
   description:
-    'Explore the photo gallery of UK Law Firm, featuring our executive consultation chambers, law library, conference facilities, and advocate practice in Gachibowli, Hyderabad.',
+    'Photographs of the chamber, consultation area and office facilities of UK Law Firm in Gachibowli, Hyderabad.',
 };
 
 export default function GalleryPage() {
@@ -30,17 +30,17 @@ export default function GalleryPage() {
           {/* Pill Badge */}
           <div className="inline-flex items-center gap-1.5 bg-[#faecd1] text-[#916b1f] border border-[#ebd8ad] px-4 py-1.5 rounded-full text-[11px] font-bold tracking-widest uppercase mb-3 shadow-2xs">
             <span>⚖️</span>
-            <span>CHAMBERS &amp; ADVOCATE PRACTICE</span>
+            <span>CHAMBERS &amp; PRACTICE</span>
           </div>
 
           {/* Heading */}
-          <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] tracking-tight leading-tight mb-3 max-w-[600px] mx-auto">
-            UK Law Firm <span className="text-[#b38634]">Photo Gallery</span>
+          <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] tracking-tight leading-tight mb-3 max-w-[700px] mx-auto">
+            Chambers and Practice — <span className="text-[#b38634]">Our Gallery.</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-            Photos of our office chambers, meeting rooms, law library, and advocates in Gachibowli, Hyderabad.
+            Photographs of the chamber, consultation area and office facilities in Gachibowli, Hyderabad.
           </p>
           <div className="w-16 h-[2px] bg-[#c9a84c] mx-auto mt-4" />
         </div>
