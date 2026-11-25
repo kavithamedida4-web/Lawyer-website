@@ -6,7 +6,6 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import HowItWorks from '@/components/HowItWorks';
-import Testimonials from '@/components/Testimonials';
 import Gallery from '@/components/Gallery';
 import FAQ from '@/components/FAQ';
 import { legalServices, getSubServiceImage } from '@/data/services';
@@ -365,13 +364,6 @@ export default async function ServiceDetailPage({ params }: Props) {
         ========================================================================
       */}
       <HowItWorks />
-
-      {/* 
-        ========================================================================
-        CLIENT TESTIMONIALS SECTION
-        ========================================================================
-      */}
-      <Testimonials />
 
       {/* 
         ========================================================================
