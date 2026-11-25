@@ -225,12 +225,12 @@ export default function Services() {
             <span className="w-10 h-[1.5px] bg-[#d8b577]" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-sans font-semibold text-[#0a1222] leading-tight mb-2 tracking-tight max-w-[680px] mx-auto">
-            Our Legal Services
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-sans font-semibold text-[#0a1222] leading-tight mb-2.5 tracking-tight max-w-[780px] mx-auto">
+            Our Practice Areas — Areas of Practice.
           </h2>
 
-          <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans max-w-lg mx-auto">
-            Clear, honest advice and dependable court representation for you and your family.
+          <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans max-w-xl mx-auto">
+            If your matter does not fall in this list, share brief details, we will inform you whether we can take it up.
           </p>
         </div>
 
