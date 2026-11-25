@@ -61,14 +61,6 @@ export default function Gallery() {
 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <div className="flex items-center justify-center gap-3 mb-2.5">
-            <span className="w-10 h-[1.5px] bg-[#d8b577]" />
-            <span className="text-[#8c6b45] text-[11px] font-bold tracking-[0.25em] uppercase font-sans">
-              CHAMBERS &amp; PRACTICE
-            </span>
-            <span className="w-10 h-[1.5px] bg-[#d8b577]" />
-          </div>
-
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-3 tracking-tight max-w-[700px] mx-auto">
             Chambers and Practice — <span className="text-[#c9a84c]">Our Gallery.</span>
           </h2>
