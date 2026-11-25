@@ -126,23 +126,22 @@ export default function Hero() {
 
             {/* Main Headline - font-sans font-semibold (600) */}
             <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-white leading-tight tracking-tight mb-3 max-w-[600px] drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
-              <span>A Legal Practice in</span>
-              <br />
-              <span className="text-[#f3cd67]">Gachibowli, Hyderabad</span>
+              <span>UK Law Firm — Advocates and Legal Counsel, </span>
+              <span className="text-[#f3cd67]">Hyderabad.</span>
             </h1>
 
             {/* Subtitle / Description */}
             <p className="text-white/85 text-xs sm:text-sm lg:text-[14px] leading-relaxed font-sans font-normal mb-5 max-w-md drop-shadow-sm">
-              Practice before the High Court for the State of Telangana, District and Sessions Courts, and other competent courts. Practice areas include civil, criminal, property, corporate and commercial law, RERA matters, and other areas of legal practice.
+              Practice before the Telangana High Court, District and Sessions Courts, and Tribunals in Hyderabad. 8+ Years of practice in civil, criminal, family, property and consumer matters.
             </p>
 
             {/* CTA Action Buttons */}
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <Link
                 href="/contact"
                 className="px-6 sm:px-7 py-2.5 sm:py-3 rounded-full border border-white/60 hover:border-[#f3cd67] bg-white/10 hover:bg-[#c9a84c] text-white hover:text-black backdrop-blur-md text-xs sm:text-sm font-semibold font-sans tracking-wide transition-all duration-300 shadow-lg active:scale-95 inline-flex items-center gap-2 group cursor-pointer"
               >
-                <span>Request Appointment</span>
+                <span>Request Chamber Appointment</span>
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
               </Link>
 
@@ -150,7 +149,7 @@ export default function Hero() {
                 href="#services"
                 className="px-4 py-2.5 rounded-full text-white/80 hover:text-[#f3cd67] text-xs sm:text-sm font-medium font-sans tracking-wide transition-colors inline-flex items-center gap-1.5"
               >
-                <span>Practice Areas</span>
+                <span>View Practice Areas</span>
                 <span>↓</span>
               </a>
             </div>
