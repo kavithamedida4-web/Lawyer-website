@@ -175,9 +175,6 @@ export default function AboutPage() {
 
             {/* Right: Core Practice Overview */}
             <div className="lg:col-span-6 font-sans">
-              <p className="text-[#b38634] font-serif italic text-base sm:text-lg mb-2 font-medium">
-                About the Advocates
-              </p>
               <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] leading-tight mb-4 tracking-tight max-w-[600px]">
                 Advocates Office in Gachibowli, Hyderabad.
               </h2>
