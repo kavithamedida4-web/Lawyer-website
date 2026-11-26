@@ -316,14 +316,6 @@ export default function Navbar() {
 
           <Link
             href="/contact"
-            className="text-gray-200 hover:text-[#e5bf55] text-sm py-1.5 transition-colors font-medium"
-            onClick={() => setMenuOpen(false)}
-          >
-            Contact
-          </Link>
-
-          <Link
-            href="/contact"
             onClick={() => setMenuOpen(false)}
             className="mt-3 bg-[#b38634] text-white px-5 py-3 text-xs font-semibold rounded-full text-center flex items-center justify-center gap-2 shadow-md"
           >
