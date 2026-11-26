@@ -184,7 +184,7 @@ export default function HowItWorks() {
                 </div>
 
                 {/* Step Title */}
-                <h3 className="font-serif font-bold text-base sm:text-lg text-[#0a1222] mb-1.5 tracking-tight group-hover:text-[#b38634] transition-colors">
+                <h3 className="font-sans font-semibold text-base sm:text-lg text-[#0a1222] mb-1.5 tracking-tight group-hover:text-[#b38634] transition-colors">
                   {step.title}
                 </h3>
 
