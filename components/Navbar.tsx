@@ -218,14 +218,6 @@ export default function Navbar() {
             Gallery
           </Link>
 
-          {/* Contact */}
-          <Link
-            href="/contact"
-            className="text-sm font-medium text-gray-300 hover:text-[#e5bf55] transition-colors"
-          >
-            Contact
-          </Link>
-
         </nav>
 
         {/* Right CTA Button */}
