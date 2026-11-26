@@ -79,12 +79,6 @@ export default async function ServiceDetailPage({ params }: Props) {
             */}
             <div className="lg:col-span-6 text-left">
               
-              {/* Category Pill with Bullet */}
-              <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-white/90 backdrop-blur-xs border border-[#b38634] text-[#6b4c0e] px-2.5 sm:px-3.5 py-0.5 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-bold tracking-wider uppercase mb-1.5 sm:mb-4 shadow-sm">
-                <span className="text-xs leading-none">•</span>
-                <span>{service.category}</span>
-              </div>
-
               {/* Main Service Title */}
               <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold tracking-tight text-[#0a1222] leading-tight mb-2 sm:mb-4 max-w-[600px]">
                 {service.title}
