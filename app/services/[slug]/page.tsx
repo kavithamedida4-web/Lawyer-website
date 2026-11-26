@@ -198,7 +198,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           
           <div className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-[#0a1222] tracking-tight leading-tight max-w-[600px] mx-auto">
-              Services We Provide in {service.title}
+              Practice Areas in {service.title}
             </h2>
             <div className="w-16 h-[2px] bg-[#c9a84c] mx-auto mt-4" />
           </div>
