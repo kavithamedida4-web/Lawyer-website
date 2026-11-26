@@ -74,7 +74,7 @@ export default function FAQ() {
                   className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 transition-colors"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-serif font-bold text-base sm:text-lg text-[#0a1222] leading-snug">
+                  <span className="font-sans font-semibold tracking-tight text-base sm:text-lg text-[#0a1222] leading-snug">
                     {faq.question}
                   </span>
                   <div

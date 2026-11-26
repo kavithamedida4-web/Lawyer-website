@@ -285,7 +285,7 @@ export default function Services() {
                   {item.sub}
                 </span>
 
-                <h3 className="text-lg font-serif font-bold text-[#141e2e] mb-2 leading-tight">
+                <h3 className="text-lg font-sans font-semibold tracking-tight text-[#141e2e] mb-2 leading-tight">
                   {item.category}
                 </h3>
 

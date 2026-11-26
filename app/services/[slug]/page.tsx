@@ -228,7 +228,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
                     {/* Content Body */}
                     <div className="p-5 sm:p-6">
-                      <h3 className="font-serif font-bold text-lg text-[#0a1222] mb-2 group-hover:text-[#916b1f] transition-colors leading-snug">
+                      <h3 className="font-sans font-semibold tracking-tight text-lg text-[#0a1222] mb-2 group-hover:text-[#916b1f] transition-colors leading-snug">
                         {sub.name}
                       </h3>
 
