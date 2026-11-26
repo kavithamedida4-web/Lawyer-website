@@ -36,12 +36,7 @@ export default function AboutPage() {
 
         <div className="max-w-[1200px] mx-auto px-4 sm:px-10 text-center relative z-10">
           
-          {/* 1. Pill Badge */}
-          <div className="inline-flex items-center gap-1.5 bg-[#faecd1] text-[#916b1f] border border-[#ebd8ad] px-4 py-1.5 rounded-full text-[11px] sm:text-xs font-bold tracking-widest uppercase mb-3.5 shadow-2xs">
-            <span>OUR CHAMBERS</span>
-          </div>
-
-          {/* 2. Main Title */}
+          {/* 1. Main Title */}
           <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-sans font-semibold tracking-tight leading-tight text-[#0a1222] mb-3 max-w-[600px] mx-auto">
             About <span className="text-[#b88a38]">UK Law Firm</span>
           </h1>
