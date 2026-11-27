@@ -18,10 +18,10 @@ export default function Gallery() {
       src: '/chambers-building-exterior.jpg',
       alt: 'UK Law Firm Chambers Exterior at Maps Apartments, Gachibowli, Hyderabad',
     },
-    // Center-Left Block (Top A4) - Advocate Portrait
+    // Center-Left Block (Top A4) - Advocate at Consultation Desk
     centerLeftTopA4: {
-      src: '/advocate-portrait-suit.jpg',
-      alt: 'Advocate in Formal Courtroom Attire',
+      src: '/gallery-umamaheshwar-desk.jpg',
+      alt: 'Advocate M. Umamaheshwar Reddy at Law & Justice Chambers Desk',
     },
     // Center-Left Block (Top 30x40) - Chambers Reception & 3D Wall Emblem
     centerLeftTop30x40: {
