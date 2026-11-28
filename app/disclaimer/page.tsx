@@ -100,7 +100,7 @@ export default function LegalDisclaimerPage() {
 
           <div>
             <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#0a1222] mb-3">
-              5. Attorney-Client Privilege
+              5. Advocate-Client Privilege
             </h2>
             <p className="text-gray-600 leading-relaxed">
               Submitting an online inquiry form, sending a WhatsApp message, or sending an unsolicited email does not, by itself, establish an advocate-client relationship. While all initial inquiries are treated with strict confidentiality, formal representation commences only upon mutual confirmation of engagement (through an engagement letter, retainer, or Vakalatnama where court appearance is required) after conflict-of-interest clearance. Statutory privilege under Section 132 of the Bharatiya Sakshya Adhiniyam, 2023 applies to confidential communications made in the course of professional employment or legal consultation as recognized by law.

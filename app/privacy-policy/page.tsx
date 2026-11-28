@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
           </h1>
 
           <p className="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-            UK Law Firm is committed to preserving the highest standards of attorney-client privilege, personal data protection, and confidentiality.
+            UK Law Firm is committed to preserving the highest standards of advocate-client privilege, personal data protection, and confidentiality.
           </p>
           <div className="w-16 h-[2px] bg-[#c9a84c] mx-auto mt-4" />
         </div>
@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
           
           <div>
             <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#0a1222] mb-3">
-              1. Attorney-Client Privilege &amp; Confidentiality
+              1. Advocate-Client Privilege &amp; Confidentiality
             </h2>
             <p className="text-gray-600 leading-relaxed">
               At UK Law Firm, we maintain strict statutory confidentiality regarding all communications, documents, and case facts disclosed to us by prospective and existing clients. This is governed by Section 132 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), and the professional ethics standards mandated by the Bar Council of India. Information shared during consultation is protected and shall never be disclosed to third parties without prior express written authorization, except as required by law.

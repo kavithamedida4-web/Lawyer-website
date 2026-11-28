@@ -193,7 +193,7 @@ export default function Footer() {
         {/* Compliance Disclaimer (Shown on Every Page) */}
         <div className="mb-8 bg-[#12151a] border-l-4 border-[#c9a84c] px-5 py-4 rounded-r-lg">
           <p className="text-gray-300 text-xs leading-relaxed">
-            The contents of this website are for informational purposes only. They do not constitute solicitation, advertisement, invitation or inducement, and do not create a lawyer-client relationship. No outcome, time frame or result is promised. For advice on your specific matter, please consult after sharing facts and documents.
+            The contents of this website are for informational purposes only. They do not constitute solicitation, advertisement, invitation or inducement, and do not create an advocate-client relationship. No outcome, time frame or result is promised. For advice on your specific matter, please consult after sharing facts and documents.
           </p>
         </div>
 

@@ -57,7 +57,7 @@ export default function TermsOfServicePage() {
 
           <div>
             <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#0a1222] mb-3">
-              2. No Attorney-Client Relationship Created Online
+              2. No Advocate-Client Relationship Created Online
             </h2>
             <p className="text-gray-600 leading-relaxed">
               Transmitting information through our online forms, WhatsApp channels, email, or telephone does not, by itself, create an advocate-client relationship between you and UK Law Firm or its advocates. Formal representation is established upon mutual acceptance of the engagement by UK Law Firm and the client, following:

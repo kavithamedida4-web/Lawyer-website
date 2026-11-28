@@ -166,7 +166,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'White Collar & Economic Offences',
-        description: 'Legal representation and defense in business fraud, cheating offences (Section 318 BNS / erstwhile Section 420 IPC), and financial investigations.',
+        description: 'Legal representation and defense in business fraud, cheating offences under Section 318 of the Bharatiya Nyaya Sanhita, 2023 (BNS) (erstwhile Section 420 IPC), and financial investigations.',
         image: '/criminal-06-white-collar.jpg',
       },
     ],
@@ -267,7 +267,7 @@ export const legalServices: LegalService[] = [
     subServices: [
       {
         name: 'Divorce (Mutual & Contested)',
-        description: 'Filing for mutual consent divorce quickly, or handling contested divorce cases in Family Court.',
+        description: 'Filing mutual consent divorce petitions, or representing clients in contested divorce proceedings before Family Courts.',
         image: '/fam-01-divorce.jpg',
       },
       {
@@ -292,7 +292,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Matrimonial Disputes',
-        description: 'Matrimonial cruelty and dowry-related proceedings (Section 85 BNS / erstwhile Section 498A IPC), stridhan recovery, and mediated family settlements.',
+        description: 'Matrimonial cruelty and dowry-related proceedings under Section 85 of the Bharatiya Nyaya Sanhita, 2023 (BNS) (erstwhile Section 498A IPC), stridhan recovery, and mediated family settlements.',
         image: '/fam-06-matrimonial.jpg',
       },
     ],

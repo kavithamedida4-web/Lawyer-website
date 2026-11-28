@@ -332,7 +332,7 @@ _Submitted via UK Law Firm official website_`;
                     className="mt-0.5 rounded border-gray-300 text-[#b38634] focus:ring-[#b38634]"
                   />
                   <label htmlFor="consent-checkbox" className="text-[11px] text-gray-700 leading-snug">
-                    <strong className="text-gray-900 font-semibold">Required:</strong> I understand this form is only a request for an appointment and does not create a lawyer-client relationship.
+                    <strong className="text-gray-900 font-semibold">Required:</strong> I understand this form is only a request for an appointment and does not create an advocate-client relationship.
                   </label>
                 </div>
 
