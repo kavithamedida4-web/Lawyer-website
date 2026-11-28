@@ -141,7 +141,7 @@ export const legalServices: LegalService[] = [
     subServices: [
       {
         name: 'Bail & Anticipatory Bail',
-        description: 'Quick filing and court arguments for Anticipatory Bail and Regular Bail in Sessions Courts and the High Court.',
+        description: 'Filing and representation for Anticipatory Bail and Regular Bail applications before Sessions Courts and the High Court.',
         image: '/criminal-01-bail.jpg',
       },
       {
@@ -299,11 +299,11 @@ export const legalServices: LegalService[] = [
   },
   {
     slug: 'tribunals-and-forums',
-    title: 'Writs before the High Court',
+    title: 'Tribunals & Statutory Forums',
     category: 'SPECIALISED REPRESENTATION',
-    shortDesc: 'Representation before NCLT, Consumer Courts, MACT accident claims, and Service Tribunals.',
+    shortDesc: 'Representation before NCLT, Consumer Commissions, MACT, REAT, Tax Tribunals, and CAT.',
     fullDesc:
-      'We represent clients before special tribunals in Hyderabad, including the Consumer Commission, Motor Accident Claims Tribunal (MACT), NCLT for company insolvency, and Central Administrative Tribunal (CAT).',
+      'We represent clients before specialized tribunals and statutory forums in Hyderabad, including the National Company Law Tribunal (NCLT), Consumer Commissions, Motor Accident Claims Tribunal (MACT), Telangana Real Estate Appellate Tribunal (REAT), tax appellate tribunals (ITAT/CESTAT), and Central Administrative Tribunal (CAT).',
     leadAdvocate: 'S. Kamalakar & M. Umamaheshwar Reddy',
     phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Kamalakar, I need legal representation before a Tribunal / Forum.',
@@ -335,7 +335,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Motor Accident Claims (MACT)',
-        description: 'Claiming full compensation from insurance companies for road accident injuries or loss of life.',
+        description: 'Filing and pursuing compensation claims before Motor Accident Claims Tribunals for road accident injuries or fatal accidents.',
         image: '/tribunals-02-motor-accident.jpg',
       },
       {
@@ -466,7 +466,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Delay in Possession',
-        description: 'Securing statutory monthly interest at prescribed bank rates for every month of delayed handover of residential and commercial apartments.',
+        description: 'Filing claims before RERA authorities for statutory interest on delayed handover of residential and commercial apartments.',
         image: '/rera-03-delay-possession.jpg',
       },
       {
@@ -925,7 +925,7 @@ export const legalServices: LegalService[] = [
     subServices: [
       {
         name: 'Legal Notice Drafting',
-        description: 'Drafting and sending strong legal notices, and preparing proper replies to notices received.',
+        description: 'Drafting and issuing formal legal notices, as well as preparing structured legal replies to notices received.',
         image: '/other-01-legal-notice.jpg',
       },
       {

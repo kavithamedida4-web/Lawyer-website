@@ -162,11 +162,11 @@ const allServices = [
   },
   {
     slug: 'tribunals-and-forums',
-    category: 'Writs before the High Court',
-    sub: 'Writ Petitions & High Court',
-    desc: 'Filing writ petitions before the High Court for the State of Telangana for fundamental rights, service matters, and government actions.',
+    category: 'Tribunals & Statutory Forums',
+    sub: 'NCLT, REAT, Tax & CAT',
+    desc: 'Representation before NCLT, Consumer Commissions, REAT, Tax Appellate Tribunals, and CAT.',
     image: '/service-writs-hc.jpg',
-    points: ['Writ Petitions (HC)', 'Article 226 Petitions', 'Service & Government Matters', 'Stay & Interim Orders'],
+    points: ['NCLT & IBC Matters', 'RERA & Consumer Appeals', 'ITAT & GST Tribunals', 'CAT & Service Matters'],
     icon: (
       <svg className="w-5 h-5 text-[#a8742b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
