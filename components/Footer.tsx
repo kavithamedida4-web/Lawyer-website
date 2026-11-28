@@ -22,7 +22,7 @@ export default function Footer() {
     { name: 'Property and Real Estate Matters', href: '/services/rera-and-builder-buyer', highlight: false },
     { name: 'Labour and Employment Matters', href: '/services/labour-and-employment', highlight: false },
     { name: 'Business and Commercial Matters', href: '/services/corporate-and-commercial', highlight: false },
-    { name: 'Writs before the High Court', href: '/services/tribunals-and-forums', highlight: false },
+    { name: 'Tribunals & Statutory Forums', href: '/services/tribunals-and-forums', highlight: false },
     { name: 'Documentation and Legal Notices', href: '/services/other-legal-services', highlight: false },
   ];
 

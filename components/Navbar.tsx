@@ -17,7 +17,7 @@ const navPracticeAreas = [
   { title: 'Wills and Succession', slug: 'other-legal-services' },
   { title: 'Business and Commercial Matters', slug: 'corporate-and-commercial' },
   { title: 'Arbitration and Mediation', slug: 'corporate-and-commercial' },
-  { title: 'Writs before the High Court', slug: 'tribunals-and-forums' },
+  { title: 'Tribunals & Statutory Forums', slug: 'tribunals-and-forums' },
   { title: 'Documentation and Legal Notices', slug: 'other-legal-services' },
 ];
 
