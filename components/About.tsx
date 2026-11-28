@@ -90,7 +90,7 @@ export default function About() {
                   <div className="h-[48%] rounded-2xl rounded-b-3xl overflow-hidden shadow-xl relative border-2 border-white bg-gray-100 group transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl">
                     <Image
                       src="/uk-law-firm-partners.jpg"
-                      alt="UK Law Firm Advocates & Legal Consultants"
+                      alt="UK Law Firm Advocates & Legal Counsel"
                       fill
                       sizes="(max-width: 768px) 50vw, 270px"
                       className="object-cover object-top group-hover:scale-108 transition-transform duration-700 ease-out"

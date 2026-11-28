@@ -100,7 +100,7 @@ export default function Navbar() {
               UK Law Firm
             </span>
             <span className="text-[#c9a84c] text-[9px] tracking-[0.2em] font-sans font-bold uppercase block -mt-0.5">
-              ADVOCATES &amp; LEGAL CONSULTANTS
+              ADVOCATES &amp; LEGAL COUNSEL
             </span>
           </div>
         </Link>

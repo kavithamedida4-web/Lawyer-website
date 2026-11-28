@@ -108,18 +108,18 @@ export default function Hero() {
         ========================================================================
       */}
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12 my-auto flex-1 flex flex-col justify-center">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 lg:gap-10 items-center w-full">
-          
+
           {/* ==================================================================
               LEFT SIDE: CONTENT (Clean font-sans typography with font-weight 600)
               Eyebrow line, bold headline, description paragraph, and pill CTA
               ================================================================== */}
           <div className="lg:col-span-5 flex flex-col justify-center text-left">
-            
+
             {/* Main Headline - font-sans font-semibold (600) */}
             <h1 className="text-2xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-white leading-tight tracking-tight mb-2 sm:mb-3 max-w-[600px] drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
-              <span>UK Law Firm — Advocates &amp; Legal Consultants, </span>
+              <span>UK Law Firm — Advocates &amp; Legal Counsel, </span>
               <span className="text-[#f3cd67]">Hyderabad.</span>
             </h1>
 
@@ -196,11 +196,10 @@ export default function Hero() {
                     type="button"
                     onClick={() => setMobileIndex(idx)}
                     aria-label={`Show card ${idx + 1}`}
-                    className={`rounded-full transition-all duration-300 ${
-                      idx === mobileIndex
-                        ? 'w-6 h-1.5 bg-white shadow-[0_0_8px_rgba(255,255,255,0.8)]'
-                        : 'w-1.5 h-1.5 bg-white/40'
-                    }`}
+                    className={`rounded-full transition-all duration-300 ${idx === mobileIndex
+                      ? 'w-6 h-1.5 bg-white shadow-[0_0_8px_rgba(255,255,255,0.8)]'
+                      : 'w-1.5 h-1.5 bg-white/40'
+                      }`}
                   />
                 ))}
               </div>
@@ -217,15 +216,13 @@ export default function Hero() {
                     style={{
                       transitionDelay: isLoaded ? '0ms' : `${idx * 240}ms`,
                     }}
-                    className={`group relative w-full h-[320px] lg:h-[360px] xl:h-[380px] rounded-2xl overflow-hidden text-left shadow-[0_14px_35px_rgba(0,0,0,0.6)] transition-all duration-700 ease-out bg-[#0c1424] block ${
-                      isLoaded
-                        ? 'opacity-100 translate-x-0 scale-100'
-                        : 'opacity-0 translate-x-20 scale-95'
-                    } ${
-                      isWave
+                    className={`group relative w-full h-[320px] lg:h-[360px] xl:h-[380px] rounded-2xl overflow-hidden text-left shadow-[0_14px_35px_rgba(0,0,0,0.6)] transition-all duration-700 ease-out bg-[#0c1424] block ${isLoaded
+                      ? 'opacity-100 translate-x-0 scale-100'
+                      : 'opacity-0 translate-x-20 scale-95'
+                      } ${isWave
                         ? 'border-2 border-white -translate-y-2 shadow-[0_20px_45px_rgba(0,0,0,0.8)]'
                         : 'border border-white/25 hover:border-white hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(0,0,0,0.7)]'
-                    }`}
+                      }`}
                   >
                     {/* Card Photograph */}
                     <Image
@@ -235,9 +232,8 @@ export default function Hero() {
                       unoptimized
                       sizes="(max-width: 1024px) 200px, 240px"
                       loading="eager"
-                      className={`object-cover ${card.pos} transition-transform duration-700 ease-out ${
-                        isWave ? 'scale-106' : 'group-hover:scale-106'
-                      }`}
+                      className={`object-cover ${card.pos} transition-transform duration-700 ease-out ${isWave ? 'scale-106' : 'group-hover:scale-106'
+                        }`}
                     />
 
                     {/* Subtle dark gradient overlay at base */}
@@ -245,9 +241,8 @@ export default function Hero() {
 
                     {/* Clean white accent border glow */}
                     <div
-                      className={`absolute inset-0 rounded-2xl border transition-colors duration-500 pointer-events-none ${
-                        isWave ? 'border-white/40' : 'border-transparent group-hover:border-white/40'
-                      }`}
+                      className={`absolute inset-0 rounded-2xl border transition-colors duration-500 pointer-events-none ${isWave ? 'border-white/40' : 'border-transparent group-hover:border-white/40'
+                        }`}
                     />
                   </Link>
                 );

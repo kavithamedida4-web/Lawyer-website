@@ -115,7 +115,7 @@ export default function LegalDisclaimerPage() {
               For verification of advocate enrollment or official chamber inquiries, you may contact our office directly:
             </p>
             <div className="bg-[#faf7f2] border border-[#eedfba] p-5 rounded-xl space-y-2 text-xs sm:text-sm">
-              <p><strong className="text-[#0a1222]">Firm:</strong> UK Law Firm, Advocates &amp; Legal Consultants</p>
+              <p><strong className="text-[#0a1222]">Firm:</strong> UK Law Firm, Advocates &amp; Legal Counsel</p>
               <p><strong className="text-[#0a1222]">Chambers:</strong> Flat No. 201, 2nd Floor, Maps Apartments, Plot No. 45, Beside Care Hospitals, Jayabheri Pine Valley, Gachibowli, Hyderabad, Telangana 500032</p>
               <p><strong className="text-[#0a1222]">Contact:</strong> +91 88978 47788</p>
               <p><strong className="text-[#0a1222]">Inquiries:</strong> contact@uklawfirm.in</p>

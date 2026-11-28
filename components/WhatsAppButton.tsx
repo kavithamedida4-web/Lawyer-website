@@ -9,7 +9,7 @@ export default function WhatsAppButton() {
     {
       name: 'M UMAMAHESHWAR REDDY',
       degree: 'B.Sc., M.Sc., LL.B.',
-      title: 'Advocate & Legal Consultant',
+      title: 'Advocate & Legal Counsel',
       phone: '8897847788',
       phoneDisplay: '+91 88978 47788',
       whatsappUrl:
@@ -18,7 +18,7 @@ export default function WhatsAppButton() {
     {
       name: 'S KAMALAKAR',
       degree: 'B.B.M., M.C.A., LL.B.',
-      title: 'Advocate & Legal Consultant',
+      title: 'Advocate & Legal Counsel',
       phone: '6304856208',
       phoneDisplay: '+91 63048 56208',
       whatsappUrl:
