@@ -25,7 +25,7 @@ const faqs = [
   {
     question: 'Do you take cases in the High Court and other courts?',
     answer:
-      'Yes. We regularly handle cases in the Telangana High Court, District Courts, Family Courts, and Special Tribunals in Hyderabad and across Telangana.',
+      'Yes. We regularly handle cases in the High Court for the State of Telangana, District Courts, Family Courts, and Special Tribunals in Hyderabad and across Telangana.',
   },
   {
     question: 'How will I know what is happening in my case?',

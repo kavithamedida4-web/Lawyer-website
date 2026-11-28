@@ -320,7 +320,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                     8+ Years of Court Practice
                   </h3>
                   <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-sans">
-                    Practice before the Telangana High Court, District and Sessions Courts, and Tribunals in Hyderabad.
+                    Practice before the High Court for the State of Telangana, District and Sessions Courts, and Tribunals in Hyderabad.
                   </p>
                 </div>
               </div>

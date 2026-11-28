@@ -60,7 +60,7 @@ export default function Footer() {
 
             {/* Paragraph Bio */}
             <p className="text-gray-200 text-xs sm:text-[13px] leading-relaxed">
-              <strong className="text-white font-semibold">UK Law Firm</strong> is based in <strong className="text-white font-semibold">Gachibowli, Hyderabad</strong>. Our advocates handle cases before the <strong className="text-white font-semibold">High Court of Telangana, District Courts, and Tribunals</strong>, providing clear advice and dependable legal support for individuals, families, and businesses.
+              <strong className="text-white font-semibold">UK Law Firm</strong> is based in <strong className="text-white font-semibold">Gachibowli, Hyderabad</strong>. Our advocates handle cases before the <strong className="text-white font-semibold">High Court for the State of Telangana, District Courts, and Tribunals</strong>, providing clear advice and dependable legal support for individuals, families, and businesses.
             </p>
           </div>
 

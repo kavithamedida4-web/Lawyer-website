@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   keywords: [
     "UK Law Firm",
     "Advocates in Hyderabad",
-    "High Court of Telangana lawyers",
+    "High Court for the State of Telangana advocates",
     "Criminal defense Hyderabad",
     "Bail lawyer Gachibowli",
     "Civil litigation Telangana",
     "RERA advocate Hyderabad",
-    "Corporate legal advisor Hyderabad"
+    "Corporate legal counsel Hyderabad"
   ],
   authors: [{ name: "UK Law Firm" }],
   creator: "UK Law Firm",

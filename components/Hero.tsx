@@ -125,7 +125,7 @@ export default function Hero() {
 
             {/* Subtitle / Description (concise on mobile, full on desktop) */}
             <p className="text-white/85 text-xs sm:text-sm lg:text-[14px] leading-relaxed font-sans font-normal mb-3.5 sm:mb-5 max-w-md drop-shadow-sm">
-              Practice before the Telangana High Court, District and Sessions Courts, and Tribunals in Hyderabad.
+              Practice before the High Court for the State of Telangana, District and Sessions Courts, and Tribunals in Hyderabad.
               <span className="hidden sm:inline"> 8+ Years of practice in civil, criminal, family, property and consumer matters.</span>
             </p>
 

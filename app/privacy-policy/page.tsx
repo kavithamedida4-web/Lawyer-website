@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
               1. Attorney-Client Privilege &amp; Confidentiality
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              At UK Law Firm, we maintain strict statutory confidentiality regarding all communications, documents, and case facts disclosed to us by prospective and existing clients. This is governed by Section 126 of the Indian Evidence Act, 1872, and the professional ethics standards mandated by the Bar Council of India. Information shared during consultation is protected and shall never be disclosed to third parties without prior express written authorization, except as required by law.
+              At UK Law Firm, we maintain strict statutory confidentiality regarding all communications, documents, and case facts disclosed to us by prospective and existing clients. This is governed by Section 132 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), and the professional ethics standards mandated by the Bar Council of India. Information shared during consultation is protected and shall never be disclosed to third parties without prior express written authorization, except as required by law.
             </p>
           </div>
 

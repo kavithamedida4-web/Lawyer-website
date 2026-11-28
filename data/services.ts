@@ -119,7 +119,7 @@ export const legalServices: LegalService[] = [
     phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Kamalakar, I need urgent legal counsel regarding Criminal Law / Bail.',
     iconType: 'scales',
-    courts: ['Telangana High Court', 'Metropolitan Sessions Courts', 'Special CBI & ACB Courts', 'Chief Metropolitan Magistrate Courts'],
+    courts: ['High Court for the State of Telangana', 'Metropolitan Sessions Courts', 'Special CBI & ACB Courts', 'Chief Metropolitan Magistrate Courts'],
     heroImages: {
       card1: {
         src: '/real-inauguration-ribbon.jpg',
@@ -166,7 +166,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'White Collar & Economic Offences',
-        description: 'Legal defense for business fraud, cheating cases (Section 420), and financial investigations.',
+        description: 'Legal representation and defense in business fraud, cheating offences (Section 318 BNS / erstwhile Section 420 IPC), and financial investigations.',
         image: '/criminal-06-white-collar.jpg',
       },
     ],
@@ -182,7 +182,7 @@ export const legalServices: LegalService[] = [
     phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Umamaheshwar Reddy, I would like to consult regarding a Civil Law matter.',
     iconType: 'document',
-    courts: ['Telangana High Court', 'City Civil Courts', 'Senior Civil Judge Courts', 'Junior Civil Judge Courts'],
+    courts: ['High Court for the State of Telangana', 'City Civil Courts', 'Senior Civil Judge Courts', 'Junior Civil Judge Courts'],
     heroImages: {
       card1: {
         src: '/real-umamaheshwar-standing-suit.jpg',
@@ -219,7 +219,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Injunctions & Stay Orders',
-        description: 'Getting quick stay orders and injunctions from court to stop illegal construction or land grabbing.',
+        description: 'Filing applications for interim injunctions and stay orders before civil courts in matters involving unauthorized construction or property encroachment.',
         image: '/civil-04-injunctions.jpg',
       },
       {
@@ -245,7 +245,7 @@ export const legalServices: LegalService[] = [
     phone: '+918897847788',
     whatsappMessage: 'Hello UK Law Firm, I seek legal guidance regarding Family / Matrimonial Law.',
     iconType: 'family',
-    courts: ['Family Courts (Hyderabad & Secunderabad)', 'Telangana High Court', 'Metropolitan Magistrate Courts'],
+    courts: ['Family Courts (Hyderabad & Secunderabad)', 'High Court for the State of Telangana', 'Metropolitan Magistrate Courts'],
     heroImages: {
       card1: {
         src: '/hero-partners-uk-law-firm.jpg',
@@ -272,7 +272,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Maintenance / Alimony',
-        description: 'Interim maintenance applications under Section 125 CrPC and Section 24 Hindu Marriage Act, permanent financial alimony, and child support calculations.',
+        description: 'Maintenance applications under Section 144 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS) (erstwhile Section 125 CrPC) and Section 24 of the Hindu Marriage Act, 1955, permanent alimony, and child support matters.',
         image: '/fam-02-alimony.jpg',
       },
       {
@@ -292,7 +292,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Matrimonial Disputes',
-        description: 'Resolving dowry complaints (498A), gold and stridhan recovery, and mutual family agreements.',
+        description: 'Matrimonial cruelty and dowry-related proceedings (Section 85 BNS / erstwhile Section 498A IPC), stridhan recovery, and mediated family settlements.',
         image: '/fam-06-matrimonial.jpg',
       },
     ],
@@ -371,7 +371,7 @@ export const legalServices: LegalService[] = [
     phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Kamalakar, I need consultation on Taxation & IT Law.',
     iconType: 'taxation',
-    courts: ['Telangana High Court (Tax Benches)', 'ITAT Hyderabad', 'GST Appellate Authorities', 'Adjudicating Officer (IT Act)'],
+    courts: ['High Court for the State of Telangana (Tax Benches)', 'ITAT Hyderabad', 'GST Appellate Authorities', 'Adjudicating Officer (IT Act)'],
     heroImages: {
       card1: {
         src: '/hero-card-umamaheshwar.jpg',
@@ -413,7 +413,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'IT Act & Cyber Law',
-        description: 'Advisory on intermediary liability, data protection, digital evidence admissibility under Section 65B of the Indian Evidence Act, and cyber compliance.',
+        description: 'Advisory on intermediary liability, data protection, admissibility of electronic records under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), and cyber compliance.',
         image: '/tax-05-cyber-it-law.jpg',
       },
       {
@@ -471,7 +471,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Refund & Compensation',
-        description: 'Getting your full money back with bank interest and legal costs if the builder stops work.',
+        description: 'Pursuing refund, statutory interest, and compensation claims before RERA authorities in cases of project abandonment or prolonged delay.',
         image: '/rera-04-refund-compensation.jpg',
       },
       {
@@ -492,7 +492,7 @@ export const legalServices: LegalService[] = [
     phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Umamaheshwar Reddy, I need legal help regarding Landlord & Tenant law.',
     iconType: 'briefcase',
-    courts: ['Rent Control Courts', 'City Civil Courts', 'Telangana High Court'],
+    courts: ['Rent Control Courts', 'City Civil Courts', 'High Court for the State of Telangana'],
     heroImages: {
       card1: {
         src: '/real-umamaheshwar-bookshelf.jpg',
@@ -550,7 +550,7 @@ export const legalServices: LegalService[] = [
     phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Kamalakar, I need counsel regarding Labour & Employment law.',
     iconType: 'workplace',
-    courts: ['Labour Courts & Industrial Tribunals', 'Telangana High Court (Writ Benches)', 'Labour Commissioner Offices'],
+    courts: ['Labour Courts & Industrial Tribunals', 'High Court for the State of Telangana (Writ Benches)', 'Labour Commissioner Offices'],
     heroImages: {
       card1: {
         src: '/hero-partners-uk-law-firm.jpg',
@@ -635,7 +635,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Refund & Replacement',
-        description: 'Getting your full money back or getting a new replacement for damaged goods, vehicles, or appliances.',
+        description: 'Filing consumer complaints seeking refund, replacement, or compensation for defective goods, vehicles, or appliances.',
         image: '/consumer-02-refund-replacement.jpg',
       },
       {
@@ -666,7 +666,7 @@ export const legalServices: LegalService[] = [
     phone: '+918897847788',
     whatsappMessage: 'Hello Advocate Kamalakar, I would like to consult on Corporate & Commercial Law.',
     iconType: 'corporate',
-    courts: ['Telangana High Court (Commercial Benches)', 'Commercial Courts (City Civil Court)', 'NCLT Hyderabad'],
+    courts: ['High Court for the State of Telangana (Commercial Benches)', 'Commercial Courts (City Civil Court)', 'NCLT Hyderabad'],
     heroImages: {
       card1: {
         src: '/real-inauguration-ribbon.jpg',
@@ -703,7 +703,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Commercial Disputes',
-        description: 'Fast-track litigation before dedicated Commercial Courts, pre-institution mediation, and emergency interim applications.',
+        description: 'Commercial litigation before designated Commercial Courts, statutory pre-institution mediation, and applications for interim relief.',
         image: '/corp-04-commercial-disputes.jpg',
       },
       {
@@ -724,7 +724,7 @@ export const legalServices: LegalService[] = [
     phone: '+918897847788',
     whatsappMessage: 'Hello UK Law Firm, I need consultation on Intellectual Property (IPR).',
     iconType: 'bulb',
-    courts: ['Intellectual Property Division (Telangana High Court)', 'Trade Marks Registry (Chennai)', 'Copyright Office'],
+    courts: ['Intellectual Property Division (High Court for the State of Telangana)', 'Trade Marks Registry (Chennai)', 'Copyright Office'],
     heroImages: {
       card1: {
         src: '/ipr-hero-kamalakar-library.jpg',
@@ -840,7 +840,7 @@ export const legalServices: LegalService[] = [
     phone: '+918897847788',
     whatsappMessage: 'Hello UK Law Firm, I need guidance regarding Immigration & OCI matters.',
     iconType: 'globe',
-    courts: ['Telangana High Court (Writ Petitions)', 'FRRO Hyderabad', 'Ministry of Home Affairs'],
+    courts: ['High Court for the State of Telangana (Writ Petitions)', 'FRRO Hyderabad', 'Ministry of Home Affairs'],
     heroImages: {
       card1: {
         src: '/about-inauguration.jpg',
@@ -903,7 +903,7 @@ export const legalServices: LegalService[] = [
     phone: '+918897847788',
     whatsappMessage: 'Hello UK Law Firm, I need legal drafting and advisory services.',
     iconType: 'users',
-    courts: ['Sub-Registrar Offices', 'Civil Courts', 'Telangana High Court'],
+    courts: ['Sub-Registrar Offices', 'Civil Courts', 'High Court for the State of Telangana'],
     heroImages: {
       card1: {
         src: '/real-partners-brass-lamp.jpg',
@@ -945,7 +945,7 @@ export const legalServices: LegalService[] = [
       },
       {
         name: 'Will, Inheritance & Succession',
-        description: 'Drafting and registering legal wills to ensure your property is safely passed on to your family.',
+        description: 'Drafting and registration of wills and testamentary instruments to record your intended succession of property.',
         image: '/other-05-will-succession.jpg',
       },
       {

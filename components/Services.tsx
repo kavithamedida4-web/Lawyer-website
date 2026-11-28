@@ -164,7 +164,7 @@ const allServices = [
     slug: 'tribunals-and-forums',
     category: 'Writs before the High Court',
     sub: 'Writ Petitions & High Court',
-    desc: 'Filing writ petitions before the High Court of Telangana for fundamental rights, service matters, and government actions.',
+    desc: 'Filing writ petitions before the High Court for the State of Telangana for fundamental rights, service matters, and government actions.',
     image: '/service-writs-hc.jpg',
     points: ['Writ Petitions (HC)', 'Article 226 Petitions', 'Service & Government Matters', 'Stay & Interim Orders'],
     icon: (

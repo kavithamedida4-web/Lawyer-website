@@ -60,12 +60,12 @@ export default function TermsOfServicePage() {
               2. No Attorney-Client Relationship Created Online
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Transmitting information through our online forms, WhatsApp dispatch channels, email, or telephone does not, by itself, create an attorney-client relationship between you and UK Law Firm or its advocates. An official attorney-client relationship is formally established only when:
+              Transmitting information through our online forms, WhatsApp channels, email, or telephone does not, by itself, create an advocate-client relationship between you and UK Law Firm or its advocates. Formal representation is established upon mutual acceptance of the engagement by UK Law Firm and the client, following:
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-1.5 text-gray-600">
-              <li>A direct chamber or digital consultation has taken place;</li>
-              <li>A formal Conflict of Interest check has been cleared by our advocates; and</li>
-              <li>A valid Vakalatnama, formal engagement letter, or retainer agreement has been mutually executed along with agreed professional fees.</li>
+              <li>A direct chamber or scheduled consultation;</li>
+              <li>Completion of a formal Conflict of Interest check by our advocates; and</li>
+              <li>Confirmation of the scope of representation via a formal engagement letter, retainer agreement, or execution of a Vakalatnama (for court or tribunal appearances).</li>
             </ul>
           </div>
 
