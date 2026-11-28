@@ -119,7 +119,7 @@ export default function Hero() {
             
             {/* Main Headline - font-sans font-semibold (600) */}
             <h1 className="text-2xl sm:text-4xl lg:text-[42px] font-sans font-semibold text-white leading-tight tracking-tight mb-2 sm:mb-3 max-w-[600px] drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
-              <span>UK Law Firm — Advocates and Legal Counsel, </span>
+              <span>UK Law Firm — Advocates &amp; Legal Consultants, </span>
               <span className="text-[#f3cd67]">Hyderabad.</span>
             </h1>
 
